@@ -1,43 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lanka Travel AI - Home</title>
-    <link rel="stylesheet" href="style.css?v=4">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Lanka Travel AI — Plan Sri Lanka with real traveller insight</title>
+    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
 </head>
-<body class="landing-body">
+
+<body>
     <div class="landing-background"></div>
-    
-    <nav class="landing-nav">
-        <div class="logo">
+    <div class="bg-grain"></div>
+
+    <nav class="site-nav">
+        <a href="index.html" class="logo">
             <span class="logo-icon">🌴</span>
             <h1>Lanka Travel AI</h1>
+        </a>
+        <div class="nav-links">
+            <a href="explore.html" class="nav-link">Explore</a>
+            <a href="chat.html" class="nav-link">Ask AI</a>
+            <a href="planner.html" class="nav-link">Trip Planner</a>
         </div>
     </nav>
 
     <main class="landing-main">
         <div class="landing-hero">
-            <h1 class="landing-title">Your Ultimate <span class="highlight">Sri Lanka</span> Journey Starts Here</h1>
-            <p class="landing-subtitle">Harness the power of our advanced AI to discover hidden gems, generate highly-optimized multi-day itineraries, and map your entire adventure with real driving routes.</p>
+            <div class="eyebrow">
+                <span>🇱🇰</span> Built on <b id="eyebrow-reviews">48,000+</b> real traveller reviews
+            </div>
+            <h1 class="landing-title">
+                Your Sri Lanka trip, planned from<br>
+                what travellers <span class="highlight">actually said</span>
+            </h1>
+            <p class="landing-subtitle">
+                We mined tens of thousands of destination reviews to learn the best time to
+                arrive, how crowded a place really gets, and what it costs — then wired that
+                into an AI concierge and a multi-objective route optimiser.
+            </p>
+            <div class="hero-actions">
+                <a href="explore.html" class="btn btn-primary">🗺️ Explore the map</a>
+                <a href="planner.html" class="btn btn-ghost">Build an itinerary</a>
+            </div>
+        </div>
+
+        <div class="stat-strip">
+            <div class="stat">
+                <div class="stat-value" id="stat-places">—</div>
+                <div class="stat-label">Destinations</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-reviews">—</div>
+                <div class="stat-label">Reviews analysed</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-timing">—</div>
+                <div class="stat-label">With timing insight</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="stat-cost">—</div>
+                <div class="stat-label">With cost insight</div>
+            </div>
         </div>
 
         <div class="landing-cards">
-            <a href="chat.html" class="landing-card">
-                <div class="landing-card-icon">💬</div>
-                <h2>AI Travel Assistant</h2>
-                <p>Chat with our intelligent concierge. Ask for recommendations, cultural insights, best times to visit, and uncover the secrets of the island.</p>
-                <div class="landing-card-btn">Start Chatting &rarr;</div>
+            <a href="explore.html" class="landing-card" style="--accent: linear-gradient(115deg,#f5a524,#ff6b5b)">
+                <div class="landing-card-icon">🧭</div>
+                <h2>Explore Sri Lanka</h2>
+                <p>
+                    Every destination on one interactive map, each pin carrying the review-mined
+                    verdict — best time of day, crowd level, and typical cost — with photos,
+                    descriptions and what visitors actually do there.
+                </p>
+                <div class="landing-card-btn">Open the map <i>→</i></div>
             </a>
 
-            <a href="planner.html" class="landing-card">
-                <div class="landing-card-icon">🗺️</div>
+            <a href="chat.html" class="landing-card" style="--accent: linear-gradient(115deg,#2dd4bf,#38bdf8)">
+                <div class="landing-card-icon">💬</div>
+                <h2>AI Travel Assistant</h2>
+                <p>
+                    Ask anything about the island. A retrieval-augmented agent answers from a
+                    knowledge graph and a review corpus, and shows you the evidence it used
+                    rather than asking you to take its word for it.
+                </p>
+                <div class="landing-card-btn">Start chatting <i>→</i></div>
+            </a>
+
+            <a href="planner.html" class="landing-card" style="--accent: linear-gradient(115deg,#8b5cf6,#6366f1)">
+                <div class="landing-card-icon">🗓️</div>
                 <h2>Interactive Trip Planner</h2>
-                <p>Input your preferences and let our Multi-Objective Planning Algorithm generate the perfect daily itinerary mapped out with real routes.</p>
-                <div class="landing-card-btn">Plan Your Trip &rarr;</div>
+                <p>
+                    Set your days, hours and priorities. An ant-colony optimiser balances
+                    attraction value, budget, time and popularity, then maps the winning route
+                    day by day on real driving roads.
+                </p>
+                <div class="landing-card-btn">Plan your trip <i>→</i></div>
             </a>
         </div>
+
+        <div class="section-head">
+            <h2>How the three modules fit together</h2>
+            <p>Each part of the final-year project feeds the next.</p>
+        </div>
+
+        <div class="pipeline">
+            <div class="pipeline-step">
+                <span class="pipeline-num">Module 01</span>
+                <h3>UGC Analysis</h3>
+                <p>
+                    Review sentences are classified and normalised into structured facts —
+                    best time, crowd level, cost band — each with a confidence score and the
+                    source sentences behind it.
+                </p>
+            </div>
+            <div class="pipeline-step">
+                <span class="pipeline-num">Module 02</span>
+                <h3>Knowledge Graph + RAG</h3>
+                <p>
+                    Those facts join Wikipedia articles and extracted features in a Neo4j graph
+                    and vector store, queried by an intent-routed LangGraph agent.
+                </p>
+            </div>
+            <div class="pipeline-step">
+                <span class="pipeline-num">Module 03</span>
+                <h3>Itinerary Optimisation</h3>
+                <p>
+                    A multi-objective ACO searches the POI graph under time budgets, returning
+                    Pareto-ranked routes split into practical daily plans.
+                </p>
+            </div>
+        </div>
     </main>
+
+    <footer class="site-footer">
+        Lanka Travel AI — final year research project. Place imagery from Wikimedia Commons.
+    </footer>
+
+    <script>
+        // Fill the stat strip from the same dataset the Explore page uses.
+        fetch('data/explore_places.json')
+            .then(r => r.ok ? r.json() : Promise.reject(r.status))
+            .then(data => {
+                const c = data.counts || {};
+                const reviews = (data.places || []).reduce(
+                    (sum, p) => sum + ((p.ugc && p.ugc.total_reviews) || 0), 0);
+
+                const set = (id, val) => {
+                    const el = document.getElementById(id);
+                    if (el) el.textContent = val;
+                };
+                set('stat-places', c.places ?? '—');
+                set('stat-reviews', reviews ? reviews.toLocaleString() : '—');
+                set('stat-timing', c.with_best_time ?? '—');
+                set('stat-cost', c.with_cost ?? '—');
+
+                const eyebrow = document.getElementById('eyebrow-reviews');
+                if (eyebrow && reviews) eyebrow.textContent = reviews.toLocaleString();
+            })
+            .catch(() => { /* stats are decorative - leave the placeholders */ });
+    </script>
 </body>
+
 </html>

@@ -1,6 +1,7 @@
 langchain
 langchain-community
 langchain-google-genai
+langchain-huggingface
 langgraph
 neo4j
 chromadb
@@ -10,3 +11,6 @@ python-dotenv
 pydantic-settings
 rank_bm25
 tqdm
+fastapi
+uvicorn
+networkx

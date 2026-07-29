@@ -4,6 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('trip-form');
     if (!form) return;
 
+    // Deep link from the Explore page: planner.html?must_visit=Ella%20Rock
+    const wanted = new URLSearchParams(window.location.search).get('must_visit');
+    const mustVisitInput = document.getElementById('must-visit-input');
+    if (wanted && mustVisitInput) {
+        mustVisitInput.value = wanted;
+        mustVisitInput.focus();
+    }
+
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
         
@@ -134,12 +142,18 @@ function renderItineraryWidget(llmSummary, moipResult) {
         }
         
         globalItineraryMap = L.map(mapContainer);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · ' +
+                'SRTM | &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (CC-BY-SA)',
+            maxZoom: 17
         }).addTo(globalItineraryMap);
         
+        // The widget was display:none until now, so Leaflet may have measured a
+        // stale size — recompute before fitting the route.
+        globalItineraryMap.invalidateSize();
+
         if (allCoords.length > 0) {
-            globalItineraryMap.fitBounds(L.latLngBounds(allCoords));
+            globalItineraryMap.fitBounds(L.latLngBounds(allCoords), { padding: [30, 30] });
             
             // Draw Real Road Route via OSRM API
             async function drawRoute(coords) {
@@ -165,19 +179,23 @@ function renderItineraryWidget(llmSummary, moipResult) {
             }
             drawRoute(allCoords);
             
-            // Add Markers
+            // Add Markers — numbered per stop, coloured per day
+            const dayColors = ['#f5a524', '#2dd4bf', '#8b5cf6', '#ff6b5b', '#38bdf8', '#a3e635'];
             itinerary.forEach(day => {
                 if (day.detailed_places) {
+                    const color = dayColors[(day.day - 1) % dayColors.length];
                     day.detailed_places.forEach((place, idx) => {
                         if (place.lat && place.lon) {
-                            const marker = L.circleMarker([place.lat, place.lon], {
-                                color: '#fe4fac',
-                                fillColor: '#0f172a',
-                                fillOpacity: 1,
-                                radius: 6,
-                                weight: 2
-                            }).addTo(globalItineraryMap);
-                            marker.bindPopup(`<b>Day ${day.day}</b><br>${place.name}`);
+                            const icon = L.divIcon({
+                                className: '',
+                                html: `<div class="poi-marker" style="background:${color};color:#0a0f1c;font-weight:600">
+                                         <span>${idx + 1}</span></div>`,
+                                iconSize: [30, 30],
+                                iconAnchor: [15, 30],
+                                popupAnchor: [0, -28]
+                            });
+                            const marker = L.marker([place.lat, place.lon], { icon }).addTo(globalItineraryMap);
+                            marker.bindPopup(`<b>Day ${day.day} · Stop ${idx + 1}</b><br>${place.name}`);
                         }
                     });
                 }

@@ -138,3 +138,15 @@ userInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') sendMessage();
 });
 
+// Fill the box from a suggestion card and send it.
+function askSuggestion(text) {
+    userInput.value = text;
+    sendMessage();
+}
+
+// Deep link from the Explore page: chat.html?q=Tell%20me%20about...
+document.addEventListener('DOMContentLoaded', () => {
+    const q = new URLSearchParams(window.location.search).get('q');
+    if (q) askSuggestion(q);
+});
+
