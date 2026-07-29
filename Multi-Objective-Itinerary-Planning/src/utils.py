@@ -14,15 +14,7 @@ def split_text_places(raw):
 def fuzzy_match_place(name, valid_places):
     if name in valid_places:
         return name
-        
-    # Check for substring matches first (e.g. "Sigiriya" in "Sigiriya Lion Rock")
-    name_lower = name.lower()
-    for place in valid_places:
-        if name_lower in place.lower():
-            return place
-            
-    # Fallback to difflib
-    matches = difflib.get_close_matches(name, valid_places, n=1, cutoff=0.5)
+    matches = difflib.get_close_matches(name, valid_places, n=1, cutoff=0.65)
     if not matches:
         raise ValueError(f"Place not found: {name}. Please use exact POI name from dropdown/list.")
     return matches[0]

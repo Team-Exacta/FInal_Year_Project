@@ -50,7 +50,7 @@ streamlit run src/app.py
 ## Important
 
 If weather API key is empty, the system skips live weather filtering and still works.
-<!-- 
+
 ## Fixes (2026-07-27)
 
 1. **Day splitter** – inter-day travel time is no longer zeroed. Real driving time between the last place of day D and the first place of day D+1 is charged to the new day.
@@ -61,7 +61,7 @@ If weather API key is empty, the system skips live weather filtering and still w
 3. **ACO best selection** – fixed crash/incorrect key when choosing the iteration best ant.
 4. **UI blink** – graph is loaded once via `@st.cache_resource`; Folium map uses `returned_objects=[]` and a stable `key` so the page no longer flickers/reloads on interaction.
 5. **Independent specialised ACO runs** – pheromone state is restored after each run so preference variants stay independent.
-6. **Default candidate pool** – when must-visit is empty and “Use all POIs” is off, a sensible set of popular Sri Lanka POIs is used so routes are non-trivial. -->
+6. **Default candidate pool** – when must-visit is empty and “Use all POIs” is off, a sensible set of popular Sri Lanka POIs is used so routes are non-trivial.
 
 ## Output Features
 

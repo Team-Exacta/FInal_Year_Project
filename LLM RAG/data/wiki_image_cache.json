@@ -675,14 +675,14 @@
   "credit": "Galle Face Green"
  },
  "gartmore-falls": {
-  "thumb": null,
-  "full": null,
-  "credit": null
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Nallathanni_sl.jpg/960px-Nallathanni_sl.jpg",
+  "full": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Nallathanni_sl.jpg",
+  "credit": "Nallathanni sl.jpg"
  },
  "goyambokka-beach": {
-  "thumb": null,
-  "full": null,
-  "credit": null
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Tangala_Beach_-_panoramio.jpg",
+  "full": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Tangala_Beach_-_panoramio.jpg",
+  "credit": "Tangala Beach - panoramio.jpg"
  },
  "handunugoda-tea-estate": {
   "thumb": null,
@@ -720,9 +720,9 @@
   "credit": "Kalametiya Bird Sanctuary Reflections.jpg"
  },
  "kalutara-beach": {
-  "thumb": null,
-  "full": null,
-  "credit": null
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Aerial_view_of_Kalutara_City%2C_Sri_Lanka.jpg/960px-Aerial_view_of_Kalutara_City%2C_Sri_Lanka.jpg",
+  "full": "https://upload.wikimedia.org/wikipedia/commons/3/31/Aerial_view_of_Kalutara_City%2C_Sri_Lanka.jpg",
+  "credit": "Kalutara"
  },
  "kandy-view-point": {
   "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Kandy_lake.%D0%9Airimuhuda._%E0%B6%B1%E0%B7%94%E0%B7%80%E0%B6%BB_%E0%B7%80%E0%B7%91%E0%B7%80%2C_Sri_Lanka_-_panoramio_%282%29.jpg/960px-Kandy_lake.%D0%9Airimuhuda._%E0%B6%B1%E0%B7%94%E0%B7%80%E0%B6%BB_%E0%B7%80%E0%B7%91%E0%B7%80%2C_Sri_Lanka_-_panoramio_%282%29.jpg",
@@ -780,9 +780,9 @@
   "credit": "Horton Plains National Park"
  },
  "moonstone-or-sandakada-pahana": {
-  "thumb": null,
-  "full": null,
-  "credit": null
+  "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Sandakada_pahana_Ridi_Viharaya.JPG/960px-Sandakada_pahana_Ridi_Viharaya.JPG",
+  "full": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Sandakada_pahana_Ridi_Viharaya.JPG",
+  "credit": "Sandakada pahana"
  },
  "muthurajawela-marsh": {
   "thumb": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Millenium_City_Pool_-_panoramio.jpg/960px-Millenium_City_Pool_-_panoramio.jpg",

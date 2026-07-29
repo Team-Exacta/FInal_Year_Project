@@ -31,12 +31,23 @@ import urllib.request
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 ROOT_DIR = os.path.abspath(os.path.join(BASE_DIR, ".."))
 
-MOIP_DATA = os.path.join(
-    ROOT_DIR,
-    "Multi-Objective-Itinerary-Planning",
-    "Multi-Objective-Itinerary-Planning--master",
-    "data",
-)
+def _find_moip_data():
+    """The optimiser project has been re-laid-out before; accept either shape."""
+    root = os.path.join(ROOT_DIR, "Multi-Objective-Itinerary-Planning")
+    candidates = [
+        os.path.join(root, "data"),                                              # current layout
+        os.path.join(root, "Multi-Objective-Itinerary-Planning--master", "data"),  # previous layout
+    ]
+    for path in candidates:
+        if os.path.isfile(os.path.join(path, "pois.csv")):
+            return os.path.normpath(path)
+    raise SystemExit(
+        "Could not find the MOIP data folder (pois.csv). Looked in:\n  "
+        + "\n  ".join(os.path.normpath(p) for p in candidates)
+    )
+
+
+MOIP_DATA = _find_moip_data()
 UGC_PROFILES = os.path.join(
     ROOT_DIR, "UGC-analysis", "output", "aggregation", "_poi_profiles.json")
 FALLBACK_PROFILES = os.path.join(BASE_DIR, "suggestionData", "_poi_profiles.json")

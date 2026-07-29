@@ -10,9 +10,27 @@ import uvicorn
 base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(base_dir)
 
-# Add MOIP path
-moip_path = os.path.join(base_dir, "..", "Multi-Objective-Itinerary-Planning", "Multi-Objective-Itinerary-Planning--master", "src")
-sys.path.append(os.path.normpath(moip_path))
+# Add MOIP path.
+# The optimiser project has been re-laid-out at least once (it used to sit under
+# an extra "Multi-Objective-Itinerary-Planning--master" folder), so resolve it by
+# looking for the module we actually import rather than hard-coding one shape.
+_MOIP_ROOT = os.path.normpath(os.path.join(base_dir, "..", "Multi-Objective-Itinerary-Planning"))
+_MOIP_CANDIDATES = [
+    os.path.join(_MOIP_ROOT, "src"),                                              # current layout
+    os.path.join(_MOIP_ROOT, "Multi-Objective-Itinerary-Planning--master", "src"),  # previous layout
+]
+
+moip_path = next(
+    (os.path.normpath(p) for p in _MOIP_CANDIDATES
+     if os.path.isfile(os.path.join(p, "aco.py"))),
+    None,
+)
+if moip_path is None:
+    raise RuntimeError(
+        "Could not locate the Multi-Objective-Itinerary-Planning source folder. "
+        "Looked for aco.py in:\n  " + "\n  ".join(os.path.normpath(p) for p in _MOIP_CANDIDATES)
+    )
+sys.path.append(moip_path)
 
 from src.agents.v2.graph import app as rag_graph
 from src.core.logger import get_logger
