@@ -1,0 +1,33 @@
+{
+  "n": 708,
+  "min": 7.0,
+  "max": 150000.0,
+  "source": "output/extraction/_all_spans.csv amount_lkr>0",
+  "percentiles": {
+    "p10": 114.0,
+    "p25": 300.0,
+    "p33": 400.0,
+    "p50": 800.0,
+    "p60": 1000.0,
+    "p75": 1500.0,
+    "p80": 2000.0,
+    "p90": 4000.0,
+    "p95": 5130.0
+  },
+  "chosen_cutoffs_lkr": {
+    "LOW_MODERATE": 500,
+    "MODERATE_HIGH": 1500,
+    "HIGH_VERYHIGH": 5000
+  },
+  "cutoff_percentile_basis": {
+    "500": "33rd pct (33.3% of fees below)",
+    "1500": "67th pct (67.4% below)",
+    "5000": "92nd pct (92.4% below)"
+  },
+  "resulting_band_shares": {
+    "LOW(<500)": "33.3%",
+    "MODERATE(500-1500)": "34.0%",
+    "HIGH(1500-5000)": "25.0%",
+    "VERY_HIGH(>=5000)": "7.6%"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "winner": "hand",
+  "results": {
+    "hand": {
+      "per_category": {
+        "best_time": {
+          "threshold": 0.33,
+          "precision": 0.7549,
+          "recall": 0.713,
+          "f1": 0.7333,
+          "tp": 77,
+          "fp": 25,
+          "fn": 31,
+          "n_anchors": 10
+        },
+        "crowd_level": {
+          "threshold": 0.33,
+          "precision": 0.5241,
+          "recall": 0.8444,
+          "f1": 0.6468,
+          "tp": 76,
+          "fp": 69,
+          "fn": 14,
+          "n_anchors": 14
+        },
+        "cost_level": {
+          "threshold": 0.3,
+          "precision": 0.9167,
+          "recall": 0.8521,
+          "f1": 0.8832,
+          "tp": 121,
+          "fp": 11,
+          "fn": 21,
+          "n_anchors": 12
+        }
+      },
+      "macro_precision": 0.7319,
+      "macro_recall": 0.8032,
+      "macro_f1": 0.7659,
+      "mean_f1": 0.7544
+    },
+    "mined": {
+      "per_category": {
+        "best_time": {
+          "threshold": 0.23,
+          "precision": 0.5563,
+          "recall": 0.7778,
+          "f1": 0.6486,
+          "tp": 84,
+          "fp": 67,
+          "fn": 24,
+          "n_anchors": 12
+        },
+        "crowd_level": {
+          "threshold": 0.3,
+          "precision": 0.4387,
+          "recall": 0.7556,
+          "f1": 0.5551,
+          "tp": 68,
+          "fp": 87,
+          "fn": 22,
+          "n_anchors": 12
+        },
+        "cost_level": {
+          "threshold": 0.26,
+          "precision": 0.7027,
+          "recall": 0.9155,
+          "f1": 0.7951,
+          "tp": 130,
+          "fp": 55,
+          "fn": 12,
+          "n_anchors": 12
+        }
+      },
+      "macro_precision": 0.5659,
+      "macro_recall": 0.8163,
+      "macro_f1": 0.6684,
+      "mean_f1": 0.6663
+    },
+    "hybrid": {
+      "per_category": {
+        "best_time": {
+          "threshold": 0.33,
+          "precision": 0.6444,
+          "recall": 0.8056,
+          "f1": 0.716,
+          "tp": 87,
+          "fp": 48,
+          "fn": 21,
+          "n_anchors": 22
+        },
+        "crowd_level": {
+          "threshold": 0.36,
+          "precision": 0.4899,
+          "recall": 0.8111,
+          "f1": 0.6109,
+          "tp": 73,
+          "fp": 76,
+          "fn": 17,
+          "n_anchors": 26
+        },
+        "cost_level": {
+          "threshold": 0.31,
+          "precision": 0.7545,
+          "recall": 0.8873,
+          "f1": 0.8155,
+          "tp": 126,
+          "fp": 41,
+          "fn": 16,
+          "n_anchors": 24
+        }
+      },
+      "macro_precision": 0.6296,
+      "macro_recall": 0.8347,
+      "macro_f1": 0.7178,
+      "mean_f1": 0.7141
+    }
+  }
+}

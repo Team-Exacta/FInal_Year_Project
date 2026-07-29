@@ -1,0 +1,1004 @@
+{
+  "best_time": {
+    "n_tagged_sentences": 880,
+    "rule_coverage": 0.7148,
+    "abstention": 0.2852,
+    "n_uncovered_sentences": 251,
+    "top_unigrams": [
+      [
+        "early",
+        241
+      ],
+      [
+        "morning",
+        185
+      ],
+      [
+        "crowded",
+        122
+      ],
+      [
+        "weekends",
+        115
+      ],
+      [
+        "avoid",
+        114
+      ],
+      [
+        "best",
+        108
+      ],
+      [
+        "time",
+        102
+      ],
+      [
+        "hot",
+        97
+      ],
+      [
+        "heat",
+        93
+      ],
+      [
+        "am",
+        91
+      ],
+      [
+        "day",
+        86
+      ],
+      [
+        "not",
+        86
+      ],
+      [
+        "season",
+        74
+      ],
+      [
+        "holidays",
+        70
+      ],
+      [
+        "afternoon",
+        61
+      ],
+      [
+        "climb",
+        58
+      ],
+      [
+        "start",
+        52
+      ],
+      [
+        "visit",
+        52
+      ],
+      [
+        "gets",
+        50
+      ],
+      [
+        "sun",
+        48
+      ],
+      [
+        "late",
+        46
+      ],
+      [
+        "evening",
+        45
+      ],
+      [
+        "better",
+        43
+      ],
+      [
+        "crowds",
+        40
+      ],
+      [
+        "december",
+        36
+      ]
+    ],
+    "top_bigrams": [
+      [
+        "early morning",
+        123
+      ],
+      [
+        "best time",
+        59
+      ],
+      [
+        "late afternoon",
+        34
+      ],
+      [
+        "avoid heat",
+        27
+      ],
+      [
+        "crowded weekends",
+        27
+      ],
+      [
+        "morning late",
+        22
+      ],
+      [
+        "gets hot",
+        21
+      ],
+      [
+        "public holidays",
+        20
+      ],
+      [
+        "time visit",
+        17
+      ],
+      [
+        "weekends holidays",
+        17
+      ],
+      [
+        "start early",
+        16
+      ],
+      [
+        "morning avoid",
+        16
+      ],
+      [
+        "early avoid",
+        15
+      ],
+      [
+        "best early",
+        12
+      ],
+      [
+        "avoid crowds",
+        12
+      ],
+      [
+        "mid day",
+        11
+      ],
+      [
+        "heat day",
+        11
+      ],
+      [
+        "visit early",
+        11
+      ],
+      [
+        "early gets",
+        10
+      ],
+      [
+        "try early",
+        10
+      ],
+      [
+        "recommend going",
+        10
+      ],
+      [
+        "morning evening",
+        10
+      ],
+      [
+        "climb early",
+        10
+      ],
+      [
+        "avoid weekends",
+        10
+      ],
+      [
+        "middle day",
+        9
+      ]
+    ],
+    "top_terms_in_missed_sentences": [
+      [
+        "early",
+        41
+      ],
+      [
+        "crowded",
+        38
+      ],
+      [
+        "not",
+        34
+      ],
+      [
+        "day",
+        28
+      ],
+      [
+        "avoid",
+        25
+      ],
+      [
+        "swimming",
+        23
+      ],
+      [
+        "hot",
+        23
+      ],
+      [
+        "holidays",
+        22
+      ],
+      [
+        "heat",
+        21
+      ],
+      [
+        "swim",
+        20
+      ],
+      [
+        "season",
+        17
+      ],
+      [
+        "time",
+        16
+      ],
+      [
+        "water",
+        14
+      ],
+      [
+        "sun",
+        14
+      ],
+      [
+        "tourists",
+        14
+      ]
+    ],
+    "top_bigrams_in_missed_sentences": [
+      [
+        "gets hot",
+        11
+      ],
+      [
+        "public holidays",
+        7
+      ],
+      [
+        "photo opportunity",
+        7
+      ],
+      [
+        "week ends",
+        6
+      ],
+      [
+        "early avoid",
+        5
+      ],
+      [
+        "early gets",
+        5
+      ],
+      [
+        "early start",
+        5
+      ],
+      [
+        "best time",
+        5
+      ],
+      [
+        "swimming not",
+        4
+      ],
+      [
+        "not safe",
+        4
+      ],
+      [
+        "safe swimming",
+        4
+      ],
+      [
+        "avoid crowds",
+        4
+      ],
+      [
+        "beat heat",
+        4
+      ],
+      [
+        "crowded holidays",
+        3
+      ],
+      [
+        "rainy days",
+        3
+      ]
+    ]
+  },
+  "crowd_level": {
+    "n_tagged_sentences": 623,
+    "rule_coverage": 0.4767,
+    "abstention": 0.5233,
+    "n_uncovered_sentences": 326,
+    "top_unigrams": [
+      [
+        "crowded",
+        149
+      ],
+      [
+        "not",
+        107
+      ],
+      [
+        "tourists",
+        96
+      ],
+      [
+        "no",
+        94
+      ],
+      [
+        "people",
+        90
+      ],
+      [
+        "place",
+        71
+      ],
+      [
+        "weekends",
+        57
+      ],
+      [
+        "visited",
+        50
+      ],
+      [
+        "quiet",
+        48
+      ],
+      [
+        "went",
+        46
+      ],
+      [
+        "waterfall",
+        39
+      ],
+      [
+        "busy",
+        36
+      ],
+      [
+        "visitors",
+        35
+      ],
+      [
+        "beach",
+        29
+      ],
+      [
+        "time",
+        29
+      ],
+      [
+        "overcrowded",
+        29
+      ],
+      [
+        "day",
+        28
+      ],
+      [
+        "locals",
+        26
+      ],
+      [
+        "crowds",
+        24
+      ],
+      [
+        "visit",
+        23
+      ],
+      [
+        "wasn",
+        21
+      ],
+      [
+        "bit",
+        20
+      ],
+      [
+        "quite",
+        19
+      ],
+      [
+        "long",
+        19
+      ],
+      [
+        "crowd",
+        19
+      ]
+    ],
+    "top_bigrams": [
+      [
+        "not crowded",
+        22
+      ],
+      [
+        "crowded weekends",
+        17
+      ],
+      [
+        "wasn crowded",
+        12
+      ],
+      [
+        "did not",
+        11
+      ],
+      [
+        "no crowds",
+        11
+      ],
+      [
+        "no tourists",
+        10
+      ],
+      [
+        "not tourists",
+        9
+      ],
+      [
+        "not people",
+        7
+      ],
+      [
+        "bit crowded",
+        7
+      ],
+      [
+        "avoid weekends",
+        7
+      ],
+      [
+        "place crowded",
+        6
+      ],
+      [
+        "not overcrowded",
+        6
+      ],
+      [
+        "lots people",
+        6
+      ],
+      [
+        "no people",
+        5
+      ],
+      [
+        "lot people",
+        5
+      ],
+      [
+        "place quiet",
+        5
+      ],
+      [
+        "crowded visited",
+        5
+      ],
+      [
+        "day visited",
+        5
+      ],
+      [
+        "no tourist",
+        5
+      ],
+      [
+        "local people",
+        5
+      ],
+      [
+        "visited place",
+        5
+      ],
+      [
+        "weekends place",
+        5
+      ],
+      [
+        "gets crowded",
+        5
+      ],
+      [
+        "no visitors",
+        5
+      ],
+      [
+        "lovely waterfall",
+        5
+      ]
+    ],
+    "top_terms_in_missed_sentences": [
+      [
+        "tourists",
+        65
+      ],
+      [
+        "not",
+        54
+      ],
+      [
+        "no",
+        53
+      ],
+      [
+        "people",
+        39
+      ],
+      [
+        "waterfall",
+        33
+      ],
+      [
+        "visitors",
+        31
+      ],
+      [
+        "place",
+        27
+      ],
+      [
+        "overcrowded",
+        27
+      ],
+      [
+        "visited",
+        21
+      ],
+      [
+        "crowds",
+        20
+      ],
+      [
+        "weekends",
+        20
+      ],
+      [
+        "locals",
+        17
+      ],
+      [
+        "went",
+        16
+      ],
+      [
+        "time",
+        14
+      ],
+      [
+        "long",
+        13
+      ]
+    ],
+    "top_bigrams_in_missed_sentences": [
+      [
+        "did not",
+        9
+      ],
+      [
+        "no crowds",
+        9
+      ],
+      [
+        "not tourists",
+        6
+      ],
+      [
+        "no tourists",
+        6
+      ],
+      [
+        "not overcrowded",
+        5
+      ],
+      [
+        "avoid weekends",
+        5
+      ],
+      [
+        "day visited",
+        4
+      ],
+      [
+        "no visitors",
+        4
+      ],
+      [
+        "lovely waterfall",
+        4
+      ],
+      [
+        "lots people",
+        4
+      ],
+      [
+        "people waiting",
+        4
+      ],
+      [
+        "tourists day",
+        3
+      ],
+      [
+        "weren tourists",
+        3
+      ],
+      [
+        "local people",
+        3
+      ],
+      [
+        "avoid crowds",
+        3
+      ]
+    ]
+  },
+  "cost_level": {
+    "n_tagged_sentences": 1100,
+    "rule_coverage": 0.8064,
+    "abstention": 0.1936,
+    "n_uncovered_sentences": 213,
+    "top_unigrams": [
+      [
+        "rupees",
+        548
+      ],
+      [
+        "fee",
+        297
+      ],
+      [
+        "entrance",
+        280
+      ],
+      [
+        "lkr",
+        231
+      ],
+      [
+        "entry",
+        179
+      ],
+      [
+        "foreigners",
+        149
+      ],
+      [
+        "person",
+        133
+      ],
+      [
+        "no",
+        125
+      ],
+      [
+        "pay",
+        103
+      ],
+      [
+        "cost",
+        100
+      ],
+      [
+        "ticket",
+        84
+      ],
+      [
+        "paid",
+        78
+      ],
+      [
+        "charge",
+        76
+      ],
+      [
+        "locals",
+        73
+      ],
+      [
+        "not",
+        73
+      ],
+      [
+        "free",
+        68
+      ],
+      [
+        "tuk",
+        67
+      ],
+      [
+        "enter",
+        66
+      ],
+      [
+        "park",
+        65
+      ],
+      [
+        "price",
+        63
+      ],
+      [
+        "worth",
+        63
+      ],
+      [
+        "rupee",
+        58
+      ],
+      [
+        "charged",
+        52
+      ],
+      [
+        "costs",
+        50
+      ],
+      [
+        "rs",
+        50
+      ]
+    ],
+    "top_bigrams": [
+      [
+        "entrance fee",
+        163
+      ],
+      [
+        "entry fee",
+        89
+      ],
+      [
+        "rupees person",
+        52
+      ],
+      [
+        "cost rupees",
+        42
+      ],
+      [
+        "fee lkr",
+        41
+      ],
+      [
+        "lkr person",
+        39
+      ],
+      [
+        "fee rupees",
+        38
+      ],
+      [
+        "tuk tuk",
+        33
+      ],
+      [
+        "paid rupees",
+        33
+      ],
+      [
+        "no entrance",
+        32
+      ],
+      [
+        "pay rupees",
+        27
+      ],
+      [
+        "costs rupees",
+        24
+      ],
+      [
+        "rupees enter",
+        22
+      ],
+      [
+        "rupees entrance",
+        20
+      ],
+      [
+        "cost lkr",
+        20
+      ],
+      [
+        "fee foreigners",
+        19
+      ],
+      [
+        "no entry",
+        18
+      ],
+      [
+        "foreigners pay",
+        18
+      ],
+      [
+        "lkr foreigners",
+        18
+      ],
+      [
+        "entrance ticket",
+        16
+      ],
+      [
+        "entrance free",
+        16
+      ],
+      [
+        "pay lkr",
+        15
+      ],
+      [
+        "rupees entry",
+        15
+      ],
+      [
+        "paid lkr",
+        14
+      ],
+      [
+        "costs lkr",
+        14
+      ]
+    ],
+    "top_terms_in_missed_sentences": [
+      [
+        "fee",
+        56
+      ],
+      [
+        "no",
+        53
+      ],
+      [
+        "entrance",
+        51
+      ],
+      [
+        "rupees",
+        46
+      ],
+      [
+        "foreigners",
+        41
+      ],
+      [
+        "entry",
+        37
+      ],
+      [
+        "pay",
+        27
+      ],
+      [
+        "ticket",
+        26
+      ],
+      [
+        "park",
+        23
+      ],
+      [
+        "tickets",
+        22
+      ],
+      [
+        "fees",
+        21
+      ],
+      [
+        "charge",
+        20
+      ],
+      [
+        "price",
+        19
+      ],
+      [
+        "charged",
+        18
+      ],
+      [
+        "locals",
+        18
+      ]
+    ],
+    "top_bigrams_in_missed_sentences": [
+      [
+        "entrance fee",
+        25
+      ],
+      [
+        "entry fee",
+        16
+      ],
+      [
+        "foreigners pay",
+        7
+      ],
+      [
+        "entrance fees",
+        7
+      ],
+      [
+        "foreigners charged",
+        6
+      ],
+      [
+        "ticket price",
+        6
+      ],
+      [
+        "thousand rupees",
+        6
+      ],
+      [
+        "no entry",
+        6
+      ],
+      [
+        "entry fees",
+        6
+      ],
+      [
+        "does not",
+        5
+      ],
+      [
+        "no tickets",
+        5
+      ],
+      [
+        "no entrance",
+        5
+      ],
+      [
+        "sri lankan",
+        4
+      ],
+      [
+        "entrance tickets",
+        4
+      ],
+      [
+        "tuk tuk",
+        4
+      ]
+    ]
+  }
+}

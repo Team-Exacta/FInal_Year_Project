@@ -1,0 +1,23 @@
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Editor/backup files
+*.bak*
+*.backup.*
+
+# ---------------------------------------------------------------------------
+# Large regenerable pipeline intermediates (~406 MB).
+# Rebuild from Review_Collection/ (the raw scraped corpus, which IS committed):
+#   python run_preprocessing.py   -> output/cleaned_data/
+#   python run_extraction.py      -> output/extraction/
+#   python run_analysis.py        -> output/analysis/
+#   python run_aggregation.py     -> output/aggregation/  (committed - small)
+#
+# Deliberately NOT ignored:
+#   output/aggregation/  - _poi_profiles.json, consumed by the RAG Explore UI
+#   output/evaluation/   - hand-annotated gold labels, not reproducible
+# ---------------------------------------------------------------------------
+output/cleaned_data/
+output/analysis/
+output/extraction/

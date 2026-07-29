@@ -1,0 +1,13 @@
+config,category,n_anchors,best_threshold,precision,recall,f1,tp,fp,fn
+hand,best_time,10,0.33,0.7549,0.713,0.7333,77,25,31
+hand,crowd_level,14,0.33,0.5241,0.8444,0.6468,76,69,14
+hand,cost_level,12,0.3,0.9167,0.8521,0.8832,121,11,21
+hand,MACRO,,,0.7319,0.8032,0.7659,,,
+mined,best_time,12,0.23,0.5563,0.7778,0.6486,84,67,24
+mined,crowd_level,12,0.3,0.4387,0.7556,0.5551,68,87,22
+mined,cost_level,12,0.26,0.7027,0.9155,0.7951,130,55,12
+mined,MACRO,,,0.5659,0.8163,0.6684,,,
+hybrid,best_time,22,0.33,0.6444,0.8056,0.716,87,48,21
+hybrid,crowd_level,26,0.36,0.4899,0.8111,0.6109,73,76,17
+hybrid,cost_level,24,0.31,0.7545,0.8873,0.8155,126,41,16
+hybrid,MACRO,,,0.6296,0.8347,0.7178,,,

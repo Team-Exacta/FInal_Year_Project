@@ -1,0 +1,54 @@
+{
+  "method": "Cohen kappa; binary=unweighted, crowd_ordinal=quadratic-weighted; 2 independent annotators",
+  "binary_detection": {
+    "shared_sentences": 149,
+    "best_time": {
+      "percent_agreement": 0.973,
+      "kappa": 0.904,
+      "rating": "almost perfect"
+    },
+    "crowd_level": {
+      "percent_agreement": 0.98,
+      "kappa": 0.921,
+      "rating": "almost perfect"
+    },
+    "cost_level": {
+      "percent_agreement": 0.966,
+      "kappa": 0.904,
+      "rating": "almost perfect"
+    }
+  },
+  "normalized_values": {
+    "shared_positive_sentences": 79,
+    "time_of_day": {
+      "n": 26,
+      "percent_agreement": 0.692,
+      "kappa": 0.574,
+      "rating": "moderate"
+    },
+    "season": {
+      "n": 26,
+      "percent_agreement": 0.923,
+      "kappa": 0.469,
+      "rating": "moderate (high raw agreement; kappa deflated by label imbalance)"
+    },
+    "day_type": {
+      "n": 26,
+      "percent_agreement": 0.846,
+      "kappa": 0.475,
+      "rating": "moderate (high raw agreement; kappa deflated by label imbalance)"
+    },
+    "cost_band": {
+      "n": 35,
+      "percent_agreement": 0.743,
+      "kappa": 0.64,
+      "rating": "substantial"
+    },
+    "crowd_ordinal": {
+      "n": 21,
+      "percent_agreement": 0.591,
+      "kappa": 0.674,
+      "rating": "substantial (quadratic-weighted)"
+    }
+  }
+}

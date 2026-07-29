@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import json; data=json.load\\(open\\('c:/Users/Bhathiya/Documents/GitHub/UGC-analysis/config/places_to_scrape.json'\\)\\); print\\(f'Total entries: {len\\(data\\)}'\\); ids=set\\(\\); dupes=[x for x in data if x['id'] in ids or ids.add\\(x['id']\\)]; print\\(f'Duplicate IDs: {len\\(dupes\\)}'\\)\")"
+    ]
+  }
+}

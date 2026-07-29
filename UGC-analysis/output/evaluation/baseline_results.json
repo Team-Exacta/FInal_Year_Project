@@ -1,0 +1,75 @@
+{
+  "detection_keyword": {
+    "best_time": {
+      "precision": 0.6581,
+      "recall": 0.713,
+      "f1": 0.6845,
+      "accuracy": 0.8817,
+      "tp": 77,
+      "fp": 40,
+      "fn": 31,
+      "tn": 452,
+      "support": 108
+    },
+    "crowd_level": {
+      "precision": 0.6396,
+      "recall": 0.7889,
+      "f1": 0.7064,
+      "accuracy": 0.9017,
+      "tp": 71,
+      "fp": 40,
+      "fn": 19,
+      "tn": 470,
+      "support": 90
+    },
+    "cost_level": {
+      "precision": 0.8483,
+      "recall": 0.8662,
+      "f1": 0.8572,
+      "accuracy": 0.9317,
+      "tp": 123,
+      "fp": 22,
+      "fn": 19,
+      "tn": 436,
+      "support": 142
+    },
+    "macro": {
+      "precision": 0.7153,
+      "recall": 0.7894,
+      "f1": 0.7505
+    },
+    "_n": 600
+  },
+  "normalization_majority": {
+    "time_of_day": {
+      "n": 65,
+      "majority_class": "EARLY_MORNING",
+      "majority_baseline_accuracy": 0.6,
+      "distinct_values": 5
+    },
+    "season": {
+      "n": 13,
+      "majority_class": "DRY_SEASON",
+      "majority_baseline_accuracy": 0.4615,
+      "distinct_values": 3
+    },
+    "day_type": {
+      "n": 16,
+      "majority_class": "WEEKDAY",
+      "majority_baseline_accuracy": 0.6875,
+      "distinct_values": 3
+    },
+    "crowd_ordinal": {
+      "n": 90,
+      "majority_class": "4",
+      "majority_baseline_accuracy": 0.2222,
+      "distinct_values": 5
+    },
+    "cost_band": {
+      "n": 134,
+      "majority_class": "MODERATE",
+      "majority_baseline_accuracy": 0.3806,
+      "distinct_values": 5
+    }
+  }
+}

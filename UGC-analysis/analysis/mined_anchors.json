@@ -1,0 +1,368 @@
+{
+  "best_time": [
+    {
+      "anchor": "Go early in the morning to avoid the heat.",
+      "cluster_size": 89,
+      "score": 0.5374,
+      "examples": [
+        "Go early in the morning to avoid the heat.",
+        "Go early, it gets really hot and sunny later.",
+        "Go early, gets quite hot."
+      ]
+    },
+    {
+      "anchor": "Best time to climb would be early morning as it can get really hot.",
+      "cluster_size": 63,
+      "score": 0.4823,
+      "examples": [
+        "Best time to climb would be early morning as it can get really hot.",
+        "The early morning climb is recommend though to avoid the heat and sun on the way.",
+        "The best time to climb is before 9 AM to avoid the heat."
+      ]
+    },
+    {
+      "anchor": "The beach is clean and spacious, and there are plenty of water sports and nearby activities to enjoy.Negatives:Swimming can be unsafe at times due to strong waves.",
+      "cluster_size": 56,
+      "score": 0.3669,
+      "examples": [
+        "The beach is clean and spacious, and there are plenty of water sports and nearby activities to enjoy.Negatives:Swimming can be unsafe at times due to strong waves.",
+        "Though it is a nice and clean beach but is very dangerous for swim.",
+        "Safe beach to swim."
+      ]
+    },
+    {
+      "anchor": "Started the hike around 12am (advice try to start early as it's always crowded) and reaches half an hour before sunrise.",
+      "cluster_size": 53,
+      "score": 0.3953,
+      "examples": [
+        "Started the hike around 12am (advice try to start early as it's always crowded) and reaches half an hour before sunrise.",
+        "Recommend to take the hike in early mornings; before the sun burns down.",
+        "Best time to hike is the morning as its less tired and you will have the best views in the morning."
+      ]
+    },
+    {
+      "anchor": "Swimming is safe.",
+      "cluster_size": 50,
+      "score": 0.4988,
+      "examples": [
+        "Swimming is safe.",
+        "Safe for swimming.",
+        "You can swim safely."
+      ]
+    },
+    {
+      "anchor": "A good photo opportunity.",
+      "cluster_size": 47,
+      "score": 0.3744,
+      "examples": [
+        "A good photo opportunity.",
+        "Good photo opportunities.",
+        "Good photo opportunity."
+      ]
+    },
+    {
+      "anchor": "Best to visit at early morning or late evening when it is not too hot.",
+      "cluster_size": 45,
+      "score": 0.4127,
+      "examples": [
+        "Best to visit at early morning or late evening when it is not too hot.",
+        "Recommend visiting in evening when it gets cooler.",
+        "Would recommend visiting during morning hours since it gets very hot."
+      ]
+    },
+    {
+      "anchor": "Don't forget to make a visit in the early morning as well as at night to capture the best pictures.",
+      "cluster_size": 44,
+      "score": 0.348,
+      "examples": [
+        "Don't forget to make a visit in the early morning as well as at night to capture the best pictures.",
+        "The best time for photography is around 7AM - 8PM.",
+        "Little bit challenging to take a proper photo, would recommend going early in the morning ."
+      ]
+    },
+    {
+      "anchor": "Be prepared to walk out early (at 2 or 3 a.m.) in order to see the stunning sunrise from the top.",
+      "cluster_size": 42,
+      "score": 0.3605,
+      "examples": [
+        "Be prepared to walk out early (at 2 or 3 a.m.) in order to see the stunning sunrise from the top.",
+        "You want to the see sunrise better you visit early in the morning.",
+        "Worth waking up early to watch the sunrise at the top."
+      ]
+    },
+    {
+      "anchor": "I went there in the afternoon and it was very hot, so I guess it is better to visit it in the late afternoon, when the sun goes down.",
+      "cluster_size": 41,
+      "score": 0.3633,
+      "examples": [
+        "I went there in the afternoon and it was very hot, so I guess it is better to visit it in the late afternoon, when the sun goes down.",
+        "Great for nature lovers, should ideally go in the early morning or close to sunset to avoid the heat of the afternoon.",
+        "Its great to visit this place either before 9 am or after 4 pm cos it can be very sunny down the paths."
+      ]
+    },
+    {
+      "anchor": "Best months for visit is from December to May as rain comes in other parts of the year.",
+      "cluster_size": 41,
+      "score": 0.433,
+      "examples": [
+        "Best months for visit is from December to May as rain comes in other parts of the year.",
+        "Get ready for humid conditions and rain if you are planning to visit except February and March, generally dry months.",
+        "The best time to visit there is during January to March where you get less rain during the day time."
+      ]
+    },
+    {
+      "anchor": "A final advice: bring some extra warm clothes, it gets quite chilly in the morning.",
+      "cluster_size": 40,
+      "score": 0.3722,
+      "examples": [
+        "A final advice: bring some extra warm clothes, it gets quite chilly in the morning.",
+        "Take warm clothes for the top as it is chilly.",
+        "Hence, be prepared for the warm clothing since it can be very chilly early in the morning."
+      ]
+    }
+  ],
+  "crowd_level": [
+    {
+      "anchor": "It is not too crowded.",
+      "cluster_size": 169,
+      "score": 0.4208,
+      "examples": [
+        "It is not too crowded.",
+        "Usually it is very crowded.",
+        "It can get very crowded."
+      ]
+    },
+    {
+      "anchor": "it was not very crowded when we went.",
+      "cluster_size": 158,
+      "score": 0.4712,
+      "examples": [
+        "it was not very crowded when we went.",
+        "It was not really crowded, though.",
+        "When we went it was a bit crowded."
+      ]
+    },
+    {
+      "anchor": "the place is interesting, no touristic at all.",
+      "cluster_size": 156,
+      "score": 0.3906,
+      "examples": [
+        "the place is interesting, no touristic at all.",
+        "Keeping aside the history and faith of locals, there is nothing much for the tourists here.",
+        "There are not much people at this place and no restaurents at the viewpoint."
+      ]
+    },
+    {
+      "anchor": "There were very few tourists around when we visited, which was nice.",
+      "cluster_size": 144,
+      "score": 0.4723,
+      "examples": [
+        "There were very few tourists around when we visited, which was nice.",
+        "Very few tourists when I was there.",
+        "We didn't see any tourists when we went, locals only which was great."
+      ]
+    },
+    {
+      "anchor": "We arrived about 10.30am.",
+      "cluster_size": 127,
+      "score": 0.3752,
+      "examples": [
+        "We arrived about 10.30am.",
+        "We arrived about 9am.",
+        "Go early in the morning, we arrived at 7:30am."
+      ]
+    },
+    {
+      "anchor": "best time to visit is early morning before it gets crowded.",
+      "cluster_size": 126,
+      "score": 0.4845,
+      "examples": [
+        "best time to visit is early morning before it gets crowded.",
+        "Best time to visit is early in the morning as during evenings it get really crowded.",
+        "It is advisabe to visit the place early morning or late in the evening."
+      ]
+    },
+    {
+      "anchor": "We went fairly early in the day.",
+      "cluster_size": 124,
+      "score": 0.377,
+      "examples": [
+        "We went fairly early in the day.",
+        "We went early in the morning.",
+        "We went in the morning (7.00 am)."
+      ]
+    },
+    {
+      "anchor": "Best to go early morning as they open, guess it's around 8.30-9am.",
+      "cluster_size": 119,
+      "score": 0.5087,
+      "examples": [
+        "Best to go early morning as they open, guess it's around 8.30-9am.",
+        "This places closes at 4 PM in the evening, so make it sure to reach early at-least 1 hr.",
+        "It is close either 6pm or 6:30pm.. can't remember ..It is quite a shame that most sections are not open for visitors."
+      ]
+    },
+    {
+      "anchor": "I don’t believe many tourists end up going to the place.",
+      "cluster_size": 116,
+      "score": 0.351,
+      "examples": [
+        "I don’t believe many tourists end up going to the place.",
+        "Seems too many people have been careless, and they’ve got fed up of tourists killing themselves.",
+        "They are careful and it is logical that they take advantage of tourists while doing their routine."
+      ]
+    },
+    {
+      "anchor": "However it gets bit crowded but it's worth the visit.",
+      "cluster_size": 115,
+      "score": 0.3588,
+      "examples": [
+        "However it gets bit crowded but it's worth the visit.",
+        "not to be visited, place is ok ok, but too expensive.",
+        "There are many areas to see that are not so popular with tourists so are less crowded so need to make sure you have enough time to explore it all."
+      ]
+    },
+    {
+      "anchor": "There were no other people there.",
+      "cluster_size": 113,
+      "score": 0.4662,
+      "examples": [
+        "There were no other people there.",
+        "No one was in there during our visit.",
+        "There were no tourists and it was so quiet."
+      ]
+    },
+    {
+      "anchor": "There’s not much crowd.",
+      "cluster_size": 113,
+      "score": 0.3804,
+      "examples": [
+        "There’s not much crowd.",
+        "Not much crowd.",
+        "No much local crowd"
+      ]
+    }
+  ],
+  "cost_level": [
+    {
+      "anchor": "Beach is nice but crowded, there are plenty of other more beautiful beaches in the area.",
+      "cluster_size": 286,
+      "score": 0.3291,
+      "examples": [
+        "Beach is nice but crowded, there are plenty of other more beautiful beaches in the area.",
+        "The beach is as beautiful as most beaches around.",
+        "There are much nicer spots along the beach."
+      ]
+    },
+    {
+      "anchor": "There are a lot of restaurants and bars alongside the beach.",
+      "cluster_size": 275,
+      "score": 0.4475,
+      "examples": [
+        "There are a lot of restaurants and bars alongside the beach.",
+        "There are many restaurants along the beach you can choose.",
+        "There are numerous restaurants and bars along the beach."
+      ]
+    },
+    {
+      "anchor": "There is entrance fee.",
+      "cluster_size": 269,
+      "score": 0.4269,
+      "examples": [
+        "There is entrance fee.",
+        "there is an entrance fee",
+        "There is a small fee for entrance."
+      ]
+    },
+    {
+      "anchor": "400 rupees to get in, about £1 and worth every penny.",
+      "cluster_size": 227,
+      "score": 0.5035,
+      "examples": [
+        "400 rupees to get in, about £1 and worth every penny.",
+        "500 rupees per person and all in good cause.",
+        "1500 rupees is a good deal."
+      ]
+    },
+    {
+      "anchor": "The beach is nice, also lots of restaurant options available.",
+      "cluster_size": 218,
+      "score": 0.4081,
+      "examples": [
+        "The beach is nice, also lots of restaurant options available.",
+        "There are very nice beach restaurants.",
+        "There are also good restaurants on this beach."
+      ]
+    },
+    {
+      "anchor": "their is an entry fee .",
+      "cluster_size": 178,
+      "score": 0.4109,
+      "examples": [
+        "their is an entry fee .",
+        "there is an entry fee for this place.",
+        "There is a small entry fee."
+      ]
+    },
+    {
+      "anchor": "We asked for half our money back as we felt the trip had not been worth 6000Rs between us.",
+      "cluster_size": 174,
+      "score": 0.3067,
+      "examples": [
+        "We asked for half our money back as we felt the trip had not been worth 6000Rs between us.",
+        "We paid him the going rate he requested as we thought it worth it.",
+        "At the end they asked for US$75 but after reminding them we did not agree and were constantly saying no, we paid them something because they did help my wife on some of the steeper sections."
+      ]
+    },
+    {
+      "anchor": "We've paid 500lkr per person and .",
+      "cluster_size": 172,
+      "score": 0.4259,
+      "examples": [
+        "We've paid 500lkr per person and .",
+        "We paid 2000LKR per person that was ok.",
+        "500lkr per person."
+      ]
+    },
+    {
+      "anchor": "We paid 1000 rupees (which seems standard) and didn't really consider him worth the money.",
+      "cluster_size": 170,
+      "score": 0.5296,
+      "examples": [
+        "We paid 1000 rupees (which seems standard) and didn't really consider him worth the money.",
+        "We paid 300 rupees each.",
+        "We gave him 1000 rupees."
+      ]
+    },
+    {
+      "anchor": "The entrance fee is 150 rupees.",
+      "cluster_size": 169,
+      "score": 0.5521,
+      "examples": [
+        "The entrance fee is 150 rupees.",
+        "Entrance fee is 300 rupees.",
+        "200 rupees entrance fee."
+      ]
+    },
+    {
+      "anchor": "You have to buy a ticket at the entrance.",
+      "cluster_size": 159,
+      "score": 0.3884,
+      "examples": [
+        "You have to buy a ticket at the entrance.",
+        "You have to buy an entrance ticket ( small amount ).",
+        "You have to get a ticket at the entrance."
+      ]
+    },
+    {
+      "anchor": "Tickets are expensive.",
+      "cluster_size": 159,
+      "score": 0.4612,
+      "examples": [
+        "Tickets are expensive.",
+        "Ticket price is very expensive.",
+        "The ticket price is very heavy (perhaps way too high)."
+      ]
+    }
+  ]
+}
