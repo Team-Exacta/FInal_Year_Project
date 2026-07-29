@@ -1,0 +1,1417 @@
+place_name,feature,review_percentage,review_count,total_reviews,avg_confidence,dominant_sentiment
+Aberdeen Falls,Waterfall,81.25,26,32.0,0.8031,positive
+Aberdeen Falls,Road access,40.62,13,32.0,0.6615,neutral
+Aberdeen Falls,Trail,31.25,10,32.0,0.716,positive
+Aberdeen Falls,Rock formation,21.88,7,32.0,0.7657,neutral
+Aberdeen Falls,Safety,18.75,6,32.0,0.8267,positive
+Aberdeen Falls,Leeches,15.62,5,32.0,0.8,negative
+Aberdeen Falls,River,15.62,5,32.0,0.78,neutral
+Aberdeen Falls,Scenic view,15.62,5,32.0,0.732,positive
+Aberdeen Falls,Stairs,15.62,5,32.0,0.764,neutral
+Abhayagiri Dagaba,Stupa,69.17,92,133.0,0.7717,neutral
+Abhayagiri Dagaba,Temple,20.3,27,133.0,0.7681,neutral
+Abhayagiri Dagaba,Weather condition,16.54,22,133.0,0.7273,negative
+Abhayagiri Dagaba,Ancient ruins,14.29,19,133.0,0.7768,neutral
+Abhayagiri Dagaba,Buddha statue,14.29,19,133.0,0.8095,positive
+Abhayagiri Dagaba,Peacefulness,13.53,18,133.0,0.8156,positive
+Ambewela Farms,Scenic view,31.89,103,323.0,0.8006,positive
+Ambewela Farms,Family friendliness,25.39,82,323.0,0.7522,positive
+Ambewela Farms,Wildlife,22.6,73,323.0,0.7858,neutral
+Ambewela Farms,Ticket price,15.79,51,323.0,0.7663,neutral
+Ambewela Farms,Weather condition,13.93,45,323.0,0.7587,negative
+Ambewela Farms,Cleanliness,12.07,39,323.0,0.879,positive
+Ambewela Farms,Mountain,10.53,34,323.0,0.7776,positive
+Ambuluwawa Tower,Scenic view,76.53,75,98.0,0.8208,positive
+Ambuluwawa Tower,Stairs,33.67,33,98.0,0.7606,neutral
+Ambuluwawa Tower,Mountain,26.53,26,98.0,0.7869,positive
+Ambuluwawa Tower,Public transport access,22.45,22,98.0,0.8055,neutral
+Ambuluwawa Tower,Crowdedness,12.24,12,98.0,0.8167,negative
+Ambuluwawa Tower,Safety,12.24,12,98.0,0.84,negative
+Ambuluwawa Tower,Ticket price,12.24,12,98.0,0.8067,positive
+Ambuluwawa Tower,Temple,10.2,10,98.0,0.776,neutral
+Ancient City of Polonnaruwa,Ancient ruins,53.8,269,500.0,0.7886,positive
+Ancient City of Polonnaruwa,Local guide,36.2,181,500.0,0.7618,positive
+Ancient City of Polonnaruwa,Museum,28.2,141,500.0,0.7776,neutral
+Ancient City of Polonnaruwa,Temple,28.2,141,500.0,0.7777,neutral
+Ancient City of Polonnaruwa,Ticket price,22.0,110,500.0,0.7835,neutral
+Ancient City of Polonnaruwa,Weather condition,20.6,103,500.0,0.7447,negative
+Ancient City of Polonnaruwa,Heritage site,16.0,80,500.0,0.8023,neutral
+Ancient City of Polonnaruwa,Public transport access,15.4,77,500.0,0.794,neutral
+Ancient City of Polonnaruwa,Sculptures,14.4,72,500.0,0.7861,positive
+Ancient City of Polonnaruwa,Buddha statue,13.2,66,500.0,0.7942,positive
+Ancient City of Polonnaruwa,Value for money,10.4,52,500.0,0.8569,negative
+Angurukaramulla Temple,Temple,83.33,150,180.0,0.7996,positive
+Angurukaramulla Temple,Sculptures,33.33,60,180.0,0.7933,positive
+Angurukaramulla Temple,Buddha statue,27.22,49,180.0,0.7955,positive
+Angurukaramulla Temple,Paintings,22.22,40,180.0,0.7825,positive
+Angurukaramulla Temple,Peacefulness,15.0,27,180.0,0.803,positive
+Angurukaramulla Temple,Public transport access,15.0,27,180.0,0.7778,neutral
+Angurukaramulla Temple,Local guide,13.89,25,180.0,0.758,positive
+Arugam Bay,Beach,69.85,234,335.0,0.8044,positive
+Arugam Bay,Waves,48.66,163,335.0,0.7467,positive
+Arugam Bay,Food quality,29.25,98,335.0,0.7488,positive
+Arugam Bay,Restaurants,26.27,88,335.0,0.7957,positive
+Arugam Bay,Accommodation,25.97,87,335.0,0.789,positive
+Arugam Bay,Cleanliness,15.82,53,335.0,0.8785,positive
+Arugam Bay,Crowdedness,15.82,53,335.0,0.8411,negative
+Arugam Bay,Ticket price,15.82,53,335.0,0.7947,positive
+Arugam Bay,Value for money,15.82,53,335.0,0.8626,negative
+Arugam Bay,Public transport access,15.52,52,335.0,0.7965,neutral
+Arugam Bay,Service quality,12.84,43,335.0,0.8047,positive
+Arugam Bay,Sea,12.54,42,335.0,0.7438,positive
+Arugam Bay,Peacefulness,11.04,37,335.0,0.8054,positive
+Arugam Bay,Shops,11.04,37,335.0,0.7392,positive
+Bahiravokanda Vihara Buddha Statue,Scenic view,74.4,372,500.0,0.8017,positive
+Bahiravokanda Vihara Buddha Statue,Buddha statue,50.8,254,500.0,0.8031,positive
+Bahiravokanda Vihara Buddha Statue,Sculptures,50.4,252,500.0,0.7962,positive
+Bahiravokanda Vihara Buddha Statue,Temple,32.2,161,500.0,0.7906,positive
+Bahiravokanda Vihara Buddha Statue,Mountain,29.6,148,500.0,0.728,neutral
+Bahiravokanda Vihara Buddha Statue,Public transport access,22.4,112,500.0,0.7971,neutral
+Bahiravokanda Vihara Buddha Statue,Ticket price,19.0,95,500.0,0.7384,neutral
+Bahiravokanda Vihara Buddha Statue,Stairs,17.6,88,500.0,0.7789,neutral
+Bahiravokanda Vihara Buddha Statue,Entrance fee,15.4,77,500.0,0.8192,neutral
+Bahiravokanda Vihara Buddha Statue,Peacefulness,15.0,75,500.0,0.8176,positive
+Baker's Falls,Waterfall,82.4,103,125.0,0.7981,positive
+Baker's Falls,Trail,26.4,33,125.0,0.7545,neutral
+Baker's Falls,Scenic view,21.6,27,125.0,0.7478,neutral
+Baker's Falls,Stairs,13.6,17,125.0,0.7859,positive
+Baker's Falls,Weather condition,10.4,13,125.0,0.7846,negative
+Batticaloa Fort,Fort,79.66,94,118.0,0.7119,positive
+Batticaloa Fort,Scenic view,30.51,36,118.0,0.7933,positive
+Batticaloa Fort,Local guide,25.42,30,118.0,0.7533,neutral
+Batticaloa Fort,Lagoon,16.1,19,118.0,0.7916,positive
+Batticaloa Fort,Cleanliness,11.02,13,118.0,0.88,positive
+Beddegana Wetland Park,Birds,50.0,20,40.0,0.745,neutral
+Beddegana Wetland Park,Peacefulness,42.5,17,40.0,0.7859,positive
+Beddegana Wetland Park,Family friendliness,27.5,11,40.0,0.7273,neutral
+Beddegana Wetland Park,Trail,27.5,11,40.0,0.7655,positive
+Beddegana Wetland Park,Ticket price,20.0,8,40.0,0.7338,neutral
+Beddegana Wetland Park,Lake,15.0,6,40.0,0.68,neutral
+Beddegana Wetland Park,Cleanliness,12.5,5,40.0,0.864,positive
+Beddegana Wetland Park,Scenic view,12.5,5,40.0,0.764,positive
+Beddegana Wetland Park,Service quality,12.5,5,40.0,0.788,positive
+Bentota Beach,Beach,93.17,559,600.0,0.8191,positive
+Bentota Beach,Cleanliness,42.0,252,600.0,0.879,positive
+Bentota Beach,Sandy beach,31.5,189,600.0,0.7706,positive
+Bentota Beach,Sea,29.33,176,600.0,0.7525,positive
+Bentota Beach,Accommodation,27.33,164,600.0,0.7877,neutral
+Bentota Beach,Waves,23.83,143,600.0,0.769,positive
+Bentota Beach,Peacefulness,18.0,108,600.0,0.8126,positive
+Bentota Beach,Sunset view,13.0,78,600.0,0.8482,positive
+Bentota Beach,Crowdedness,11.5,69,600.0,0.8528,negative
+Bentota Beach,Scenic view,11.33,68,600.0,0.7981,positive
+Bentota Beach,Family friendliness,10.67,64,600.0,0.7728,positive
+Bogoda Wooden Bridge,Bridge,90.24,37,41.0,0.7714,neutral
+Bogoda Wooden Bridge,Temple,63.41,26,41.0,0.7723,neutral
+Bogoda Wooden Bridge,Road access,46.34,19,41.0,0.7005,positive
+Bogoda Wooden Bridge,Cave,24.39,10,41.0,0.7,neutral
+Bogoda Wooden Bridge,Cave temple,17.07,7,41.0,0.7943,neutral
+Bogoda Wooden Bridge,River,17.07,7,41.0,0.7857,positive
+Bogoda Wooden Bridge,Public transport access,14.63,6,41.0,0.75,neutral
+Bogoda Wooden Bridge,Stairs,12.2,5,41.0,0.752,neutral
+Bopath Ella (Bopath Falls),Waterfall,64.29,27,42.0,0.7963,positive
+Bopath Ella (Bopath Falls),Rock formation,21.43,9,42.0,0.8,negative
+Bopath Ella (Bopath Falls),Weather condition,21.43,9,42.0,0.7733,negative
+Bopath Ella (Bopath Falls),River,19.05,8,42.0,0.78,neutral
+Bopath Ella (Bopath Falls),Safety,19.05,8,42.0,0.84,negative
+Bopath Ella (Bopath Falls),Scenic view,19.05,8,42.0,0.7588,positive
+Bopath Ella (Bopath Falls),Road access,16.67,7,42.0,0.6586,neutral
+Bopath Ella (Bopath Falls),Ticket price,16.67,7,42.0,0.7543,neutral
+Bopath Ella (Bopath Falls),Cleanliness,11.9,5,42.0,0.88,negative
+Bopath Ella (Bopath Falls),Family friendliness,11.9,5,42.0,0.792,positive
+Brief Garden - Bevis Bawa,Ticket price,21.55,86,399.0,0.7657,neutral
+Brief Garden - Bevis Bawa,Local guide,16.79,67,399.0,0.7669,positive
+Brief Garden - Bevis Bawa,Public transport access,15.54,62,399.0,0.8029,neutral
+Brief Garden - Bevis Bawa,Peacefulness,15.04,60,399.0,0.81,positive
+Brief Garden - Bevis Bawa,Sculptures,13.78,55,399.0,0.7836,positive
+Brief Garden - Bevis Bawa,Entrance fee,13.03,52,399.0,0.8408,neutral
+Brief Garden - Bevis Bawa,Scenic view,13.03,52,399.0,0.8085,positive
+Brief Garden - Bevis Bawa,Road access,10.28,41,399.0,0.6893,neutral
+Buduruwagala Temple,Sculptures,68.38,80,117.0,0.79,positive
+Buduruwagala Temple,Rock formation,56.41,66,117.0,0.7145,positive
+Buduruwagala Temple,Peacefulness,41.88,49,117.0,0.818,positive
+Buduruwagala Temple,Temple,39.32,46,117.0,0.7896,positive
+Buduruwagala Temple,Buddha statue,35.9,42,117.0,0.7919,neutral
+Buduruwagala Temple,Road access,31.62,37,117.0,0.7086,positive
+Buduruwagala Temple,Lake,11.97,14,117.0,0.7186,positive
+Buduruwagala Temple,Scenic view,11.97,14,117.0,0.8021,positive
+Buduruwagala Temple,Ticket price,11.97,14,117.0,0.7479,neutral
+Buduruwagala Temple,Trail,11.11,13,117.0,0.7677,positive
+Casuarina Beach,Beach,89.29,175,196.0,0.8118,positive
+Casuarina Beach,Cleanliness,41.84,82,196.0,0.8756,positive
+Casuarina Beach,Sea,23.98,47,196.0,0.7238,positive
+Casuarina Beach,Peacefulness,21.43,42,196.0,0.7657,positive
+Casuarina Beach,Sandy beach,21.43,42,196.0,0.7486,positive
+Casuarina Beach,Family friendliness,17.86,35,196.0,0.7686,positive
+Casuarina Beach,Water depth,17.86,35,196.0,0.7697,positive
+Casuarina Beach,Crowdedness,15.82,31,196.0,0.8632,negative
+Casuarina Beach,Safety,13.27,26,196.0,0.7954,positive
+Casuarina Beach,Toilets,12.76,25,196.0,0.7816,neutral
+Casuarina Beach,Entrance fee,12.24,24,196.0,0.8117,neutral
+Casuarina Beach,Ticket price,11.73,23,196.0,0.7365,neutral
+Casuarina Beach,Shops,10.71,21,196.0,0.6986,neutral
+Ceylon Tea Museum,Museum,51.43,251,488.0,0.7875,positive
+Ceylon Tea Museum,Local guide,29.92,146,488.0,0.7712,positive
+Ceylon Tea Museum,Value for money,23.98,117,488.0,0.8277,positive
+Ceylon Tea Museum,Ticket price,19.67,96,488.0,0.7902,positive
+Ceylon Tea Museum,Shops,17.42,85,488.0,0.7275,positive
+Ceylon Tea Museum,Service quality,12.7,62,488.0,0.8032,positive
+Ceylon Tea Museum,Scenic view,11.48,56,488.0,0.8212,positive
+Ceylon Tea Museum,Guided tours,11.07,54,488.0,0.833,positive
+Ceylon Tea Museum,Public transport access,11.07,54,488.0,0.7996,neutral
+Ceylon Tea Museum,Tea plantation,11.07,54,488.0,0.8167,neutral
+Ceylon Tea Museum,Mountain,10.45,51,488.0,0.7557,positive
+Coconut Tree Hill,Scenic view,68.0,85,125.0,0.7855,positive
+Coconut Tree Hill,Mountain,40.0,50,125.0,0.7068,neutral
+Coconut Tree Hill,Sunset view,34.4,43,125.0,0.8395,positive
+Coconut Tree Hill,Beach,28.0,35,125.0,0.7851,positive
+Coconut Tree Hill,Crowdedness,28.0,35,125.0,0.8417,negative
+Coconut Tree Hill,Sea,28.0,35,125.0,0.784,positive
+Coconut Tree Hill,Road access,15.2,19,125.0,0.6568,neutral
+Coconut Tree Hill,Viewpoint,12.0,15,125.0,0.824,positive
+Colombo Lotus Tower,Scenic view,69.33,52,75.0,0.8087,positive
+Colombo Lotus Tower,Ticket price,34.67,26,75.0,0.7873,neutral
+Colombo Lotus Tower,Viewpoint,25.33,19,75.0,0.8284,positive
+Colombo Lotus Tower,Value for money,20.0,15,75.0,0.8587,negative
+Colombo Lotus Tower,Restaurants,18.67,14,75.0,0.78,neutral
+Colombo Lotus Tower,Family friendliness,13.33,10,75.0,0.764,positive
+Colombo Lotus Tower,Service quality,13.33,10,75.0,0.796,positive
+Colombo Lotus Tower,Food quality,12.0,9,75.0,0.7489,positive
+Colombo Lotus Tower,Entrance fee,10.67,8,75.0,0.78,neutral
+Colombo National Museum,Museum,69.2,346,500.0,0.7889,positive
+Colombo National Museum,Ticket price,15.4,77,500.0,0.7701,neutral
+Colombo National Museum,Colonial architecture,12.0,60,500.0,0.792,positive
+Colombo National Museum,Weather condition,11.6,58,500.0,0.7448,negative
+Colombo National Museum,Family friendliness,10.4,52,500.0,0.7569,positive
+Dagoba of Thuparama,Stupa,69.7,92,132.0,0.7759,neutral
+Dagoba of Thuparama,Temple,23.48,31,132.0,0.7768,neutral
+Dagoba of Thuparama,Buddha statue,20.45,27,132.0,0.7511,neutral
+Dagoba of Thuparama,Weather condition,16.67,22,132.0,0.7236,negative
+Dagoba of Thuparama,Ancient ruins,15.15,20,132.0,0.762,neutral
+Dambulla Cave Temple,Cave,70.4,352,500.0,0.7603,positive
+Dambulla Cave Temple,Temple,68.0,340,500.0,0.7926,positive
+Dambulla Cave Temple,Sculptures,39.2,196,500.0,0.7872,positive
+Dambulla Cave Temple,Stairs,39.0,195,500.0,0.7755,neutral
+Dambulla Cave Temple,Buddha statue,36.8,184,500.0,0.8008,positive
+Dambulla Cave Temple,Cave temple,30.2,151,500.0,0.825,positive
+Dambulla Cave Temple,Paintings,29.0,145,500.0,0.7859,positive
+Dambulla Cave Temple,Ticket price,21.4,107,500.0,0.7664,neutral
+Dambulla Cave Temple,Scenic view,21.2,106,500.0,0.7981,positive
+Dambulla Cave Temple,Rock formation,18.6,93,500.0,0.7103,positive
+Dambulla Cave Temple,Local guide,17.2,86,500.0,0.7458,neutral
+Dambulla Cave Temple,Weather condition,16.2,81,500.0,0.7375,negative
+Dambulla Cave Temple,Murals,11.4,57,500.0,0.7961,positive
+Dambulla Cave Temple,Mountain,10.0,50,500.0,0.732,neutral
+Dehiwala Zoo - Sri Lanka,Wildlife,81.63,40,49.0,0.788,positive
+Dehiwala Zoo - Sri Lanka,Family friendliness,34.69,17,49.0,0.7659,positive
+Dehiwala Zoo - Sri Lanka,Birds,28.57,14,49.0,0.7557,neutral
+Dehiwala Zoo - Sri Lanka,Elephants,26.53,13,49.0,0.78,neutral
+Dehiwala Zoo - Sri Lanka,Cleanliness,16.33,8,49.0,0.88,positive
+Dehiwala Zoo - Sri Lanka,Food quality,14.29,7,49.0,0.7371,positive
+Dehiwala Zoo - Sri Lanka,Crowdedness,12.24,6,49.0,0.8433,negative
+Dehiwala Zoo - Sri Lanka,Ticket price,12.24,6,49.0,0.7917,neutral
+Dehiwala Zoo - Sri Lanka,Entrance fee,10.2,5,49.0,0.808,negative
+Dehiwala Zoo - Sri Lanka,Souvenir stalls,10.2,5,49.0,0.804,positive
+Demodara Loop,Scenic view,33.33,42,126.0,0.7638,positive
+Demodara Loop,Bridge,26.19,33,126.0,0.7624,neutral
+Demodara Loop,Mountain,19.84,25,126.0,0.7312,neutral
+Demodara Loop,Trail,19.05,24,126.0,0.7683,neutral
+Demodara Loop,Public transport access,16.67,21,126.0,0.7971,neutral
+Demodara Loop,Ticket price,15.08,19,126.0,0.7416,neutral
+Demodara Loop,Road access,11.11,14,126.0,0.6471,neutral
+Devon Falls,Waterfall,71.92,146,203.0,0.7953,positive
+Devon Falls,Scenic view,50.74,103,203.0,0.7696,positive
+Devon Falls,Road access,36.45,74,203.0,0.6811,positive
+Devon Falls,Viewpoint,17.24,35,203.0,0.8023,neutral
+Diyaluma Falls,Waterfall,87.21,150,172.0,0.804,positive
+Diyaluma Falls,Scenic view,35.47,61,172.0,0.8075,positive
+Diyaluma Falls,Road access,31.98,55,172.0,0.6833,positive
+Diyaluma Falls,Local guide,26.74,46,172.0,0.7615,neutral
+Diyaluma Falls,Public transport access,19.19,33,172.0,0.7867,neutral
+Diyaluma Falls,Rock formation,15.12,26,172.0,0.7508,neutral
+Diyaluma Falls,Weather condition,14.53,25,172.0,0.7864,negative
+Diyaluma Falls,Trail,13.95,24,172.0,0.71,neutral
+Diyaluma Falls,Safety,10.47,18,172.0,0.7944,positive
+Diyatha Uyana,Food quality,68.25,86,126.0,0.7151,positive
+Diyatha Uyana,Family friendliness,53.17,67,126.0,0.7696,positive
+Diyatha Uyana,Lake,32.54,41,126.0,0.72,positive
+Diyatha Uyana,Crowdedness,30.16,38,126.0,0.8442,negative
+Diyatha Uyana,Trail,26.98,34,126.0,0.7435,positive
+Diyatha Uyana,Market,20.63,26,126.0,0.8138,positive
+Diyatha Uyana,Scenic view,19.05,24,126.0,0.7846,positive
+Diyatha Uyana,Souvenir stalls,19.05,24,126.0,0.7692,neutral
+Diyatha Uyana,Parking,18.25,23,126.0,0.7948,neutral
+Diyatha Uyana,Restaurants,18.25,23,126.0,0.7974,positive
+Diyatha Uyana,Cleanliness,15.08,19,126.0,0.8905,positive
+Diyatha Uyana,Shops,13.49,17,126.0,0.7712,positive
+Dondra Head Lighthouse,Lighthouse,71.19,84,118.0,0.7933,positive
+Dondra Head Lighthouse,Scenic view,50.0,59,118.0,0.8114,positive
+Dondra Head Lighthouse,Beach,27.12,32,118.0,0.7906,positive
+Dondra Head Lighthouse,Sea,24.58,29,118.0,0.7731,positive
+Dondra Head Lighthouse,Peacefulness,11.86,14,118.0,0.8229,positive
+Dondra Head Lighthouse,Stairs,10.17,12,118.0,0.775,neutral
+Dondra Head Lighthouse,Ticket price,10.17,12,118.0,0.7308,neutral
+Dutch Hospital Shopping Precinct,Shops,55.87,438,784.0,0.7537,positive
+Dutch Hospital Shopping Precinct,Restaurants,54.08,424,784.0,0.7906,positive
+Dutch Hospital Shopping Precinct,Food quality,23.98,188,784.0,0.735,positive
+Dutch Hospital Shopping Precinct,Value for money,17.22,135,784.0,0.8684,negative
+Dutch Hospital Shopping Precinct,Cafes,14.67,115,784.0,0.7746,positive
+Dutch Hospital Shopping Precinct,Fort,13.39,105,784.0,0.7076,positive
+Elephant Pass,Elephants,37.19,45,121.0,0.7596,neutral
+Elephant Pass,Road access,20.66,25,121.0,0.674,neutral
+Elephant Pass,Scenic view,12.4,15,121.0,0.7713,positive
+Elephant Transit Home (ETH),Elephants,92.4,462,500.0,0.7902,positive
+Elephant Transit Home (ETH),Wildlife,24.6,123,500.0,0.7844,positive
+Elephant Transit Home (ETH),Ticket price,12.0,60,500.0,0.778,neutral
+Elephant Transit Home (ETH),Family friendliness,10.8,54,500.0,0.7622,neutral
+Ella Rock,Scenic view,76.0,380,500.0,0.8011,positive
+Ella Rock,Trail,46.0,230,500.0,0.7593,neutral
+Ella Rock,Rock formation,42.8,214,500.0,0.7007,neutral
+Ella Rock,Local guide,39.4,197,500.0,0.7585,neutral
+Ella Rock,Mountain,23.2,116,500.0,0.74,positive
+Ella Rock,Weather condition,15.8,79,500.0,0.7575,negative
+Ella Rock,Tea plantation,14.4,72,500.0,0.8119,neutral
+Ella Rock,Signage,13.8,69,500.0,0.7362,neutral
+Ella Rock,Viewpoint,13.8,69,500.0,0.7994,neutral
+Ella Rock,Bridge,12.6,63,500.0,0.7556,neutral
+Ella Rock,Waterfall,12.4,62,500.0,0.78,neutral
+Ella Rock,Ticket price,11.4,57,500.0,0.7674,neutral
+Embekka Devalaya,Sculptures,83.72,36,43.0,0.7928,positive
+Embekka Devalaya,Temple,60.47,26,43.0,0.8015,positive
+Embekka Devalaya,Hindu shrine,18.6,8,43.0,0.7725,neutral
+Embekka Devalaya,Road access,16.28,7,43.0,0.6971,neutral
+Embekka Devalaya,Peacefulness,11.63,5,43.0,0.84,positive
+Embekka Devalaya,Public transport access,11.63,5,43.0,0.744,positive
+Embekka Devalaya,Ticket price,11.63,5,43.0,0.736,neutral
+Fort Frederick,Fort,69.3,149,215.0,0.6988,neutral
+Fort Frederick,Temple,68.84,148,215.0,0.7796,neutral
+Fort Frederick,Scenic view,34.42,74,215.0,0.7859,positive
+Fort Frederick,Hindu shrine,25.58,55,215.0,0.784,positive
+Fort Frederick,Mountain,12.09,26,215.0,0.7046,neutral
+Fort Frederick,Sea,12.09,26,215.0,0.7362,positive
+Fort Frederick,Beach,10.23,22,215.0,0.7864,positive
+Fort Frederick,Road access,10.23,22,215.0,0.6682,neutral
+Fort Frederick,Rock formation,10.23,22,215.0,0.7236,neutral
+Gal Oya National Park,Elephants,67.12,49,73.0,0.7865,positive
+Gal Oya National Park,Birds,53.42,39,73.0,0.7856,positive
+Gal Oya National Park,Boat service,53.42,39,73.0,0.7195,positive
+Gal Oya National Park,Wildlife,41.1,30,73.0,0.7827,neutral
+Gal Oya National Park,Lake,35.62,26,73.0,0.73,positive
+Gal Oya National Park,Forest,17.81,13,73.0,0.7846,neutral
+Gal Oya National Park,Peacefulness,16.44,12,73.0,0.81,positive
+Gal Oya National Park,Scenic view,15.07,11,73.0,0.8164,positive
+Gal Oya National Park,Local guide,10.96,8,73.0,0.7412,neutral
+Gal Oya National Park,Road access,10.96,8,73.0,0.6575,neutral
+Gal Vihara,Sculptures,62.0,310,500.0,0.7919,positive
+Gal Vihara,Buddha statue,56.0,280,500.0,0.8017,neutral
+Gal Vihara,Rock formation,37.8,189,500.0,0.7047,neutral
+Gal Vihara,Temple,29.6,148,500.0,0.7746,neutral
+Gal Vihara,Ancient ruins,14.4,72,500.0,0.7694,neutral
+Galle Dutch Fort,Fort,67.33,404,600.0,0.7102,positive
+Galle Dutch Fort,Shops,34.33,206,600.0,0.7599,positive
+Galle Dutch Fort,Scenic view,33.17,199,600.0,0.8145,positive
+Galle Dutch Fort,Restaurants,31.17,187,600.0,0.7832,positive
+Galle Dutch Fort,Sea,20.67,124,600.0,0.7665,positive
+Galle Dutch Fort,Heritage site,15.0,90,600.0,0.7922,neutral
+Galle Dutch Fort,Cafes,14.0,84,600.0,0.7831,positive
+Galle Dutch Fort,Accommodation,12.17,73,600.0,0.7712,neutral
+Galle Dutch Fort,Beach,11.67,70,600.0,0.7886,positive
+Galle Dutch Fort,Weather condition,11.5,69,600.0,0.7374,negative
+Galle Dutch Fort,Sunset view,11.33,68,600.0,0.8468,positive
+Galle Face Green,Food quality,47.08,226,480.0,0.7112,neutral
+Galle Face Green,Sea,38.12,183,480.0,0.7492,positive
+Galle Face Green,Souvenir stalls,27.92,134,480.0,0.7718,neutral
+Galle Face Green,Family friendliness,26.46,127,480.0,0.7591,neutral
+Galle Face Green,Sunset view,24.17,116,480.0,0.8462,positive
+Galle Face Green,Beach,23.96,115,480.0,0.785,neutral
+Galle Face Green,Accommodation,23.54,113,480.0,0.7789,neutral
+Galle Face Green,Scenic view,21.25,102,480.0,0.7698,positive
+Galle Face Green,Crowdedness,16.04,77,480.0,0.8465,negative
+Galle Face Green,Cleanliness,12.5,60,480.0,0.8683,positive
+Galle Fort Lighthouse,Lighthouse,63.0,315,500.0,0.7783,neutral
+Galle Fort Lighthouse,Fort,44.0,220,500.0,0.6972,neutral
+Galle Fort Lighthouse,Scenic view,32.8,164,500.0,0.798,positive
+Galle Fort Lighthouse,Sea,21.4,107,500.0,0.7479,positive
+Galle Fort Lighthouse,Beach,16.8,84,500.0,0.7886,positive
+Galle Fort Lighthouse,Sunset view,10.8,54,500.0,0.8393,positive
+Galway's Land National Park,Birds,60.94,39,64.0,0.7472,neutral
+Galway's Land National Park,Forest,56.25,36,64.0,0.7828,neutral
+Galway's Land National Park,Ticket price,37.5,24,64.0,0.7742,neutral
+Galway's Land National Park,Trail,34.38,22,64.0,0.7618,neutral
+Galway's Land National Park,Wildlife,32.81,21,64.0,0.76,neutral
+Galway's Land National Park,Value for money,25.0,16,64.0,0.86,negative
+Galway's Land National Park,Peacefulness,15.62,10,64.0,0.792,positive
+Galway's Land National Park,Road access,14.06,9,64.0,0.67,neutral
+Galway's Land National Park,Entrance fee,10.94,7,64.0,0.8371,neutral
+Galway's Land National Park,Signage,10.94,7,64.0,0.74,neutral
+Gangaramaya Temple,Temple,81.4,407,500.0,0.7948,positive
+Gangaramaya Temple,Buddha statue,31.0,155,500.0,0.7955,neutral
+Gangaramaya Temple,Sculptures,28.2,141,500.0,0.7811,neutral
+Gangaramaya Temple,Museum,26.8,134,500.0,0.7748,neutral
+Gangaramaya Temple,Peacefulness,22.0,110,500.0,0.8087,positive
+Gangaramaya Temple,Ticket price,14.8,74,500.0,0.7636,neutral
+Gangaramaya Temple,Lake,12.6,63,500.0,0.6978,neutral
+Gangaramaya Temple,Entrance fee,12.4,62,500.0,0.8142,neutral
+Gartmore Falls,Scenic view,100.0,6,6.0,0.8467,positive
+Gartmore Falls,Waterfall,100.0,6,6.0,0.8267,positive
+Goyambokka Beach,Beach,94.95,282,297.0,0.8187,positive
+Goyambokka Beach,Waves,44.44,132,297.0,0.7914,positive
+Goyambokka Beach,Restaurants,36.7,109,297.0,0.7963,positive
+Goyambokka Beach,Food quality,29.63,88,297.0,0.7523,positive
+Goyambokka Beach,Sea,20.88,62,297.0,0.7455,positive
+Goyambokka Beach,Value for money,19.19,57,297.0,0.8477,negative
+Goyambokka Beach,Peacefulness,18.18,54,297.0,0.797,positive
+Goyambokka Beach,Crowdedness,17.17,51,297.0,0.8533,negative
+Goyambokka Beach,Cleanliness,15.82,47,297.0,0.88,positive
+Goyambokka Beach,Sandy beach,15.82,47,297.0,0.7549,positive
+Goyambokka Beach,Family friendliness,14.14,42,297.0,0.7833,positive
+Goyambokka Beach,Accommodation,13.13,39,297.0,0.7856,neutral
+Goyambokka Beach,Ticket price,13.13,39,297.0,0.7856,neutral
+Gregory Lake,Lake,73.6,368,500.0,0.7143,positive
+Gregory Lake,Boat service,38.0,190,500.0,0.724,neutral
+Gregory Lake,Scenic view,24.2,121,500.0,0.8036,positive
+Gregory Lake,Ticket price,23.2,116,500.0,0.7547,neutral
+Gregory Lake,Family friendliness,22.8,114,500.0,0.7677,positive
+Gregory Lake,Cleanliness,21.0,105,500.0,0.8773,positive
+Gregory Lake,Food quality,12.0,60,500.0,0.6933,neutral
+Gregory Lake,Mountain,11.0,55,500.0,0.7764,positive
+Hakgala Botanic Gardens,Ticket price,21.6,108,500.0,0.7728,neutral
+Hakgala Botanic Gardens,Cleanliness,12.6,63,500.0,0.8806,positive
+Hakgala Botanic Gardens,Scenic view,12.0,60,500.0,0.8223,positive
+Hakgala Botanic Gardens,Value for money,11.0,55,500.0,0.864,negative
+Hakgala Botanic Gardens,Entrance fee,10.8,54,500.0,0.8452,neutral
+Handunugoda Tea Estate,Local guide,45.59,217,476.0,0.7782,positive
+Handunugoda Tea Estate,Tea plantation,45.38,216,476.0,0.826,positive
+Handunugoda Tea Estate,Value for money,38.24,182,476.0,0.8226,positive
+Handunugoda Tea Estate,Shops,28.36,135,476.0,0.6898,positive
+Handunugoda Tea Estate,Service quality,12.18,58,476.0,0.8024,positive
+Handunugoda Tea Estate,Guided tours,11.34,54,476.0,0.8396,positive
+Handunugoda Tea Estate,Public transport access,11.13,53,476.0,0.8057,positive
+Handunugoda Tea Estate,Ticket price,11.13,53,476.0,0.7896,positive
+Henerathgoda Botanical Garden,Peacefulness,28.95,11,38.0,0.7782,positive
+Henerathgoda Botanical Garden,Family friendliness,21.05,8,38.0,0.775,positive
+Henerathgoda Botanical Garden,Cleanliness,13.16,5,38.0,0.864,positive
+Hikkaduwa Beach,Beach,90.17,541,600.0,0.8122,positive
+Hikkaduwa Beach,Turtles,33.67,202,600.0,0.7836,neutral
+Hikkaduwa Beach,Waves,28.0,168,600.0,0.7638,positive
+Hikkaduwa Beach,Sea,27.33,164,600.0,0.721,positive
+Hikkaduwa Beach,Cleanliness,24.83,149,600.0,0.8761,positive
+Hikkaduwa Beach,Restaurants,23.17,139,600.0,0.7894,positive
+Hikkaduwa Beach,Crowdedness,20.67,124,600.0,0.8484,negative
+Hikkaduwa Beach,Coral reef,18.33,110,600.0,0.7715,positive
+Hikkaduwa Beach,Sandy beach,18.0,108,600.0,0.7594,positive
+Hikkaduwa Beach,Accommodation,17.83,107,600.0,0.7791,neutral
+Hikkaduwa Beach,Food quality,11.5,69,600.0,0.7409,positive
+Hiriketiya Beach,Beach,96.06,122,127.0,0.81,positive
+Hiriketiya Beach,Waves,55.12,70,127.0,0.7471,positive
+Hiriketiya Beach,Crowdedness,32.28,41,127.0,0.8546,negative
+Hiriketiya Beach,Restaurants,29.92,38,127.0,0.7805,neutral
+Hiriketiya Beach,Food quality,21.26,27,127.0,0.7304,positive
+Hiriketiya Beach,Peacefulness,19.69,25,127.0,0.7872,positive
+Hiriketiya Beach,Family friendliness,18.11,23,127.0,0.7791,positive
+Hiriketiya Beach,Accommodation,15.75,20,127.0,0.778,neutral
+Hiriketiya Beach,Sea,14.17,18,127.0,0.7344,neutral
+Hiriketiya Beach,Ticket price,12.6,16,127.0,0.7712,neutral
+Hiriketiya Beach,Value for money,12.6,16,127.0,0.8525,positive
+Hiriketiya Beach,Cleanliness,11.81,15,127.0,0.872,positive
+Hiriketiya Beach,Sandy beach,11.02,14,127.0,0.7457,positive
+Horton Plains National Park,Scenic view,60.17,361,600.0,0.8211,positive
+Horton Plains National Park,Waterfall,33.5,201,600.0,0.7859,positive
+Horton Plains National Park,Trail,26.5,159,600.0,0.7673,positive
+Horton Plains National Park,Ticket price,19.83,119,600.0,0.7798,neutral
+Horton Plains National Park,Weather condition,19.17,115,600.0,0.7711,negative
+Horton Plains National Park,Wildlife,19.0,114,600.0,0.7733,neutral
+Horton Plains National Park,Cleanliness,13.33,80,600.0,0.8588,negative
+Horton Plains National Park,Mountain,13.0,78,600.0,0.7528,neutral
+Horton Plains National Park,Birds,12.0,72,600.0,0.7489,neutral
+Horton Plains National Park,Crowdedness,11.67,70,600.0,0.8346,negative
+Horton Plains National Park,Value for money,10.67,64,600.0,0.8669,negative
+Horton Plains National Park,Entrance fee,10.5,63,600.0,0.8257,neutral
+Hummanaya Blow Hole,Sea,25.51,50,196.0,0.7176,neutral
+Hummanaya Blow Hole,Ticket price,23.98,47,196.0,0.7553,neutral
+Hummanaya Blow Hole,Scenic view,22.96,45,196.0,0.7882,positive
+Hummanaya Blow Hole,Rock formation,20.41,40,196.0,0.749,neutral
+Hummanaya Blow Hole,Weather condition,16.33,32,196.0,0.7612,negative
+Hummanaya Blow Hole,Beach,15.31,30,196.0,0.7973,positive
+Hummanaya Blow Hole,Entrance fee,14.8,29,196.0,0.8041,neutral
+Hummanaya Blow Hole,Waves,14.8,29,196.0,0.7648,positive
+Hummanaya Blow Hole,Stairs,11.73,23,196.0,0.7791,neutral
+Hurulu Eco Park,Elephants,96.15,325,338.0,0.7853,neutral
+Hurulu Eco Park,Wildlife,35.21,119,338.0,0.7818,neutral
+Hurulu Eco Park,Birds,23.37,79,338.0,0.7582,neutral
+Hurulu Eco Park,Road access,21.6,73,338.0,0.6793,neutral
+Hurulu Eco Park,Local guide,20.71,70,338.0,0.7673,positive
+Hurulu Eco Park,Ticket price,13.61,46,338.0,0.7583,neutral
+Hurulu Eco Park,Accommodation,13.02,44,338.0,0.7614,neutral
+Hurulu Eco Park,Scenic view,12.72,43,338.0,0.8049,positive
+Hurulu Eco Park,Weather condition,12.72,43,338.0,0.7493,negative
+Hurulu Eco Park,Trail,11.24,38,338.0,0.7584,neutral
+Hurulu Eco Park,Crowdedness,10.95,37,338.0,0.8492,negative
+Hurulu Eco Park,Family friendliness,10.06,34,338.0,0.7776,positive
+Independence Memorial Hall,Sculptures,16.18,61,377.0,0.7793,neutral
+Independence Memorial Hall,Cleanliness,10.08,38,377.0,0.8821,positive
+Independence Memorial Hall,Peacefulness,10.08,38,377.0,0.7937,positive
+Isurumuniya Temple,Temple,67.94,178,262.0,0.7892,positive
+Isurumuniya Temple,Rock formation,46.18,121,262.0,0.7183,positive
+Isurumuniya Temple,Sculptures,42.75,112,262.0,0.783,neutral
+Isurumuniya Temple,Scenic view,32.06,84,262.0,0.7832,positive
+Isurumuniya Temple,Museum,21.76,57,262.0,0.7772,neutral
+Isurumuniya Temple,Ticket price,16.79,44,262.0,0.7664,neutral
+Isurumuniya Temple,Buddha statue,14.5,38,262.0,0.8032,neutral
+Isurumuniya Temple,Stupa,12.98,34,262.0,0.7776,positive
+Isurumuniya Temple,Cave temple,12.21,32,262.0,0.8181,neutral
+Isurumuniya Temple,Entrance fee,12.21,32,262.0,0.8281,neutral
+Isurumuniya Temple,Peacefulness,12.21,32,262.0,0.8175,positive
+Isurumuniya Temple,Lake,11.83,31,262.0,0.7103,positive
+Isurumuniya Temple,Weather condition,11.83,31,262.0,0.7303,negative
+Isurumuniya Temple,Elephants,10.31,27,262.0,0.7815,positive
+Jaffna Fort,Fort,73.41,334,455.0,0.7049,neutral
+Jaffna Fort,Scenic view,23.52,107,455.0,0.8082,positive
+Jaffna Fort,Ancient ruins,12.53,57,455.0,0.7716,neutral
+Jami Ul-Alfar Mosque,Mosque,76.29,280,367.0,0.7949,positive
+Jami Ul-Alfar Mosque,Crowdedness,24.52,90,367.0,0.8124,negative
+Jami Ul-Alfar Mosque,Market,14.44,53,367.0,0.786,neutral
+Japanese Peace Pagoda - Rumassala,Scenic view,63.8,319,500.0,0.8198,positive
+Japanese Peace Pagoda - Rumassala,Peacefulness,48.0,240,500.0,0.8232,positive
+Japanese Peace Pagoda - Rumassala,Stupa,43.6,218,500.0,0.7948,positive
+Japanese Peace Pagoda - Rumassala,Beach,36.6,183,500.0,0.7867,positive
+Japanese Peace Pagoda - Rumassala,Forest,31.0,155,500.0,0.7791,neutral
+Japanese Peace Pagoda - Rumassala,Temple,26.4,132,500.0,0.7914,positive
+Japanese Peace Pagoda - Rumassala,Sunset view,17.4,87,500.0,0.8547,positive
+Japanese Peace Pagoda - Rumassala,Sea,16.2,81,500.0,0.7706,positive
+Japanese Peace Pagoda - Rumassala,Public transport access,13.4,67,500.0,0.7991,neutral
+Japanese Peace Pagoda - Rumassala,Mountain,13.0,65,500.0,0.7258,neutral
+Japanese Peace Pagoda - Rumassala,Fort,12.6,63,500.0,0.7168,positive
+Jaya Sri Maha Bodhi,Buddha statue,27.7,118,426.0,0.7544,neutral
+Jaya Sri Maha Bodhi,Temple,19.25,82,426.0,0.7783,neutral
+Jaya Sri Maha Bodhi,Peacefulness,13.85,59,426.0,0.8014,positive
+Jaya Sri Maha Bodhi,Crowdedness,11.03,47,426.0,0.8468,negative
+Jungle Beach,Beach,91.67,550,600.0,0.8061,positive
+Jungle Beach,Forest,40.33,242,600.0,0.7816,neutral
+Jungle Beach,Cleanliness,36.67,220,600.0,0.8649,negative
+Jungle Beach,Crowdedness,25.0,150,600.0,0.8499,negative
+Jungle Beach,Peacefulness,17.17,103,600.0,0.7864,positive
+Jungle Beach,Sea,14.5,87,600.0,0.7384,positive
+Jungle Beach,Trail,13.17,79,600.0,0.7238,neutral
+Jungle Beach,Scenic view,11.83,71,600.0,0.7921,positive
+Jungle Beach,Public transport access,11.17,67,600.0,0.7922,neutral
+Jungle Beach,Rock formation,10.5,63,600.0,0.7705,neutral
+Kabalana Beach,Beach,90.0,27,30.0,0.8133,positive
+Kabalana Beach,Waves,60.0,18,30.0,0.7467,positive
+Kabalana Beach,Sandy beach,33.33,10,30.0,0.792,positive
+Kabalana Beach,Cleanliness,26.67,8,30.0,0.88,positive
+Kabalana Beach,Accommodation,23.33,7,30.0,0.7771,neutral
+Kabalana Beach,Restaurants,23.33,7,30.0,0.8057,positive
+Kabalana Beach,Cafes,16.67,5,30.0,0.748,positive
+Kabalana Beach,Ticket price,16.67,5,30.0,0.728,neutral
+Kalametiya Eco Bird Watching,Birds,92.48,246,266.0,0.7789,positive
+Kalametiya Eco Bird Watching,Local guide,59.77,159,266.0,0.7894,positive
+Kalametiya Eco Bird Watching,Peacefulness,33.46,89,266.0,0.8261,positive
+Kalametiya Eco Bird Watching,Boat service,30.83,82,266.0,0.711,positive
+Kalametiya Eco Bird Watching,Lagoon,24.06,64,266.0,0.8072,positive
+Kalametiya Eco Bird Watching,Scenic view,24.06,64,266.0,0.7959,positive
+Kalametiya Eco Bird Watching,Rock formation,20.68,55,266.0,0.7076,positive
+Kalametiya Eco Bird Watching,Sunset view,10.53,28,266.0,0.845,positive
+Kalametiya Eco Bird Watching,Wildlife,10.53,28,266.0,0.7993,positive
+Kalutara Bodhiya,Temple,60.42,145,240.0,0.7895,positive
+Kalutara Bodhiya,Road access,23.33,56,240.0,0.6616,neutral
+Kalutara Bodhiya,Peacefulness,22.92,55,240.0,0.8073,positive
+Kalutara Bodhiya,Stupa,20.0,48,240.0,0.7779,neutral
+Kalutara Bodhiya,River,17.92,43,240.0,0.7842,neutral
+Kalutara Bodhiya,Scenic view,15.0,36,240.0,0.7686,positive
+Kalutara Bodhiya,Buddha statue,14.17,34,240.0,0.7771,neutral
+Kalutara Bodhiya,Crowdedness,14.17,34,240.0,0.8135,negative
+Kalutara Bodhiya,Local guide,10.83,26,240.0,0.7585,positive
+Kande Viharaya Temple,Temple,83.61,102,122.0,0.7927,positive
+Kande Viharaya Temple,Buddha statue,56.56,69,122.0,0.8043,neutral
+Kande Viharaya Temple,Sculptures,45.08,55,122.0,0.7745,neutral
+Kande Viharaya Temple,Elephants,22.13,27,122.0,0.7689,neutral
+Kande Viharaya Temple,Crowdedness,17.21,21,122.0,0.8486,negative
+Kande Viharaya Temple,Local guide,14.75,18,122.0,0.76,positive
+Kande Viharaya Temple,Public transport access,14.75,18,122.0,0.7844,neutral
+Kande Viharaya Temple,Paintings,13.93,17,122.0,0.7729,neutral
+Kande Viharaya Temple,Peacefulness,13.11,16,122.0,0.8075,positive
+Kande Viharaya Temple,Hindu shrine,12.3,15,122.0,0.7547,neutral
+Kandy Lake,Lake,86.67,520,600.0,0.7139,positive
+Kandy Lake,Temple,30.0,180,600.0,0.7812,neutral
+Kandy Lake,Scenic view,25.83,155,600.0,0.7821,positive
+Kandy Lake,Birds,18.83,113,600.0,0.7655,neutral
+Kandy Lake,Peacefulness,17.5,105,600.0,0.8072,positive
+Kandy Lake,Crowdedness,11.83,71,600.0,0.7907,negative
+Kandy Lake,Cleanliness,10.67,64,600.0,0.8725,positive
+Kandy View Point,Scenic view,86.2,431,500.0,0.7748,positive
+Kandy View Point,Lake,43.4,217,500.0,0.7112,positive
+Kandy View Point,Viewpoint,36.2,181,500.0,0.8126,positive
+Kandy View Point,Temple,21.6,108,500.0,0.7824,neutral
+Kandy View Point,Mountain,16.0,80,500.0,0.7565,positive
+Kandy View Point,Public transport access,12.4,62,500.0,0.7923,neutral
+Kandy View Point,Buddha statue,11.6,58,500.0,0.7959,neutral
+Kanniya Hot Springs,Weather condition,68.2,208,305.0,0.7265,negative
+Kanniya Hot Springs,Crowdedness,14.75,45,305.0,0.8542,negative
+Kanniya Hot Springs,Ticket price,14.75,45,305.0,0.7551,neutral
+Kanniya Hot Springs,Cleanliness,14.43,44,305.0,0.8705,positive
+Kanniya Hot Springs,Entrance fee,10.82,33,305.0,0.84,neutral
+Kataragama Temple,Temple,67.69,199,294.0,0.7725,neutral
+Kataragama Temple,Hindu shrine,30.27,89,294.0,0.7629,neutral
+Kataragama Temple,Crowdedness,20.41,60,294.0,0.849,negative
+Kataragama Temple,Peacefulness,10.2,30,294.0,0.8093,positive
+Kaudulla National Park,Elephants,96.2,481,500.0,0.789,positive
+Kaudulla National Park,Wildlife,35.0,175,500.0,0.78,neutral
+Kaudulla National Park,Birds,34.0,170,500.0,0.7644,neutral
+Kaudulla National Park,Local guide,15.6,78,500.0,0.7601,positive
+Kaudulla National Park,Lake,15.4,77,500.0,0.6977,neutral
+Kaudulla National Park,Road access,12.4,62,500.0,0.6703,neutral
+Kaudulla National Park,Ticket price,12.2,61,500.0,0.7462,neutral
+Kaudulla National Park,Crowdedness,10.4,52,500.0,0.8258,negative
+Keerimalai Hot springs,Sea,34.09,45,132.0,0.7262,positive
+Keerimalai Hot springs,Weather condition,29.55,39,132.0,0.7303,negative
+Keerimalai Hot springs,Cleanliness,28.03,37,132.0,0.8789,positive
+Keerimalai Hot springs,Beach,14.39,19,132.0,0.7842,neutral
+Keerimalai Hot springs,Temple,14.39,19,132.0,0.7989,positive
+Keerimalai Hot springs,Hindu shrine,13.64,18,132.0,0.7733,neutral
+Keerimalai Hot springs,Crowdedness,10.61,14,132.0,0.8571,negative
+Kelaniya Raja Maha Vihara,Temple,79.8,399,500.0,0.7848,neutral
+Kelaniya Raja Maha Vihara,Buddha statue,45.0,225,500.0,0.7669,neutral
+Kelaniya Raja Maha Vihara,Peacefulness,26.8,134,500.0,0.8012,positive
+Kelaniya Raja Maha Vihara,Paintings,23.2,116,500.0,0.7853,positive
+Kelaniya Raja Maha Vihara,Crowdedness,17.4,87,500.0,0.8462,negative
+Kelaniya Raja Maha Vihara,Sculptures,13.0,65,500.0,0.7837,positive
+Kelaniya Raja Maha Vihara,River,10.8,54,500.0,0.7585,neutral
+Kiri Vehera,Stupa,42.31,11,26.0,0.7782,neutral
+Kiri Vehera,Temple,42.31,11,26.0,0.7727,neutral
+Kiri Vehera,Crowdedness,19.23,5,26.0,0.872,negative
+Kiri Vehera,Peacefulness,19.23,5,26.0,0.792,positive
+Kirinda Viharaya,Temple,82.76,48,58.0,0.7879,positive
+Kirinda Viharaya,Scenic view,58.62,34,58.0,0.7685,positive
+Kirinda Viharaya,Sea,58.62,34,58.0,0.7429,positive
+Kirinda Viharaya,Rock formation,46.55,27,58.0,0.7422,neutral
+Kirinda Viharaya,Beach,43.1,25,58.0,0.7832,positive
+Kirinda Viharaya,Buddha statue,18.97,11,58.0,0.78,neutral
+Kirinda Viharaya,Peacefulness,18.97,11,58.0,0.8182,positive
+Kirinda Viharaya,Sculptures,18.97,11,58.0,0.7818,neutral
+Kirinda Viharaya,Weather condition,15.52,9,58.0,0.7556,negative
+Kirinda Viharaya,Safety,10.34,6,58.0,0.85,negative
+Kirinda Viharaya,Stairs,10.34,6,58.0,0.7567,neutral
+Knuckles Mountain Range,Mountain,59.04,147,249.0,0.7845,positive
+Knuckles Mountain Range,Scenic view,51.81,129,249.0,0.8212,positive
+Knuckles Mountain Range,Waterfall,30.52,76,249.0,0.7929,positive
+Knuckles Mountain Range,Local guide,28.92,72,249.0,0.7694,neutral
+Knuckles Mountain Range,Weather condition,23.29,58,249.0,0.7866,negative
+Knuckles Mountain Range,Leeches,18.88,47,249.0,0.7953,negative
+Knuckles Mountain Range,Trail,15.66,39,249.0,0.7862,positive
+Knuckles Mountain Range,Tea plantation,13.65,34,249.0,0.8347,positive
+Knuckles Mountain Range,Accommodation,12.45,31,249.0,0.7703,neutral
+Knuckles Mountain Range,Forest,12.45,31,249.0,0.7903,positive
+Knuckles Mountain Range,Road access,11.65,29,249.0,0.6979,neutral
+Knuckles Mountain Range,Birds,10.84,27,249.0,0.7548,neutral
+Knuckles Mountain Range,Food quality,10.44,26,249.0,0.7638,positive
+Koggala Lake,Lake,57.14,64,112.0,0.7081,positive
+Koggala Lake,Boat service,52.68,59,112.0,0.7041,neutral
+Koggala Lake,Ticket price,35.71,40,112.0,0.7688,neutral
+Koggala Lake,Temple,29.46,33,112.0,0.7836,positive
+Koggala Lake,Value for money,24.11,27,112.0,0.8563,negative
+Koggala Lake,Birds,21.43,24,112.0,0.7483,neutral
+Koggala Lake,Wildlife,17.86,20,112.0,0.785,positive
+Koggala Lake,Local guide,16.07,18,112.0,0.7578,neutral
+Koggala Lake,Public transport access,14.29,16,112.0,0.7925,neutral
+Koggala Lake,Peacefulness,13.39,15,112.0,0.8267,positive
+Kosgoda Sea Turtle Conservation Project,Turtles,93.53,477,510.0,0.7938,positive
+Kosgoda Sea Turtle Conservation Project,Sea,44.9,229,510.0,0.7109,neutral
+Kosgoda Sea Turtle Conservation Project,Family friendliness,19.22,98,510.0,0.7649,positive
+Kosgoda Sea Turtle Conservation Project,Ticket price,17.06,87,510.0,0.7669,neutral
+Kosgoda Sea Turtle Conservation Project,Local guide,16.86,86,510.0,0.7576,neutral
+Kosgoda Sea Turtle Conservation Project,Wildlife,16.86,86,510.0,0.7988,positive
+Kosgoda Sea Turtle Conservation Project,Beach,16.47,84,510.0,0.7798,neutral
+Kosgoda Sea Turtle Conservation Project,Service quality,15.1,77,510.0,0.7953,positive
+Kumana National Park,Birds,72.48,79,109.0,0.7628,neutral
+Kumana National Park,Wildlife,58.72,64,109.0,0.7887,positive
+Kumana National Park,Leopards,56.88,62,109.0,0.7658,neutral
+Kumana National Park,Elephants,52.29,57,109.0,0.7611,neutral
+Kumana National Park,Road access,22.94,25,109.0,0.686,neutral
+Kumana National Park,Local guide,21.1,23,109.0,0.7465,neutral
+Kumana National Park,Scenic view,17.43,19,109.0,0.7942,positive
+Kumana National Park,Crowdedness,15.6,17,109.0,0.8494,negative
+Kumana National Park,Forest,13.76,15,109.0,0.7773,neutral
+Kumana National Park,Ticket price,13.76,15,109.0,0.7313,neutral
+Kumana National Park,Peacefulness,11.01,12,109.0,0.7967,positive
+Laxapana Falls,Waterfall,81.82,18,22.0,0.8033,positive
+Laxapana Falls,Scenic view,45.45,10,22.0,0.764,positive
+Laxapana Falls,Road access,40.91,9,22.0,0.6722,neutral
+Laxapana Falls,Stairs,40.91,9,22.0,0.8044,positive
+Laxapana Falls,Safety,22.73,5,22.0,0.8,positive
+Lipton’s Seat,Scenic view,83.0,415,500.0,0.805,positive
+Lipton’s Seat,Public transport access,49.2,246,500.0,0.7891,neutral
+Lipton’s Seat,Tea plantation,38.6,193,500.0,0.8338,positive
+Lipton’s Seat,Road access,28.4,142,500.0,0.6954,neutral
+Lipton’s Seat,Mountain,23.2,116,500.0,0.7481,neutral
+Lipton’s Seat,Ticket price,20.2,101,500.0,0.7478,neutral
+Lipton’s Seat,Weather condition,15.6,78,500.0,0.7774,negative
+Lipton’s Seat,Viewpoint,12.4,62,500.0,0.8235,positive
+Lipton’s Seat,Sunrise view,12.2,61,500.0,0.8354,positive
+Little Adam's Peak View Point,Scenic view,84.43,591,700.0,0.8248,positive
+Little Adam's Peak View Point,Mountain,51.71,362,700.0,0.7322,positive
+Little Adam's Peak View Point,Stairs,27.14,190,700.0,0.7787,neutral
+Little Adam's Peak View Point,Trail,20.14,141,700.0,0.7516,positive
+Little Adam's Peak View Point,Rock formation,13.86,97,700.0,0.733,positive
+Little Adam's Peak View Point,Weather condition,13.14,92,700.0,0.773,negative
+Little Adam's Peak View Point,Sunrise view,12.43,87,700.0,0.8354,positive
+Little Adam's Peak View Point,Tea plantation,11.14,78,700.0,0.8318,positive
+Lovamahapaya Brazen Palace,Ancient ruins,32.0,8,25.0,0.73,neutral
+Lover's Leap Falls,Waterfall,72.95,267,366.0,0.7998,positive
+Lover's Leap Falls,Scenic view,49.18,180,366.0,0.7997,positive
+Lover's Leap Falls,Tea plantation,31.42,115,366.0,0.8296,positive
+Lover's Leap Falls,Public transport access,26.5,97,366.0,0.7961,neutral
+Lover's Leap Falls,Road access,22.13,81,366.0,0.6796,neutral
+Lover's Leap Falls,Trail,18.85,69,366.0,0.7449,neutral
+Lover's Leap Falls,Mountain,13.93,51,366.0,0.7345,neutral
+Lover's Leap Falls,Weather condition,13.66,50,366.0,0.7792,negative
+Lunugamvehera National Park,Birds,63.04,29,46.0,0.7579,neutral
+Lunugamvehera National Park,Leopards,63.04,29,46.0,0.7676,neutral
+Lunugamvehera National Park,Elephants,50.0,23,46.0,0.7513,neutral
+Lunugamvehera National Park,Wildlife,47.83,22,46.0,0.7882,positive
+Lunugamvehera National Park,Crowdedness,26.09,12,46.0,0.8383,negative
+Lunugamvehera National Park,Scenic view,26.09,12,46.0,0.7967,positive
+Lunugamvehera National Park,Forest,17.39,8,46.0,0.7725,neutral
+Lunugamvehera National Park,Lake,17.39,8,46.0,0.7625,neutral
+Lunugamvehera National Park,Peacefulness,17.39,8,46.0,0.825,positive
+Lunugamvehera National Park,Local guide,15.22,7,46.0,0.7543,neutral
+Lunugamvehera National Park,Ticket price,13.04,6,46.0,0.7133,neutral
+Madu River Safari by Buddhi,River,60.2,301,500.0,0.7837,positive
+Madu River Safari by Buddhi,Boat service,56.6,283,500.0,0.716,neutral
+Madu River Safari by Buddhi,Temple,32.4,162,500.0,0.7721,neutral
+Madu River Safari by Buddhi,Birds,28.0,140,500.0,0.7623,neutral
+Madu River Safari by Buddhi,Ticket price,25.8,129,500.0,0.764,neutral
+Madu River Safari by Buddhi,Wildlife,18.8,94,500.0,0.7743,neutral
+Madu River Safari by Buddhi,Local guide,14.8,74,500.0,0.7655,positive
+Madu River Safari by Buddhi,Value for money,14.0,70,500.0,0.8691,negative
+Madu River Safari by Buddhi,Scenic view,10.8,54,500.0,0.8007,positive
+Madu River Safari by Buddhi,Family friendliness,10.2,51,500.0,0.7565,neutral
+Maduru Oya National Park,Elephants,88.89,24,27.0,0.7667,neutral
+Maduru Oya National Park,Wildlife,48.15,13,27.0,0.7646,neutral
+Maduru Oya National Park,Road access,37.04,10,27.0,0.686,neutral
+Maduru Oya National Park,Birds,29.63,8,27.0,0.75,neutral
+Maduru Oya National Park,Scenic view,29.63,8,27.0,0.8225,positive
+Maduru Oya National Park,Crowdedness,22.22,6,27.0,0.8267,positive
+Maduru Oya National Park,Lake,22.22,6,27.0,0.72,positive
+Maha Saman Dewalaya,Temple,32.43,12,37.0,0.79,positive
+Maha Saman Dewalaya,Peacefulness,27.03,10,37.0,0.792,positive
+Maha Saman Dewalaya,Hindu shrine,16.22,6,37.0,0.7567,neutral
+Maha Saman Dewalaya,Road access,16.22,6,37.0,0.6617,neutral
+Maha Saman Dewalaya,Buddha statue,13.51,5,37.0,0.78,neutral
+Maligawila Buddha Statue,Buddha statue,75.86,22,29.0,0.8418,positive
+Maligawila Buddha Statue,Sculptures,72.41,21,29.0,0.8124,positive
+Maligawila Buddha Statue,Value for money,37.93,11,29.0,0.8,positive
+Maligawila Buddha Statue,Ancient ruins,24.14,7,29.0,0.8,positive
+Maligawila Buddha Statue,Rock formation,24.14,7,29.0,0.7114,positive
+Marble Beach,Beach,91.34,306,335.0,0.8148,positive
+Marble Beach,Cleanliness,36.42,122,335.0,0.88,positive
+Marble Beach,Accommodation,25.37,85,335.0,0.7892,positive
+Marble Beach,Sea,23.28,78,335.0,0.7369,positive
+Marble Beach,Crowdedness,20.0,67,335.0,0.8615,negative
+Marble Beach,Peacefulness,19.4,65,335.0,0.768,positive
+Marble Beach,Food quality,19.1,64,335.0,0.7394,positive
+Marble Beach,Safety,16.12,54,335.0,0.8015,positive
+Marble Beach,Family friendliness,13.73,46,335.0,0.7661,positive
+Marble Beach,Ticket price,13.13,44,335.0,0.7891,positive
+Marble Beach,Sandy beach,11.94,40,335.0,0.7745,positive
+Marble Beach,Restaurants,11.04,37,335.0,0.7881,neutral
+Marble Beach,Scenic view,11.04,37,335.0,0.7803,positive
+Marble Beach,Service quality,10.75,36,335.0,0.81,positive
+Matara Paravi Duwa Temple,Temple,83.33,50,60.0,0.7968,positive
+Matara Paravi Duwa Temple,Scenic view,58.33,35,60.0,0.8223,positive
+Matara Paravi Duwa Temple,Bridge,50.0,30,60.0,0.7813,positive
+Matara Paravi Duwa Temple,Sea,35.0,21,60.0,0.7543,positive
+Matara Paravi Duwa Temple,Beach,28.33,17,60.0,0.7812,positive
+Matara Paravi Duwa Temple,Entrance fee,18.33,11,60.0,0.7764,neutral
+Matara Paravi Duwa Temple,Public transport access,18.33,11,60.0,0.6909,neutral
+Matara Paravi Duwa Temple,Peacefulness,11.67,7,60.0,0.8,positive
+Mihintale,Scenic view,56.0,280,500.0,0.809,positive
+Mihintale,Stairs,38.0,190,500.0,0.7807,neutral
+Mihintale,Rock formation,35.4,177,500.0,0.7137,positive
+Mihintale,Stupa,26.6,133,500.0,0.7803,positive
+Mihintale,Buddha statue,21.8,109,500.0,0.8002,positive
+Mihintale,Temple,20.8,104,500.0,0.7863,positive
+Mihintale,Sunset view,19.0,95,500.0,0.8448,positive
+Mihintale,Weather condition,18.6,93,500.0,0.7458,negative
+Mihintale,Mountain,17.8,89,500.0,0.7384,neutral
+Mihintale,Local guide,15.4,77,500.0,0.7644,positive
+Mihintale,Sculptures,12.4,62,500.0,0.79,positive
+Mihintale,Ancient ruins,11.6,58,500.0,0.7779,neutral
+Mihintale,Ticket price,11.0,55,500.0,0.7547,neutral
+Minneriya National Park,Elephants,94.83,569,600.0,0.7886,positive
+Minneriya National Park,Wildlife,37.0,222,600.0,0.7832,neutral
+Minneriya National Park,Birds,34.83,209,600.0,0.7589,neutral
+Minneriya National Park,Local guide,19.67,118,600.0,0.7664,positive
+Minneriya National Park,Lake,15.83,95,600.0,0.6937,neutral
+Minneriya National Park,Family friendliness,11.5,69,600.0,0.7501,neutral
+Minneriya National Park,Ticket price,11.0,66,600.0,0.7497,neutral
+Minneriya National Park,Scenic view,10.5,63,600.0,0.7994,positive
+Minneriya National Park,Crowdedness,10.0,60,600.0,0.8313,negative
+Mirissa Beach,Beach,92.0,552,600.0,0.8173,positive
+Mirissa Beach,Restaurants,39.5,237,600.0,0.7991,positive
+Mirissa Beach,Waves,35.17,211,600.0,0.7798,positive
+Mirissa Beach,Cleanliness,26.67,160,600.0,0.8772,positive
+Mirissa Beach,Sea,20.83,125,600.0,0.7427,positive
+Mirissa Beach,Food quality,19.17,115,600.0,0.7517,positive
+Mirissa Beach,Sandy beach,18.5,111,600.0,0.7659,positive
+Mirissa Beach,Crowdedness,17.17,103,600.0,0.8536,negative
+Mirissa Beach,Scenic view,14.0,84,600.0,0.79,positive
+Mirissa Beach,Sunset view,12.33,74,600.0,0.8454,positive
+Mirissa Beach,Family friendliness,11.33,68,600.0,0.7756,positive
+Mirissa Beach,Accommodation,10.0,60,600.0,0.783,neutral
+Moon Plains,Scenic view,74.55,123,165.0,0.7717,positive
+Moon Plains,Mountain,47.88,79,165.0,0.7734,positive
+Moon Plains,Ticket price,35.15,58,165.0,0.7433,neutral
+Moon Plains,Viewpoint,23.64,39,165.0,0.8097,neutral
+Moon Plains,Weather condition,16.36,27,165.0,0.7896,negative
+Moon Plains,Wildlife,16.36,27,165.0,0.7674,neutral
+Moon Plains,Family friendliness,13.33,22,165.0,0.7491,positive
+Moon Plains,Entrance fee,12.12,20,165.0,0.814,neutral
+Moon Plains,Road access,12.12,20,165.0,0.672,neutral
+Moon Plains,Local guide,10.3,17,165.0,0.7682,positive
+Moonstone or Sandakada pahana,Sculptures,45.31,29,64.0,0.7855,positive
+Moonstone or Sandakada pahana,Wildlife,23.44,15,64.0,0.7627,neutral
+Moonstone or Sandakada pahana,Temple,18.75,12,64.0,0.7483,neutral
+Moonstone or Sandakada pahana,Ancient ruins,10.94,7,64.0,0.76,neutral
+Moonstone or Sandakada pahana,Elephants,10.94,7,64.0,0.7486,neutral
+Mount Lavinia Beach,Beach,85.6,428,500.0,0.8137,positive
+Mount Lavinia Beach,Restaurants,34.2,171,500.0,0.7929,positive
+Mount Lavinia Beach,Accommodation,33.0,165,500.0,0.7989,positive
+Mount Lavinia Beach,Cleanliness,28.4,142,500.0,0.873,positive
+Mount Lavinia Beach,Food quality,27.0,135,500.0,0.7425,positive
+Mount Lavinia Beach,Sea,26.2,131,500.0,0.7426,positive
+Mount Lavinia Beach,Crowdedness,17.4,87,500.0,0.8538,negative
+Mount Lavinia Beach,Scenic view,15.8,79,500.0,0.7903,positive
+Mount Lavinia Beach,Sunset view,15.4,77,500.0,0.8468,positive
+Mount Lavinia Beach,Sandy beach,14.8,74,500.0,0.7497,positive
+Mount Lavinia Beach,Family friendliness,14.2,71,500.0,0.7746,positive
+Mount Lavinia Beach,Service quality,11.8,59,500.0,0.8075,positive
+Mount Lavinia Beach,Safety,10.4,52,500.0,0.81,positive
+Mulgirigala Raja Maha Vihara,Temple,60.47,231,382.0,0.7974,positive
+Mulgirigala Raja Maha Vihara,Scenic view,52.09,199,382.0,0.803,positive
+Mulgirigala Raja Maha Vihara,Rock formation,43.19,165,382.0,0.7184,positive
+Mulgirigala Raja Maha Vihara,Stairs,41.62,159,382.0,0.7821,positive
+Mulgirigala Raja Maha Vihara,Cave,29.84,114,382.0,0.7705,positive
+Mulgirigala Raja Maha Vihara,Paintings,29.06,111,382.0,0.8002,positive
+Mulgirigala Raja Maha Vihara,Local guide,27.23,104,382.0,0.7817,positive
+Mulgirigala Raja Maha Vihara,Cave temple,22.51,86,382.0,0.8307,positive
+Mulgirigala Raja Maha Vihara,Buddha statue,21.2,81,382.0,0.7951,positive
+Mulgirigala Raja Maha Vihara,Ticket price,19.37,74,382.0,0.7682,neutral
+Mulgirigala Raja Maha Vihara,Public transport access,15.18,58,382.0,0.7841,positive
+Mulgirigala Raja Maha Vihara,Sculptures,14.66,56,382.0,0.7954,positive
+Mulgirigala Raja Maha Vihara,Peacefulness,13.61,52,382.0,0.8046,positive
+Mulgirigala Raja Maha Vihara,Entrance fee,10.73,41,382.0,0.8337,positive
+Muthurajawela Marsh,Birds,77.02,181,235.0,0.768,positive
+Muthurajawela Marsh,Boat service,57.45,135,235.0,0.7099,positive
+Muthurajawela Marsh,Local guide,47.66,112,235.0,0.7728,positive
+Muthurajawela Marsh,Lagoon,36.6,86,235.0,0.7772,neutral
+Muthurajawela Marsh,Wildlife,30.64,72,235.0,0.7878,positive
+Muthurajawela Marsh,Ticket price,15.74,37,235.0,0.7538,neutral
+Muthurajawela Marsh,Public transport access,12.34,29,235.0,0.7724,neutral
+Muthurajawela Marsh,Peacefulness,11.91,28,235.0,0.8271,positive
+Muthurajawela Marsh,Accommodation,10.21,24,235.0,0.7758,neutral
+Nagadipa Purana Vihara,Temple,75.15,124,165.0,0.779,neutral
+Nagadipa Purana Vihara,Boat service,62.42,103,165.0,0.734,neutral
+Nagadipa Purana Vihara,Hindu shrine,32.73,54,165.0,0.763,neutral
+Nagadipa Purana Vihara,Buddha statue,29.09,48,165.0,0.7608,neutral
+Nagadipa Purana Vihara,Ticket price,18.79,31,165.0,0.7126,neutral
+Nagadipa Purana Vihara,Public transport access,13.94,23,165.0,0.7557,neutral
+Nagadipa Purana Vihara,Road access,10.91,18,165.0,0.6906,positive
+Nagadipa Purana Vihara,Safety,10.3,17,165.0,0.8176,negative
+Nalanda Gedige,Temple,67.79,101,149.0,0.783,positive
+Nalanda Gedige,Lake,32.89,49,149.0,0.7408,neutral
+Nalanda Gedige,Hindu shrine,30.87,46,149.0,0.7661,neutral
+Nalanda Gedige,Value for money,27.52,41,149.0,0.799,positive
+Nalanda Gedige,Peacefulness,26.85,40,149.0,0.813,positive
+Nalanda Gedige,Sculptures,20.81,31,149.0,0.7819,positive
+Nalanda Gedige,Road access,18.79,28,149.0,0.6614,neutral
+Nalanda Gedige,Scenic view,10.74,16,149.0,0.7906,neutral
+Nalanda Gedige,Ancient ruins,10.07,15,149.0,0.7627,neutral
+Nalanda Gedige,Local guide,10.07,15,149.0,0.6973,neutral
+Nallur Kandaswamy Kovil Festival,Temple,76.47,13,17.0,0.7908,positive
+Nallur Kandaswamy Kovil Festival,Hindu shrine,52.94,9,17.0,0.7867,positive
+Negombo Beach,Beach,5430.0,543,10.0,0.8094,positive
+Negombo Beach,Cleanliness,3250.0,325,10.0,0.8706,negative
+Negombo Beach,Accommodation,1500.0,150,10.0,0.7873,neutral
+Negombo Beach,Sea,1420.0,142,10.0,0.7376,positive
+Negombo Beach,Sandy beach,1230.0,123,10.0,0.7488,positive
+Negombo Beach,Sunset view,920.0,92,10.0,0.8428,positive
+Negombo Beach,Restaurants,900.0,90,10.0,0.7898,positive
+Negombo Beach,Food quality,750.0,75,10.0,0.7235,positive
+Negombo Beach,Family friendliness,700.0,70,10.0,0.7617,positive
+Negombo Beach,Waves,670.0,67,10.0,0.7725,neutral
+Negombo Beach,Boat service,620.0,62,10.0,0.7577,neutral
+Negombo Beach,Scenic view,490.0,49,10.0,0.7831,positive
+Negombo Beach,Souvenir stalls,490.0,49,10.0,0.771,neutral
+Negombo Beach,Crowdedness,450.0,45,10.0,0.8476,negative
+Negombo Beach,Peacefulness,440.0,44,10.0,0.8,positive
+Negombo Beach,Safety,440.0,44,10.0,0.82,negative
+Negombo Beach,Value for money,260.0,26,10.0,0.8446,positive
+Negombo Beach,Weather condition,250.0,25,10.0,0.7688,negative
+Negombo Beach,Strong current,240.0,24,10.0,0.7942,negative
+Negombo Beach,Ticket price,230.0,23,10.0,0.8313,negative
+Negombo Beach,Service quality,210.0,21,10.0,0.7971,positive
+Negombo Beach,Road access,200.0,20,10.0,0.704,positive
+Negombo Beach,Market,140.0,14,10.0,0.7857,positive
+Negombo Beach,Shops,130.0,13,10.0,0.7292,neutral
+Negombo Beach,Water depth,120.0,12,10.0,0.7133,neutral
+Negombo Beach,Public transport access,100.0,10,10.0,0.81,neutral
+Negombo Beach,Birds,80.0,8,10.0,0.795,positive
+Negombo Beach,Cafes,80.0,8,10.0,0.725,neutral
+Negombo Beach,Local guide,60.0,6,10.0,0.7833,positive
+Negombo Beach,Noise level,60.0,6,10.0,0.7867,negative
+Negombo Beach,Stairs,60.0,6,10.0,0.7267,positive
+Negombo Beach,Accessibility,50.0,5,10.0,0.872,positive
+Negombo Beach,Church,50.0,5,10.0,0.76,neutral
+Negombo Beach,Fort,50.0,5,10.0,0.684,neutral
+Negombo Beach,Lagoon,50.0,5,10.0,0.772,neutral
+Negombo Fish Market,Market,2820.0,282,10.0,0.7801,positive
+Negombo Fish Market,Beach,930.0,93,10.0,0.7768,neutral
+Negombo Fish Market,Food quality,600.0,60,10.0,0.7547,positive
+Negombo Fish Market,Boat service,590.0,59,10.0,0.7654,neutral
+Negombo Fish Market,Sea,560.0,56,10.0,0.7064,neutral
+Negombo Fish Market,Crowdedness,520.0,52,10.0,0.795,negative
+Negombo Fish Market,Local guide,460.0,46,10.0,0.7435,neutral
+Negombo Fish Market,Cleanliness,440.0,44,10.0,0.865,negative
+Negombo Fish Market,Ticket price,420.0,42,10.0,0.7871,positive
+Negombo Fish Market,Souvenir stalls,320.0,32,10.0,0.7662,neutral
+Negombo Fish Market,Public transport access,310.0,31,10.0,0.791,neutral
+Negombo Fish Market,Accommodation,290.0,29,10.0,0.771,neutral
+Negombo Fish Market,Weather condition,230.0,23,10.0,0.7626,negative
+Negombo Fish Market,Value for money,220.0,22,10.0,0.8345,positive
+Negombo Fish Market,Birds,200.0,20,10.0,0.771,neutral
+Negombo Fish Market,Family friendliness,150.0,15,10.0,0.7493,positive
+Negombo Fish Market,Restaurants,140.0,14,10.0,0.7757,positive
+Negombo Fish Market,Lagoon,110.0,11,10.0,0.7509,neutral
+Negombo Fish Market,Noise level,110.0,11,10.0,0.7818,negative
+Negombo Fish Market,Guided tours,90.0,9,10.0,0.8289,positive
+Negombo Fish Market,Shops,90.0,9,10.0,0.6911,neutral
+Negombo Fish Market,Road access,80.0,8,10.0,0.6838,positive
+Negombo Fish Market,Sandy beach,80.0,8,10.0,0.6975,neutral
+Negombo Fish Market,Wildlife,80.0,8,10.0,0.7725,neutral
+Negombo Fish Market,Scenic view,70.0,7,10.0,0.7829,neutral
+Negombo Fish Market,Bridge,50.0,5,10.0,0.76,neutral
+Negombo Fish Market,Entrance fee,50.0,5,10.0,0.792,positive
+Negombo Fish Market,Fort,50.0,5,10.0,0.66,neutral
+Negombo Fish Market,Service quality,50.0,5,10.0,0.8,positive
+Negombo Fish Market,Stairs,50.0,5,10.0,0.692,neutral
+Negombo Fish Market,Temple,50.0,5,10.0,0.804,positive
+Nilavarai Bottomless Well,Cleanliness,18.28,17,93.0,0.8659,negative
+Nilavarai Bottomless Well,Water depth,13.98,13,93.0,0.6692,neutral
+Nilaveli Beach,Beach,95.59,260,272.0,0.8167,positive
+Nilaveli Beach,Cleanliness,43.38,118,272.0,0.8747,positive
+Nilaveli Beach,Peacefulness,29.41,80,272.0,0.784,positive
+Nilaveli Beach,Sandy beach,27.21,74,272.0,0.7789,positive
+Nilaveli Beach,Accommodation,26.1,71,272.0,0.7763,neutral
+Nilaveli Beach,Sea,23.16,63,272.0,0.7317,positive
+Nilaveli Beach,Waves,16.91,46,272.0,0.777,positive
+Nilaveli Beach,Restaurants,12.13,33,272.0,0.7812,neutral
+Nilaveli Beach,Crowdedness,11.4,31,272.0,0.8497,negative
+Old Parliament Building,Colonial architecture,24.3,69,284.0,0.7754,neutral
+Old Parliament Building,Sea,17.96,51,284.0,0.7224,neutral
+Old Parliament Building,Accommodation,14.44,41,284.0,0.7717,neutral
+Old Parliament Building,Beach,11.62,33,284.0,0.7685,neutral
+Old Parliament Building,Scenic view,11.27,32,284.0,0.7588,positive
+Old Parliament Building,Fort,10.56,30,284.0,0.6873,neutral
+Old Parliament Building,Sculptures,10.21,29,284.0,0.7655,neutral
+Pasikudah Beach,Beach,91.18,93,102.0,0.8196,positive
+Pasikudah Beach,Accommodation,45.1,46,102.0,0.7913,positive
+Pasikudah Beach,Sea,35.29,36,102.0,0.7222,positive
+Pasikudah Beach,Cleanliness,31.37,32,102.0,0.8762,positive
+Pasikudah Beach,Peacefulness,31.37,32,102.0,0.7625,positive
+Pasikudah Beach,Sandy beach,27.45,28,102.0,0.7836,positive
+Pasikudah Beach,Water depth,24.51,25,102.0,0.7712,positive
+Pasikudah Beach,Waves,20.59,21,102.0,0.7848,positive
+Pasikudah Beach,Coral reef,18.63,19,102.0,0.7937,positive
+Pasikudah Beach,Safety,16.67,17,102.0,0.8106,positive
+Pasikudah Beach,Crowdedness,15.69,16,102.0,0.8662,negative
+Pasikudah Beach,Family friendliness,15.69,16,102.0,0.7675,positive
+Pasikudah Beach,Scenic view,11.76,12,102.0,0.7917,positive
+Pasikudah Beach,Sunrise view,10.78,11,102.0,0.8491,positive
+Passikudah Beach,Beach,89.68,365,407.0,0.8175,positive
+Passikudah Beach,Accommodation,38.08,155,407.0,0.7937,positive
+Passikudah Beach,Sea,33.17,135,407.0,0.7333,positive
+Passikudah Beach,Cleanliness,30.22,123,407.0,0.878,positive
+Passikudah Beach,Peacefulness,28.99,118,407.0,0.7614,positive
+Passikudah Beach,Sandy beach,25.55,104,407.0,0.774,positive
+Passikudah Beach,Safety,20.15,82,407.0,0.7941,positive
+Passikudah Beach,Family friendliness,14.99,61,407.0,0.7711,positive
+Passikudah Beach,Coral reef,14.74,60,407.0,0.7717,positive
+Passikudah Beach,Water depth,14.0,57,407.0,0.7688,positive
+Passikudah Beach,Crowdedness,13.02,53,407.0,0.8585,negative
+Passikudah Beach,Waves,10.57,43,407.0,0.7702,neutral
+Pedro Tea Factory,Local guide,30.4,152,500.0,0.7752,positive
+Pedro Tea Factory,Tea plantation,25.4,127,500.0,0.8362,positive
+Pedro Tea Factory,Ticket price,24.4,122,500.0,0.7616,neutral
+Pedro Tea Factory,Scenic view,21.0,105,500.0,0.813,positive
+Pedro Tea Factory,Value for money,17.4,87,500.0,0.8326,positive
+Pedro Tea Factory,Service quality,13.0,65,500.0,0.7868,positive
+Pedro Tea Factory,Shops,12.8,64,500.0,0.6867,neutral
+Pedro Tea Factory,Guided tours,11.4,57,500.0,0.8193,positive
+Pettah Floating Market,Market,65.38,68,104.0,0.7841,neutral
+Pettah Floating Market,Shops,48.08,50,104.0,0.7424,neutral
+Pettah Floating Market,Food quality,19.23,20,104.0,0.704,neutral
+Pettah Floating Market,Crowdedness,17.31,18,104.0,0.8289,negative
+Pettah Floating Market,Souvenir stalls,17.31,18,104.0,0.7644,neutral
+Pettah Floating Market,Public transport access,14.42,15,104.0,0.7387,negative
+Pettah Floating Market,Restaurants,13.46,14,104.0,0.7743,neutral
+Pettah Floating Market,Value for money,13.46,14,104.0,0.8571,positive
+Pettah Floating Market,Ticket price,11.54,12,104.0,0.8067,positive
+Pettah Floating Market,Cleanliness,10.58,11,104.0,0.8691,negative
+Pettah Floating Market,Lake,10.58,11,104.0,0.6909,neutral
+Pidurangala Rock,Scenic view,81.8,409,500.0,0.7921,positive
+Pidurangala Rock,Rock formation,79.0,395,500.0,0.7317,positive
+Pidurangala Rock,Sunrise view,28.8,144,500.0,0.8383,positive
+Pidurangala Rock,Stairs,28.4,142,500.0,0.7721,neutral
+Pidurangala Rock,Sunset view,24.6,123,500.0,0.8366,positive
+Pidurangala Rock,Temple,21.4,107,500.0,0.7637,neutral
+Pidurangala Rock,Ticket price,20.8,104,500.0,0.7618,neutral
+Pidurangala Rock,Crowdedness,14.6,73,500.0,0.8419,negative
+Pidurangala Rock,Trail,13.0,65,500.0,0.7209,neutral
+Pidurangala Rock,Weather condition,10.8,54,500.0,0.757,negative
+Pidurangala Rock,Buddha statue,10.6,53,500.0,0.7868,neutral
+Pidurutalagala,Mountain,67.06,57,85.0,0.7551,neutral
+Pidurutalagala,Scenic view,57.65,49,85.0,0.7841,positive
+Pidurutalagala,Weather condition,17.65,15,85.0,0.7653,negative
+Pidurutalagala,Road access,16.47,14,85.0,0.6714,neutral
+Pidurutalagala,Ticket price,11.76,10,85.0,0.755,neutral
+Pinnawala Elephant Orphanage,Elephants,96.83,581,600.0,0.7864,positive
+Pinnawala Elephant Orphanage,River,42.0,252,600.0,0.7704,neutral
+Pinnawala Elephant Orphanage,Wildlife,34.0,204,600.0,0.7826,neutral
+Pinnawala Elephant Orphanage,Ticket price,21.67,130,600.0,0.757,neutral
+Pinnawala Elephant Orphanage,Value for money,15.33,92,600.0,0.8274,positive
+Pinnawala Elephant Orphanage,Family friendliness,14.5,87,600.0,0.7366,neutral
+Pitawala Pathana,Scenic view,59.26,32,54.0,0.7931,positive
+Pitawala Pathana,Mountain,33.33,18,54.0,0.7822,positive
+Pitawala Pathana,Weather condition,27.78,15,54.0,0.76,negative
+Pitawala Pathana,Road access,18.52,10,54.0,0.685,neutral
+Pitawala Pathana,Rock formation,16.67,9,54.0,0.7644,neutral
+Pitawala Pathana,Forest,14.81,8,54.0,0.785,positive
+Pitawala Pathana,Viewpoint,14.81,8,54.0,0.805,positive
+Pitawala Pathana,Family friendliness,12.96,7,54.0,0.76,neutral
+Pitawala Pathana,Trail,12.96,7,54.0,0.7571,positive
+Pitawala Pathana,Ticket price,11.11,6,54.0,0.7617,neutral
+Polhena Beach,Beach,85.78,181,211.0,0.8054,positive
+Polhena Beach,Sea,34.12,72,211.0,0.7197,positive
+Polhena Beach,Turtles,33.65,71,211.0,0.7885,positive
+Polhena Beach,Crowdedness,28.44,60,211.0,0.846,negative
+Polhena Beach,Coral reef,22.75,48,211.0,0.7608,positive
+Polhena Beach,Peacefulness,21.33,45,211.0,0.7733,positive
+Polhena Beach,Safety,20.85,44,211.0,0.7918,positive
+Polhena Beach,Cleanliness,19.91,42,211.0,0.8748,positive
+Polhena Beach,Family friendliness,18.48,39,211.0,0.7574,positive
+Polhena Beach,Water depth,17.06,36,211.0,0.7561,positive
+Polhena Beach,Waves,14.22,30,211.0,0.7847,positive
+Polhena Beach,Accommodation,13.27,28,211.0,0.7879,positive
+Polhena Beach,Sandy beach,10.43,22,211.0,0.7491,positive
+Polonnaruwa Vatadage,Ancient ruins,32.29,62,192.0,0.7848,positive
+Polonnaruwa Vatadage,Buddha statue,31.25,60,192.0,0.7867,neutral
+Polonnaruwa Vatadage,Sculptures,29.69,57,192.0,0.786,positive
+Polonnaruwa Vatadage,Weather condition,17.19,33,192.0,0.7339,negative
+Polonnaruwa Vatadage,Temple,16.67,32,192.0,0.7856,positive
+Polonnaruwa Vatadage,Local guide,14.58,28,192.0,0.7632,positive
+Polonnaruwa Vatadage,Heritage site,11.46,22,192.0,0.7964,neutral
+Polonnaruwa Vatadage,Museum,11.46,22,192.0,0.7791,neutral
+Popham's Arboretum,Local guide,40.25,64,159.0,0.7631,positive
+Popham's Arboretum,Wildlife,40.25,64,159.0,0.7909,positive
+Popham's Arboretum,Birds,27.67,44,159.0,0.7677,positive
+Popham's Arboretum,Forest,27.67,44,159.0,0.7836,positive
+Popham's Arboretum,Trail,19.5,31,159.0,0.7716,positive
+Popham's Arboretum,Ticket price,15.09,24,159.0,0.7671,neutral
+Popham's Arboretum,Service quality,11.32,18,159.0,0.8011,positive
+Popham's Arboretum,Peacefulness,10.69,17,159.0,0.8259,positive
+Rankoth Vehera,Stupa,72.41,42,58.0,0.7681,neutral
+Rankoth Vehera,Ancient ruins,22.41,13,58.0,0.7446,neutral
+Rankoth Vehera,Temple,15.52,9,58.0,0.7689,neutral
+Rankoth Vehera,Weather condition,12.07,7,58.0,0.7686,positive
+Richmond Castle,Local guide,29.38,57,194.0,0.776,positive
+Richmond Castle,Family friendliness,21.65,42,194.0,0.7748,neutral
+Richmond Castle,Ticket price,18.04,35,194.0,0.7734,neutral
+Richmond Castle,Entrance fee,14.43,28,194.0,0.8286,neutral
+Richmond Castle,Public transport access,11.86,23,194.0,0.7991,neutral
+Richmond Castle,Colonial architecture,10.82,21,194.0,0.7771,neutral
+Ridee Viharaya (silver Temple),Temple,81.08,60,74.0,0.7977,positive
+Ridee Viharaya (silver Temple),Scenic view,33.78,25,74.0,0.8,positive
+Ridee Viharaya (silver Temple),Peacefulness,24.32,18,74.0,0.8067,positive
+Ridee Viharaya (silver Temple),Sculptures,18.92,14,74.0,0.77,neutral
+Ridee Viharaya (silver Temple),Cave,17.57,13,74.0,0.7323,positive
+Ridee Viharaya (silver Temple),Food quality,16.22,12,74.0,0.7733,positive
+Ridee Viharaya (silver Temple),Rock formation,16.22,12,74.0,0.7233,neutral
+Ridee Viharaya (silver Temple),Buddha statue,14.86,11,74.0,0.7873,neutral
+Ridee Viharaya (silver Temple),Value for money,14.86,11,74.0,0.8073,positive
+Ridee Viharaya (silver Temple),Accommodation,12.16,9,74.0,0.8089,positive
+Ridee Viharaya (silver Temple),Mountain,12.16,9,74.0,0.7667,positive
+Ridee Viharaya (silver Temple),Local guide,10.81,8,74.0,0.7512,neutral
+Ridee Viharaya (silver Temple),Service quality,10.81,8,74.0,0.82,positive
+Ritigala Forest Monastery,Forest,55.79,130,233.0,0.7897,positive
+Ritigala Forest Monastery,Ancient ruins,45.49,106,233.0,0.7862,positive
+Ritigala Forest Monastery,Local guide,32.62,76,233.0,0.7764,positive
+Ritigala Forest Monastery,Trail,29.61,69,233.0,0.7487,neutral
+Ritigala Forest Monastery,Peacefulness,23.61,55,233.0,0.8131,positive
+Ritigala Forest Monastery,Ticket price,20.17,47,233.0,0.7477,neutral
+Ritigala Forest Monastery,Mountain,16.31,38,233.0,0.7558,neutral
+Ritigala Forest Monastery,Road access,16.31,38,233.0,0.6768,neutral
+Ritigala Forest Monastery,Public transport access,13.73,32,233.0,0.8012,neutral
+Ritigala Forest Monastery,Entrance fee,12.88,30,233.0,0.824,neutral
+Ritigala Forest Monastery,Value for money,11.59,27,233.0,0.8163,positive
+Royal Botanical Gardens,Peacefulness,18.5,111,600.0,0.8072,positive
+Royal Botanical Gardens,Cleanliness,16.17,97,600.0,0.8866,positive
+Royal Botanical Gardens,Ticket price,16.0,96,600.0,0.7819,neutral
+Royal Botanical Gardens,Bridge,13.0,78,600.0,0.7844,positive
+Royal Botanical Gardens,Weather condition,12.0,72,600.0,0.755,negative
+Ruwanweli Maha Seya,Stupa,56.4,282,500.0,0.7799,neutral
+Ruwanweli Maha Seya,Weather condition,19.0,95,500.0,0.7301,negative
+Ruwanweli Maha Seya,Temple,16.8,84,500.0,0.7769,neutral
+Ruwanweli Maha Seya,Buddha statue,14.4,72,500.0,0.7661,neutral
+Ruwanweli Maha Seya,Peacefulness,14.4,72,500.0,0.8011,positive
+Ruwanweli Maha Seya,Crowdedness,11.0,55,500.0,0.8429,negative
+Samadhi Statue,Sculptures,76.92,80,104.0,0.7852,positive
+Samadhi Statue,Buddha statue,57.69,60,104.0,0.7973,neutral
+Samadhi Statue,Peacefulness,26.92,28,104.0,0.8071,positive
+Samudra Parakrama,Lake,79.31,23,29.0,0.7391,positive
+Samudra Parakrama,Scenic view,34.48,10,29.0,0.822,positive
+Samudra Parakrama,Sea,34.48,10,29.0,0.708,neutral
+Samudra Parakrama,Peacefulness,27.59,8,29.0,0.835,positive
+Samudra Parakrama,Sunset view,24.14,7,29.0,0.8686,positive
+Sea Turtle Conservation Project (Koggala),Turtles,93.05,174,187.0,0.7925,positive
+Sea Turtle Conservation Project (Koggala),Sea,41.18,77,187.0,0.7195,neutral
+Sea Turtle Conservation Project (Koggala),Local guide,33.16,62,187.0,0.7524,neutral
+Sea Turtle Conservation Project (Koggala),Wildlife,25.67,48,187.0,0.7792,neutral
+Sea Turtle Conservation Project (Koggala),Ticket price,22.99,43,187.0,0.7623,neutral
+Sea Turtle Conservation Project (Koggala),Entrance fee,18.18,34,187.0,0.8365,neutral
+Sea Turtle Conservation Project (Koggala),Service quality,12.83,24,187.0,0.7892,positive
+Sea Turtle Conservation Project (Koggala),Beach,12.3,23,187.0,0.7774,neutral
+Sea Turtle Farm Galle Mahamodara,Turtles,85.6,428,500.0,0.8007,positive
+Sea Turtle Farm Galle Mahamodara,Sea,44.8,224,500.0,0.7291,positive
+Sea Turtle Farm Galle Mahamodara,Wildlife,22.6,113,500.0,0.7998,positive
+Sea Turtle Farm Galle Mahamodara,Service quality,22.2,111,500.0,0.8009,positive
+Sea Turtle Farm Galle Mahamodara,Family friendliness,13.8,69,500.0,0.7771,positive
+Sea Turtle Farm Galle Mahamodara,Cleanliness,11.0,55,500.0,0.8865,positive
+Sea Turtle Farm Galle Mahamodara,Beach,10.2,51,500.0,0.7878,positive
+Seema Malakaya Temple,Temple,83.96,267,318.0,0.7891,positive
+Seema Malakaya Temple,Lake,60.38,192,318.0,0.7071,positive
+Seema Malakaya Temple,Peacefulness,38.99,124,318.0,0.8106,positive
+Seema Malakaya Temple,Ticket price,22.33,71,318.0,0.7415,neutral
+Seema Malakaya Temple,Buddha statue,22.01,70,318.0,0.7997,neutral
+Seema Malakaya Temple,Scenic view,19.81,63,318.0,0.7876,positive
+Seema Malakaya Temple,Entrance fee,16.67,53,318.0,0.8253,neutral
+Seema Malakaya Temple,Sculptures,15.72,50,318.0,0.7856,positive
+Seenigama Muhudu Viharaya,Temple,64.91,37,57.0,0.7762,neutral
+Seenigama Muhudu Viharaya,Sea,36.84,21,57.0,0.699,neutral
+Seenigama Muhudu Viharaya,Boat service,35.09,20,57.0,0.691,neutral
+Seenigama Muhudu Viharaya,Beach,28.07,16,57.0,0.7762,neutral
+Seenigama Muhudu Viharaya,Peacefulness,15.79,9,57.0,0.8044,positive
+Seenigama Muhudu Viharaya,Scenic view,15.79,9,57.0,0.7811,positive
+Seenigama Muhudu Viharaya,Road access,14.04,8,57.0,0.6238,neutral
+Seruwila Mangala Raja Maha Vihara,Temple,58.54,24,41.0,0.7533,neutral
+Seruwila Mangala Raja Maha Vihara,Buddha statue,36.59,15,41.0,0.748,neutral
+Seruwila Mangala Raja Maha Vihara,Stupa,36.59,15,41.0,0.7547,neutral
+Seruwila Mangala Raja Maha Vihara,Road access,21.95,9,41.0,0.75,positive
+Seruwila Mangala Raja Maha Vihara,Hindu shrine,14.63,6,41.0,0.7567,neutral
+Seruwila Mangala Raja Maha Vihara,Peacefulness,14.63,6,41.0,0.84,positive
+Seruwila Mangala Raja Maha Vihara,Forest,12.2,5,41.0,0.752,neutral
+Sigiriya Lion Rock,Scenic view,56.67,306,540.0,0.8027,positive
+Sigiriya Lion Rock,Rock formation,48.33,261,540.0,0.7048,neutral
+Sigiriya Lion Rock,Stairs,38.7,209,540.0,0.7766,neutral
+Sigiriya Lion Rock,Local guide,23.52,127,540.0,0.7639,neutral
+Sigiriya Lion Rock,Ticket price,20.37,110,540.0,0.7853,neutral
+Sigiriya Lion Rock,Fortress,17.41,94,540.0,0.7874,positive
+Sigiriya Lion Rock,Crowdedness,17.04,92,540.0,0.8435,negative
+Sigiriya Lion Rock,Weather condition,14.63,79,540.0,0.757,negative
+Sigiriya Lion Rock,Murals,14.07,76,540.0,0.7979,positive
+Sigiriya Lion Rock,Ancient ruins,13.7,74,540.0,0.7876,positive
+Sigiriya Lion Rock,Heritage site,11.11,60,540.0,0.7997,neutral
+Sigiriya Lion Rock,Value for money,10.19,55,540.0,0.8691,negative
+Sigiriya Lion Rock,Paintings,10.0,54,540.0,0.7863,positive
+Single Tree Hill,Scenic view,80.95,51,63.0,0.8047,positive
+Single Tree Hill,Mountain,61.9,39,63.0,0.7267,positive
+Single Tree Hill,Temple,50.79,32,63.0,0.7837,neutral
+Single Tree Hill,Tea plantation,38.1,24,63.0,0.8242,positive
+Single Tree Hill,Road access,33.33,21,63.0,0.6843,positive
+Single Tree Hill,Lake,31.75,20,63.0,0.718,positive
+Single Tree Hill,Trail,30.16,19,63.0,0.7305,neutral
+Single Tree Hill,Public transport access,11.11,7,63.0,0.7714,neutral
+Single Tree Hill,Viewpoint,11.11,7,63.0,0.76,neutral
+Sinharaja Forest Reserve,Forest,78.49,343,437.0,0.7928,positive
+Sinharaja Forest Reserve,Local guide,59.27,259,437.0,0.7763,positive
+Sinharaja Forest Reserve,Birds,43.71,191,437.0,0.7661,neutral
+Sinharaja Forest Reserve,Wildlife,38.67,169,437.0,0.7806,neutral
+Sinharaja Forest Reserve,Weather condition,36.16,158,437.0,0.7454,negative
+Sinharaja Forest Reserve,Leeches,31.12,136,437.0,0.8006,negative
+Sinharaja Forest Reserve,Waterfall,29.06,127,437.0,0.7915,positive
+Sinharaja Forest Reserve,Trail,25.86,113,437.0,0.7697,positive
+Sinharaja Forest Reserve,Ticket price,13.5,59,437.0,0.7897,neutral
+Sinharaja Forest Reserve,Accommodation,12.59,55,437.0,0.784,positive
+Sinharaja Forest Reserve,Scenic view,10.3,45,437.0,0.7782,positive
+Sinharaja Forest Reserve,Heritage site,10.07,44,437.0,0.8018,neutral
+Sithulpawwa Rock Temple,Temple,78.02,71,91.0,0.7896,positive
+Sithulpawwa Rock Temple,Scenic view,41.76,38,91.0,0.7879,positive
+Sithulpawwa Rock Temple,Rock formation,36.26,33,91.0,0.7158,positive
+Sithulpawwa Rock Temple,Wildlife,32.97,30,91.0,0.7853,neutral
+Sithulpawwa Rock Temple,Road access,31.87,29,91.0,0.7031,neutral
+Sithulpawwa Rock Temple,Elephants,23.08,21,91.0,0.7552,neutral
+Sithulpawwa Rock Temple,Forest,23.08,21,91.0,0.7619,neutral
+Sithulpawwa Rock Temple,Peacefulness,20.88,19,91.0,0.7853,positive
+Sithulpawwa Rock Temple,Mountain,18.68,17,91.0,0.7365,positive
+Sithulpawwa Rock Temple,Cave,15.38,14,91.0,0.7114,neutral
+Sithulpawwa Rock Temple,Cave temple,15.38,14,91.0,0.8114,neutral
+Sithulpawwa Rock Temple,Weather condition,14.29,13,91.0,0.7477,negative
+Sithulpawwa Rock Temple,Ancient ruins,13.19,12,91.0,0.745,neutral
+Sithulpawwa Rock Temple,Stupa,13.19,12,91.0,0.7667,neutral
+Sithulpawwa Rock Temple,Birds,10.99,10,91.0,0.74,neutral
+Somawathiya Chaitya,Buddha statue,42.17,35,83.0,0.7629,neutral
+Somawathiya Chaitya,Temple,42.17,35,83.0,0.7743,neutral
+Somawathiya Chaitya,Stupa,38.55,32,83.0,0.7619,neutral
+Somawathiya Chaitya,Elephants,31.33,26,83.0,0.7638,neutral
+Somawathiya Chaitya,Road access,28.92,24,83.0,0.7133,positive
+Somawathiya Chaitya,Forest,22.89,19,83.0,0.7695,neutral
+Somawathiya Chaitya,Weather condition,15.66,13,83.0,0.7708,negative
+Somawathiya Chaitya,Peacefulness,10.84,9,83.0,0.7867,positive
+Sri Pada / Adam's Peak,Sunrise view,3200.0,320,10.0,0.8338,positive
+Sri Pada / Adam's Peak,Mountain,3010.0,301,10.0,0.73,neutral
+Sri Pada / Adam's Peak,Scenic view,2460.0,246,10.0,0.8081,positive
+Sri Pada / Adam's Peak,Stairs,2400.0,240,10.0,0.772,neutral
+Sri Pada / Adam's Peak,Crowdedness,1490.0,149,10.0,0.8481,negative
+Sri Pada / Adam's Peak,Weather condition,1360.0,136,10.0,0.769,negative
+Sri Pada / Adam's Peak,Trail,1170.0,117,10.0,0.7268,neutral
+Sri Pada / Adam's Peak,Shops,1030.0,103,10.0,0.7254,neutral
+Sri Pada / Adam's Peak,Temple,930.0,93,10.0,0.7776,neutral
+Sri Pada / Adam's Peak,Accommodation,740.0,74,10.0,0.7622,neutral
+Sri Pada / Adam's Peak,Food quality,650.0,65,10.0,0.6945,neutral
+Sri Pada / Adam's Peak,Cleanliness,530.0,53,10.0,0.8589,negative
+Sri Pada / Adam's Peak,Buddha statue,520.0,52,10.0,0.7642,neutral
+Sri Pada / Adam's Peak,Family friendliness,480.0,48,10.0,0.7396,neutral
+Sri Pada / Adam's Peak,Souvenir stalls,480.0,48,10.0,0.7667,neutral
+Sri Pada / Adam's Peak,Toilets,450.0,45,10.0,0.7782,neutral
+Sri Pada / Adam's Peak,Ticket price,390.0,39,10.0,0.7603,neutral
+Sri Pada / Adam's Peak,Local guide,360.0,36,10.0,0.7292,neutral
+Sri Pada / Adam's Peak,Value for money,320.0,32,10.0,0.8225,positive
+Sri Pada / Adam's Peak,Public transport access,310.0,31,10.0,0.74,neutral
+Sri Pada / Adam's Peak,Waterfall,290.0,29,10.0,0.7897,positive
+Sri Pada / Adam's Peak,Road access,280.0,28,10.0,0.6582,neutral
+Sri Pada / Adam's Peak,Rock formation,270.0,27,10.0,0.7244,neutral
+Sri Pada / Adam's Peak,Sunset view,240.0,24,10.0,0.8308,positive
+Sri Pada / Adam's Peak,Peacefulness,230.0,23,10.0,0.8087,positive
+Sri Pada / Adam's Peak,Safety,230.0,23,10.0,0.827,negative
+Sri Pada / Adam's Peak,Forest,170.0,17,10.0,0.7941,neutral
+Sri Pada / Adam's Peak,Hindu shrine,170.0,17,10.0,0.7471,neutral
+Sri Pada / Adam's Peak,River,170.0,17,10.0,0.7576,neutral
+Sri Pada / Adam's Peak,Service quality,140.0,14,10.0,0.8071,positive
+Sri Pada / Adam's Peak,Signage,130.0,13,10.0,0.7,neutral
+Sri Pada / Adam's Peak,Water depth,110.0,11,10.0,0.7236,neutral
+Sri Pada / Adam's Peak,Wildlife,110.0,11,10.0,0.7655,neutral
+Sri Pada / Adam's Peak,Cafes,90.0,9,10.0,0.76,neutral
+Sri Pada / Adam's Peak,Leeches,90.0,9,10.0,0.8022,negative
+Sri Pada / Adam's Peak,Entrance fee,70.0,7,10.0,0.7943,neutral
+Sri Pada / Adam's Peak,Restaurants,70.0,7,10.0,0.7829,neutral
+Sri Pada / Adam's Peak,Heritage site,50.0,5,10.0,0.76,neutral
+Sri Pada / Adam's Peak,Lake,50.0,5,10.0,0.704,positive
+Sri Pada / Adam's Peak,Market,50.0,5,10.0,0.772,neutral
+Sri Pada / Adam's Peak,Strong current,50.0,5,10.0,0.8,negative
+St Benedict's Monastery - Adisham,Scenic view,31.51,69,219.0,0.7943,positive
+St Benedict's Monastery - Adisham,Shops,18.72,41,219.0,0.6815,neutral
+St Benedict's Monastery - Adisham,Road access,15.53,34,219.0,0.6932,neutral
+St Benedict's Monastery - Adisham,Ticket price,15.07,33,219.0,0.7442,neutral
+St Benedict's Monastery - Adisham,Cleanliness,14.16,31,219.0,0.8929,positive
+St Benedict's Monastery - Adisham,Mountain,10.05,22,219.0,0.7391,neutral
+St Clair's Falls,Waterfall,75.59,192,254.0,0.7939,positive
+St Clair's Falls,Scenic view,51.57,131,254.0,0.7854,positive
+St Clair's Falls,Road access,32.28,82,254.0,0.6899,positive
+St Clair's Falls,Weather condition,15.35,39,254.0,0.7867,negative
+St Clair's Falls,Viewpoint,14.17,36,254.0,0.8022,neutral
+St Clair's Falls,Tea plantation,10.24,26,254.0,0.8408,positive
+St Lucia's Cathedral,Church,95.0,38,40.0,0.7847,positive
+St Lucia's Cathedral,Peacefulness,25.0,10,40.0,0.808,positive
+St Lucia's Cathedral,Cleanliness,15.0,6,40.0,0.9067,positive
+St Lucia's Cathedral,Parking,15.0,6,40.0,0.8,positive
+St Lucia's Cathedral,Sculptures,15.0,6,40.0,0.8,positive
+St Lucia's Cathedral,Service quality,15.0,6,40.0,0.8167,positive
+St. Mary's Church,Church,84.17,234,278.0,0.7959,positive
+St. Mary's Church,Paintings,21.22,59,278.0,0.8014,positive
+St. Mary's Church,Peacefulness,17.63,49,278.0,0.8106,positive
+Statue of Parakramabahu I,Sculptures,76.77,76,99.0,0.7858,positive
+Statue of Parakramabahu I,Lake,25.25,25,99.0,0.7112,neutral
+Statue of Parakramabahu I,Ancient ruins,14.14,14,99.0,0.7829,positive
+Statue of Parakramabahu I,Rock formation,13.13,13,99.0,0.7046,neutral
+Statue of Parakramabahu I,Local guide,11.11,11,99.0,0.7436,neutral
+Temple of the Sacred Tooth Relic,Temple,69.37,437,630.0,0.7883,positive
+Temple of the Sacred Tooth Relic,Crowdedness,27.14,171,630.0,0.8301,negative
+Temple of the Sacred Tooth Relic,Buddha statue,22.86,144,630.0,0.7733,neutral
+Temple of the Sacred Tooth Relic,Local guide,18.57,117,630.0,0.7679,positive
+Temple of the Sacred Tooth Relic,Ticket price,17.14,108,630.0,0.7579,neutral
+Temple of the Sacred Tooth Relic,Museum,14.29,90,630.0,0.7827,positive
+Temple of the Sacred Tooth Relic,Peacefulness,10.48,66,630.0,0.8012,positive
+Trincomalee Beach,Beach,86.76,59,68.0,0.818,positive
+Trincomalee Beach,Cleanliness,47.06,32,68.0,0.865,positive
+Trincomalee Beach,Sea,27.94,19,68.0,0.7253,positive
+Trincomalee Beach,Accommodation,23.53,16,68.0,0.7638,neutral
+Trincomalee Beach,Peacefulness,20.59,14,68.0,0.7829,positive
+Trincomalee Beach,Sandy beach,16.18,11,68.0,0.7727,positive
+Trincomalee Beach,Crowdedness,14.71,10,68.0,0.838,negative
+Trincomalee Beach,Safety,14.71,10,68.0,0.824,positive
+Trincomalee Beach,Weather condition,14.71,10,68.0,0.776,negative
+Trincomalee Beach,Family friendliness,10.29,7,68.0,0.7886,positive
+Trincomalee Beach,Hindu shrine,10.29,7,68.0,0.7914,positive
+Trincomalee Beach,Scenic view,10.29,7,68.0,0.8286,positive
+Trincomalee Beach,Temple,10.29,7,68.0,0.7857,positive
+Trincomalee War Cemetery,Cleanliness,30.31,77,254.0,0.8847,positive
+Trincomalee War Cemetery,Peacefulness,24.02,61,254.0,0.8184,positive
+Trincomalee War Cemetery,Road access,12.99,33,254.0,0.6764,positive
+Turtle Conservation Project Turtle Watch,Turtles,95.47,358,375.0,0.7887,positive
+Turtle Conservation Project Turtle Watch,Beach,57.87,217,375.0,0.775,neutral
+Turtle Conservation Project Turtle Watch,Local guide,42.13,158,375.0,0.7535,neutral
+Turtle Conservation Project Turtle Watch,Sea,36.53,137,375.0,0.7091,neutral
+Turtle Conservation Project Turtle Watch,Wildlife,26.93,101,375.0,0.7863,neutral
+Turtle Conservation Project Turtle Watch,Ticket price,19.73,74,375.0,0.7582,neutral
+Turtle Conservation Project Turtle Watch,Crowdedness,16.0,60,375.0,0.8223,negative
+Turtle Conservation Project Turtle Watch,Service quality,14.4,54,375.0,0.7826,positive
+Turtle Conservation Project Turtle Watch,Sandy beach,13.87,52,375.0,0.6915,neutral
+Turtle Conservation Project Turtle Watch,Family friendliness,13.6,51,375.0,0.7427,neutral
+Turtle Conservation Project Turtle Watch,Value for money,10.13,38,375.0,0.8421,negative
+Twin Baths (Kuttam Pokuna),Cleanliness,10.63,27,254.0,0.8681,positive
+Udawalawe National Park,Elephants,74.67,448,600.0,0.7816,neutral
+Udawalawe National Park,Wildlife,71.17,427,600.0,0.7933,positive
+Udawalawe National Park,Local guide,55.67,334,600.0,0.7969,positive
+Udawalawe National Park,Birds,51.17,307,600.0,0.7721,neutral
+Udawalawe National Park,Accommodation,14.0,84,600.0,0.78,neutral
+Udawalawe National Park,Ticket price,11.0,66,600.0,0.8041,positive
+Unawatuna Beach,Beach,94.74,126,133.0,0.8184,positive
+Unawatuna Beach,Restaurants,43.61,58,133.0,0.7931,positive
+Unawatuna Beach,Cleanliness,30.83,41,133.0,0.8702,positive
+Unawatuna Beach,Sea,30.08,40,133.0,0.7455,positive
+Unawatuna Beach,Sandy beach,24.81,33,133.0,0.7497,positive
+Unawatuna Beach,Waves,21.05,28,133.0,0.775,positive
+Unawatuna Beach,Food quality,20.3,27,133.0,0.7393,positive
+Unawatuna Beach,Crowdedness,18.8,25,133.0,0.8168,negative
+Unawatuna Beach,Family friendliness,16.54,22,133.0,0.7718,positive
+Unawatuna Beach,Accommodation,15.04,20,133.0,0.796,positive
+Unawatuna Beach,Peacefulness,12.78,17,133.0,0.7859,positive
+Unawatuna Beach,Safety,12.03,16,133.0,0.8,positive
+Unawatuna Beach,Ticket price,12.03,16,133.0,0.7912,positive
+Unawatuna Beach,Cafes,11.28,15,133.0,0.8053,positive
+Unawatuna Beach,Value for money,11.28,15,133.0,0.8267,positive
+Uppuveli Beach,Beach,96.94,95,98.0,0.8145,positive
+Uppuveli Beach,Cleanliness,39.8,39,98.0,0.8677,negative
+Uppuveli Beach,Restaurants,30.61,30,98.0,0.806,positive
+Uppuveli Beach,Sea,27.55,27,98.0,0.7356,positive
+Uppuveli Beach,Accommodation,25.51,25,98.0,0.7872,neutral
+Uppuveli Beach,Sandy beach,23.47,23,98.0,0.7687,positive
+Uppuveli Beach,Peacefulness,18.37,18,98.0,0.7844,positive
+Uppuveli Beach,Food quality,14.29,14,98.0,0.7386,positive
+Uppuveli Beach,Crowdedness,13.27,13,98.0,0.8369,negative
+Uppuveli Beach,Boat service,10.2,10,98.0,0.754,neutral
+Uppuveli Beach,Safety,10.2,10,98.0,0.82,positive
+Uppuveli Beach,Waves,10.2,10,98.0,0.784,positive
+Victoria Park of Nuwara Eliya,Family friendliness,28.0,140,500.0,0.7581,positive
+Victoria Park of Nuwara Eliya,Cleanliness,24.2,121,500.0,0.8817,positive
+Victoria Park of Nuwara Eliya,Ticket price,17.4,87,500.0,0.7655,neutral
+Victoria Park of Nuwara Eliya,Entrance fee,17.0,85,500.0,0.8466,neutral
+Viharamahadevi Park,Family friendliness,43.6,218,500.0,0.7572,positive
+Viharamahadevi Park,Cleanliness,21.2,106,500.0,0.8858,positive
+Viharamahadevi Park,Crowdedness,15.6,78,500.0,0.8095,negative
+Viharamahadevi Park,Buddha statue,14.4,72,500.0,0.8125,positive
+Viharamahadevi Park,Sculptures,13.6,68,500.0,0.7868,positive
+Viharamahadevi Park,Peacefulness,13.4,67,500.0,0.7928,positive
+Viharamahadevi Park,Trail,13.0,65,500.0,0.7628,neutral
+Visit Kanneliya Rain Forest,Forest,76.06,54,71.0,0.7937,positive
+Visit Kanneliya Rain Forest,Waterfall,52.11,37,71.0,0.7908,positive
+Visit Kanneliya Rain Forest,Local guide,47.89,34,71.0,0.7571,neutral
+Visit Kanneliya Rain Forest,Weather condition,46.48,33,71.0,0.7424,negative
+Visit Kanneliya Rain Forest,Birds,28.17,20,71.0,0.781,positive
+Visit Kanneliya Rain Forest,Leeches,28.17,20,71.0,0.798,negative
+Visit Kanneliya Rain Forest,Trail,21.13,15,71.0,0.7667,neutral
+Visit Kanneliya Rain Forest,Wildlife,18.31,13,71.0,0.8031,positive
+Visit Kanneliya Rain Forest,Ticket price,16.9,12,71.0,0.7658,neutral
+Visit Kanneliya Rain Forest,Food quality,15.49,11,71.0,0.72,neutral
+Visit Kanneliya Rain Forest,Family friendliness,12.68,9,71.0,0.7467,positive
+Wasgamuwa National Park,Elephants,87.69,57,65.0,0.7856,positive
+Wasgamuwa National Park,Birds,53.85,35,65.0,0.7646,neutral
+Wasgamuwa National Park,Wildlife,52.31,34,65.0,0.7735,neutral
+Wasgamuwa National Park,River,21.54,14,65.0,0.7886,positive
+Wasgamuwa National Park,Crowdedness,18.46,12,65.0,0.8767,negative
+Wasgamuwa National Park,Local guide,18.46,12,65.0,0.7392,neutral
+Wasgamuwa National Park,Road access,15.38,10,65.0,0.729,neutral
+Wasgamuwa National Park,Scenic view,15.38,10,65.0,0.792,positive
+Wasgamuwa National Park,Food quality,13.85,9,65.0,0.7022,neutral
+Wasgamuwa National Park,Forest,13.85,9,65.0,0.7733,neutral
+Wasgamuwa National Park,Leopards,12.31,8,65.0,0.7725,neutral
+Wasgamuwa National Park,Ticket price,12.31,8,65.0,0.7375,neutral
+Wasgamuwa National Park,Peacefulness,10.77,7,65.0,0.8057,positive
+Weherahena Buddhist Temple,Temple,73.49,61,83.0,0.7813,positive
+Weherahena Buddhist Temple,Buddha statue,56.63,47,83.0,0.8047,positive
+Weherahena Buddhist Temple,Sculptures,45.78,38,83.0,0.7805,neutral
+Weherahena Buddhist Temple,Paintings,36.14,30,83.0,0.7907,positive
+Weherahena Buddhist Temple,Local guide,18.07,15,83.0,0.7467,neutral
+Weherahena Buddhist Temple,Ticket price,15.66,13,83.0,0.7485,neutral
+Weherahena Buddhist Temple,Peacefulness,14.46,12,83.0,0.7967,positive
+Weherahena Buddhist Temple,Scenic view,13.25,11,83.0,0.7982,positive
+Weherahena Buddhist Temple,Murals,12.05,10,83.0,0.818,positive
+Weherahena Buddhist Temple,Public transport access,10.84,9,83.0,0.7889,neutral
+Weligama Beach,Beach,86.91,166,191.0,0.8151,positive
+Weligama Beach,Waves,62.3,119,191.0,0.7402,positive
+Weligama Beach,Cleanliness,29.84,57,191.0,0.8758,positive
+Weligama Beach,Sandy beach,19.9,38,191.0,0.7568,positive
+Weligama Beach,Accommodation,18.85,36,191.0,0.7833,neutral
+Weligama Beach,Restaurants,16.23,31,191.0,0.8,positive
+Weligama Beach,Sea,15.71,30,191.0,0.7487,positive
+Weligama Beach,Crowdedness,15.18,29,191.0,0.831,negative
+Weligama Beach,Family friendliness,10.47,20,191.0,0.787,positive
+Weligama Beach,Food quality,10.47,20,191.0,0.756,positive
+Weligama Beach,Peacefulness,10.47,20,191.0,0.786,positive
+Weligama Beach,Safety,10.47,20,191.0,0.787,positive
+Wewurukannala Vihara,Temple,79.84,103,129.0,0.7835,positive
+Wewurukannala Vihara,Buddha statue,51.16,66,129.0,0.7991,neutral
+Wewurukannala Vihara,Elephants,41.09,53,129.0,0.7736,neutral
+Wewurukannala Vihara,Sculptures,41.09,53,129.0,0.7792,neutral
+Wewurukannala Vihara,Wildlife,20.93,27,129.0,0.76,neutral
+Wewurukannala Vihara,Paintings,20.16,26,129.0,0.7769,neutral
+Wewurukannala Vihara,Ticket price,14.73,19,129.0,0.7489,neutral
+Wewurukannala Vihara,Murals,13.95,18,129.0,0.7944,positive
+Wewurukannala Vihara,Entrance fee,10.85,14,129.0,0.7943,neutral
+Whale Watching in Mirissa,Whales,100.0,103,103.0,0.7988,positive
+Whale Watching in Mirissa,Boat service,56.31,58,103.0,0.7386,positive
+Whale Watching in Mirissa,Dolphins,42.72,44,103.0,0.7695,neutral
+Whale Watching in Mirissa,Service quality,33.01,34,103.0,0.8235,positive
+Whale Watching in Mirissa,Sea,32.04,33,103.0,0.7182,neutral
+Whale Watching in Mirissa,Wildlife,17.48,18,103.0,0.7922,positive
+Whale Watching in Mirissa,Ticket price,13.59,14,103.0,0.7957,positive
+Whale Watching in Mirissa,Food quality,12.62,13,103.0,0.7585,positive
+Wilpattu National Park,Leopards,70.8,354,500.0,0.7703,neutral
+Wilpattu National Park,Wildlife,67.8,339,500.0,0.7851,neutral
+Wilpattu National Park,Birds,59.2,296,500.0,0.7627,neutral
+Wilpattu National Park,Elephants,48.0,240,500.0,0.7618,neutral
+Wilpattu National Park,Local guide,19.6,98,500.0,0.7596,neutral
+Wilpattu National Park,Forest,18.0,90,500.0,0.7698,neutral
+Wilpattu National Park,Scenic view,14.2,71,500.0,0.8115,positive
+Wilpattu National Park,Road access,13.6,68,500.0,0.6937,neutral
+Wilpattu National Park,Ticket price,13.6,68,500.0,0.7599,neutral
+Wilpattu National Park,Crowdedness,13.0,65,500.0,0.8489,negative
+Wilpattu National Park,Trail,10.0,50,500.0,0.7616,neutral
+Wolvendaal Church,Church,84.62,99,117.0,0.7875,positive
+Wolvendaal Church,Colonial architecture,23.93,28,117.0,0.7764,neutral
+Wolvendaal Church,Service quality,11.97,14,117.0,0.7771,positive
+Wolvendaal Church,Local guide,11.11,13,117.0,0.7615,positive
+Yala National Park,Wildlife,73.42,58,79.0,0.7824,neutral
+Yala National Park,Leopards,65.82,52,79.0,0.77,neutral
+Yala National Park,Birds,55.7,44,79.0,0.7614,neutral
+Yala National Park,Elephants,55.7,44,79.0,0.7736,neutral
+Yala National Park,Crowdedness,22.78,18,79.0,0.8344,negative
+Yala National Park,Road access,20.25,16,79.0,0.7362,positive
+Yala National Park,Local guide,15.19,12,79.0,0.7333,neutral
+Yala National Park,Accommodation,13.92,11,79.0,0.7655,neutral
+Yala National Park,Ticket price,13.92,11,79.0,0.7555,neutral
+Yala National Park,Beach,11.39,9,79.0,0.7756,neutral
+Yala National Park,Trail,11.39,9,79.0,0.78,neutral
+Yala National Park,Forest,10.13,8,79.0,0.7775,neutral
+Yapahuwa Rock Fortress,Scenic view,58.82,50,85.0,0.7926,positive
+Yapahuwa Rock Fortress,Rock formation,56.47,48,85.0,0.7125,positive
+Yapahuwa Rock Fortress,Stairs,54.12,46,85.0,0.7891,neutral
+Yapahuwa Rock Fortress,Fortress,44.71,38,85.0,0.7847,positive
+Yapahuwa Rock Fortress,Ancient ruins,30.59,26,85.0,0.7838,neutral
+Yapahuwa Rock Fortress,Sculptures,22.35,19,85.0,0.7874,positive
+Yapahuwa Rock Fortress,Temple,20.0,17,85.0,0.7729,neutral
+Yapahuwa Rock Fortress,Trail,16.47,14,85.0,0.72,neutral
+Yapahuwa Rock Fortress,Weather condition,16.47,14,85.0,0.7543,negative
+Yapahuwa Rock Fortress,Cave,12.94,11,85.0,0.72,neutral
+Yapahuwa Rock Fortress,Museum,11.76,10,85.0,0.752,neutral
+Yapahuwa Rock Fortress,Mountain,10.59,9,85.0,0.74,neutral

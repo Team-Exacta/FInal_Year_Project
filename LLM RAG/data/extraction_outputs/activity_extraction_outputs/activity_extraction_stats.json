@@ -1,0 +1,185 @@
+{
+  "input_rows": 44928,
+  "reviews_with_activity": 26406,
+  "reviews_without_activity": 18522,
+  "activity_triples": 55778,
+  "unique_places_with_activities": 169,
+  "unique_activity_types": 79,
+  "sentiment_counts": {
+    "neutral": 26651,
+    "positive": 26526,
+    "negative": 2601
+  },
+  "top_activities": [
+    [
+      "Temple visit",
+      8529
+    ],
+    [
+      "Photography",
+      4005
+    ],
+    [
+      "Religious visit",
+      3821
+    ],
+    [
+      "Relaxing",
+      2846
+    ],
+    [
+      "Safari",
+      2819
+    ],
+    [
+      "Hiking",
+      2657
+    ],
+    [
+      "Fort visit",
+      2645
+    ],
+    [
+      "Waterfall visit",
+      2567
+    ],
+    [
+      "Shopping",
+      2562
+    ],
+    [
+      "Swimming",
+      2175
+    ],
+    [
+      "Museum visit",
+      1801
+    ],
+    [
+      "Sunset watching",
+      1747
+    ],
+    [
+      "Ancient city visit",
+      1728
+    ],
+    [
+      "Tea factory visit",
+      1363
+    ],
+    [
+      "Surfing",
+      1282
+    ],
+    [
+      "Sunrise watching",
+      1261
+    ],
+    [
+      "Tea plantation visit",
+      1242
+    ],
+    [
+      "Boat ride",
+      1019
+    ],
+    [
+      "Trekking",
+      885
+    ],
+    [
+      "Viewpoint visit",
+      811
+    ]
+  ],
+  "top_places": [
+    [
+      "Temple of the Sacred Tooth Relic",
+      2222
+    ],
+    [
+      "Bahiravokanda Vihara Buddha Statue",
+      1479
+    ],
+    [
+      "Galle Dutch Fort",
+      1445
+    ],
+    [
+      "Ancient City of Polonnaruwa",
+      1442
+    ],
+    [
+      "Handunugoda Tea Estate",
+      1407
+    ],
+    [
+      "Pedro Tea Factory",
+      1379
+    ],
+    [
+      "Sri Pada / Adam's PeakUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",
+      1285
+    ],
+    [
+      "Dutch Hospital Shopping Precinct",
+      1066
+    ],
+    [
+      "Madu River Safari by Buddhi",
+      1031
+    ],
+    [
+      "Kelaniya Raja Maha Vihara",
+      1009
+    ],
+    [
+      "Udawalawe National Park",
+      983
+    ],
+    [
+      "Little Adam's Peak View Point",
+      979
+    ],
+    [
+      "Ceylon Tea Museum",
+      961
+    ],
+    [
+      "Dambulla Cave Temple",
+      906
+    ],
+    [
+      "Hikkaduwa Beach",
+      899
+    ],
+    [
+      "Gal Vihara",
+      895
+    ],
+    [
+      "Gangaramaya Temple",
+      850
+    ],
+    [
+      "Galle Fort Lighthouse",
+      845
+    ],
+    [
+      "Lover's Leap Falls",
+      838
+    ],
+    [
+      "Jaffna Fort",
+      818
+    ]
+  ],
+  "outputs": {
+    "jsonl": "/mnt/data/review_activity_triples.jsonl",
+    "json": "/mnt/data/review_activity_triples.json",
+    "csv": "/mnt/data/review_activity_triples.csv",
+    "summary_csv": "/mnt/data/activity_summary_by_place.csv",
+    "no_activity_csv": "/mnt/data/reviews_with_no_activity.csv",
+    "stats_json": "/mnt/data/activity_extraction_stats.json"
+  }
+}

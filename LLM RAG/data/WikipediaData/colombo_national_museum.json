@@ -1,0 +1,18 @@
+{
+  "poi_name": "Colombo National Museum",
+  "category": "Museum",
+  "city": "Colombo",
+  "district": "Colombo District",
+  "province": "Western Province",
+  "country": "Sri Lanka",
+  "latitude": "6.9104168",
+  "longitude": "79.8609194",
+  "full_address": "National Museum of Colombo, Sir Marcus Fernando Mawatha, Town Hall, Cinnamon Gardens, Slave Island, Colombo, Colombo District, Western Province, 00300, Sri Lanka",
+  "wikipedia_title": "Colombo National Museum",
+  "wikipedia_desc": "Museum in Colombo, Sri Lanka",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/National_Museum_of_Colombo",
+  "wikipedia_link_type": "article_or_closest_article",
+  "has_real_article": true,
+  "rag_text": "DESTINATION: Colombo National Museum\nTYPE: Museum\nLOCATION: Colombo, Colombo District, Western Province, Sri Lanka\nCOORDINATES: 6.9104168, 79.8609194\nADDRESS: National Museum of Colombo, Sir Marcus Fernando Mawatha, Town Hall, Cinnamon Gardens, Slave Island, Colombo, Colombo District, Western Province, 00300, Sri Lanka\nDESCRIPTION: Museum in Colombo, Sri Lanka\nSOURCE: https://en.wikipedia.org/wiki/Colombo_National_Museum\n\nThe Colombo National Museum, also known as the Sri Lanka National Museum, is a museum in Colombo and the largest in Sri Lanka. Founded in 1877 and maintained by the Department of National Museums, it holds collections of significant importance to Sri Lanka, such as the regalia of the Kandyan monarchs, as well as many other exhibits relating the country's cultural and natural heritage.",
+  "text_length": 813
+}

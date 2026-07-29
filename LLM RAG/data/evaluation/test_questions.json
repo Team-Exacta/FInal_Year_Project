@@ -1,0 +1,602 @@
+[
+  {
+    "id": "Q_ACT_01",
+    "intent": "activity_query",
+    "question": "Where are the best places for swimming in Sri Lanka?",
+    "ground_truth": "The best places for swimming in Sri Lanka include Polhena Beach, Goyambokka Beach, Unawatuna Beach, Diyaluma Falls, Hiriketiya Beach, Nilaveli Beach, and Casuarina Beach."
+  },
+  {
+    "id": "Q_ACT_02",
+    "intent": "activity_query",
+    "question": "Which destinations are good for bird watching in Sri Lanka?",
+    "ground_truth": "Good destinations for bird watching in Sri Lanka include Kalametiya Eco Bird Watching, Beddegana Wetland Park, and Kumana National Park."
+  },
+  {
+    "id": "Q_ACT_03",
+    "intent": "activity_query",
+    "question": "What are the best spots for hiking in Sri Lanka?",
+    "ground_truth": "The best hiking spots in Sri Lanka include Ella Rock, Little Adam's Peak View Point, Horton Plains National Park, Knuckles Mountain Range, Single Tree Hill, Pidurangala Rock, Aberdeen Falls, Sinharaja Forest Reserve, Devon Falls, and Nine Arches Bridge."
+  },
+  {
+    "id": "Q_ACT_04",
+    "intent": "activity_query",
+    "question": "Which places are popular for exploring ancient ruins in Sri Lanka?",
+    "ground_truth": "Popular places for exploring ancient ruins in Sri Lanka include the Ancient City of Polonnaruwa, Ritigala Forest Monastery, Polonnaruwa Vatadage, and Yapahuwa Rock Fortress."
+  },
+  {
+    "id": "Q_ACT_05",
+    "intent": "activity_query",
+    "question": "Where can I visit famous Buddhist temples in Sri Lanka?",
+    "ground_truth": "Famous Buddhist temples and religious sites in Sri Lanka include Nagadipa Purana Vihara, the Temple of the Sacred Tooth Relic, Kelaniya Raja Maha Vihara, Gangaramaya Temple, Rankoth Vehera, Sithulpawwa Rock Temple, and Weherahena Buddhist Temple."
+  },
+  {
+    "id": "Q_ACT_06",
+    "intent": "activity_query",
+    "question": "Where can I experience a wildlife safari in Sri Lanka?",
+    "ground_truth": "Top places for wildlife safari experiences in Sri Lanka include Gal Oya National Park, Hurulu Eco Park, Kaudulla National Park, Kumana National Park, and the Elephant Transit Home."
+  },
+  {
+    "id": "Q_ACT_07",
+    "intent": "activity_query",
+    "question": "What are the best places for boating and boat rides in Sri Lanka?",
+    "ground_truth": "The best places for boating and boat rides in Sri Lanka include Madu River Safari by Buddhi, Muthurajawela Marsh, Koggala Lake, Gal Oya National Park, Gregory Lake, Nagadipa Purana Vihara, and Seenigama Muhudu Viharaya."
+  },
+  {
+    "id": "Q_ACT_08",
+    "intent": "activity_query",
+    "question": "What are the best locations for bird watching in Sri Lanka?",
+    "ground_truth": "The best bird watching locations in Sri Lanka include Kalametiya Eco Bird Watching, Beddegana Wetland Park, and Kumana National Park."
+  },
+  {
+    "id": "Q_ACT_09",
+    "intent": "activity_query",
+    "question": "Where can I go for scenic photography and viewpoint visits in Sri Lanka?",
+    "ground_truth": "Top destinations for scenic photography and viewpoint visits in Sri Lanka include Baker's Falls, Beddegana Wetland Park, Brief Garden - Bevis Bawa, Coconut Tree Hill, Devon Falls, Diyaluma Falls, Dondra Head Lighthouse, Galle Fort Lighthouse, Kandy View Point, and Horton Plains National Park."
+  },
+  {
+    "id": "Q_ACT_10",
+    "intent": "activity_query",
+    "question": "Where can I go surfing and whale watching in Sri Lanka?",
+    "ground_truth": "The top surfing destinations in Sri Lanka include Weligama Beach, Hiriketiya Beach, Arugam Bay, and Kabalana Beach. For whale watching, Mirissa is the top destination."
+  },
+  {
+    "id": "Q_FEA_01",
+    "intent": "feature_query",
+    "question": "Which heritage sites feature ancient ruins?",
+    "ground_truth": "Heritage sites that feature ancient ruins include the Ancient City of Polonnaruwa, Sigiriya Lion Rock, Yapahuwa Rock Fortress, and Ritigala Forest Monastery."
+  },
+  {
+    "id": "Q_FEA_02",
+    "intent": "feature_query",
+    "question": "Which places have tea plantations and a scenic view?",
+    "ground_truth": "Places with tea plantations and scenic views include Lipton's Seat, Pedro Tea Factory, Lover's Leap Falls, and Ceylon Tea Museum."
+  },
+  {
+    "id": "Q_FEA_03",
+    "intent": "feature_query",
+    "question": "Which temples are located in caves?",
+    "ground_truth": "Temples located in caves or associated with cave structures include Dambulla Cave Temple, Isurumuniya Temple, and Gal Vihara."
+  },
+  {
+    "id": "Q_FEA_04",
+    "intent": "feature_query",
+    "question": "Which places have both sculptures and paintings?",
+    "ground_truth": "Places featuring both sculptures and paintings include Dambulla Cave Temple, Yapahuwa Rock Fortress, Buduruwagala Temple, and Weherahena Buddhist Temple."
+  },
+  {
+    "id": "Q_FEA_05",
+    "intent": "feature_query",
+    "question": "Which beaches are known for their sunset views?",
+    "ground_truth": "Beaches known for sunset views include Negombo Beach, Mirissa Beach, and Arugam Bay."
+  },
+  {
+    "id": "Q_FEA_06",
+    "intent": "feature_query",
+    "question": "Which places have a museum?",
+    "ground_truth": "Places that have or feature a museum include the Colombo National Museum and the Temple of the Sacred Tooth Relic."
+  },
+  {
+    "id": "Q_FEA_07",
+    "intent": "feature_query",
+    "question": "Which places have a fort?",
+    "ground_truth": "Places with a fort include Jaffna Fort, Batticaloa Fort, and Sigiriya Lion Rock, an ancient rock fortress."
+  },
+  {
+    "id": "Q_FEA_08",
+    "intent": "feature_query",
+    "question": "Which locations have a bridge?",
+    "ground_truth": "Locations featuring a bridge include Bogoda Wooden Bridge, Matara Paravi Duwa Temple, Negombo Fish Market, Demodara Loop, Royal Botanical Gardens, and Ella Rock."
+  },
+  {
+    "id": "Q_FEA_09",
+    "intent": "feature_query",
+    "question": "Which places are associated with a lagoon?",
+    "ground_truth": "Kalametiya Eco Bird Watching is associated with a lagoon."
+  },
+  {
+    "id": "Q_FEA_10",
+    "intent": "feature_query",
+    "question": "Which beaches are noted for their shallow water depth?",
+    "ground_truth": "Beaches noted for shallow water depth include Pasikudah Beach, Casuarina Beach, and Polhena Beach."
+  },
+  {
+    "id": "Q_LOC_01",
+    "intent": "location_query",
+    "question": "What are the top attractions in the Kandy District?",
+    "ground_truth": "Top attractions in the Kandy District include Ambuluwawa Tower, Ceylon Tea Museum, Kandy Lake, Kandy View Point, and Royal Botanical Gardens."
+  },
+  {
+    "id": "Q_LOC_02",
+    "intent": "location_query",
+    "question": "What places can I visit in the Nuwara Eliya District?",
+    "ground_truth": "Places you can visit in the Nuwara Eliya District include Ambewela Farms, Baker's Falls, Devon Falls, Galway's Land National Park, and Gartmore Falls."
+  },
+  {
+    "id": "Q_LOC_03",
+    "intent": "location_query",
+    "question": "Which tourist attractions are located in the Galle District?",
+    "ground_truth": "Tourist attractions located in the Galle District include Bentota Beach, Dutch Hospital Shopping Precinct, Galle Dutch Fort, Galle Fort Lighthouse, and Handunugoda Tea Estate."
+  },
+  {
+    "id": "Q_LOC_04",
+    "intent": "location_query",
+    "question": "What are the main destinations in the Matara District?",
+    "ground_truth": "Main destinations in the Matara District include Coconut Tree Hill, Hiriketiya Beach, Jungle Beach, Mirissa Beach, and Polhena Beach."
+  },
+  {
+    "id": "Q_LOC_05",
+    "intent": "location_query",
+    "question": "What are some notable places in the Anuradhapura District?",
+    "ground_truth": "Notable places in the Anuradhapura District include Hurulu Eco Park, Jaya Sri Maha Bodhi, Mihintale, Ritigala Forest Monastery, and Ruwanweli Maha Seya."
+  },
+  {
+    "id": "Q_LOC_06",
+    "intent": "location_query",
+    "question": "What are the main attractions in the Colombo District?",
+    "ground_truth": "Main attractions in the Colombo District include Beddegana Wetland Park, Colombo Lotus Tower, Colombo National Museum, Dehiwala Zoo - Sri Lanka, and Diyatha Uyana."
+  },
+  {
+    "id": "Q_LOC_07",
+    "intent": "location_query",
+    "question": "What are the best spots to visit in the Trincomalee District?",
+    "ground_truth": "The best spots to visit in the Trincomalee District include Fort Frederick, Kanniya Hot Springs, Marble Beach, Nilaveli Beach, and Trincomalee Beach."
+  },
+  {
+    "id": "Q_LOC_08",
+    "intent": "location_query",
+    "question": "What is there to explore in the Badulla District?",
+    "ground_truth": "In the Badulla District, you can explore Bambarakanda Falls, Bogoda Wooden Bridge, Demodara Loop, Diyaluma Falls, and Dunhinda Falls."
+  },
+  {
+    "id": "Q_LOC_09",
+    "intent": "location_query",
+    "question": "Which places should I visit in the Monaragala District?",
+    "ground_truth": "Places you should visit in the Monaragala District include Buduruwagala Temple, Kataragama Temple, Lunugamvehera National Park, Maligawila Buddha Statue, and Udawalawe National Park."
+  },
+  {
+    "id": "Q_LOC_10",
+    "intent": "location_query",
+    "question": "What to see around the Hambantota District?",
+    "ground_truth": "Around the Hambantota District, you can see Goyambokka Beach, Hummanaya Blow Hole, and Kirinda Viharaya."
+  },
+  {
+    "id": "Q_COM_01",
+    "intent": "comparison_query",
+    "question": "What are the main differences between Yala National Park and Udawalawe National Park?",
+    "ground_truth": "Both Yala and Udawalawe National Parks are renowned for wildlife safaris and elephant watching. However, Yala National Park is famous for its leopard population and offers a broader range of wildlife viewing, though it can become quite crowded. In contrast, Udawalawe National Park is highly regarded for its large elephant population and features on-site accommodation, but it is not known for leopards."
+  },
+  {
+    "id": "Q_COM_02",
+    "intent": "comparison_query",
+    "question": "How does Sigiriya Lion Rock compare to Pidurangala Rock for visitors?",
+    "ground_truth": "Both Sigiriya Lion Rock and Pidurangala Rock offer excellent hiking and scenic views in the same area. Sigiriya Lion Rock is an ancient rock fortress that features extensive ruins, a museum, and significant historical value, but it has a much higher entrance fee. Pidurangala Rock, while lacking the ancient ruins, is a popular alternative for hiking that offers breathtaking sunset views, a lower ticket price, and is generally less crowded."
+  },
+  {
+    "id": "Q_COM_03",
+    "intent": "comparison_query",
+    "question": "Can you compare Arugam Bay and Weligama Beach?",
+    "ground_truth": "Arugam Bay and Weligama Beach are both highly popular destinations for surfing. Arugam Bay is famous for its world-class waves, peaceful atmosphere, and surf shops, though it can get crowded during peak season. Weligama Beach also offers excellent waves for surfing but is distinguished by being a family-friendly, sandy beach that is highly accessible for beginners."
+  },
+  {
+    "id": "Q_COM_04",
+    "intent": "comparison_query",
+    "question": "Compare the experiences of visiting Victoria Park of Nuwara Eliya versus Ella Rock.",
+    "ground_truth": "Victoria Park of Nuwara Eliya and Ella Rock offer very different experiences. Victoria Park is a clean, family-friendly destination focused on relaxing, featuring well-maintained gardens in Nuwara Eliya. Ella Rock, on the other hand, is a rugged viewpoint in Badulla District that requires hiking along a trail, rewarding visitors with scenic mountain views, waterfalls, and nearby attractions like the Nine Arches Bridge."
+  },
+  {
+    "id": "Q_COM_05",
+    "intent": "comparison_query",
+    "question": "What are the differences between Unawatuna Beach and Mirissa Beach?",
+    "ground_truth": "Both Unawatuna and Mirissa are popular coastal destinations in the South. Unawatuna Beach is known for its calm waters, making it an excellent family-friendly spot for safe swimming, relaxing, and enjoying nearby cafes. Mirissa Beach also offers sandy shores and swimming, but it stands out for its surfing waves, spectacular sunset watching, and scenic viewpoints."
+  },
+  {
+    "id": "Q_COM_06",
+    "intent": "comparison_query",
+    "question": "Compare Ruwanweli Maha Seya and Polonnaruwa Vatadage.",
+    "ground_truth": "Ruwanweli Maha Seya and Polonnaruwa Vatadage are both significant historical and religious sites, but they belong to different eras and locations. Ruwanweli Maha Seya is a massive, highly revered ancient stupa located in the sacred city of Anuradhapura. The Polonnaruwa Vatadage is a prominent heritage site in Polonnaruwa, featuring a distinct circular structure with ancient ruins, stone sculptures, and a central Buddha statue."
+  },
+  {
+    "id": "Q_COM_07",
+    "intent": "comparison_query",
+    "question": "How do Gal Oya National Park and Madu River Safari by Buddhi compare for boat tours?",
+    "ground_truth": "Both locations offer boat-based experiences but with different focuses. Gal Oya National Park offers boat safaris on a large lake where visitors can spot elephants, birds, and forest wildlife in a highly peaceful, remote setting. Madu River Safari by Buddhi provides boat rides through river mangroves, offering a family-friendly experience that includes a temple visit, fish spa treatments, and scenic river views."
+  },
+  {
+    "id": "Q_COM_08",
+    "intent": "comparison_query",
+    "question": "Compare the Colombo National Museum and the Temple of the Sacred Tooth Relic.",
+    "ground_truth": "The Colombo National Museum is a cultural institution focused on Sri Lanka's history, showcasing ancient ruins, royal regalia, and historical artifacts. The Temple of the Sacred Tooth Relic in Kandy is primarily an active, highly sacred religious site that houses a relic of the Buddha; it also features its own museum and involves significant cultural and religious rituals."
+  },
+  {
+    "id": "Q_COM_09",
+    "intent": "comparison_query",
+    "question": "What is the difference between Minneriya National Park and Kaudulla National Park?",
+    "ground_truth": "Minneriya and Kaudulla National Parks are both top destinations for elephant watching and jeep safaris, featuring lakes and birdlife. The main difference lies in the seasonal movement of elephants between the two parks. Both can experience crowdedness, but Minneriya is famous for 'The Gathering' of elephants during the dry season, while Kaudulla is highly rated as an alternative that also boasts significant elephant herds."
+  },
+  {
+    "id": "Q_COM_10",
+    "intent": "comparison_query",
+    "question": "Compare Galle Dutch Fort and Jaffna Fort.",
+    "ground_truth": "Both Galle Dutch Fort and Jaffna Fort are historic colonial-era heritage sites with scenic views. Galle Dutch Fort is located in the South, featuring extensive preservation, beaches, museums, and a vibrant scene of restaurants and boutiques. Jaffna Fort is located in the North and offers significant historical value and scenic coastal views, but it lacks the extensive commercialized restaurant and boutique scene found in Galle."
+  },
+  {
+    "id": "Q_EXP_01",
+    "intent": "explanation_query",
+    "question": "Explain about Sigiriya Lion Rock.",
+    "ground_truth": "Evidence shows Sigiriya Lion Rock features scenic views, ancient ruins including a fortress, and well-preserved murals, though visitors note a steep climb with stairs and a high ticket price."
+  },
+  {
+    "id": "Q_EXP_02",
+    "intent": "explanation_query",
+    "question": "Explain about Ella Rock.",
+    "ground_truth": "Ella Rock is recommended based on visitor evidence highlighting it as a great place for hiking that features waterfalls, trails, rock formations, and amazing views."
+  },
+  {
+    "id": "Q_EXP_03",
+    "intent": "explanation_query",
+    "question": "Explain about Arugam Bay.",
+    "ground_truth": "Evidence indicates Arugam Bay is excellent for surfing and swimming, featuring a peaceful sandy beach with good waves and food, though it can get crowded."
+  },
+  {
+    "id": "Q_EXP_04",
+    "intent": "explanation_query",
+    "question": "Explain about Victoria Park of Nuwara Eliya.",
+    "ground_truth": "Victoria Park of Nuwara Eliya is recommended because evidence shows it is a well-maintained, clean garden that is family-friendly and good for relaxing walks."
+  },
+  {
+    "id": "Q_EXP_05",
+    "intent": "explanation_query",
+    "question": "Explain about the Temple of the Sacred Tooth Relic.",
+    "ground_truth": "Evidence highlights the Temple of the Sacred Tooth Relic as a deeply peaceful, culturally important site containing a Buddha statue, though it charges an entrance fee and can be crowded."
+  },
+  {
+    "id": "Q_EXP_06",
+    "intent": "explanation_query",
+    "question": "Explain about Galle Fort Lighthouse.",
+    "ground_truth": "Galle Fort Lighthouse is recommended based on evidence showing it offers scenic sunset views of the sea and beach, making it great for photography."
+  },
+  {
+    "id": "Q_EXP_07",
+    "intent": "explanation_query",
+    "question": "Explain about Horton Plains National Park.",
+    "ground_truth": "Evidence indicates Horton Plains National Park is an excellent location for hiking and trekking, featuring scenic mountain trails, waterfalls, and wildlife like birds, though visitors should be prepared for varying weather."
+  },
+  {
+    "id": "Q_EXP_08",
+    "intent": "explanation_query",
+    "question": "Explain about Sri Pada / Adam's Peak.",
+    "ground_truth": "Sri Pada is recommended because evidence highlights it as a deeply peaceful heritage site with scenic mountain and sunrise views, though the trail involves many stairs and leeches."
+  },
+  {
+    "id": "Q_EXP_09",
+    "intent": "explanation_query",
+    "question": "Explain about the Ancient City of Polonnaruwa.",
+    "ground_truth": "Evidence supports the Ancient City of Polonnaruwa as a highly rated heritage site where visitors can explore ancient ruins and temples, though weather conditions can be a factor."
+  },
+  {
+    "id": "Q_EXP_10",
+    "intent": "explanation_query",
+    "question": "Explain about Yala National Park.",
+    "ground_truth": "Yala National Park is recommended based on evidence that it is a premier location for safaris, offering frequent wildlife sightings including elephants, leopards, and birds with the help of local guides."
+  },
+  {
+    "id": "Q_NEA_01",
+    "intent": "nearby_query",
+    "question": "Can you provide a simple list of the names of places to visit near Mirissa Beach?",
+    "ground_truth": "Places near Mirissa Beach include Coconut Tree Hill, Weligama Beach, and Polhena Beach."
+  },
+  {
+    "id": "Q_NEA_02",
+    "intent": "nearby_query",
+    "question": "What are the names of the attractions located around Ella Rock?",
+    "ground_truth": "Attractions around Ella Rock include Ravana Ella Falls, Nine Arches Bridge, and Little Adam's Peak View Point."
+  },
+  {
+    "id": "Q_NEA_03",
+    "intent": "nearby_query",
+    "question": "Please list the names of the places close to the Temple of the Sacred Tooth Relic.",
+    "ground_truth": "Close to the Temple of the Sacred Tooth Relic, you can visit Kandy Lake, Kandy View Point, and Bahiravokanda Vihara Buddha Statue."
+  },
+  {
+    "id": "Q_NEA_04",
+    "intent": "nearby_query",
+    "question": "Provide a simple list of interesting places near Sigiriya Lion Rock.",
+    "ground_truth": "Near Sigiriya Lion Rock, you can visit Pidurangala Rock, Hurulu Eco Park, and Dambulla Cave Temple."
+  },
+  {
+    "id": "Q_NEA_05",
+    "intent": "nearby_query",
+    "question": "What are the names of the places I should see around Galle Dutch Fort?",
+    "ground_truth": "Around Galle Dutch Fort, you can visit Galle Fort Lighthouse, Sea Turtle Farm Galle Mahamodara, and the Japanese Peace Pagoda."
+  },
+  {
+    "id": "Q_NEA_06",
+    "intent": "nearby_query",
+    "question": "Places to visit near Nuwara Eliya?",
+    "ground_truth": "Places near Nuwara Eliya include Single Tree Hill, Galway's Land National Park, Gregory Lake, Lover's Leap Falls, Pedro Tea Factory, Moon Plains, Hakgala Botanic Gardens, and Ambewela Farms."
+  },
+  {
+    "id": "Q_NEA_07",
+    "intent": "nearby_query",
+    "question": "What attractions are close to Yala National Park?",
+    "ground_truth": "Attractions close to Yala National Park include Sithulpawwa Rock Temple, Kataragama Temple, Kirinda Viharaya, Lunugamvehera National Park, Maligawila Buddha Statue, Buduruwagala Temple, Kalametiya Eco Bird Watching, and Elephant Transit Home (ETH)."
+  },
+  {
+    "id": "Q_NEA_08",
+    "intent": "nearby_query",
+    "question": "Are there any good spots near Arugam Bay?",
+    "ground_truth": "Good spots near Arugam Bay include Kumana National Park, Little Adam's Peak View Point, Demodara Loop, Lunugamvehera National Park, and Sithulpawwa Rock Temple."
+  },
+  {
+    "id": "Q_NEA_09",
+    "intent": "nearby_query",
+    "question": "What can I visit around Anuradhapura?",
+    "ground_truth": "Around Anuradhapura, you can visit Isurumuniya Temple, Lovamahapaya Brazen Palace, Jaya Sri Maha Bodhi, Moonstone or Sandakada pahana, Ruwanweli Maha Seya, Twin Baths (Kuttam Pokuna), Dagoba of Thuparama, and Abhayagiri Dagaba."
+  },
+  {
+    "id": "Q_NEA_10",
+    "intent": "nearby_query",
+    "question": "Recommendations for places near Trincomalee?",
+    "ground_truth": "Places near Trincomalee include Trincomalee War Cemetery, Uppuveli Beach, Fort Frederick, Kanniya Hot Springs, Nilaveli Beach, Marble Beach, Seruwila Mangala Raja Maha Vihara, and Hurulu Eco Park."
+  },
+  {
+    "id": "Q_FAC_01",
+    "intent": "facility_query",
+    "question": "What are some tourist spots that feature on-site restaurants?",
+    "ground_truth": "The tourist spots that feature on-site restaurants include Negombo Beach, Negombo Fish Market, and Sri Pada / Adam's Peak."
+  },
+  {
+    "id": "Q_FAC_02",
+    "intent": "facility_query",
+    "question": "What are some attractions that feature steps or stairs?",
+    "ground_truth": "Attractions that feature steps or stairs include Sri Pada / Adam's Peak, Yapahuwa Rock Fortress, and Laxapana Falls."
+  },
+  {
+    "id": "Q_FAC_03",
+    "intent": "facility_query",
+    "question": "What are some locations that offer value for money and require an entrance fee?",
+    "ground_truth": "Locations that require an entrance fee include Ancient City of Polonnaruwa, Ceylon Tea Museum, and Colombo Lotus Tower."
+  },
+  {
+    "id": "Q_FAC_04",
+    "intent": "facility_query",
+    "question": "What are some places that feature a local guide or guide service?",
+    "ground_truth": "Places that offer a local guide include Negombo Fish Market, Sri Pada / Adam's Peak, and Handunugoda Tea Estate."
+  },
+  {
+    "id": "Q_FAC_05",
+    "intent": "facility_query",
+    "question": "What are some temples and sites in Sri Lanka that feature donation boxes?",
+    "ground_truth": "Temples and sites that feature donation boxes include Angurukaramulla Temple, Bahiravokanda Vihara Buddha Statue, and Kalutara Bodhiya."
+  },
+  {
+    "id": "Q_FAC_06",
+    "intent": "facility_query",
+    "question": "What are some places in Sri Lanka that provide tourist accommodation?",
+    "ground_truth": "Places that provide tourist accommodation include Negombo Beach, Sri Pada / Adam's Peak, and Negombo Fish Market."
+  },
+  {
+    "id": "Q_FAC_07",
+    "intent": "facility_query",
+    "question": "What are some locations that provide easily accessible tuk tuk services?",
+    "ground_truth": "Locations that provide easily accessible tuk tuk services include Lover's Leap Falls, Jungle Beach, and Japanese Peace Pagoda."
+  },
+  {
+    "id": "Q_FAC_08",
+    "intent": "facility_query",
+    "question": "What are some beaches or attractions that provide toilet facilities?",
+    "ground_truth": "Beaches or attractions that provide toilet facilities include Sri Pada / Adam's Peak, Casuarina Beach, and Ritigala Forest Monastery."
+  },
+  {
+    "id": "Q_FAC_09",
+    "intent": "facility_query",
+    "question": "What are some attractions that provide parking facilities?",
+    "ground_truth": "Attractions that provide parking facilities include Negombo Beach, Diyatha Uyana, and Henerathgoda Botanical Garden."
+  },
+  {
+    "id": "Q_FAC_10",
+    "intent": "facility_query",
+    "question": "What are some places that provide access to shops or souvenir shops?",
+    "ground_truth": "Places that provide access to shops or souvenir shops include Sri Pada / Adam's Peak, Negombo Beach, and Negombo Fish Market."
+  },
+  {
+    "id": "Q_PAT_01",
+    "intent": "place_attribute_query",
+    "question": "What are the features, activities, and facilities available at Sigiriya Lion Rock?",
+    "ground_truth": "The features and activities at Sigiriya Lion Rock include Scenic view, Rock formation, Stairs, Local guide, Ticket price, and Fortress."
+  },
+  {
+    "id": "Q_PAT_02",
+    "intent": "place_attribute_query",
+    "question": "What are the features, activities, and facilities available at Temple of the Sacred Tooth Relic?",
+    "ground_truth": "The features and activities at Temple of the Sacred Tooth Relic include Religious visit, Temple visit, Temple, Crowdedness, Buddha statue, and Local guide."
+  },
+  {
+    "id": "Q_PAT_03",
+    "intent": "place_attribute_query",
+    "question": "What are the features, activities, and facilities available at Yala National Park?",
+    "ground_truth": "The features and activities at Yala National Park include Safari, Wildlife, Leopards, Birds, Elephants, and Crowdedness."
+  },
+  {
+    "id": "Q_PAT_04",
+    "intent": "place_attribute_query",
+    "question": "What are the features, activities, and facilities available at Mirissa Beach?",
+    "ground_truth": "The features and activities at Mirissa Beach include Relaxing, Surfing, Swimming, Sunset watching, Beach, and Restaurants."
+  },
+  {
+    "id": "Q_PAT_05",
+    "intent": "place_attribute_query",
+    "question": "What are the features, activities, and facilities available at Galle Dutch Fort?",
+    "ground_truth": "The features and activities at Galle Dutch Fort include Fort visit, Shopping, Sunset watching, Fort, Shops, and Scenic view."
+  },
+  {
+    "id": "Q_PAT_06",
+    "intent": "place_attribute_query",
+    "question": "What are the features, activities, and facilities available at Ella Rock?",
+    "ground_truth": "The features and activities at Ella Rock include Hiking, Scenic view, Trail, Rock formation, Local guide, and Mountain."
+  },
+  {
+    "id": "Q_PAT_07",
+    "intent": "place_attribute_query",
+    "question": "What are the features, activities, and facilities available at Horton Plains National Park?",
+    "ground_truth": "The features and activities at Horton Plains National Park include Hiking, Waterfall visit, Trekking, Scenic view, Waterfall, and Trail."
+  },
+  {
+    "id": "Q_PAT_08",
+    "intent": "place_attribute_query",
+    "question": "What are the features, activities, and facilities available at Pinnawala Elephant Orphanage?",
+    "ground_truth": "The features and activities at Pinnawala Elephant Orphanage include Photography, Elephant watching, Elephants, River, Wildlife, and Ticket price."
+  },
+  {
+    "id": "Q_PAT_09",
+    "intent": "place_attribute_query",
+    "question": "What are the features, activities, and facilities available at Colombo Lotus Tower?",
+    "ground_truth": "The features and activities at Colombo Lotus Tower include Viewpoint visit, Scenic view, Ticket price, Viewpoint, Value for money, and Restaurants."
+  },
+  {
+    "id": "Q_PAT_10",
+    "intent": "place_attribute_query",
+    "question": "What are the features, activities, and facilities available at Arugam Bay?",
+    "ground_truth": "The features and activities at Arugam Bay include Surfing, Relaxing, Swimming, Shopping, Beach, and Waves."
+  },
+  {
+    "id": "Q_ACT_11",
+    "intent": "activity_query",
+    "question": "What are the best locations for snorkelling in Sri Lanka?",
+    "ground_truth": "The best locations for snorkelling include Polhena Beach, Hikkaduwa Beach, Jungle Beach, and Victoria Park of Nuwara Eliya."
+  },
+  {
+    "id": "Q_ACT_12",
+    "intent": "activity_query",
+    "question": "Which places are highly recommended for elephant watching?",
+    "ground_truth": "The best locations for elephant watching include Maduru Oya National Park, Wasgamuwa National Park, Hurulu Eco Park, and Kaudulla National Park."
+  },
+  {
+    "id": "Q_ACT_13",
+    "intent": "activity_query",
+    "question": "Where can I go camping in Sri Lanka?",
+    "ground_truth": "The best locations for camping include Knuckles Mountain Range, Gal Oya National Park, Kumana National Park, and Wasgamuwa National Park."
+  },
+  {
+    "id": "Q_ACT_14",
+    "intent": "activity_query",
+    "question": "What are the best places to experience a train ride?",
+    "ground_truth": "The best locations for a train ride include Demodara Loop, Ella Rock, Moon Plains, and Dunhinda Falls."
+  },
+  {
+    "id": "Q_ACT_15",
+    "intent": "activity_query",
+    "question": "Where can I go for a tea plantation visit?",
+    "ground_truth": "The best locations for a tea plantation visit include Handunugoda Tea Estate, Pedro Tea Factory, and Lipton\u2019s Seat."
+  },
+  {
+    "id": "Q_FEA_11",
+    "intent": "feature_query",
+    "question": "Which places are noted for their cleanliness?",
+    "ground_truth": "Places known for their cleanliness include Trincomalee Beach, Nilaveli Beach, Bentota Beach, and Casuarina Beach."
+  },
+  {
+    "id": "Q_FEA_12",
+    "intent": "feature_query",
+    "question": "What are the most family friendly destinations?",
+    "ground_truth": "Places known for their family friendliness include Negombo Beach, Sri Pada / Adam's Peak, Negombo Fish Market, and Diyatha Uyana."
+  },
+  {
+    "id": "Q_FEA_13",
+    "intent": "feature_query",
+    "question": "Which locations are known for their safety?",
+    "ground_truth": "Places known for their safety include Laxapana Falls, Polhena Beach, Aberdeen Falls, and Pasikudah Beach."
+  },
+  {
+    "id": "Q_FEA_14",
+    "intent": "feature_query",
+    "question": "What are some tourist spots that offer great value for money?",
+    "ground_truth": "Places known for their value for money include Sri Pada / Adam's Peak, Negombo Beach, Negombo Fish Market, and Handunugoda Tea Estate."
+  },
+  {
+    "id": "Q_FEA_15",
+    "intent": "feature_query",
+    "question": "Which places are known for their peacefulness and quiet atmosphere?",
+    "ground_truth": "Places known for their peacefulness include Negombo Beach, Sri Pada / Adam's Peak, Japanese Peace Pagoda - Rumassala, and Beddegana Wetland Park."
+  },
+  {
+    "id": "Q_CON_01",
+    "question": "Where are the best places for hiking in Nuwara Eliya District?",
+    "intent": "constraint_query",
+    "ground_truth": "The best places for hiking in Nuwara Eliya District include Horton Plains National Park and Single Tree Hill."
+  },
+  {
+    "id": "Q_CON_02",
+    "question": "I'm traveling with my family, what are some family-friendly beaches in Matara?",
+    "intent": "constraint_query",
+    "ground_truth": "Family-friendly beaches in Matara include Polhena Beach and Hiriketiya Beach."
+  },
+  {
+    "id": "Q_CON_03",
+    "question": "Are there any places for bird watching in the Ampara District?",
+    "intent": "constraint_query",
+    "ground_truth": "A good place for bird watching in the Ampara District is Kumana National Park."
+  },
+  {
+    "id": "Q_CON_04",
+    "question": "What are the top attractions for swimming in the Galle District?",
+    "intent": "constraint_query",
+    "ground_truth": "Top attractions for swimming in the Galle District include Unawatuna Beach and Hikkaduwa Beach."
+  },
+  {
+    "id": "Q_CON_05",
+    "question": "Where can I go for a safari in the Polonnaruwa District?",
+    "intent": "constraint_query",
+    "ground_truth": "You can go for a safari in the Polonnaruwa District at Kaudulla National Park, Gal Oya National Park, or Wasgamuwa National Park."
+  },
+  {
+    "id": "Q_TIM_01",
+    "question": "When is the best time of day to visit Sri Pada / Adam's Peak?",
+    "intent": "timing_query",
+    "ground_truth": "The best time to visit Sri Pada / Adam's Peak is early in the morning to witness the sunrise from the summit."
+  },
+  {
+    "id": "Q_TIM_02",
+    "question": "Is it recommended to visit Horton Plains National Park early in the morning?",
+    "intent": "timing_query",
+    "ground_truth": "Yes, it is highly recommended to visit Horton Plains National Park early in the morning (around 6 AM) before the cloud cover rolls in and obscures the views."
+  },
+  {
+    "id": "Q_TIM_03",
+    "question": "What time does the Pinnawala Elephant Orphanage feed the baby elephants?",
+    "intent": "timing_query",
+    "ground_truth": "The Pinnawala Elephant Orphanage feeds the baby elephants at designated times, including a popular feeding session at 9:00 AM."
+  },
+  {
+    "id": "Q_TIM_04",
+    "question": "Can I visit the Temple of the Sacred Tooth Relic in the evening?",
+    "intent": "timing_query",
+    "ground_truth": "Yes, you can visit the Temple of the Sacred Tooth Relic in the evening when the temple is beautifully lit up, and during the evening worship rituals."
+  },
+  {
+    "id": "Q_TIM_05",
+    "question": "What is the best time of year to see migratory birds at Yala National Park?",
+    "intent": "timing_query",
+    "ground_truth": "The best time to see migratory birds at Yala National Park is during the winter months when over 180 species visit the coastal lagoons."
+  }
+]

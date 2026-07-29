@@ -1,0 +1,18 @@
+{
+  "poi_name": "Elephant Transit Home (ETH)",
+  "category": "Wildlife Conservation",
+  "city": "Udawalawe",
+  "district": "Ratnapura District",
+  "province": "Sabaragamuwa Province",
+  "country": "Sri Lanka",
+  "latitude": "6.4268769",
+  "longitude": "80.8171104",
+  "full_address": "Elephant Transit Home, C.P De Silva Road, Udawalawe, Ratnapura District, Sabaragamuwa Province, 70190, Sri Lanka",
+  "wikipedia_title": "Elephant Transit Home (ETH)",
+  "wikipedia_desc": "",
+  "wikipedia_url": "https://en.wikipedia.org/w/index.php?search=Elephant%20Transit%20Home%20%28ETH%29%20Sri%20Lanka",
+  "wikipedia_link_type": "wikipedia_search",
+  "has_real_article": false,
+  "rag_text": "DESTINATION: Elephant Transit Home (ETH)\nTYPE: Wildlife Conservation\nLOCATION: Udawalawe, Ratnapura District, Sabaragamuwa Province, Sri Lanka\nCOORDINATES: 6.4268769, 80.8171104\nADDRESS: Elephant Transit Home, C.P De Silva Road, Udawalawe, Ratnapura District, Sabaragamuwa Province, 70190, Sri Lanka\nSOURCE: https://en.wikipedia.org/w/index.php?search=Elephant%20Transit%20Home%20%28ETH%29%20Sri%20Lanka\n\nElephant Transit Home (ETH) is a wildlife conservation located in Ratnapura District. It is a travel destination in Sri Lanka.\nAddress: Elephant Transit Home, C.P De Silva Road, Udawalawe, Ratnapura District, Sabaragamuwa Province, 70190, Sri Lanka",
+  "text_length": 653
+}

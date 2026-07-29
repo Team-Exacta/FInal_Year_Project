@@ -1,0 +1,95 @@
+================================================================================
+COMPARISON QUERY ANALYSIS
+================================================================================
+
+================================================================================
+ID: Q_COM_01
+Question: Compare Yala National Park and Udawalawe National Park.
+Expected Intent: comparison_query
+Ground Truth: Yala National Park is known for safaris featuring leopards, elephants, and wildlife, but can be crowded. Udawalawe National Park is also known for safaris featuring elephants, birds, and accommodation, but does not feature leopards.
+Detected Intent: comparison_query
+Answer (first 400): Yala National Park and Udawalawe National Park are both prominent wildlife reserves in Sri Lanka that offer distinct safari experiences. If you are looking for alternatives, several other parks provide unique encounters with nature.
+
+### Yala National Park
+- Located in the Uva Province, this park is a well-known destination for wildlife viewing.
+- Visitors often engage in jeep safaris to explore t
+Contexts (7 chunks):
+  [1] Knowledge Graph Fact 1. Elephant Transit Home (ETH) is located in Ratnapura District for Safari, featuring Family friendliness, Wildlife, Ticket price, and Elephants, with facilities including Entrance fee.    Supporting Evidence:    [1] Place: Elephant Transit Home (ETH) Category: Wildlife Conserva...
+  [2] Place: Yala National Park Rating: 5 stars Title: Great with the right crew Source: Visitor Review  coming out of the bush right in front of our car without dozens of other vehicles around us. I would definitely book the safari directly with an accommodation, even if it is more expensive than outside...
+  [3] Place: Lunugamvehera National Park Category: National Park / Wildlife Reserve Location: Monaragala District, Uva Province, Sri Lanka Source: Wikipedia Article  Lunugamvehera National Park (Sinhala: ලුණුගම්වෙහෙර ජාතික වනෝද්‍යානය) in Sri Lanka was declared in 1995, with the intention of protecting the...
+  [4] Place: Yala National Park Rating: 5 stars Title: Great with the right crew Source: Visitor Review  We booked three half-day safaris at Yala NP and they were awesome. The driver Heshan and our guide Sanka were professionals, we were traveling with them daily and booked them through our lodge (Koragah...
+  [5] Place: Yala National Park Category: National Park / Wildlife Reserve Location: Uva Province, Sri Lanka Source: Wikipedia Article  and is available on Wikimedia Commons as a historical record of Yala’s formative years in wildlife management....
+  [6] Place: Udawalawe National Park Rating: 5 stars Title: Must do, with an experienced guide Source: Visitor Review  National park was incredible, we did Udawalawe and Yala and had a much better time in Udewalawe. There was a much better focus on animal welfare and also diversity of wildlife. So importa...
+  [7] RETRIEVAL NOTES: - Ranked by: Wildlife, Safari - CONTRADICTION RULE: If Review Evidence contradicts the Knowledge Graph facts, you MUST treat the Knowledge Graph as the absolute ground truth....
+
+
+================================================================================
+ID: Q_COM_02
+Question: Compare Sigiriya Lion Rock and Pidurangala Rock.
+Expected Intent: comparison_query
+Ground Truth: Sigiriya Lion Rock is an ancient rock fortress featuring ruins, a museum, and scenic views, but has a higher entrance fee. Pidurangala Rock is a nearby rock formation known for hiking and offering a sunset view, often being less crowded and having a lower ticket price.
+  [NOT YET RUN - needs full pipeline execution]
+
+
+================================================================================
+ID: Q_COM_03
+Question: Compare Arugam Bay and Weligama Beach.
+Expected Intent: comparison_query
+Ground Truth: Arugam Bay is a popular beach for surfing known for its peacefulness, waves, and shops, though it can be crowded. Weligama Beach is also known for surfing and waves, but is noted for being a family-friendly sandy beach.
+  [NOT YET RUN - needs full pipeline execution]
+
+
+================================================================================
+ID: Q_COM_04
+Question: Compare Victoria Park of Nuwara Eliya and Ella Rock.
+Expected Intent: comparison_query
+Ground Truth: Victoria Park of Nuwara Eliya is a park suitable for relaxing with family-friendly features and cleanliness. Ella Rock is a viewpoint and hiking trail offering scenic views of the mountain, a waterfall, and a bridge.
+  [NOT YET RUN - needs full pipeline execution]
+
+
+================================================================================
+ID: Q_COM_05
+Question: Compare Unawatuna Beach and Mirissa Beach.
+Expected Intent: comparison_query
+Ground Truth: Unawatuna Beach is a calm, family-friendly beach known for swimming, relaxing, and cafes. Mirissa Beach is also a sandy beach suitable for swimming and surfing, but is uniquely known for sunset watching and having a scenic view.
+  [NOT YET RUN - needs full pipeline execution]
+
+
+================================================================================
+ID: Q_COM_06
+Question: Compare Ruwanweli Maha Seya and Polonnaruwa Vatadage.
+Expected Intent: comparison_query
+Ground Truth: Ruwanweli Maha Seya is a significant religious site and ancient stupa located in Anuradhapura. Polonnaruwa Vatadage is a heritage site in Polonnaruwa featuring ancient ruins, a Buddha statue, and sculptures.
+  [NOT YET RUN - needs full pipeline execution]
+
+
+================================================================================
+ID: Q_COM_07
+Question: Compare Gal Oya National Park and Madu River Safari by Buddhi.
+Expected Intent: comparison_query
+Ground Truth: Gal Oya National Park offers boat safaris on a lake with opportunities to see elephants, birds, and forest wildlife in a peaceful setting. Madu River Safari by Buddhi offers boat rides on a river featuring a temple visit, spa treatments, and a family-friendly environment.
+  [NOT YET RUN - needs full pipeline execution]
+
+
+================================================================================
+ID: Q_COM_08
+Question: Compare Colombo National Museum and Temple of the Sacred Tooth Relic.
+Expected Intent: comparison_query
+Ground Truth: Colombo National Museum is a museum offering historical artifacts and ancient ruins. Temple of the Sacred Tooth Relic is a prominent religious site featuring a temple, museum, and significant cultural rituals.
+  [NOT YET RUN - needs full pipeline execution]
+
+
+================================================================================
+ID: Q_COM_09
+Question: Compare Minneriya National Park and Kaudulla National Park.
+Expected Intent: comparison_query
+Ground Truth: Minneriya National Park is a popular location for elephant watching and safaris, featuring a lake, birds, and peacefulness. Kaudulla National Park is also highly rated for elephant watching and jeep safaris, featuring a lake and birds, but can experience crowdedness.
+  [NOT YET RUN - needs full pipeline execution]
+
+
+================================================================================
+ID: Q_COM_10
+Question: Compare Galle Dutch Fort and Jaffna Fort.
+Expected Intent: comparison_query
+Ground Truth: Galle Dutch Fort is a heritage site featuring a fort, beach, and museum, known for its scenic views and restaurants. Jaffna Fort is also a heritage site featuring a fort and scenic views, but is located in a different region and does not have the same extensive restaurant scene.
+  [NOT YET RUN - needs full pipeline execution]

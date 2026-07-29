@@ -1,0 +1,219 @@
+{
+  "input_file": "aggregated_cleaned_reviews(2).json",
+  "input_reviews": 44928,
+  "reviews_with_extracted_facility": 20166,
+  "reviews_without_facility": 24762,
+  "total_facility_triples": 38639,
+  "unique_places_with_facilities": 166,
+  "unique_facility_types_found": 58,
+  "unique_evidence_chunks": 32288,
+  "sentiment_counts": {
+    "negative": 5385,
+    "neutral": 22216,
+    "positive": 11038
+  },
+  "top_25_facilities": [
+    [
+      "Entrance fee",
+      4695
+    ],
+    [
+      "Accommodation",
+      4273
+    ],
+    [
+      "Restaurant",
+      2986
+    ],
+    [
+      "Steps or stairs",
+      2742
+    ],
+    [
+      "Tuk tuk service",
+      2607
+    ],
+    [
+      "Guide service",
+      2003
+    ],
+    [
+      "Ticket or receipt",
+      1804
+    ],
+    [
+      "Shop",
+      1671
+    ],
+    [
+      "Bridge",
+      1557
+    ],
+    [
+      "Cafe",
+      1034
+    ],
+    [
+      "Boat service",
+      972
+    ],
+    [
+      "Food stall",
+      925
+    ],
+    [
+      "Parking",
+      906
+    ],
+    [
+      "Donation box",
+      838
+    ],
+    [
+      "Toilet",
+      738
+    ],
+    [
+      "Shade or shelter",
+      716
+    ],
+    [
+      "Signage",
+      693
+    ],
+    [
+      "Security",
+      691
+    ],
+    [
+      "Brochure",
+      528
+    ],
+    [
+      "Road access",
+      505
+    ],
+    [
+      "Pathway",
+      472
+    ],
+    [
+      "Taxi service",
+      455
+    ],
+    [
+      "Seating",
+      411
+    ],
+    [
+      "Souvenir shop",
+      392
+    ],
+    [
+      "General facilities",
+      389
+    ]
+  ],
+  "top_25_places_by_facility_mentions": [
+    [
+      "Dutch Hospital Shopping Precinct",
+      1430
+    ],
+    [
+      "Nine Arches Bridge",
+      1365
+    ],
+    [
+      "Sri Pada / Adam's Peak",
+      960
+    ],
+    [
+      "Galle Dutch Fort",
+      839
+    ],
+    [
+      "Lipton's Seat",
+      800
+    ],
+    [
+      "Dambulla Cave Temple",
+      766
+    ],
+    [
+      "Sigiriya Lion Rock",
+      673
+    ],
+    [
+      "Ancient City of Polonnaruwa",
+      656
+    ],
+    [
+      "Madu River Safari by Buddhi",
+      656
+    ],
+    [
+      "Ella Rock",
+      655
+    ],
+    [
+      "Mount Lavinia Beach",
+      648
+    ],
+    [
+      "Mihintale",
+      612
+    ],
+    [
+      "Royal Botanical Gardens",
+      591
+    ],
+    [
+      "Bahiravokanda Vihara Buddha Statue",
+      589
+    ],
+    [
+      "Horton Plains National Park",
+      585
+    ],
+    [
+      "Little Adam's Peak View Point",
+      572
+    ],
+    [
+      "Gregory Lake",
+      561
+    ],
+    [
+      "Mirissa Beach",
+      551
+    ],
+    [
+      "Hikkaduwa Beach",
+      542
+    ],
+    [
+      "Mulgirigala Raja Maha Vihara",
+      529
+    ],
+    [
+      "Arugam Bay",
+      528
+    ],
+    [
+      "Sinharaja Forest Reserve",
+      519
+    ],
+    [
+      "Bentota Beach",
+      506
+    ],
+    [
+      "Galle Face Green",
+      502
+    ],
+    [
+      "Pinnawala Elephant Orphanage",
+      494
+    ]
+  ]
+}

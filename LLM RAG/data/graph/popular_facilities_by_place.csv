@@ -1,0 +1,284 @@
+place_name,facility,review_percentage,review_count,total_reviews,avg_confidence,dominant_sentiment
+Aberdeen Falls,Accommodation,25.0,8,32.0,0.7612,neutral
+Aberdeen Falls,Steps or stairs,18.75,6,32.0,0.7825,neutral
+Ambuluwawa Tower,Steps or stairs,38.78,38,98.0,0.7796,neutral
+Ambuluwawa Tower,Tuk tuk service,23.47,23,98.0,0.7783,neutral
+Ambuluwawa Tower,Entrance fee,10.2,10,98.0,0.7917,neutral
+Ancient City of Polonnaruwa,Ticket or receipt,15.8,79,500.0,0.8254,neutral
+Ancient City of Polonnaruwa,Entrance fee,15.6,78,500.0,0.7816,neutral
+Ancient City of Polonnaruwa,Tuk tuk service,13.6,68,500.0,0.7709,neutral
+Ancient City of Polonnaruwa,Guide service,12.8,64,500.0,0.7872,neutral
+Angurukaramulla Temple,Donation box,24.44,44,180.0,0.7985,neutral
+Angurukaramulla Temple,Entrance fee,15.0,27,180.0,0.8077,negative
+Angurukaramulla Temple,Tuk tuk service,15.0,27,180.0,0.7687,neutral
+Angurukaramulla Temple,Guide service,11.11,20,180.0,0.7838,neutral
+Arugam Bay,Accommodation,31.04,104,335.0,0.7852,neutral
+Arugam Bay,Restaurant,28.06,94,335.0,0.7916,neutral
+Arugam Bay,Tuk tuk service,13.43,45,335.0,0.796,positive
+Bahiravokanda Vihara Buddha Statue,Entrance fee,22.8,114,500.0,0.7774,neutral
+Bahiravokanda Vihara Buddha Statue,Tuk tuk service,22.2,111,500.0,0.7742,neutral
+Bahiravokanda Vihara Buddha Statue,Steps or stairs,20.6,103,500.0,0.7869,neutral
+Bahiravokanda Vihara Buddha Statue,Donation box,12.6,63,500.0,0.7869,neutral
+Baker's Falls,Steps or stairs,12.8,16,125.0,0.8212,negative
+Batticaloa Fort,Guide service,16.1,19,118.0,0.781,neutral
+Batticaloa Fort,Accessibility ramp,11.86,14,118.0,0.8248,neutral
+Beddegana Wetland Park,Pathway,20.0,8,40.0,0.8056,positive
+Beddegana Wetland Park,Ticket or receipt,12.5,5,40.0,0.81,neutral
+Bentota Beach,Accommodation,28.33,170,600.0,0.7853,neutral
+Bentota Beach,Restaurant,10.67,64,600.0,0.7974,neutral
+Bogoda Wooden Bridge,Bridge,90.24,37,41.0,0.7622,neutral
+Bogoda Wooden Bridge,Road access,31.71,13,41.0,0.8053,negative
+Bogoda Wooden Bridge,Accommodation,12.2,5,41.0,0.754,neutral
+Bogoda Wooden Bridge,Steps or stairs,12.2,5,41.0,0.7786,neutral
+Bopath Ella (Bopath Falls),Accommodation,11.9,5,42.0,0.7783,neutral
+Bopath Ella (Bopath Falls),Ticket or receipt,11.9,5,42.0,0.81,neutral
+Brief Garden - Bevis Bawa,Entrance fee,23.31,93,399.0,0.7752,neutral
+Brief Garden - Bevis Bawa,Tuk tuk service,15.29,61,399.0,0.7712,neutral
+Brief Garden - Bevis Bawa,Guide service,13.03,52,399.0,0.791,neutral
+Buduruwagala Temple,Entrance fee,12.82,15,117.0,0.7433,neutral
+Casuarina Beach,Entrance fee,15.31,30,196.0,0.7671,neutral
+Casuarina Beach,Toilet,12.76,25,196.0,0.8357,neutral
+Casuarina Beach,Changing room,12.24,24,196.0,0.8363,neutral
+Ceylon Tea Museum,Guide service,20.29,99,488.0,0.8077,positive
+Ceylon Tea Museum,Entrance fee,14.14,69,488.0,0.7945,neutral
+Ceylon Tea Museum,Shop,12.5,61,488.0,0.7929,neutral
+Ceylon Tea Museum,Tuk tuk service,10.25,50,488.0,0.7893,neutral
+Colombo Lotus Tower,View platform,29.33,22,75.0,0.7857,neutral
+Colombo Lotus Tower,Entrance fee,24.0,18,75.0,0.781,neutral
+Colombo Lotus Tower,Restaurant,24.0,18,75.0,0.7638,neutral
+Colombo Lotus Tower,Ticket or receipt,20.0,15,75.0,0.8167,neutral
+Colombo National Museum,Entrance fee,11.0,55,500.0,0.7877,neutral
+Dambulla Cave Temple,Steps or stairs,39.6,198,500.0,0.7931,neutral
+Dambulla Cave Temple,Entrance fee,16.8,84,500.0,0.7788,neutral
+Dambulla Cave Temple,Ticket or receipt,12.6,63,500.0,0.8252,neutral
+Dehiwala Zoo - Sri Lanka,Entrance fee,14.29,7,49.0,0.7467,neutral
+Dehiwala Zoo - Sri Lanka,Food stall,12.24,6,49.0,0.7889,positive
+Demodara Loop,Train service,36.51,46,126.0,0.7615,neutral
+Demodara Loop,Bridge,26.98,34,126.0,0.7648,neutral
+Demodara Loop,Tuk tuk service,12.7,16,126.0,0.7663,neutral
+Demodara Loop,Entrance fee,10.32,13,126.0,0.7562,neutral
+Diyaluma Falls,Tuk tuk service,15.12,26,172.0,0.7814,neutral
+Diyatha Uyana,Pathway,20.63,26,126.0,0.7759,neutral
+Diyatha Uyana,Restaurant,19.84,25,126.0,0.7828,neutral
+Diyatha Uyana,Parking,19.05,24,126.0,0.8219,neutral
+Diyatha Uyana,Food stall,16.67,21,126.0,0.7852,neutral
+Diyatha Uyana,Seating,11.11,14,126.0,0.7857,positive
+Diyatha Uyana,Shop,11.11,14,126.0,0.8067,positive
+Dondra Head Lighthouse,Steps or stairs,12.71,15,118.0,0.7871,neutral
+Dondra Head Lighthouse,Entrance fee,11.86,14,118.0,0.78,neutral
+Dutch Hospital Shopping Precinct,Restaurant,62.5,490,784.0,0.7859,neutral
+Dutch Hospital Shopping Precinct,Shop,37.12,291,784.0,0.7885,neutral
+Dutch Hospital Shopping Precinct,Cafe,15.94,125,784.0,0.7873,neutral
+Dutch Hospital Shopping Precinct,Souvenir shop,10.08,79,784.0,0.7867,neutral
+Elephant Transit Home (ETH),Entrance fee,10.2,51,500.0,0.7808,neutral
+Ella Rock,Signage,15.4,77,500.0,0.7819,neutral
+Ella Rock,Bridge,12.8,64,500.0,0.7669,neutral
+Ella Rock,Brochure,12.8,64,500.0,0.7778,neutral
+Ella Rock,Accommodation,10.8,54,500.0,0.781,neutral
+Embekka Devalaya,Entrance fee,16.28,7,43.0,0.7486,neutral
+Embekka Devalaya,Accommodation,13.95,6,43.0,0.75,neutral
+Gal Oya National Park,Boat service,17.81,13,73.0,0.7767,neutral
+Gal Oya National Park,Jeep service,13.7,10,73.0,0.7933,neutral
+Galle Dutch Fort,Restaurant,35.0,210,600.0,0.7829,neutral
+Galle Dutch Fort,Shop,22.67,136,600.0,0.7848,neutral
+Galle Dutch Fort,Cafe,15.67,94,600.0,0.7763,neutral
+Galle Dutch Fort,Accommodation,13.83,83,600.0,0.7684,neutral
+Galle Face Green,Food stall,35.21,169,480.0,0.775,neutral
+Galle Face Green,Accommodation,23.54,113,480.0,0.766,neutral
+Galway's Land National Park,Entrance fee,34.38,22,64.0,0.7739,neutral
+Galway's Land National Park,Ticket or receipt,18.75,12,64.0,0.8043,neutral
+Galway's Land National Park,Pathway,10.94,7,64.0,0.7843,neutral
+Gangaramaya Temple,Entrance fee,15.4,77,500.0,0.7738,neutral
+Goyambokka Beach,Restaurant,39.39,117,297.0,0.7962,neutral
+Goyambokka Beach,Accommodation,17.17,51,297.0,0.7856,neutral
+Gregory Lake,Boat service,29.2,146,500.0,0.7717,neutral
+Gregory Lake,Entrance fee,18.8,94,500.0,0.7716,neutral
+Hakgala Botanic Gardens,Entrance fee,16.2,81,500.0,0.7787,neutral
+Handunugoda Tea Estate,Guide service,27.31,130,476.0,0.8018,positive
+Handunugoda Tea Estate,Shop,19.12,91,476.0,0.8043,neutral
+Handunugoda Tea Estate,Tuk tuk service,10.92,52,476.0,0.7933,neutral
+Henerathgoda Botanical Garden,Parking,15.79,6,38.0,0.8167,neutral
+Henerathgoda Botanical Garden,Boat service,13.16,5,38.0,0.78,neutral
+Hikkaduwa Beach,Restaurant,25.5,153,600.0,0.7917,positive
+Hikkaduwa Beach,Accommodation,19.33,116,600.0,0.7819,neutral
+Hiriketiya Beach,Restaurant,34.65,44,127.0,0.781,neutral
+Hiriketiya Beach,Accommodation,18.11,23,127.0,0.7824,neutral
+Horton Plains National Park,Entrance fee,14.5,87,600.0,0.781,neutral
+Horton Plains National Park,Ticket or receipt,11.83,71,600.0,0.8267,neutral
+Hummanaya Blow Hole,Entrance fee,23.98,47,196.0,0.7732,neutral
+Hummanaya Blow Hole,Accommodation,12.76,25,196.0,0.7785,neutral
+Hummanaya Blow Hole,Steps or stairs,12.76,25,196.0,0.7869,neutral
+Hummanaya Blow Hole,Parking,10.2,20,196.0,0.8075,neutral
+Hurulu Eco Park,Accommodation,14.5,49,338.0,0.7698,neutral
+Hurulu Eco Park,Entrance fee,12.43,42,338.0,0.7885,neutral
+Isurumuniya Temple,Entrance fee,16.41,43,262.0,0.775,neutral
+Japanese Peace Pagoda - Rumassala,Tuk tuk service,13.4,67,500.0,0.7744,neutral
+Jungle Beach,Tuk tuk service,11.5,69,600.0,0.7671,neutral
+Kabalana Beach,Restaurant,26.67,8,30.0,0.8025,positive
+Kabalana Beach,Accommodation,20.0,6,30.0,0.8112,negative
+Kabalana Beach,Cafe,16.67,5,30.0,0.8,positive
+Kalametiya Eco Bird Watching,Guide service,14.29,38,266.0,0.7914,positive
+Kalametiya Eco Bird Watching,Boat service,10.15,27,266.0,0.7669,neutral
+Kalutara Bodhiya,Donation box,13.33,32,240.0,0.7967,neutral
+Kande Viharaya Temple,Tuk tuk service,13.11,16,122.0,0.775,neutral
+Kandy View Point,Tuk tuk service,10.2,51,500.0,0.7604,neutral
+Kanniya Hot Springs,Entrance fee,14.75,45,305.0,0.7706,neutral
+Kirinda Viharaya,Steps or stairs,10.34,6,58.0,0.78,neutral
+Knuckles Mountain Range,Accommodation,27.31,68,249.0,0.7674,neutral
+Koggala Lake,Boat service,40.18,45,112.0,0.7642,neutral
+Koggala Lake,Entrance fee,22.32,25,112.0,0.7679,neutral
+Koggala Lake,Tuk tuk service,14.29,16,112.0,0.7737,neutral
+Kosgoda Sea Turtle Conservation Project,Entrance fee,18.43,94,510.0,0.779,neutral
+Kosgoda Sea Turtle Conservation Project,Donation box,12.55,64,510.0,0.7815,neutral
+Kumana National Park,Entrance fee,13.76,15,109.0,0.7562,neutral
+Laxapana Falls,Steps or stairs,40.91,9,22.0,0.8062,positive
+Little Adam's Peak View Point,Steps or stairs,27.57,193,700.0,0.816,neutral
+Lovamahapaya Brazen Palace,Safety barrier,28.0,7,25.0,0.7786,neutral
+Lover's Leap Falls,Tuk tuk service,25.96,95,366.0,0.7726,neutral
+Lunugamvehera National Park,Entrance fee,10.87,5,46.0,0.7567,neutral
+Madu River Safari by Buddhi,Boat service,39.8,199,500.0,0.7667,neutral
+Madu River Safari by Buddhi,Entrance fee,20.0,100,500.0,0.7738,neutral
+Maduru Oya National Park,Accommodation,18.52,5,27.0,0.7767,neutral
+Maligawila Buddha Statue,Accommodation,24.14,7,29.0,0.7686,neutral
+Marble Beach,Accommodation,26.57,89,335.0,0.7756,neutral
+Marble Beach,Restaurant,11.64,39,335.0,0.7862,neutral
+Marble Beach,Entrance fee,10.75,36,335.0,0.779,neutral
+Matara Paravi Duwa Temple,Bridge,51.67,31,60.0,0.7808,neutral
+Matara Paravi Duwa Temple,Entrance fee,18.33,11,60.0,0.7533,neutral
+Matara Paravi Duwa Temple,Public transport access,11.67,7,60.0,0.7689,neutral
+Matara Paravi Duwa Temple,Steps or stairs,10.0,6,60.0,0.79,neutral
+Mihintale,Steps or stairs,38.2,191,500.0,0.7903,neutral
+Mihintale,Entrance fee,11.6,58,500.0,0.7802,neutral
+Mirissa Beach,Restaurant,42.5,255,600.0,0.7943,positive
+Mirissa Beach,Accommodation,11.67,70,600.0,0.7857,neutral
+Moon Plains,Entrance fee,23.64,39,165.0,0.7591,neutral
+Moon Plains,Ticket or receipt,14.55,24,165.0,0.8166,neutral
+Moonstone or Sandakada pahana,Steps or stairs,15.62,10,64.0,0.7491,neutral
+Mount Lavinia Beach,Restaurant,36.8,184,500.0,0.7872,neutral
+Mount Lavinia Beach,Accommodation,34.2,171,500.0,0.7795,neutral
+Mulgirigala Raja Maha Vihara,Steps or stairs,40.05,153,382.0,0.7996,neutral
+Mulgirigala Raja Maha Vihara,Entrance fee,21.99,84,382.0,0.7726,neutral
+Mulgirigala Raja Maha Vihara,Tuk tuk service,11.78,45,382.0,0.7756,neutral
+Muthurajawela Marsh,Boat service,43.4,102,235.0,0.7688,neutral
+Muthurajawela Marsh,Guide service,19.57,46,235.0,0.7973,positive
+Muthurajawela Marsh,Accommodation,11.49,27,235.0,0.7745,neutral
+Muthurajawela Marsh,Entrance fee,11.49,27,235.0,0.7667,neutral
+Muthurajawela Marsh,Visitor centre,10.21,24,235.0,0.8245,neutral
+Nagadipa Purana Vihara,Boat service,32.12,53,165.0,0.763,neutral
+Nagadipa Purana Vihara,Entrance fee,10.91,18,165.0,0.7519,neutral
+Negombo Beach,Accommodation,1530.0,153,10.0,0.7855,neutral
+Negombo Beach,Restaurant,920.0,92,10.0,0.7921,neutral
+Negombo Beach,Food stall,240.0,24,10.0,0.7733,neutral
+Negombo Beach,Boat service,120.0,12,10.0,0.7636,neutral
+Negombo Beach,Shop,100.0,10,10.0,0.7815,neutral
+Negombo Beach,Tuk tuk service,100.0,10,10.0,0.7938,neutral
+Negombo Beach,General facilities,90.0,9,10.0,0.6978,negative
+Negombo Beach,Cafe,80.0,8,10.0,0.7544,neutral
+Negombo Beach,Souvenir shop,80.0,8,10.0,0.7622,neutral
+Negombo Beach,Shade or shelter,70.0,7,10.0,0.8057,negative
+Negombo Beach,Parking,60.0,6,10.0,0.8,neutral
+Negombo Fish Market,Accommodation,320.0,32,10.0,0.7573,neutral
+Negombo Fish Market,Tuk tuk service,270.0,27,10.0,0.7674,neutral
+Negombo Fish Market,Entrance fee,180.0,18,10.0,0.7638,neutral
+Negombo Fish Market,Guide service,180.0,18,10.0,0.77,neutral
+Negombo Fish Market,Restaurant,140.0,14,10.0,0.7807,neutral
+Negombo Fish Market,Shop,70.0,7,10.0,0.7686,neutral
+Negombo Fish Market,Bridge,50.0,5,10.0,0.774,neutral
+Nilaveli Beach,Accommodation,27.94,76,272.0,0.7865,neutral
+Nilaveli Beach,Restaurant,13.97,38,272.0,0.7976,neutral
+Old Parliament Building,Accommodation,14.44,41,284.0,0.7662,neutral
+Pasikudah Beach,Accommodation,46.08,47,102.0,0.7809,neutral
+Passikudah Beach,Accommodation,38.33,156,407.0,0.7841,neutral
+Pedro Tea Factory,Guide service,21.4,107,500.0,0.7958,neutral
+Pedro Tea Factory,Entrance fee,18.6,93,500.0,0.7701,neutral
+Pettah Floating Market,Shop,36.54,38,104.0,0.7887,neutral
+Pettah Floating Market,Restaurant,15.38,16,104.0,0.7731,neutral
+Pidurangala Rock,Steps or stairs,28.2,141,500.0,0.8148,negative
+Pidurangala Rock,Entrance fee,19.6,98,500.0,0.7919,neutral
+Pidurutalagala,Security,31.76,27,85.0,0.7645,neutral
+Pidurutalagala,Road access,10.59,9,85.0,0.8167,positive
+Pinnawala Elephant Orphanage,Entrance fee,14.17,85,600.0,0.7725,neutral
+Pinnawala Elephant Orphanage,Ticket or receipt,10.5,63,600.0,0.8267,neutral
+Pitawala Pathana,Ticket or receipt,11.11,6,54.0,0.8089,neutral
+Polhena Beach,Accommodation,15.17,32,211.0,0.7867,neutral
+Popham's Arboretum,Donation box,16.35,26,159.0,0.7839,neutral
+Popham's Arboretum,Guide service,15.72,25,159.0,0.7967,positive
+Popham's Arboretum,Entrance fee,12.58,20,159.0,0.7687,neutral
+Richmond Castle,Entrance fee,22.16,43,194.0,0.778,neutral
+Richmond Castle,Guide service,13.4,26,194.0,0.8143,positive
+Richmond Castle,Tuk tuk service,12.37,24,194.0,0.7704,neutral
+Ridee Viharaya (silver Temple),Accommodation,18.92,14,74.0,0.82,positive
+Ritigala Forest Monastery,Entrance fee,21.46,50,233.0,0.7777,neutral
+Ritigala Forest Monastery,Tuk tuk service,12.45,29,233.0,0.7715,neutral
+Ritigala Forest Monastery,Guide service,11.16,26,233.0,0.7812,neutral
+Royal Botanical Gardens,Entrance fee,16.83,101,600.0,0.7827,neutral
+Royal Botanical Gardens,Bridge,13.17,79,600.0,0.7833,neutral
+Samudra Parakrama,Accommodation,17.24,5,29.0,0.7667,neutral
+Sea Turtle Conservation Project (Koggala),Entrance fee,26.2,49,187.0,0.7835,neutral
+Sea Turtle Conservation Project (Koggala),Guide service,12.3,23,187.0,0.79,neutral
+Seema Malakaya Temple,Entrance fee,19.5,62,318.0,0.7732,neutral
+Seema Malakaya Temple,Ticket or receipt,15.72,50,318.0,0.8333,neutral
+Seenigama Muhudu Viharaya,Boat service,12.28,7,57.0,0.7733,neutral
+Sigiriya Lion Rock,Steps or stairs,39.07,211,540.0,0.7972,neutral
+Sigiriya Lion Rock,Entrance fee,13.89,75,540.0,0.7859,neutral
+Sigiriya Lion Rock,Ticket or receipt,11.67,63,540.0,0.8373,neutral
+Single Tree Hill,Safety barrier,12.7,8,63.0,0.74,neutral
+Single Tree Hill,Accommodation,11.11,7,63.0,0.74,neutral
+Sinharaja Forest Reserve,Guide service,22.65,99,437.0,0.7906,neutral
+Sinharaja Forest Reserve,Accommodation,18.08,79,437.0,0.7754,neutral
+Sinharaja Forest Reserve,Entrance fee,10.3,45,437.0,0.7828,neutral
+Sithulpawwa Rock Temple,Road access,12.09,11,91.0,0.8164,positive
+Sri Pada / Adam's Peak,Steps or stairs,2280.0,228,10.0,0.8007,neutral
+Sri Pada / Adam's Peak,Shop,860.0,86,10.0,0.7857,neutral
+Sri Pada / Adam's Peak,Accommodation,840.0,84,10.0,0.7628,neutral
+Sri Pada / Adam's Peak,Food stall,480.0,48,10.0,0.7765,neutral
+Sri Pada / Adam's Peak,Toilet,470.0,47,10.0,0.8338,neutral
+Sri Pada / Adam's Peak,Cafe,260.0,26,10.0,0.7858,neutral
+Sri Pada / Adam's Peak,Entrance fee,260.0,26,10.0,0.8006,neutral
+Sri Pada / Adam's Peak,Donation box,230.0,23,10.0,0.7943,neutral
+Sri Pada / Adam's Peak,Safety barrier,160.0,16,10.0,0.8,positive
+Sri Pada / Adam's Peak,Shoe storage,130.0,13,10.0,0.7531,neutral
+Sri Pada / Adam's Peak,Handrail,120.0,12,10.0,0.765,neutral
+Sri Pada / Adam's Peak,Pathway,100.0,10,10.0,0.8042,neutral
+Sri Pada / Adam's Peak,Guide service,90.0,9,10.0,0.78,neutral
+Sri Pada / Adam's Peak,Signage,90.0,9,10.0,0.79,neutral
+Sri Pada / Adam's Peak,Tuk tuk service,90.0,9,10.0,0.7753,neutral
+Sri Pada / Adam's Peak,Lighting,80.0,8,10.0,0.815,negative
+Sri Pada / Adam's Peak,Restaurant,80.0,8,10.0,0.7988,positive
+Sri Pada / Adam's Peak,Shade or shelter,80.0,8,10.0,0.7733,neutral
+Sri Pada / Adam's Peak,Public transport access,70.0,7,10.0,0.7543,neutral
+Sri Pada / Adam's Peak,Brochure,60.0,6,10.0,0.7988,negative
+Sri Pada / Adam's Peak,Shower,60.0,6,10.0,0.8043,neutral
+Sri Pada / Adam's Peak,Road access,50.0,5,10.0,0.788,neutral
+Sri Pada / Adam's Peak,Security,50.0,5,10.0,0.7683,neutral
+St Benedict's Monastery - Adisham,Shop,14.61,32,219.0,0.7834,neutral
+St Benedict's Monastery - Adisham,Entrance fee,13.24,29,219.0,0.7776,neutral
+St Lucia's Cathedral,Parking,15.0,6,40.0,0.8514,positive
+Temple of the Sacred Tooth Relic,Entrance fee,12.54,79,630.0,0.7834,neutral
+Trincomalee Beach,Accommodation,27.94,19,68.0,0.7857,neutral
+Trincomalee War Cemetery,Guide service,14.96,38,254.0,0.78,neutral
+Turtle Conservation Project Turtle Watch,Entrance fee,18.67,70,375.0,0.7829,neutral
+Turtle Conservation Project Turtle Watch,Guide service,11.2,42,375.0,0.7822,neutral
+Udawalawe National Park,Guide service,17.0,102,600.0,0.799,positive
+Udawalawe National Park,Accommodation,14.17,85,600.0,0.7831,neutral
+Unawatuna Beach,Restaurant,45.86,61,133.0,0.7849,neutral
+Unawatuna Beach,Accommodation,16.54,22,133.0,0.767,neutral
+Unawatuna Beach,Cafe,12.78,17,133.0,0.7911,positive
+Uppuveli Beach,Restaurant,34.69,34,98.0,0.8065,positive
+Uppuveli Beach,Accommodation,29.59,29,98.0,0.7977,neutral
+Victoria Park of Nuwara Eliya,Entrance fee,24.0,120,500.0,0.7782,neutral
+Viharamahadevi Park,Shade or shelter,10.0,50,500.0,0.7922,positive
+Visit Kanneliya Rain Forest,Guide service,16.9,12,71.0,0.7631,neutral
+Visit Kanneliya Rain Forest,Accommodation,11.27,8,71.0,0.764,neutral
+Weherahena Buddhist Temple,Donation box,19.28,16,83.0,0.7712,neutral
+Weherahena Buddhist Temple,Entrance fee,16.87,14,83.0,0.7711,neutral
+Weligama Beach,Accommodation,20.94,40,191.0,0.7747,neutral
+Weligama Beach,Restaurant,17.8,34,191.0,0.7894,neutral
+Wewurukannala Vihara,Entrance fee,15.5,20,129.0,0.7614,neutral
+Wewurukannala Vihara,Donation box,10.85,14,129.0,0.7756,neutral
+Whale Watching in Mirissa,Food stall,14.56,15,103.0,0.79,positive
+Whale Watching in Mirissa,Towel service,13.59,14,103.0,0.7993,positive
+Wolvendaal Church,Donation box,13.68,16,117.0,0.8,neutral
+Wolvendaal Church,Guide service,10.26,12,117.0,0.7862,neutral
+Yala National Park,Accommodation,13.92,11,79.0,0.7915,neutral
+Yapahuwa Rock Fortress,Steps or stairs,63.53,54,85.0,0.7941,neutral

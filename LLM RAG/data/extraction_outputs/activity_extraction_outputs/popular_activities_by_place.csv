@@ -1,0 +1,315 @@
+place_name,activity,review_percentage,review_count,total_reviews,avg_confidence,dominant_sentiment
+Aberdeen Falls,Waterfall visit,87.5,28,32,0.7416,neutral
+Aberdeen Falls,Swimming,31.25,10,32,0.8708,neutral
+Aberdeen Falls,Hiking,25.0,8,32,0.8793,neutral
+Abhayagiri Dagaba,Religious visit,22.56,30,133,0.7398,neutral
+Abhayagiri Dagaba,Ancient city visit,21.05,28,133,0.7543,positive
+Ancient City of Polonnaruwa,Ancient city visit,84.6,423,500,0.743,neutral
+Ancient City of Polonnaruwa,Ruins exploration,29.2,146,500,0.7489,neutral
+Ancient City of Polonnaruwa,Museum visit,16.0,80,500,0.7683,positive
+Angurukaramulla Temple,Temple visit,76.67,138,180,0.7564,neutral
+Angurukaramulla Temple,Religious visit,10.0,18,180,0.7475,positive
+Arugam Bay,Surfing,61.49,206,335,0.8883,positive
+Arugam Bay,Relaxing,24.18,81,335,0.8608,positive
+Arugam Bay,Swimming,12.54,42,335,0.8956,positive
+Arugam Bay,Shopping,10.75,36,335,0.8834,positive
+Bahiravokanda Vihara Buddha Statue,Religious visit,77.2,386,500,0.7476,neutral
+Bahiravokanda Vihara Buddha Statue,Temple visit,77.2,386,500,0.7509,neutral
+Baker's Falls,Waterfall visit,70.4,88,125,0.7424,neutral
+Baker's Falls,Hiking,16.8,21,125,0.8826,neutral
+Baker's Falls,Photography,13.6,17,125,0.8544,positive
+Baker's Falls,Trekking,12.0,15,125,0.8833,neutral
+"Bambarakanda FallsUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Waterfall visit,80.19,85,106,0.7508,neutral
+"Bambarakanda FallsUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Hiking,16.04,17,106,0.8767,neutral
+Batticaloa Fort,Fort visit,77.97,92,118,0.7542,neutral
+Beddegana Wetland Park,Photography,20.0,8,40,0.8638,positive
+Beddegana Wetland Park,Bird watching,17.5,7,40,0.886,neutral
+Beddegana Wetland Park,Relaxing,15.0,6,40,0.8717,positive
+Bentota Beach,Swimming,22.33,134,600,0.8941,positive
+Bentota Beach,Sunset watching,12.33,74,600,0.8681,positive
+Bentota Beach,Relaxing,11.5,69,600,0.8681,positive
+Bentota Beach,Surfing,10.83,65,600,0.8942,positive
+Bogoda Wooden Bridge,Temple visit,21.95,9,41,0.7408,neutral
+Bopath Ella (Bopath Falls),Waterfall visit,64.29,27,42,0.7497,neutral
+Brief Garden - Bevis Bawa,Photography,13.53,54,399,0.8557,positive
+Buduruwagala Temple,Temple visit,70.09,82,117,0.7492,neutral
+Casuarina Beach,Swimming,22.96,45,196,0.892,positive
+Ceylon Tea Museum,Museum visit,81.35,397,488,0.7513,positive
+Ceylon Tea Museum,Shopping,15.78,77,488,0.8859,neutral
+Coconut Tree Hill,Photography,44.0,55,125,0.8635,positive
+Coconut Tree Hill,Sunset watching,34.4,43,125,0.8579,positive
+Coconut Tree Hill,Viewpoint visit,11.2,14,125,0.888,positive
+Colombo Lotus Tower,Viewpoint visit,24.0,18,75,0.8822,positive
+Colombo National Museum,Museum visit,75.2,376,500,0.7563,positive
+Dagoba of Thuparama,Religious visit,65.15,86,132,0.7426,neutral
+Dagoba of Thuparama,Ancient city visit,15.91,21,132,0.7419,neutral
+Dagoba of Thuparama,Photography,10.61,14,132,0.8486,neutral
+Dambulla Cave Temple,Temple visit,77.6,388,500,0.7512,neutral
+Dehiwala Zoo - Sri Lanka,Relaxing,10.2,5,49,0.856,positive
+Demodara Loop,Train ride,21.43,27,126,0.8866,positive
+Devon Falls,Waterfall visit,53.2,108,203,0.743,neutral
+Devon Falls,Photography,18.23,37,203,0.86,positive
+Devon Falls,Viewpoint visit,13.3,27,203,0.8803,neutral
+Diyaluma Falls,Waterfall visit,72.67,125,172,0.748,neutral
+Diyaluma Falls,Swimming,25.0,43,172,0.8914,positive
+Diyaluma Falls,Hiking,23.26,40,172,0.888,positive
+Diyaluma Falls,Photography,18.6,32,172,0.8571,positive
+Diyatha Uyana,Relaxing,48.41,61,126,0.8598,positive
+Diyatha Uyana,Shopping,20.63,26,126,0.8832,positive
+Dondra Head Lighthouse,Photography,11.86,14,118,0.8647,positive
+"Dunhinda FallsUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Waterfall visit,83.96,89,106,0.7499,neutral
+"Dunhinda FallsUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Hiking,13.21,14,106,0.8843,neutral
+"Dunhinda FallsUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Shopping,10.38,11,106,0.8792,neutral
+Dutch Hospital Shopping Precinct,Shopping,68.37,536,784,0.8833,neutral
+Dutch Hospital Shopping Precinct,Relaxing,10.2,80,784,0.8623,positive
+Elephant Transit Home (ETH),Safari,10.6,53,500,0.8827,neutral
+Ella Rock,Hiking,45.8,229,500,0.8863,positive
+Embekka Devalaya,Temple visit,20.93,9,43,0.755,positive
+Fort Frederick,Fort visit,80.47,173,215,0.7476,neutral
+Fort Frederick,Temple visit,38.14,82,215,0.7627,neutral
+Gal Oya National Park,Safari,42.47,31,73,0.8786,neutral
+Gal Oya National Park,Boat safari,32.88,24,73,0.8815,positive
+Gal Oya National Park,Boat ride,16.44,12,73,0.884,neutral
+Gal Oya National Park,Swimming,16.44,12,73,0.8779,neutral
+Gal Oya National Park,Elephant watching,15.07,11,73,0.8755,neutral
+Gal Oya National Park,Camping,13.7,10,73,0.8747,neutral
+Gal Oya National Park,Jeep safari,12.33,9,73,0.8843,positive
+Gal Vihara,Temple visit,69.2,346,500,0.7459,neutral
+Gal Vihara,Ancient city visit,21.0,105,500,0.7438,neutral
+Gal Vihara,Religious visit,13.8,69,500,0.7427,positive
+Galle Dutch Fort,Fort visit,81.33,488,600,0.7517,positive
+Galle Dutch Fort,Shopping,34.33,206,600,0.8848,positive
+Galle Dutch Fort,Sunset watching,10.83,65,600,0.8614,positive
+Galle Face Green,Sunset watching,20.42,98,480,0.8602,positive
+Galle Face Green,Street food tasting,18.96,91,480,0.881,neutral
+Galle Face Green,Relaxing,17.92,86,480,0.8617,positive
+Galle Fort Lighthouse,Fort visit,64.4,322,500,0.7496,positive
+Galle Fort Lighthouse,Photography,28.0,140,500,0.8623,positive
+Gangaramaya Temple,Temple visit,76.8,384,500,0.7595,positive
+Goyambokka Beach,Swimming,30.98,92,297,0.8942,positive
+Goyambokka Beach,Relaxing,14.81,44,297,0.8664,positive
+Gregory Lake,Boat ride,28.2,141,500,0.887,positive
+Gregory Lake,Relaxing,15.0,75,500,0.8634,positive
+Handunugoda Tea Estate,Tea plantation visit,92.02,438,476,0.7496,positive
+Handunugoda Tea Estate,Shopping,26.89,128,476,0.8838,neutral
+Handunugoda Tea Estate,Tea tasting,18.49,88,476,0.8851,positive
+Henerathgoda Botanical Garden,Relaxing,23.68,9,38,0.8577,positive
+Hikkaduwa Beach,Surfing,22.83,137,600,0.8883,positive
+Hikkaduwa Beach,Swimming,22.67,136,600,0.8881,positive
+Hikkaduwa Beach,Snorkelling,21.17,127,600,0.8875,positive
+Hikkaduwa Beach,Relaxing,14.0,84,600,0.8622,positive
+Hiriketiya Beach,Surfing,64.57,82,127,0.8914,positive
+Hiriketiya Beach,Swimming,24.41,31,127,0.8943,positive
+Hiriketiya Beach,Relaxing,14.17,18,127,0.87,positive
+Horton Plains National Park,Hiking,33.33,200,600,0.8877,positive
+Horton Plains National Park,Waterfall visit,17.67,106,600,0.7487,positive
+Horton Plains National Park,Trekking,13.67,82,600,0.8831,neutral
+Hurulu Eco Park,Safari,43.79,148,338,0.8803,neutral
+Hurulu Eco Park,Elephant watching,18.05,61,338,0.8761,neutral
+Independence Memorial Hall,Photography,15.65,59,377,0.8591,positive
+Independence Memorial Hall,Shopping,11.41,43,377,0.883,neutral
+Isurumuniya Temple,Temple visit,71.76,188,262,0.751,neutral
+Isurumuniya Temple,Ancient city visit,16.79,44,262,0.7542,positive
+Jaffna Fort,Fort visit,76.48,348,455,0.75,neutral
+Jaffna Public Library,Photography,13.9,26,187,0.8478,neutral
+Jami Ul-Alfar Mosque,Religious visit,68.66,252,367,0.7453,neutral
+Jami Ul-Alfar Mosque,Photography,15.8,58,367,0.8542,positive
+Japanese Peace Pagoda - Rumassala,Sunset watching,16.4,82,500,0.8627,positive
+Jaya Sri Maha Bodhi,Ancient city visit,11.27,48,426,0.7422,neutral
+Jaya Sri Maha Bodhi,Pilgrimage,10.09,43,426,0.8781,neutral
+Jungle Beach,Swimming,20.17,121,600,0.8929,positive
+Jungle Beach,Snorkelling,12.83,77,600,0.8916,positive
+Kabalana Beach,Surfing,50.0,15,30,0.894,positive
+Kalametiya Eco Bird Watching,Bird watching,31.58,84,266,0.8855,positive
+Kalametiya Eco Bird Watching,Photography,15.04,40,266,0.857,positive
+Kalametiya Eco Bird Watching,Boat ride,14.29,38,266,0.8888,positive
+Kalametiya Eco Bird Watching,Sunset watching,10.15,27,266,0.8611,positive
+Kalutara Bodhiya,Temple visit,27.92,67,240,0.7777,positive
+Kalutara Bodhiya,Religious visit,12.92,31,240,0.7605,positive
+Kande Viharaya Temple,Temple visit,79.51,97,122,0.7621,neutral
+Kande Viharaya Temple,Religious visit,18.03,22,122,0.7409,neutral
+Kande Viharaya Temple,Photography,13.11,16,122,0.8539,positive
+Kandy Lake,Temple visit,11.5,69,600,0.7668,positive
+Kandy Lake,Relaxing,10.17,61,600,0.8626,positive
+Kandy View Point,Viewpoint visit,34.4,172,500,0.8838,positive
+Kandy View Point,Photography,21.8,109,500,0.863,positive
+Kataragama Temple,Temple visit,78.91,232,294,0.7513,neutral
+Kataragama Temple,Pilgrimage,19.73,58,294,0.8742,neutral
+Kaudulla National Park,Safari,42.2,211,500,0.8803,neutral
+Kaudulla National Park,Elephant watching,16.0,80,500,0.8873,positive
+Kaudulla National Park,Jeep safari,10.6,53,500,0.8759,neutral
+Keerimalai Hot springs,Swimming,18.94,25,132,0.8797,neutral
+Kelaniya Raja Maha Vihara,Temple visit,79.6,398,500,0.7504,neutral
+Kelaniya Raja Maha Vihara,Religious visit,30.8,154,500,0.734,neutral
+Kiri Vehera,Pilgrimage,26.92,7,26,0.864,neutral
+Kirinda Viharaya,Temple visit,72.41,42,58,0.7531,positive
+Knuckles Mountain Range,Hiking,30.92,77,249,0.8827,positive
+Knuckles Mountain Range,Trekking,29.72,74,249,0.8817,neutral
+Knuckles Mountain Range,Camping,14.06,35,249,0.8898,positive
+Koggala Lake,Boat ride,40.18,45,112,0.8849,neutral
+Koggala Lake,Temple visit,15.18,17,112,0.7844,positive
+Koggala Lake,Spa treatment,13.39,15,112,0.8768,neutral
+Koggala Lake,Relaxing,12.5,14,112,0.8725,positive
+Kumana National Park,Safari,46.79,51,109,0.8806,neutral
+Kumana National Park,Camping,11.93,13,109,0.8871,positive
+Kumana National Park,Bird watching,10.09,11,109,0.8857,neutral
+Laxapana Falls,Waterfall visit,90.91,20,22,0.7437,neutral
+Lipton’s Seat,Tea factory visit,18.6,93,500,0.7465,neutral
+Lipton’s Seat,Sunrise watching,11.0,55,500,0.8543,positive
+Lipton’s Seat,Photography,10.6,53,500,0.8583,positive
+Lipton’s Seat,Viewpoint visit,10.6,53,500,0.8879,positive
+Little Adam's Peak View Point,Hiking,37.57,263,700,0.8891,positive
+Little Adam's Peak View Point,Ziplining,13.86,97,700,0.881,neutral
+Little Adam's Peak View Point,Sunrise watching,11.86,83,700,0.8565,positive
+Little Adam's Peak View Point,Photography,11.29,79,700,0.856,positive
+Lover's Leap Falls,Waterfall visit,81.15,297,366,0.7462,neutral
+Lover's Leap Falls,Hiking,19.95,73,366,0.8864,positive
+Lunugamvehera National Park,Safari,50.0,23,46,0.8789,neutral
+Lunugamvehera National Park,Jeep safari,13.04,6,46,0.8771,neutral
+Madu River Safari by Buddhi,Boat ride,44.6,223,500,0.8846,positive
+Madu River Safari by Buddhi,Spa treatment,27.8,139,500,0.8792,neutral
+Madu River Safari by Buddhi,Safari,27.2,136,500,0.8808,neutral
+Madu River Safari by Buddhi,Temple visit,16.8,84,500,0.7737,neutral
+Madu River Safari by Buddhi,Boat safari,10.4,52,500,0.8781,neutral
+Maduru Oya National Park,Safari,33.33,9,27,0.8806,neutral
+Maduru Oya National Park,Elephant watching,29.63,8,27,0.8856,neutral
+Maha Saman Dewalaya,Temple visit,13.51,5,37,0.806,positive
+Maligawila Buddha Statue,Religious visit,58.62,17,29,0.7508,positive
+Marble Beach,Swimming,15.22,51,335,0.8907,positive
+Matara Paravi Duwa Temple,Temple visit,75.0,45,60,0.7507,neutral
+Mihintale,Sunset watching,18.6,93,500,0.8577,positive
+Mihintale,Ancient city visit,13.2,66,500,0.7458,neutral
+Mihintale,Religious visit,12.4,62,500,0.7493,positive
+Minneriya National Park,Safari,40.83,245,600,0.8809,neutral
+Minneriya National Park,Elephant watching,12.5,75,600,0.8828,neutral
+Minneriya National Park,Jeep safari,10.67,64,600,0.8801,neutral
+Mirissa Beach,Relaxing,21.17,127,600,0.8668,positive
+Mirissa Beach,Surfing,20.0,120,600,0.8928,positive
+Mirissa Beach,Swimming,18.5,111,600,0.8968,positive
+Mirissa Beach,Sunset watching,12.17,73,600,0.8674,positive
+Moon Plains,Safari,36.97,61,165,0.8794,neutral
+Moon Plains,Jeep safari,21.21,35,165,0.8775,neutral
+Moon Plains,Viewpoint visit,21.21,35,165,0.8819,neutral
+Mount Lavinia Beach,Relaxing,14.4,72,500,0.8666,positive
+Mount Lavinia Beach,Sunset watching,13.4,67,500,0.8651,positive
+Mount Lavinia Beach,Swimming,13.4,67,500,0.8891,positive
+Mulgirigala Raja Maha Vihara,Temple visit,71.99,275,382,0.7544,positive
+Muthurajawela Marsh,Boat ride,43.83,103,235,0.8851,positive
+Muthurajawela Marsh,Photography,11.06,26,235,0.8524,positive
+Nagadipa Purana Vihara,Temple visit,84.85,140,165,0.7497,neutral
+Nagadipa Purana Vihara,Boat ride,32.73,54,165,0.8828,neutral
+Nagadipa Purana Vihara,Religious visit,23.03,38,165,0.7317,neutral
+Nalanda Gedige,Temple visit,26.85,40,149,0.7478,positive
+Nallur Kandaswamy Kovil Festival,Temple visit,70.59,12,17,0.76,neutral
+"Negombo BeachUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Swimming,20.34,120,590,0.8881,neutral
+"Negombo BeachUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Sunset watching,14.07,83,590,0.8574,positive
+"Negombo BeachUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Relaxing,10.85,64,590,0.86,positive
+"Negombo Fish MarketUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Photography,10.59,41,387,0.8607,positive
+"Negombo Fish MarketUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Seafood tasting,10.59,41,387,0.8772,neutral
+Nilaveli Beach,Swimming,23.53,64,272,0.895,positive
+Nilaveli Beach,Relaxing,13.6,37,272,0.8658,positive
+Nine Arches BridgeSomeone from this business manages the listing.,Photography,32.0,192,600,0.8582,positive
+Old Parliament Building,Photography,24.3,69,284,0.8536,neutral
+Pasikudah Beach,Swimming,17.65,18,102,0.8973,positive
+Pasikudah Beach,Relaxing,13.73,14,102,0.8684,positive
+Passikudah Beach,Swimming,19.66,80,407,0.8973,positive
+Pedro Tea Factory,Tea factory visit,91.6,458,500,0.7471,neutral
+Pedro Tea Factory,Photography,12.0,60,500,0.8534,neutral
+Pedro Tea Factory,Shopping,11.2,56,500,0.8834,neutral
+Pettah Floating Market,Shopping,46.15,48,104,0.8813,neutral
+Pidurangala Rock,Hiking,27.0,135,500,0.8847,neutral
+Pidurangala Rock,Sunrise watching,27.0,135,500,0.8571,positive
+Pidurangala Rock,Sunset watching,24.0,120,500,0.8554,positive
+Pidurutalagala,Photography,16.47,14,85,0.85,neutral
+Pinnawala Elephant Orphanage,Photography,14.0,84,600,0.8436,neutral
+Pinnawala Elephant Orphanage,Elephant watching,10.17,61,600,0.8759,neutral
+Pitawala Pathana,Hiking,20.37,11,54,0.8812,neutral
+Pitawala Pathana,Photography,14.81,8,54,0.8512,positive
+Pitawala Pathana,Viewpoint visit,14.81,8,54,0.88,neutral
+Polhena Beach,Swimming,35.55,75,211,0.8876,positive
+Polhena Beach,Snorkelling,32.23,68,211,0.8898,positive
+Polhena Beach,Relaxing,12.8,27,211,0.8622,positive
+Polonnaruwa Vatadage,Ancient city visit,66.15,127,192,0.7432,neutral
+Polonnaruwa Vatadage,Ruins exploration,13.02,25,192,0.765,positive
+Popham's Arboretum,Safari,10.69,17,159,0.8741,neutral
+Rankoth Vehera,Religious visit,25.86,15,58,0.7465,neutral
+Ravana Ella FallsSomeone from this business manages the listing.,Waterfall visit,60.8,304,500,0.7494,neutral
+Ravana Ella FallsSomeone from this business manages the listing.,Photography,23.0,115,500,0.8565,positive
+Ravana Ella FallsSomeone from this business manages the listing.,Swimming,17.8,89,500,0.8832,neutral
+Richmond Castle,Photography,12.89,25,194,0.86,positive
+Ridee Viharaya (silver Temple),Temple visit,62.16,46,74,0.755,neutral
+Ridee Viharaya (silver Temple),Meditation,12.16,9,74,0.8767,neutral
+Ritigala Forest Monastery,Ruins exploration,23.61,55,233,0.7511,positive
+Ritigala Forest Monastery,Hiking,10.73,25,233,0.8888,positive
+Royal Botanical Gardens,Relaxing,13.67,82,600,0.8666,positive
+Ruwanweli Maha Seya,Religious visit,22.8,114,500,0.7452,neutral
+Ruwanweli Maha Seya,Ancient city visit,14.8,74,500,0.742,neutral
+Samadhi Statue,Religious visit,18.27,19,104,0.7395,neutral
+Samadhi Statue,Meditation,14.42,15,104,0.8742,neutral
+Samadhi Statue,Ancient city visit,11.54,12,104,0.7462,positive
+Samudra Parakrama,Ancient city visit,20.69,6,29,0.7243,neutral
+Samudra Parakrama,Sunset watching,20.69,6,29,0.8562,positive
+Seema Malakaya Temple,Temple visit,67.61,215,318,0.7511,neutral
+Seema Malakaya Temple,Photography,16.98,54,318,0.8603,positive
+Seema Malakaya Temple,Meditation,15.41,49,318,0.882,neutral
+Seenigama Muhudu Viharaya,Temple visit,71.93,41,57,0.7595,neutral
+Seenigama Muhudu Viharaya,Boat ride,24.56,14,57,0.8812,neutral
+Seenigama Muhudu Viharaya,Photography,10.53,6,57,0.855,neutral
+Seruwila Mangala Raja Maha Vihara,Temple visit,70.73,29,41,0.7487,neutral
+Seruwila Mangala Raja Maha Vihara,Religious visit,17.07,7,41,0.7357,neutral
+Single Tree Hill,Hiking,30.16,19,63,0.8847,neutral
+Single Tree Hill,Temple visit,26.98,17,63,0.7535,positive
+Sinharaja Forest Reserve,Swimming,13.04,57,437,0.887,positive
+Sinharaja Forest Reserve,Waterfall visit,12.13,53,437,0.756,positive
+Sinharaja Forest Reserve,Trekking,11.67,51,437,0.8829,neutral
+Sinharaja Forest Reserve,Hiking,11.44,50,437,0.8819,neutral
+Sithulpawwa Rock Temple,Temple visit,80.22,73,91,0.7554,neutral
+Somawathiya Chaitya,Religious visit,26.51,22,83,0.7496,neutral
+Somawathiya Chaitya,Temple visit,16.87,14,83,0.7481,neutral
+Somawathiya Chaitya,Pilgrimage,13.25,11,83,0.8775,neutral
+Sri Pada / Adam's Peak,Sunrise watching,50.0,5,10,0.8667,positive
+"Sri Pada / Adam's PeakUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Sunrise watching,59.8,293,490,0.8501,neutral
+"Sri Pada / Adam's PeakUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Hiking,31.84,156,490,0.8791,neutral
+"Sri Pada / Adam's PeakUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Pilgrimage,20.61,101,490,0.8769,neutral
+"Sri Pada / Adam's PeakUnclaimedIf you own this business, claim it for free now to update business info, respond to reviews, and more.Claim this listing",Shopping,20.2,99,490,0.8745,neutral
+St Benedict's Monastery - Adisham,Shopping,15.07,33,219,0.8776,neutral
+St Clair's Falls,Waterfall visit,49.61,126,254,0.7525,neutral
+St Clair's Falls,Photography,17.32,44,254,0.8642,positive
+St Clair's Falls,Viewpoint visit,11.42,29,254,0.8824,neutral
+St Lucia's Cathedral,Religious visit,12.5,5,40,0.7557,positive
+St. Mary's Church,Religious visit,62.59,174,278,0.7518,positive
+St. Mary's Church,Photography,10.43,29,278,0.8574,neutral
+Statue of Parakramabahu I,Ancient city visit,15.15,15,99,0.7453,neutral
+Temple of the Sacred Tooth Relic,Religious visit,83.81,528,630,0.7435,neutral
+Temple of the Sacred Tooth Relic,Temple visit,83.81,528,630,0.7526,neutral
+Trincomalee Beach,Relaxing,13.24,9,68,0.8636,positive
+Trincomalee Beach,Swimming,11.76,8,68,0.8936,positive
+Turtle Conservation Project Turtle Watch,Photography,20.53,77,375,0.8459,neutral
+Turtle Conservation Project Turtle Watch,Turtle watching,19.73,74,375,0.8756,neutral
+Twin Baths (Kuttam Pokuna),Ancient city visit,13.39,34,254,0.7434,neutral
+Udawalawe National Park,Safari,68.5,411,600,0.8868,positive
+Unawatuna Beach,Swimming,27.82,37,133,0.8849,positive
+Unawatuna Beach,Relaxing,18.8,25,133,0.8655,positive
+Uppuveli Beach,Relaxing,22.45,22,98,0.8632,positive
+Uppuveli Beach,Swimming,20.41,20,98,0.8938,positive
+Uppuveli Beach,Fishing,14.29,14,98,0.8747,neutral
+Victoria Park of Nuwara Eliya,Relaxing,17.4,87,500,0.8647,positive
+Viharamahadevi Park,Relaxing,26.0,130,500,0.861,positive
+Visit Kanneliya Rain Forest,Waterfall visit,25.35,18,71,0.7521,neutral
+Visit Kanneliya Rain Forest,Hiking,16.9,12,71,0.8843,neutral
+Visit Kanneliya Rain Forest,Trekking,12.68,9,71,0.8829,neutral
+Wasgamuwa National Park,Safari,44.62,29,65,0.8818,neutral
+Wasgamuwa National Park,Elephant watching,23.08,15,65,0.88,neutral
+Wasgamuwa National Park,Jeep safari,15.38,10,65,0.874,neutral
+Weherahena Buddhist Temple,Temple visit,79.52,66,83,0.7553,positive
+Weherahena Buddhist Temple,Religious visit,20.48,17,83,0.745,positive
+Weligama Beach,Surfing,71.2,136,191,0.8876,positive
+Weligama Beach,Swimming,18.85,36,191,0.8926,positive
+Weligama Beach,Relaxing,12.04,23,191,0.8641,positive
+Wewurukannala Vihara,Temple visit,76.74,99,129,0.7593,neutral
+Wewurukannala Vihara,Religious visit,13.18,17,129,0.7465,positive
+Wewurukannala Vihara,Photography,10.08,13,129,0.8385,neutral
+Whale Watching in Mirissa,Whale watching,50.49,52,103,0.8836,positive
+Wilpattu National Park,Safari,47.8,239,500,0.8796,neutral
+Wolvendaal Church,Religious visit,67.52,79,117,0.7501,positive
+Yala National Park,Safari,50.63,40,79,0.8805,neutral

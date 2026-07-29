@@ -1,0 +1,18 @@
+{
+  "poi_name": "Polhena Beach",
+  "category": "Beach",
+  "city": "Polhena",
+  "district": "Matara District",
+  "province": "Southern Province",
+  "country": "Sri Lanka",
+  "latitude": "5.9361875",
+  "longitude": "80.5256355",
+  "full_address": "Polhena Beach, Thotamuna, Polhena, Matara District, Southern Province, Sri Lanka",
+  "wikipedia_title": "Polhena",
+  "wikipedia_desc": "",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Polhena",
+  "wikipedia_link_type": "article_or_closest_article",
+  "has_real_article": true,
+  "rag_text": "DESTINATION: Polhena Beach\nTYPE: Beach\nLOCATION: Polhena, Matara District, Southern Province, Sri Lanka\nCOORDINATES: 5.9361875, 80.5256355\nADDRESS: Polhena Beach, Thotamuna, Polhena, Matara District, Southern Province, Sri Lanka\n\nPolhena Beach is a beach located in Matara District. It is a travel destination in Sri Lanka.\nAddress: Polhena Beach, Thotamuna, Polhena, Matara District, Southern Province, Sri Lanka",
+  "text_length": 413
+}

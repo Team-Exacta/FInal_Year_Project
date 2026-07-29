@@ -1,0 +1,166 @@
+poi_id,name,category,satisfaction_score,cost,duration_time_min,latitude,longitude
+1,Aberdeen Falls,Waterfall,0.21,0,90,6.94833,80.50194
+2,Abhayagiri Dagaba,Religious Site,0.85,0,120,8.3711,80.3951
+3,Ambewela Farms,Farm / Factory,2.02,1000,120,6.9037507,80.7957375
+4,Ambuluwawa Tower,Landmark / Tower,0.63,2000,120,7.1615272,80.5473577
+5,Ancient City of Polonnaruwa,Heritage Site,3.23,4500,120,7.9403,81.0033
+6,Angurukaramulla Temple,Religious Site,1.16,0,120,7.2096609,79.8537614
+7,Arugam Bay,Beach,2.16,0,120,6.8466228,81.8305531
+8,Bahiravokanda Vihara Buddha Statue,Religious Site,3.23,300,120,7.2936,80.63
+9,Baker's Falls,Waterfall,0.81,0,90,6.7925595,80.789623
+10,Bambarakanda Falls,Waterfall,0.68,0,90,6.7742969,80.8311072
+11,Batticaloa Fort,Fort / Historic Site,0.76,0,120,7.7117713,81.7019475
+12,Beddegana Wetland Park,Wetland / Nature Park,1.5,100,240,6.8904487,79.9090936
+13,Bentota Beach,Beach,3.88,0,180,6.4290746,79.9943317
+14,Bogoda Wooden Bridge,Heritage Site,0.26,0,120,7.0079106,80.9963053
+15,Bopath Ella (Bopath Falls),Waterfall,4.5,0,120,6.8017623,80.3692116
+16,Brief Garden - Bevis Bawa,Garden / Park,2.58,1500,120,6.4571463,80.0375895
+17,Buduruwagala Temple,Religious Site,0.76,500,120,6.6848766,81.0793976
+18,Casuarina Beach,Beach,1.27,0,180,9.7631004,79.8876687
+19,Ceylon Tea Museum,Museum,3.09,1000,90,7.2686376,80.6326564
+20,Coconut Tree Hill,Viewpoint / Hiking,0.81,0,120,5.9392522,80.4682756
+21,Colombo Lotus Tower,Landmark / Tower,0.48,3000,120,6.9270163,79.8583152
+22,Colombo National Museum,Museum,3.23,1500,90,6.9104168,79.8609194
+23,Dagoba of Thuparama,Religious Site,0.85,0,120,8.3556,80.3961
+24,Dambulla Cave Temple,Religious Site,3.1,2000,120,7.8566286,80.6484958
+25,Dehiwala Zoo - Sri Lanka,Zoo / Wildlife Attraction,1.58,1500,120,6.8571738,79.8742032
+26,Demodara Loop,Engineering Landmark,0.81,0,120,6.9025732,81.0640232
+27,Devon Falls,Waterfall,1.31,0,90,6.9515033,80.6301127
+28,Diyaluma Falls,Waterfall,1.11,0,90,6.733071,81.031448
+29,Diyatha Uyana,Garden / Park,0.81,0,120,6.8940896,79.912699
+30,Dondra Head Lighthouse,Lighthouse,0.76,0,120,5.9213,80.5941
+31,Dunhinda Falls,Waterfall,0.68,0,90,7.0169435,81.063492
+32,Dutch Hospital Shopping Precinct,Shopping / Market,5.0,0,120,6.0268677,80.2194762
+33,Elephant Pass,Landmark / Historic Site,0.78,0,120,9.5248985,80.4055256
+34,Elephant Transit Home (ETH),Wildlife Conservation,4.7,1500,120,6.4268769,80.8171104
+35,Ella Rock,Viewpoint / Hiking,3.23,0,120,6.8550355,81.0523841
+36,Embekka Devalaya,Religious Site,0.28,300,120,7.2179,80.5677
+37,Fort Frederick,Fort / Historic Site,1.32,0,120,8.5793044,81.2440475
+38,Gal Oya National Park,National Park / Wildlife Reserve,0.47,5000,240,7.2114,81.4883
+39,Gal Vihara,Religious Site,2.97,0,120,7.9669,81.0028
+40,Galle Dutch Fort,Fort / Historic Site,3.8,0,120,6.0268677,80.2194762
+41,Galle Face Green,Urban Park / Promenade,3.03,0,120,6.9249607,79.8444586
+42,Galle Face Hotel,Hotel,0.13,0,120,6.9201212,79.8461345
+43,Galle Fort Lighthouse,Lighthouse,3.23,0,120,6.0245483,80.2193733
+44,Galway's Land National Park,National Park / Wildlife Reserve,0.41,1000,240,6.9657876,80.7780162
+45,Gangaramaya Temple,Religious Site,3.22,400,120,6.9166446,79.8566559
+46,Gartmore Falls,Waterfall,1.07,0,90,6.7786554,80.5592226
+47,Goyambokka Beach,Beach,1.92,0,180,6.0091444,80.7805432
+48,Gregory Lake,Lake / River,3.23,500,120,6.9537634,80.7795416
+49,Hakgala Botanic Gardens,Garden / Park,3.23,1500,120,6.9274,80.8201
+50,Handunugoda Tea Estate,Farm / Factory,3.07,1000,120,6.0136428,80.3641777
+51,Henerathgoda Botanical Garden,Garden / Park,0.25,300,120,7.1,79.9861
+52,Hikkaduwa Beach,Beach,3.88,0,180,6.1346944,80.0997142
+53,Hiriketiya Beach,Beach,0.81,0,180,5.9627833,80.707008
+54,Horton Plains National Park,National Park / Wildlife Reserve,3.68,5000,240,6.8067144,80.8021297
+55,Hummanaya Blow Hole,Natural Landmark,1.27,300,120,5.9776154,80.7387267
+56,Hurulu Eco Park,National Park / Wildlife Reserve,2.18,5000,240,8.0581698,80.7701177
+57,Independence Memorial Hall,Memorial / Landmark,2.42,0,120,6.9040669,79.8676301
+58,Isurumuniya Temple,Religious Site,1.69,300,120,8.3346,80.3904
+59,Jaffna Fort,Fort / Historic Site,2.94,0,120,9.6623181,80.008169
+60,Jaffna Public Library,Cultural Landmark,1.21,0,120,9.6621715,80.0118084
+61,Jami Ul-Alfar Mosque,Religious Site,2.11,0,120,6.9384729,79.8518591
+62,Japanese Peace Pagoda - Rumassala,Religious Site,3.22,0,120,6.0158561,80.2379092
+63,Jaya Sri Maha Bodhi,Religious Site,2.75,0,120,8.3447103,80.3972255
+64,Jungle Beach,Beach,3.88,0,180,5.958594,80.4130866
+65,Kabalana Beach,Beach,0.19,0,180,5.9770597,80.3526132
+66,Kalametiya Eco Bird Watching,Wildlife / Bird Watching,1.72,2500,120,6.0895,80.9369
+67,Kalutara Bodhiya,Religious Site,1.55,0,120,6.5869828,79.9600819
+68,Kande Viharaya Temple,Religious Site,0.79,0,120,6.4490583,80.000279
+69,Kandy Lake,Lake / River,3.88,0,120,7.2902225,80.6432334
+70,Kandy View Point,Viewpoint / Hiking,3.23,0,120,7.2912,80.6406
+71,Kanniya Hot Springs,Hot Springs,1.97,100,120,8.6184026,81.1671242
+72,Kataragama Temple,Religious Site,1.9,0,120,6.3872525,81.3359797
+73,Kaudulla National Park,National Park / Wildlife Reserve,3.23,5000,240,8.1758109,80.9145547
+74,Keerimalai Hot springs,Hot Springs,0.85,100,120,9.8118894,80.0098736
+75,Kelaniya Raja Maha Vihara,Religious Site,3.22,0,120,6.9515273,79.918674
+76,Kiri Vehera,Religious Site,0.17,0,120,7.9632705,81.0036211
+77,Kirinda Viharaya,Religious Site,0.37,0,120,6.2139,81.3347
+78,Knuckles Mountain Range,Viewpoint / Hiking,1.46,0,120,7.45,80.8
+79,Koggala Lake,Lake / River,0.72,0,120,6.0023673,80.3319389
+80,Kosgoda Sea Turtle Conservation Project,Wildlife Conservation,3.29,1500,120,6.354312,80.0182795
+81,Kumana National Park,National Park / Wildlife Reserve,0.7,5000,240,6.6186785,81.6649958
+82,Laxapana Falls,Waterfall,2.11,0,90,6.899106,80.5009038
+83,Lipton’s Seat,Viewpoint / Hiking,4.8,0,120,6.7806643,81.0155075
+84,Little Adam's Peak View Point,Viewpoint / Hiking,4.52,0,120,6.86505,81.0630167
+85,Lovamahapaya Brazen Palace,Heritage Site,0.16,1000,120,8.341,80.3918
+86,Lover's Leap Falls,Waterfall,2.36,0,90,6.9765669,80.7856893
+87,Lunugamvehera National Park,National Park / Wildlife Reserve,0.3,500,240,6.4807205,81.2030468
+88,Madu River Safari by Buddhi,Lake / River,3.22,0,120,6.2736394,80.0382751
+89,Maduru Oya National Park,National Park / Wildlife Reserve,0.17,500,240,7.537625,81.1194996
+90,Maha Saman Dewalaya,Religious Site,0.24,0,120,6.6806,80.3802
+91,Maligawila Buddha Statue,Religious Site,0.19,0,120,6.7283447,81.3524319
+92,Marble Beach,Beach,2.16,0,180,8.5122958,81.21047
+93,Matara Paravi Duwa Temple,Religious Site,0.39,0,120,5.9485,80.5353
+94,Mihintale,Religious Site,3.23,0,120,8.3583002,80.5121579
+95,Minneriya National Park,National Park / Wildlife Reserve,3.87,5000,240,8.0161446,80.850139
+96,Mirissa Beach,Beach,3.87,0,180,5.9431556,80.4618001
+97,Moon Plains,Viewpoint / Hiking,1.07,0,120,6.9504901,80.8067974
+98,Moonstone or Sandakada pahana,Heritage Site,4.3,1000,45,8.3122,80.4131
+99,Mount Lavinia Beach,Beach,3.23,0,180,6.8362022,79.8649564
+100,Mulgirigala Raja Maha Vihara,Religious Site,2.47,0,120,6.123,80.7364
+101,Muthurajawela Marsh,Wetland / Nature Park,1.52,500,120,7.12,79.88
+102,Nagadipa Purana Vihara,Religious Site,1.07,0,120,9.6128,79.774
+103,Nalanda Gedige,Heritage Site,0.64,0,120,7.6697429,80.645926
+104,Nallur Kandaswamy Kovil Festival,Religious / Cultural Event,4.8,0,180,9.67457,80.0296574
+105,Negombo Beach,Beach,3.88,0,180,7.2424579,79.8408979
+106,Negombo Fish Market,Shopping / Market,2.56,0,120,7.2110593,79.8318074
+107,Nilavarai Bottomless Well,Natural Landmark,0.59,0,120,9.7543399,80.0883
+108,Nilaveli Beach,Beach,1.76,0,180,8.6980818,81.1929762
+109,Nine Arches Bridge,Engineering Landmark,3.86,0,120,6.8760426,81.061567
+110,Old Parliament Building,Landmark / Public Building,1.64,0,120,6.9309613,79.8429228
+111,Pasikudah Beach,Beach,0.66,0,180,7.9294868,81.5613931
+112,Pedro Tea Factory,Farm / Factory,3.23,1000,120,6.969943,80.795548
+113,Pettah Floating Market,Shopping / Market,0.67,0,120,6.9327568,79.854912
+114,Pidurangala Rock,Viewpoint / Hiking,3.22,1000,120,7.966063,80.7616591
+115,Pidurutalagala,Viewpoint / Hiking,0.55,0,120,7.0009508,80.7736523
+116,Pinnawala Elephant Orphanage,Zoo / Wildlife Attraction,3.88,3000,120,7.300512,80.3871935
+117,Pitawala Pathana,Viewpoint / Hiking,3.01,0,120,7.5490862,80.7541155
+118,Polhena Beach,Beach,1.36,0,180,5.9361875,80.5256355
+119,Polonnaruwa Vatadage,Heritage Site,1.24,1000,120,7.9473418,81.0014847
+120,Popham's Arboretum,Garden / Park,1.02,1000,120,7.8608104,80.6758588
+121,Rankoth Vehera,Religious Site,0.37,0,120,7.9582,81.0034
+122,Ravana Ella Falls,Waterfall,3.22,0,90,6.8682666,81.0596926
+123,Richmond Castle,Heritage Site,1.25,500,120,6.6016907,79.9751218
+124,Ridee Viharaya (silver Temple),Religious Site,4.6,0,90,7.5366541,80.4914296
+125,Ritigala Forest Monastery,Religious Site,1.51,500,240,8.1313924,80.6593457
+126,Royal Botanical Gardens,Garden / Park,3.81,2000,120,7.2706509,80.5963395
+127,Ruwanweli Maha Seya,Religious Site,2.96,0,120,8.350051,80.3963636
+128,Samadhi Statue,Religious Site,0.67,0,120,8.3619,80.3992
+129,Samudra Parakrama,Lake / River,0.19,0,120,7.9,80.967
+130,Sea Turtle Conservation Project (Koggala),Wildlife Conservation,4.5,1500,90,5.9912,80.3255
+131,Sea Turtle Farm Galle Mahamodara,Wildlife Conservation,3.22,1500,120,6.0398,80.2082
+132,Seema Malakaya Temple,Religious Site,2.05,400,120,6.9161,79.8569
+133,Seenigama Muhudu Viharaya,Religious Site,0.37,0,120,6.1553441,80.0900798
+134,Seruwila Mangala Raja Maha Vihara,Religious Site,0.26,0,120,8.3708,81.3194
+135,Sigiriya Lion Rock,Heritage Site,3.48,4500,120,7.9566634,80.7599301
+136,Single Tree Hill,Viewpoint / Hiking,1.65,0,120,6.9580205,80.7626508
+137,Sinharaja Forest Reserve,Forest Reserve,2.82,1000,240,6.4010545,80.5026392
+138,Sithulpawwa Rock Temple,Religious Site,0.58,0,120,6.3869,81.4497
+139,Somawathiya Chaitya,Religious Site,0.54,0,120,8.1208884,81.1689112
+140,Sri Pada / Adam's Peak,Viewpoint / Hiking,2.96,0,120,6.8261677,80.5232448
+141,St Benedict's Monastery - Adisham,Religious Site,1.41,500,120,6.7721724,80.9309262
+142,St Clair's Falls,Waterfall,1.64,0,90,6.9409114,80.6491756
+143,St Lucia's Cathedral,Religious Site,1.2,0,120,6.9476771,79.8634616
+144,St. Mary's Church,Religious Site,4.4,0,45,6.9456057,79.8595145
+145,Statue of Parakramabahu I,Heritage Site,0.64,1000,120,7.9333,81.0003
+146,Temple of the Sacred Tooth Relic,Religious Site,4.07,2000,120,7.2936148,80.6413453
+147,Trincomalee Beach,Beach,0.44,0,180,8.6111739,81.2190923
+148,Trincomalee War Cemetery,Memorial / Cemetery,1.64,0,120,8.6157265,81.2123229
+149,Turtle Conservation Project Turtle Watch,Wildlife Conservation,2.42,1500,120,6.0463,80.8524
+150,Twin Baths (Kuttam Pokuna),Heritage Site,4.4,0,60,8.3085,80.39
+151,Udawalawe National Park,National Park / Wildlife Reserve,3.87,5000,240,6.5121582,80.887626
+152,Unawatuna Beach,Beach,0.86,0,180,6.0081669,80.2443683
+153,Uppuveli Beach,Beach,0.63,0,180,8.5987375,81.2226276
+154,Victoria Park of Nuwara Eliya,Garden / Park,3.17,300,240,6.9658,80.7672
+155,Viharamahadevi Park,Garden / Park,3.23,0,240,6.9148992,79.8613636
+156,Visit Kanneliya Rain Forest,Forest Reserve,0.46,1000,240,6.2474622,80.3476291
+157,Wasgamuwa National Park,National Park / Wildlife Reserve,0.42,5000,240,7.7434134,80.9156975
+158,Weherahena Buddhist Temple,Religious Site,0.54,300,120,5.9529,80.5755
+159,Weligama Beach,Beach,1.23,0,180,5.9688378,80.4251596
+160,Wewurukannala Vihara,Religious Site,0.83,300,120,5.9458,80.7183
+161,Whale Watching in Mirissa,Activity / Experience,0.67,8000,120,5.9033478,80.4949752
+162,Wilpattu National Park,National Park / Wildlife Reserve,3.22,5000,240,8.4496505,80.0167297
+163,Wolvendaal Church,Religious Site,0.76,0,120,6.9420432,79.8590271
+164,Yala National Park,National Park / Wildlife Reserve,0.51,5000,240,6.5709721,81.5072819
+165,Yapahuwa Rock Fortress,Heritage Site,3.53,1000,120,7.8168,80.3107

@@ -1,0 +1,22 @@
+
+======================================================================
+  EVALUATION REPORT -- Setup: 1_Baseline
+  Generated: 2026-07-28 03:12:08
+  Questions evaluated: 100
+======================================================================
+
+  FEATURE FLAGS:
+  USE_BM25=false | USE_GRAPH_RETRIEVAL=false
+  USE_DYNAMIC_THRESHOLDS=false | USE_FACT_CHECKER=false | USE_INTENT_CLASSIFIER=false
+
+  OVERALL METRIC SCORES:
+  Metric                     Mean      Min      Max
+  --------------------------------------------------
+  faithfulness             0.8746   0.0276   1.0000
+  answer_relevancy         0.7547   0.0209   1.0000
+  context_precision        0.6350   0.3790   0.9677
+  context_recall           0.6514   0.3917   0.9777
+
+  INTENT ACCURACY: 0/100 = 0.0%
+
+  Avg pipeline time: 12.2s

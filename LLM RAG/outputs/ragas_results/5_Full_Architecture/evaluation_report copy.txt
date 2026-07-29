@@ -1,0 +1,22 @@
+
+======================================================================
+  EVALUATION REPORT — Setup: 5_Full_Architecture
+  Generated: 2026-07-27 18:03:23
+  Questions evaluated: 100
+======================================================================
+
+  FEATURE FLAGS:
+  USE_BM25=true | USE_GRAPH_RETRIEVAL=true
+  USE_DYNAMIC_THRESHOLDS=true | USE_FACT_CHECKER=true | USE_INTENT_CLASSIFIER=true
+
+  OVERALL METRIC SCORES:
+  Metric                     Mean      Min      Max
+  --------------------------------------------------
+  faithfulness             0.9218   0.6154   1.0000
+  answer_relevancy         0.8672   0.0000   1.0000
+  context_precision        0.9478   0.0000   1.0000
+  context_recall           0.8794   0.0000   1.0000
+
+  INTENT ACCURACY: 93/100 = 93.0%
+
+  Avg pipeline time: 22.9s

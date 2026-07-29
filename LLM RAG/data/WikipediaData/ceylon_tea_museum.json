@@ -1,0 +1,18 @@
+{
+  "poi_name": "Ceylon Tea Museum",
+  "category": "Museum",
+  "city": "Kandy",
+  "district": "Kandy District",
+  "province": "Central Province",
+  "country": "Sri Lanka",
+  "latitude": "7.2686376",
+  "longitude": "80.6326564",
+  "full_address": "Ceylon Tea Museum, Hanthana Road, Deiyannewela, Suduhumpola, Hanthana, Kandy, Kandy District, Central Province, 85129, Sri Lanka",
+  "wikipedia_title": "Ceylon Tea Museum",
+  "wikipedia_desc": "Tea museum in Kandy, Sri Lanka",
+  "wikipedia_url": "https://en.wikipedia.org/wiki/Ceylon_Tea_Museum",
+  "wikipedia_link_type": "article_or_closest_article",
+  "has_real_article": true,
+  "rag_text": "DESTINATION: Ceylon Tea Museum\nTYPE: Museum\nLOCATION: Kandy, Kandy District, Central Province, Sri Lanka\nCOORDINATES: 7.2686376, 80.6326564\nADDRESS: Ceylon Tea Museum, Hanthana Road, Deiyannewela, Suduhumpola, Hanthana, Kandy, Kandy District, Central Province, 85129, Sri Lanka\nDESCRIPTION: Tea museum in Kandy, Sri Lanka\nSOURCE: https://en.wikipedia.org/wiki/Ceylon_Tea_Museum\n\nThe Ceylon Tea Museum is located in the former Hanthana Tea Factory, which was originally constructed in 1925. It is situated 3 km (1.9 mi) south of Kandy.",
+  "text_length": 534
+}

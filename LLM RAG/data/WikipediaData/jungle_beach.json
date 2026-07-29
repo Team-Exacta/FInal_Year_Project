@@ -1,0 +1,18 @@
+{
+  "poi_name": "Jungle Beach",
+  "category": "Beach",
+  "city": "Kumbalgama",
+  "district": "Matara District",
+  "province": "Southern Province",
+  "country": "Sri Lanka",
+  "latitude": "5.958594",
+  "longitude": "80.4130866",
+  "full_address": "Jungle Beach, Kumbalgama, Matara District, Southern Province, Sri Lanka",
+  "wikipedia_title": "Jungle Beach",
+  "wikipedia_desc": "",
+  "wikipedia_url": "https://en.wikipedia.org/w/index.php?search=Jungle%20Beach%20Sri%20Lanka",
+  "wikipedia_link_type": "wikipedia_search",
+  "has_real_article": false,
+  "rag_text": "DESTINATION: Jungle Beach\nTYPE: Beach\nLOCATION: Kumbalgama, Matara District, Southern Province, Sri Lanka\nCOORDINATES: 5.958594, 80.4130866\nADDRESS: Jungle Beach, Kumbalgama, Matara District, Southern Province, Sri Lanka\nSOURCE: https://en.wikipedia.org/w/index.php?search=Jungle%20Beach%20Sri%20Lanka\n\nJungle Beach is a beach located in Matara District. It is a travel destination in Sri Lanka.\nAddress: Jungle Beach, Kumbalgama, Matara District, Southern Province, Sri Lanka",
+  "text_length": 476
+}

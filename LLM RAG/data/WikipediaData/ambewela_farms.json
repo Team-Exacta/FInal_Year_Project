@@ -1,0 +1,18 @@
+{
+  "poi_name": "Ambewela Farms",
+  "category": "Farm / Factory",
+  "city": "Nuwara Eliya",
+  "district": "Nuwara Eliya District",
+  "province": "Central Province",
+  "country": "Sri Lanka",
+  "latitude": "6.9037507",
+  "longitude": "80.7957375",
+  "full_address": "Ambewela Farm, Nuwara Eliya, Nuwara Eliya District, Central Province, 90364, Sri Lanka",
+  "wikipedia_title": "Ambewela Farms",
+  "wikipedia_desc": "",
+  "wikipedia_url": "https://en.wikipedia.org/w/index.php?search=Ambewela%20Farms%20Sri%20Lanka",
+  "wikipedia_link_type": "wikipedia_search",
+  "has_real_article": false,
+  "rag_text": "DESTINATION: Ambewela Farms\nTYPE: Farm / Factory\nLOCATION: Nuwara Eliya, Nuwara Eliya District, Central Province, Sri Lanka\nCOORDINATES: 6.9037507, 80.7957375\nADDRESS: Ambewela Farm, Nuwara Eliya, Nuwara Eliya District, Central Province, 90364, Sri Lanka\nSOURCE: https://en.wikipedia.org/w/index.php?search=Ambewela%20Farms%20Sri%20Lanka\n\nAmbewela Farms is a farm / factory located in Nuwara Eliya District. It is a travel destination in Sri Lanka.\nAddress: Ambewela Farm, Nuwara Eliya, Nuwara Eliya District, Central Province, 90364, Sri Lanka",
+  "text_length": 544
+}

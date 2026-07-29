@@ -1,0 +1,6 @@
+Original past rows: 3669
+Mapped rows: 3278
+Clean rows: 3246
+Unique original names: 384
+Unique mapped POIs: 48
+POIs in dataset: 165

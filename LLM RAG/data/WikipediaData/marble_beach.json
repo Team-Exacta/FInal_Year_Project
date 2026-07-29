@@ -1,0 +1,18 @@
+{
+  "poi_name": "Marble Beach",
+  "category": "Beach",
+  "city": "Trincomalee",
+  "district": "Trincomalee District",
+  "province": "Eastern Province",
+  "country": "Sri Lanka",
+  "latitude": "8.5122958",
+  "longitude": "81.21047",
+  "full_address": "Marble Beach, Trincomalee, Trincomalee District, Eastern Province, Sri Lanka",
+  "wikipedia_title": "Marble Beach",
+  "wikipedia_desc": "",
+  "wikipedia_url": "https://en.wikipedia.org/w/index.php?search=Marble%20Beach%20Sri%20Lanka",
+  "wikipedia_link_type": "wikipedia_search",
+  "has_real_article": false,
+  "rag_text": "DESTINATION: Marble Beach\nTYPE: Beach\nLOCATION: Trincomalee, Trincomalee District, Eastern Province, Sri Lanka\nCOORDINATES: 8.5122958, 81.21047\nADDRESS: Marble Beach, Trincomalee, Trincomalee District, Eastern Province, Sri Lanka\nSOURCE: https://en.wikipedia.org/w/index.php?search=Marble%20Beach%20Sri%20Lanka\n\nMarble Beach is a beach located in Trincomalee District. It is a travel destination in Sri Lanka.\nAddress: Marble Beach, Trincomalee, Trincomalee District, Eastern Province, Sri Lanka",
+  "text_length": 495
+}

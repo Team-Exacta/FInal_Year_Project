@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanka Travel AI</title>
+    <link rel="stylesheet" href="style.css?v=3">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Leaflet CSS and JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- Marked.js for Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+    <div class="bg-glow"></div>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌴</span>
+                <h1>Lanka Travel AI</h1>
+            </a>
+            <div class="nav-links">
+                <a href="planner.html" class="generate-btn">🗺️ Plan a Trip</a>
+                <div class="status">
+                    <span class="status-dot"></span> Online
+                </div>
+            </div>
+        </header>
+
+        <div class="chat-container" id="chat-container">
+            <div class="welcome-hero" id="welcome-hero">
+                <h1 class="welcome-title">Explore <span class="highlight">Sri Lanka</span> Like Never Before</h1>
+                <p class="welcome-subtitle">Your AI-powered personal travel concierge. Discover hidden gems, plan perfect itineraries, and get local insights instantly.</p>
+                
+                <div class="hero-options-grid">
+                    <a href="planner.html" class="hero-option-card">
+                        <div class="option-icon">🗺️</div>
+                        <h3>Interactive Trip Planner</h3>
+                        <p>Design a perfectly optimized multi-day itinerary with an interactive map.</p>
+                    </a>
+                    <div class="hero-option-card" onclick="document.getElementById('user-input').value='What are the most beautiful beaches to visit in Sri Lanka?'; document.getElementById('send-btn').click();">
+                        <div class="option-icon">🏖️</div>
+                        <h3>Discover Beaches</h3>
+                        <p>Find the best coastal spots for surfing, relaxing, or whale watching.</p>
+                    </div>
+                    <div class="hero-option-card" onclick="document.getElementById('user-input').value='I want to see wild elephants and leopards. Where should I go?'; document.getElementById('send-btn').click();">
+                        <div class="option-icon">🐘</div>
+                        <h3>Wildlife Safari</h3>
+                        <p>Explore national parks and encounter Sri Lanka's amazing wildlife.</p>
+                    </div>
+                    <div class="hero-option-card" onclick="document.getElementById('user-input').value='What are the top attractions in the Hill Country?'; document.getElementById('send-btn').click();">
+                        <div class="option-icon">⛰️</div>
+                        <h3>Hill Country</h3>
+                        <p>Journey through lush tea plantations, waterfalls, and scenic train rides.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Ask about travel in Sri Lanka..." autocomplete="off">
+            <button id="send-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="script.js?v=3"></script>
+
+</body>
+</html>

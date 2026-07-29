@@ -1,0 +1,12 @@
+langchain
+langchain-community
+langchain-google-genai
+langgraph
+neo4j
+chromadb
+sentence-transformers
+pandas
+python-dotenv
+pydantic-settings
+rank_bm25
+tqdm

@@ -1,0 +1,230 @@
+{
+  "generated_at": "2026-05-15T10:26:44.408575Z",
+  "input_file": "aggregated_cleaned_reviews(5).csv",
+  "method": "rule-based feature extraction using controlled feature vocabulary, exact review evidence snippets, and heuristic sentiment classification",
+  "note": "Obvious scraped suffixes in place names were cleaned, such as Unclaimed/Claim this listing and Someone from this business manages the listing.",
+  "total_reviews": 44928,
+  "reviews_with_extracted_feature": 42105,
+  "reviews_without_extracted_feature": 2823,
+  "total_feature_triples": 147763,
+  "unique_places_with_features": 166,
+  "unique_feature_types_found": 79,
+  "allowed_feature_types": [
+    "Beach",
+    "Sandy beach",
+    "Rocky beach",
+    "Sea",
+    "Waves",
+    "Lagoon",
+    "Lake",
+    "River",
+    "Waterfall",
+    "Coral reef",
+    "Mountain",
+    "Rock formation",
+    "Cave",
+    "Forest",
+    "Tea plantation",
+    "Viewpoint",
+    "Scenic view",
+    "Sunset view",
+    "Sunrise view",
+    "Wildlife",
+    "Elephants",
+    "Turtles",
+    "Whales",
+    "Dolphins",
+    "Birds",
+    "Leopards",
+    "Temple",
+    "Stupa",
+    "Buddha statue",
+    "Murals",
+    "Paintings",
+    "Sculptures",
+    "Cave temple",
+    "Ancient ruins",
+    "Fortress",
+    "Fort",
+    "Colonial architecture",
+    "Museum",
+    "Lighthouse",
+    "Church",
+    "Mosque",
+    "Hindu shrine",
+    "Heritage site",
+    "Entrance fee",
+    "Ticket price",
+    "Parking",
+    "Toilets",
+    "Changing rooms",
+    "Restaurants",
+    "Cafes",
+    "Shops",
+    "Market",
+    "Souvenir stalls",
+    "Accommodation",
+    "Guided tours",
+    "Local guide",
+    "Signage",
+    "Information boards",
+    "Road access",
+    "Public transport access",
+    "Stairs",
+    "Trail",
+    "Bridge",
+    "Boat service",
+    "Crowdedness",
+    "Cleanliness",
+    "Safety",
+    "Accessibility",
+    "Family friendliness",
+    "Peacefulness",
+    "Noise level",
+    "Service quality",
+    "Value for money",
+    "Food quality",
+    "Water clarity",
+    "Water depth",
+    "Strong current",
+    "Leeches",
+    "Weather condition"
+  ],
+  "sentiment_counts": {
+    "positive": 72207,
+    "negative": 19416,
+    "neutral": 56140
+  },
+  "top_features_by_mentions": [
+    [
+      "Scenic view",
+      9833
+    ],
+    [
+      "Beach",
+      7133
+    ],
+    [
+      "Temple",
+      5894
+    ],
+    [
+      "Ticket price",
+      4950
+    ],
+    [
+      "Local guide",
+      4742
+    ],
+    [
+      "Cleanliness",
+      4359
+    ],
+    [
+      "Peacefulness",
+      4351
+    ],
+    [
+      "Crowdedness",
+      4229
+    ],
+    [
+      "Elephants",
+      3910
+    ],
+    [
+      "Weather condition",
+      3843
+    ],
+    [
+      "Family friendliness",
+      3694
+    ],
+    [
+      "Sea",
+      3407
+    ],
+    [
+      "Wildlife",
+      3387
+    ],
+    [
+      "Value for money",
+      3067
+    ],
+    [
+      "Road access",
+      3044
+    ],
+    [
+      "Accommodation",
+      2941
+    ],
+    [
+      "Mountain",
+      2923
+    ],
+    [
+      "Birds",
+      2882
+    ],
+    [
+      "Buddha statue",
+      2880
+    ],
+    [
+      "Rock formation",
+      2872
+    ],
+    [
+      "Public transport access",
+      2799
+    ],
+    [
+      "Sculptures",
+      2673
+    ],
+    [
+      "Food quality",
+      2646
+    ],
+    [
+      "Trail",
+      2510
+    ],
+    [
+      "Lake",
+      2367
+    ],
+    [
+      "Restaurants",
+      2355
+    ],
+    [
+      "Stairs",
+      2203
+    ],
+    [
+      "Waterfall",
+      2145
+    ],
+    [
+      "Shops",
+      2126
+    ],
+    [
+      "Entrance fee",
+      2030
+    ]
+  ],
+  "outputs": [
+    "review_feature_triples.csv",
+    "review_feature_triples.jsonl",
+    "review_feature_triples.json",
+    "feature_summary_by_place.csv",
+    "place_feature_profile.csv",
+    "reviews_with_no_feature.csv",
+    "feature_extraction_stats.json",
+    "feature_extraction_prompt.txt"
+  ]
+}

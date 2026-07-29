@@ -1,0 +1,92 @@
+[
+    {
+        "question": "Is Lover's Leap Falls a popular spot to visit in Sri Lanka?",
+        "ground_truth": "Yes, Lover's Leap Falls is a well-regarded waterfall visit, with 81.15% of reviewers mentioning it positively.",
+        "source_fact": {
+            "place": "Lover's Leap Falls",
+            "activity": "Waterfall visit",
+            "percentage": 81.15
+        }
+    },
+    {
+        "question": "Is Aberdeen Falls a popular spot for tourists to visit in Sri Lanka?",
+        "ground_truth": "Yes, Aberdeen Falls is a popular waterfall visit, with 87.5% of reviewers mentioning it positively.",
+        "source_fact": {
+            "place": "Aberdeen Falls",
+            "activity": "Waterfall visit",
+            "percentage": 87.5
+        }
+    },
+    {
+        "question": "Is Baker's Falls a popular spot for tourists to visit in Sri Lanka?",
+        "ground_truth": "Yes, Baker's Falls is a popular waterfall visit, with 70.4% of reviewers mentioning it positively.",
+        "source_fact": {
+            "place": "Baker's Falls",
+            "activity": "Waterfall visit",
+            "percentage": 70.4
+        }
+    },
+    {
+        "question": "Is Bopath Ella a popular spot for tourists to visit in Sri Lanka?",
+        "ground_truth": "Yes, Bopath Ella is a popular waterfall visit, with 64.29% of reviewers mentioning it positively.",
+        "source_fact": {
+            "place": "Bopath Ella (Bopath Falls)",
+            "activity": "Waterfall visit",
+            "percentage": 64.29
+        }
+    },
+    {
+        "question": "How popular is visiting Devon Falls among tourists in Sri Lanka?",
+        "ground_truth": "Visiting Devon Falls is a popular activity, with 53.2% of reviewers mentioning it positively.",
+        "source_fact": {
+            "place": "Devon Falls",
+            "activity": "Waterfall visit",
+            "percentage": 53.2
+        }
+    },
+    {
+        "question": "Is Diyaluma Falls a popular spot to visit in Sri Lanka?",
+        "ground_truth": "Yes, Diyaluma Falls is a popular waterfall visit, with 72.67% of reviewers mentioning it positively.",
+        "source_fact": {
+            "place": "Diyaluma Falls",
+            "activity": "Waterfall visit",
+            "percentage": 72.67
+        }
+    },
+    {
+        "question": "Is Laxapana Falls a popular spot for tourists to visit in Sri Lanka?",
+        "ground_truth": "Yes, Laxapana Falls is a highly regarded destination, with 90.91% of reviewers mentioning their visit to the waterfall positively.",
+        "source_fact": {
+            "place": "Laxapana Falls",
+            "activity": "Waterfall visit",
+            "percentage": 90.91
+        }
+    },
+    {
+        "question": "Is the Maligawila Buddha Statue a popular spot for a religious visit among tourists?",
+        "ground_truth": "Yes, the Maligawila Buddha Statue is considered a good destination for a religious visit, with 58.62% of reviewers mentioning it positively.",
+        "source_fact": {
+            "place": "Maligawila Buddha Statue",
+            "activity": "Religious visit",
+            "percentage": 58.62
+        }
+    },
+    {
+        "question": "Is St. Mary's Church a popular spot for a religious visit in Sri Lanka?",
+        "ground_truth": "Yes, St. Mary's Church is a popular destination for a religious visit, with 62.59% of reviewers mentioning it positively.",
+        "source_fact": {
+            "place": "St. Mary's Church",
+            "activity": "Religious visit",
+            "percentage": 62.59
+        }
+    },
+    {
+        "question": "Is the Temple of the Sacred Tooth Relic a popular spot for a religious visit among tourists?",
+        "ground_truth": "Yes, the Temple of the Sacred Tooth Relic is highly regarded for religious visits, with 83.81% of reviewers mentioning it positively.",
+        "source_fact": {
+            "place": "Temple of the Sacred Tooth Relic",
+            "activity": "Religious visit",
+            "percentage": 83.81
+        }
+    }
+]

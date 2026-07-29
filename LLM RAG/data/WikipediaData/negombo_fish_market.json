@@ -1,0 +1,18 @@
+{
+  "poi_name": "Negombo Fish Market",
+  "category": "Shopping / Market",
+  "city": "Negombo",
+  "district": "Gampaha District",
+  "province": "Western Province",
+  "country": "Sri Lanka",
+  "latitude": "7.2110593",
+  "longitude": "79.8318074",
+  "full_address": "Negombo Fish Market, Sea Street, Periyamulla, Negombo, Gampaha District, Western Province, 11500, Sri Lanka",
+  "wikipedia_title": "Negombo Fish Market",
+  "wikipedia_desc": "",
+  "wikipedia_url": "https://en.wikipedia.org/w/index.php?search=Negombo%20Fish%20Market%20Sri%20Lanka",
+  "wikipedia_link_type": "wikipedia_search",
+  "has_real_article": false,
+  "rag_text": "DESTINATION: Negombo Fish Market\nTYPE: Shopping / Market\nLOCATION: Negombo, Gampaha District, Western Province, Sri Lanka\nCOORDINATES: 7.2110593, 79.8318074\nADDRESS: Negombo Fish Market, Sea Street, Periyamulla, Negombo, Gampaha District, Western Province, 11500, Sri Lanka\nSOURCE: https://en.wikipedia.org/w/index.php?search=Negombo%20Fish%20Market%20Sri%20Lanka\n\nNegombo Fish Market is a shopping / market located in Gampaha District. It is a travel destination in Sri Lanka.\nAddress: Negombo Fish Market, Sea Street, Periyamulla, Negombo, Gampaha District, Western Province, 11500, Sri Lanka",
+  "text_length": 594
+}
