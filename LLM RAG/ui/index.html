@@ -4,164 +4,488 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lanka Travel AI — Plan Sri Lanka with real traveller insight</title>
-    <link rel="stylesheet" href="style.css?v=7">
+    <title>Lanka Travel AI — Discover your perfect Sri Lankan destination</title>
+    <meta name="description"
+        content="Find where to go in Sri Lanka using insight mined from tens of thousands of real traveller reviews — best time to arrive, how crowded it gets and what it costs.">
+    <link rel="stylesheet" href="style.css?v=10">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- synchronous on purpose: sets data-theme before the first paint -->
+    <script src="theme.js?v=2"></script>
 </head>
 
 <body>
-    <div class="landing-background"></div>
-    <div class="bg-grain"></div>
+    <a class="skip-link" href="#main">Skip to main content</a>
 
-    <nav class="site-nav">
-        <a href="index.html" class="logo">
-            <span class="logo-icon">🌴</span>
-            <h1>Lanka Travel AI</h1>
+    <!-- ==================================================== navigation -->
+    <nav class="site-nav is-over-hero" aria-label="Primary">
+        <a href="index.html" class="logo" aria-label="Lanka Travel AI — home">
+            <span class="logo-mark" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" />
+                    <polygon points="16.2 7.8 14.1 14.1 7.8 16.2 9.9 9.9" />
+                </svg>
+            </span>
+            <span class="logo-name">Lanka Travel AI</span>
         </a>
+
         <div class="nav-links">
+            <a href="index.html" class="nav-link active" aria-current="page">Home</a>
             <a href="explore.html" class="nav-link">Explore</a>
-            <a href="chat.html" class="nav-link">Ask AI</a>
+            <a href="chat.html" class="nav-link">Recommendations</a>
             <a href="planner.html" class="nav-link">Trip Planner</a>
+            <a href="#why" class="nav-link">About</a>
+        </div>
+
+        <div class="nav-actions">
+            <span class="nav-fav-wrap">
+                <a class="btn-icon" href="saved.html" aria-label="Saved places">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5C2 10.8 3.5 12.5 5 14l7 7Z" />
+                    </svg>
+                </a>
+                <span class="nav-count" data-wishlist-count hidden>0</span>
+            </span>
+            <button class="btn-icon theme-toggle" type="button" aria-label="Switch theme"></button>
+            <button class="btn-icon nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="nav-panel">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 6h18M3 12h18M3 18h18" />
+                </svg>
+            </button>
         </div>
     </nav>
 
-    <main class="landing-main">
-        <div class="landing-hero">
-            <div class="eyebrow">
-                <span>🇱🇰</span> Built on <b id="eyebrow-reviews">48,000+</b> real traveller reviews
+    <div class="nav-panel" id="nav-panel">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="explore.html" class="nav-link">Explore</a>
+        <a href="chat.html" class="nav-link">Recommendations</a>
+        <a href="planner.html" class="nav-link">Trip Planner</a>
+        <a href="saved.html" class="nav-link">Saved places</a>
+        <a href="#why" class="nav-link">About</a>
+    </div>
+
+    <main id="main">
+        <!-- ================================================= 1 · hero -->
+        <header class="hero">
+            <div class="hero-media">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Sigiriya_%28141688197%29.jpeg"
+                    alt="" data-no-fallback fetchpriority="high" decoding="async">
             </div>
-            <h1 class="landing-title">
-                Your Sri Lanka trip, planned from<br>
-                what travellers <span class="highlight">actually said</span>
-            </h1>
-            <p class="landing-subtitle">
-                We mined tens of thousands of destination reviews to learn the best time to
-                arrive, how crowded a place really gets, and what it costs — then wired that
-                into an AI concierge and a multi-objective route optimiser.
-            </p>
-            <div class="hero-actions">
-                <a href="explore.html" class="btn btn-primary">🗺️ Explore the map</a>
-                <a href="planner.html" class="btn btn-ghost">Build an itinerary</a>
+
+            <div class="container">
+                <div class="hero-inner">
+                    <p class="hero-eyebrow">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="m12 3 1.9 4.6L18.5 9.5l-4.6 1.9L12 16l-1.9-4.6L5.5 9.5l4.6-1.9Z" />
+                        </svg>
+                        Built on <b id="eyebrow-reviews">48,000+</b> real traveller reviews
+                    </p>
+
+                    <h1>Discover your <em>perfect destination</em> in Sri Lanka</h1>
+
+                    <p class="hero-lead">
+                        Every beach, temple and mountain trail on the island — ranked by what visitors
+                        actually said. Know the best hour to arrive, how busy it gets and what you'll
+                        pay, before you go.
+                    </p>
+
+                    <form class="hero-search" id="hero-search" role="search" aria-label="Search destinations">
+                        <div class="search-field">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span class="search-field-body">
+                                <label for="hs-where">Where to</label>
+                                <input type="search" id="hs-where" name="q" placeholder="Beach, temple, waterfall…"
+                                    autocomplete="off">
+                            </span>
+                        </div>
+
+                        <div class="search-field">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" />
+                                <polygon points="16.2 7.8 14.1 14.1 7.8 16.2 9.9 9.9" />
+                            </svg>
+                            <span class="search-field-body">
+                                <label for="hs-type">Trip type</label>
+                                <select id="hs-type" name="theme" data-enhance>
+                                    <option value="">Any experience</option>
+                                </select>
+                            </span>
+                        </div>
+
+                        <div class="search-field">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" />
+                                <path d="M3 5v14a2 2 0 0 0 2 2h16v-5" />
+                                <path d="M18 12a2 2 0 0 0 0 4h4v-4Z" />
+                            </svg>
+                            <span class="search-field-body">
+                                <label for="hs-budget">Budget</label>
+                                <select id="hs-budget" name="cost" data-enhance>
+                                    <option value="">Any budget</option>
+                                    <option value="FREE">Free entry</option>
+                                    <option value="LOW">Budget friendly</option>
+                                    <option value="MODERATE">Mid range</option>
+                                    <option value="HIGH">Premium</option>
+                                </select>
+                            </span>
+                        </div>
+
+                        <button class="btn btn-primary btn-lg" type="submit">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="11" cy="11" r="8" />
+                                <path d="m21 21-4.3-4.3" />
+                            </svg>
+                            Search
+                        </button>
+                    </form>
+
+                    <p class="hero-suggestions">
+                        <span>Popular right now:</span>
+                        <a href="explore.html?q=beach">Beaches</a>
+                        <a href="explore.html?q=waterfall">Waterfalls</a>
+                        <a href="explore.html?theme=heritage">Ancient cities</a>
+                        <a href="explore.html?theme=wildlife">Safari parks</a>
+                        <a href="explore.html?insight=cost:free">Free to enter</a>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- =========================================== 2 · stat strip -->
+        <div class="container">
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <b id="stat-places">—</b>
+                    <span>Destinations mapped</span>
+                </div>
+                <div class="hero-stat">
+                    <b id="stat-reviews">—</b>
+                    <span>Reviews analysed</span>
+                </div>
+                <div class="hero-stat">
+                    <b id="stat-timing">—</b>
+                    <span>With timing insight</span>
+                </div>
+                <div class="hero-stat">
+                    <b id="stat-cost">—</b>
+                    <span>With cost insight</span>
+                </div>
             </div>
         </div>
 
-        <div class="stat-strip">
-            <div class="stat">
-                <div class="stat-value" id="stat-places">—</div>
-                <div class="stat-label">Destinations</div>
+        <!-- ================================== 3 · popular destinations -->
+        <section class="section" aria-labelledby="popular-h">
+            <div class="container reveal">
+                <div class="section-head">
+                    <div>
+                        <span class="section-eyebrow">Most talked about</span>
+                        <h2 id="popular-h">Popular destinations</h2>
+                        <p>The places travellers write about most — and what those reviews revealed.</p>
+                    </div>
+                    <a class="btn btn-text" href="explore.html">
+                        See all destinations
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="card-grid" id="popular-grid"></div>
             </div>
-            <div class="stat">
-                <div class="stat-value" id="stat-reviews">—</div>
-                <div class="stat-label">Reviews analysed</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="stat-timing">—</div>
-                <div class="stat-label">With timing insight</div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" id="stat-cost">—</div>
-                <div class="stat-label">With cost insight</div>
-            </div>
-        </div>
+        </section>
 
-        <div class="landing-cards">
-            <a href="explore.html" class="landing-card" style="--accent: linear-gradient(115deg,#f5a524,#ff6b5b)">
-                <div class="landing-card-icon">🧭</div>
-                <h2>Explore Sri Lanka</h2>
-                <p>
-                    Every destination on one interactive map, each pin carrying the review-mined
-                    verdict — best time of day, crowd level, and typical cost — with photos,
-                    descriptions and what visitors actually do there.
-                </p>
-                <div class="landing-card-btn">Open the map <i>→</i></div>
-            </a>
-
-            <a href="chat.html" class="landing-card" style="--accent: linear-gradient(115deg,#2dd4bf,#38bdf8)">
-                <div class="landing-card-icon">💬</div>
-                <h2>AI Travel Assistant</h2>
-                <p>
-                    Ask anything about the island. A retrieval-augmented agent answers from a
-                    knowledge graph and a review corpus, and shows you the evidence it used
-                    rather than asking you to take its word for it.
-                </p>
-                <div class="landing-card-btn">Start chatting <i>→</i></div>
-            </a>
-
-            <a href="planner.html" class="landing-card" style="--accent: linear-gradient(115deg,#8b5cf6,#6366f1)">
-                <div class="landing-card-icon">🗓️</div>
-                <h2>Interactive Trip Planner</h2>
-                <p>
-                    Set your days, hours and priorities. An ant-colony optimiser balances
-                    attraction value, budget, time and popularity, then maps the winning route
-                    day by day on real driving roads.
-                </p>
-                <div class="landing-card-btn">Plan your trip <i>→</i></div>
-            </a>
-        </div>
-
-        <div class="section-head">
-            <h2>How the three modules fit together</h2>
-            <p>Each part of the final-year project feeds the next.</p>
-        </div>
-
-        <div class="pipeline">
-            <div class="pipeline-step">
-                <span class="pipeline-num">Module 01</span>
-                <h3>UGC Analysis</h3>
-                <p>
-                    Review sentences are classified and normalised into structured facts —
-                    best time, crowd level, cost band — each with a confidence score and the
-                    source sentences behind it.
-                </p>
+        <!-- ======================================= 4 · categories -->
+        <section class="section section-tint" aria-labelledby="cat-h">
+            <div class="container reveal">
+                <div class="section-head section-head-center">
+                    <div>
+                        <span class="section-eyebrow">Browse by interest</span>
+                        <h2 id="cat-h">Explore by category</h2>
+                        <p>Pick the kind of day you want. We'll narrow the island down to it.</p>
+                    </div>
+                </div>
+                <div class="cat-grid" id="category-grid"></div>
             </div>
-            <div class="pipeline-step">
-                <span class="pipeline-num">Module 02</span>
-                <h3>Knowledge Graph + RAG</h3>
-                <p>
-                    Those facts join Wikipedia articles and extracted features in a Neo4j graph
-                    and vector store, queried by an intent-routed LangGraph agent.
-                </p>
+        </section>
+
+        <!-- ================================= 5 · recommended for you -->
+        <section class="section" aria-labelledby="rec-h">
+            <div class="container reveal">
+                <div class="section-head">
+                    <div>
+                        <span class="section-eyebrow">Personalised</span>
+                        <h2 id="rec-h">Recommended for you</h2>
+                        <p>
+                            Scored on traveller rating, how much review evidence backs each place,
+                            and how complete our insight is. Set filters on Explore to sharpen it.
+                        </p>
+                    </div>
+                    <a class="btn btn-text" href="chat.html">
+                        Ask the AI for ideas
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="card-grid" id="recommended-grid"></div>
             </div>
-            <div class="pipeline-step">
-                <span class="pipeline-num">Module 03</span>
-                <h3>Itinerary Optimisation</h3>
-                <p>
-                    A multi-objective ACO searches the POI graph under time budgets, returning
-                    Pareto-ranked routes split into practical daily plans.
-                </p>
+        </section>
+
+        <!-- ========================================= 6 · trending -->
+        <section class="section section-tint" aria-labelledby="trend-h">
+            <div class="container reveal">
+                <div class="section-head">
+                    <div>
+                        <span class="section-eyebrow">Highest rated</span>
+                        <h2 id="trend-h">Trending this season</h2>
+                        <p>Top-rated places where reviewers agree the timing is worth planning around.</p>
+                    </div>
+                    <a class="btn btn-text" href="explore.html?sort=rating">
+                        Sort the map by rating
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="card-grid" id="trending-grid"></div>
             </div>
-        </div>
+        </section>
+
+        <!-- ============================================ 7 · why us -->
+        <section class="section" id="why" aria-labelledby="why-h">
+            <div class="container reveal">
+                <div class="section-head section-head-center">
+                    <div>
+                        <span class="section-eyebrow">About this project</span>
+                        <h2 id="why-h">Why use this recommendation system</h2>
+                        <p>
+                            A final-year research project that turns unstructured traveller reviews into
+                            planning decisions you can check for yourself.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-grid">
+                    <article class="feature">
+                        <div class="feature-icon">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
+                            </svg>
+                        </div>
+                        <h3>Grounded in real reviews</h3>
+                        <p>
+                            Nothing is invented. Every timing, crowd and cost verdict traces back to
+                            review sentences you can read, each with a confidence score.
+                        </p>
+                    </article>
+
+                    <article class="feature">
+                        <div class="feature-icon">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="6" />
+                                <circle cx="12" cy="12" r="2" />
+                            </svg>
+                        </div>
+                        <h3>Match scores you can question</h3>
+                        <p>
+                            Recommendations are ranked by rating, evidence volume and how well a place
+                            fits the filters you set — not by who paid to be listed.
+                        </p>
+                    </article>
+
+                    <article class="feature">
+                        <div class="feature-icon">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="6" cy="19" r="3" />
+                                <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" />
+                                <circle cx="18" cy="5" r="3" />
+                            </svg>
+                        </div>
+                        <h3>Routes built on real roads</h3>
+                        <p>
+                            The planner balances attraction value, budget, driving time and popularity,
+                            then splits the winning route into practical days.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================= 8 · how it fits together -->
+        <section class="section section-tint" aria-labelledby="pipe-h">
+            <div class="container reveal">
+                <div class="section-head section-head-center">
+                    <div>
+                        <span class="section-eyebrow">Under the hood</span>
+                        <h2 id="pipe-h">How the three modules fit together</h2>
+                        <p>Each part of the project feeds the next.</p>
+                    </div>
+                </div>
+
+                <div class="pipeline">
+                    <article class="pipeline-step">
+                        <span class="pipeline-num">Module 01</span>
+                        <h3>UGC analysis</h3>
+                        <p>
+                            Review sentences are classified and normalised into structured facts — best
+                            time, crowd level, cost band — each with a confidence score and the source
+                            sentences behind it.
+                        </p>
+                    </article>
+                    <article class="pipeline-step">
+                        <span class="pipeline-num">Module 02</span>
+                        <h3>Knowledge graph + RAG</h3>
+                        <p>
+                            Those facts join Wikipedia articles and extracted features in a Neo4j graph
+                            and vector store, queried by an intent-routed LangGraph agent.
+                        </p>
+                    </article>
+                    <article class="pipeline-step">
+                        <span class="pipeline-num">Module 03</span>
+                        <h3>Itinerary optimisation</h3>
+                        <p>
+                            A multi-objective ant-colony search explores the POI graph under time
+                            budgets, returning Pareto-ranked routes split into daily plans.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================= 9 · testimonials -->
+        <section class="section" aria-labelledby="say-h">
+            <div class="container reveal">
+                <div class="section-head section-head-center">
+                    <div>
+                        <span class="section-eyebrow">From the review corpus</span>
+                        <h2 id="say-h">What travellers said</h2>
+                        <p>A sample of the review evidence behind the timing and crowd verdicts.</p>
+                    </div>
+                </div>
+                <div class="quote-grid" id="quote-grid"></div>
+            </div>
+        </section>
+
+        <!-- =============================================== 10 · CTA -->
+        <section class="section-sm">
+            <div class="container reveal">
+                <div class="cta-band">
+                    <h2>Ready to build the actual itinerary?</h2>
+                    <p>
+                        Tell the planner how many days you have and what matters most — value, time,
+                        budget or popularity — and it will map the route day by day.
+                    </p>
+                    <div class="cta-actions">
+                        <a class="btn btn-primary btn-lg" href="planner.html">Plan my trip</a>
+                        <a class="btn btn-secondary btn-lg" href="explore.html">Browse the map first</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+    <!-- ===================================================== footer -->
     <footer class="site-footer">
-        Lanka Travel AI — final year research project. Place imagery from Wikimedia Commons.
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-mark" aria-hidden="true">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <polygon points="16.2 7.8 14.1 14.1 7.8 16.2 9.9 9.9" />
+                            </svg>
+                        </span>
+                        <span class="logo-name">Lanka Travel AI</span>
+                    </a>
+                    <p>
+                        A destination recommendation system for Sri Lanka, built on review mining,
+                        a travel knowledge graph and multi-objective route optimisation.
+                    </p>
+                </div>
+
+                <nav class="footer-col" aria-label="Explore">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="explore.html">All destinations</a></li>
+                        <li><a href="explore.html?theme=beach">Beaches</a></li>
+                        <li><a href="explore.html?theme=heritage">Heritage sites</a></li>
+                        <li><a href="explore.html?theme=wildlife">Wildlife parks</a></li>
+                        <li><a href="saved.html">Saved places</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="footer-col" aria-label="Support">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="chat.html">Ask the AI</a></li>
+                        <li><a href="planner.html">Trip planner</a></li>
+                        <li><a href="#why">How it works</a></li>
+                        <li><a href="#why">Data sources</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-col">
+                    <h4>Travel ideas by email</h4>
+                    <p style="font-size:var(--fs-sm);color:rgba(255,255,255,.66)">
+                        Occasional notes on when to visit what. No spam.
+                    </p>
+                    <form class="newsletter" data-newsletter>
+                        <label class="sr-only" for="newsletter-email">Email address</label>
+                        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                    <p class="newsletter-note">Demo form — nothing is sent or stored.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© <span data-year>2026</span> Lanka Travel AI — final year research project.</span>
+                <div class="footer-legal">
+                    <a href="#why">Privacy policy</a>
+                    <a href="#why">Terms &amp; conditions</a>
+                    <a href="#why">Image credits</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#why" aria-label="Facebook">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3Z" />
+                        </svg>
+                    </a>
+                    <a href="#why" aria-label="Instagram">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <circle cx="12" cy="12" r="4" />
+                            <circle cx="17.5" cy="6.5" r="1" />
+                        </svg>
+                    </a>
+                    <a href="#why" aria-label="X">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 4l7.5 9.8L4.4 20h2l6-5.4L17 20h3l-7.9-10.3L19.5 4h-2l-5.4 4.9L8.2 4Z" />
+                        </svg>
+                    </a>
+                    <a href="#why" aria-label="YouTube">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="2" y="5" width="20" height="14" rx="4" />
+                            <polygon points="10.5 9 15.5 12 10.5 15" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
 
-    <script>
-        // Fill the stat strip from the same dataset the Explore page uses.
-        fetch('data/explore_places.json')
-            .then(r => r.ok ? r.json() : Promise.reject(r.status))
-            .then(data => {
-                const c = data.counts || {};
-                const reviews = (data.places || []).reduce(
-                    (sum, p) => sum + ((p.ugc && p.ugc.total_reviews) || 0), 0);
-
-                const set = (id, val) => {
-                    const el = document.getElementById(id);
-                    if (el) el.textContent = val;
-                };
-                set('stat-places', c.places ?? '—');
-                set('stat-reviews', reviews ? reviews.toLocaleString() : '—');
-                set('stat-timing', c.with_best_time ?? '—');
-                set('stat-cost', c.with_cost ?? '—');
-
-                const eyebrow = document.getElementById('eyebrow-reviews');
-                if (eyebrow && reviews) eyebrow.textContent = reviews.toLocaleString();
-            })
-            .catch(() => { /* stats are decorative - leave the placeholders */ });
-    </script>
+    <script src="ui.js?v=1"></script>
+    <script src="home.js?v=1"></script>
 </body>
 
 </html>

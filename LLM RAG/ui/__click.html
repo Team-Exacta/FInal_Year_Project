@@ -1,0 +1,16 @@
+<!doctype html><meta charset=utf-8>
+<style>html,body{margin:0}iframe{border:0;display:block;width:1440px;height:1000px}</style>
+<iframe id=f></iframe>
+<script>
+const q = new URLSearchParams(location.search);
+const f = document.getElementById('f');
+f.src = q.get('p');
+f.onload = () => setTimeout(() => {
+  const id = q.get('id');
+  if (!id) return;
+  const d = f.contentDocument;
+  const sel = d.getElementById(id);
+  const btn = sel && sel.parentElement.querySelector('.dropdown-btn');
+  if (btn) btn.click();
+}, 2500);
+</script>

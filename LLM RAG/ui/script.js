@@ -133,10 +133,20 @@ async function sendMessage() {
 }
 
 
-sendBtn.addEventListener('click', sendMessage);
-userInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') sendMessage();
-});
+// The composer is a real <form>, so Enter and the send button both route
+// through submit — preventDefault stops the browser navigating away.
+const chatForm = document.getElementById('chat-form');
+if (chatForm) {
+    chatForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        sendMessage();
+    });
+} else {
+    sendBtn.addEventListener('click', sendMessage);
+    userInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') sendMessage();
+    });
+}
 
 // Fill the box from a suggestion card and send it.
 function askSuggestion(text) {

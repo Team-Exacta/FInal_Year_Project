@@ -4,79 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Travel Assistant — Lanka Travel AI</title>
-    <link rel="stylesheet" href="style.css?v=7">
+    <title>Recommendations — Lanka Travel AI</title>
+    <meta name="description"
+        content="Ask for Sri Lanka travel recommendations and see the knowledge-graph evidence behind every answer.">
+    <link rel="stylesheet" href="style.css?v=10">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
-    <!-- Marked.js for Markdown rendering -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="theme.js?v=2"></script>
 </head>
 
 <body>
-    <div class="bg-glow"></div>
+    <a class="skip-link" href="#main">Skip to the conversation</a>
 
-    <nav class="site-nav">
-        <a href="index.html" class="logo">
-            <span class="logo-icon">🌴</span>
-            <h1>Lanka Travel AI</h1>
+    <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" class="logo" aria-label="Lanka Travel AI — home">
+            <span class="logo-mark" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" />
+                    <polygon points="16.2 7.8 14.1 14.1 7.8 16.2 9.9 9.9" />
+                </svg>
+            </span>
+            <span class="logo-name">Lanka Travel AI</span>
         </a>
+
         <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
             <a href="explore.html" class="nav-link">Explore</a>
-            <a href="chat.html" class="nav-link active">Ask AI</a>
+            <a href="chat.html" class="nav-link active" aria-current="page">Recommendations</a>
             <a href="planner.html" class="nav-link">Trip Planner</a>
-            <div class="status"><span class="status-dot"></span> Online</div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="chat-container" id="chat-container">
-            <div class="welcome-hero" id="welcome-hero">
-                <h1 class="welcome-title">Explore <span class="highlight">Sri Lanka</span> like never before</h1>
-                <p class="welcome-subtitle">
-                    Your AI travel concierge, grounded in a knowledge graph and tens of thousands
-                    of real traveller reviews. Ask anything — and see the evidence behind the answer.
-                </p>
-
-                <div class="hero-options-grid">
-                    <a href="explore.html" class="hero-option-card">
-                        <div class="option-icon">🧭</div>
-                        <h3>Explore the map</h3>
-                        <p>Browse every destination with review-mined timing, crowd and cost insight.</p>
-                    </a>
-                    <div class="hero-option-card"
-                        onclick="askSuggestion('What are the most beautiful beaches to visit in Sri Lanka?')">
-                        <div class="option-icon">🏖️</div>
-                        <h3>Discover beaches</h3>
-                        <p>Find the best coastal spots for surfing, relaxing, or whale watching.</p>
-                    </div>
-                    <div class="hero-option-card"
-                        onclick="askSuggestion('I want to see wild elephants and leopards. Where should I go?')">
-                        <div class="option-icon">🐘</div>
-                        <h3>Wildlife safari</h3>
-                        <p>Explore national parks and encounter Sri Lanka's amazing wildlife.</p>
-                    </div>
-                    <div class="hero-option-card"
-                        onclick="askSuggestion('What are the top attractions in the Hill Country?')">
-                        <div class="option-icon">⛰️</div>
-                        <h3>Hill country</h3>
-                        <p>Journey through tea plantations, waterfalls, and scenic train rides.</p>
-                    </div>
-                </div>
-            </div>
+            <a href="index.html#why" class="nav-link">About</a>
         </div>
 
-        <div class="input-container">
-            <input type="text" id="user-input" placeholder="Ask about travel in Sri Lanka..." autocomplete="off">
-            <button id="send-btn" aria-label="Send">
-                <svg viewBox="0 0 24 24" width="22" height="22">
-                    <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+        <div class="nav-actions">
+            <span class="status"><span class="status-dot"></span> Online</span>
+            <span class="nav-fav-wrap">
+                <a class="btn-icon" href="saved.html" aria-label="Saved places">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5C2 10.8 3.5 12.5 5 14l7 7Z" />
+                    </svg>
+                </a>
+                <span class="nav-count" data-wishlist-count hidden>0</span>
+            </span>
+            <button class="btn-icon theme-toggle" type="button" aria-label="Switch theme"></button>
+            <button class="btn-icon nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="nav-panel">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 6h18M3 12h18M3 18h18" />
                 </svg>
             </button>
         </div>
+    </nav>
+
+    <div class="nav-panel" id="nav-panel">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="explore.html" class="nav-link">Explore</a>
+        <a href="chat.html" class="nav-link active">Recommendations</a>
+        <a href="planner.html" class="nav-link">Trip Planner</a>
+        <a href="saved.html" class="nav-link">Saved places</a>
+        <a href="index.html#why" class="nav-link">About</a>
     </div>
 
-    <script src="script.js?v=5"></script>
+    <main class="page" id="main">
+        <div class="chat-shell">
+            <div class="chat-container" id="chat-container">
+                <div class="welcome-hero" id="welcome-hero">
+                    <h1 class="welcome-title">Where should you go in <em>Sri Lanka</em>?</h1>
+                    <p class="welcome-subtitle">
+                        Ask anything about the island. Answers are grounded in a travel knowledge graph
+                        and tens of thousands of real reviews — and every one shows its evidence.
+                    </p>
+
+                    <div class="hero-options-grid">
+                        <a href="explore.html" class="hero-option-card">
+                            <span class="option-icon" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2" />
+                                    <path d="M8 2v16M16 6v16" />
+                                </svg>
+                            </span>
+                            <h3>Explore the map</h3>
+                            <p>Browse every destination with review-mined timing, crowd and cost insight.</p>
+                        </a>
+
+                        <button type="button" class="hero-option-card"
+                            onclick="askSuggestion('What are the most beautiful beaches to visit in Sri Lanka?')">
+                            <span class="option-icon" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 1.3 0 1.9-.5 2.5-1" />
+                                    <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 1.3 0 1.9-.5 2.5-1" />
+                                    <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 1.3 0 1.9-.5 2.5-1" />
+                                </svg>
+                            </span>
+                            <h3>Discover beaches</h3>
+                            <p>Find the best coastal spots for surfing, relaxing or whale watching.</p>
+                        </button>
+
+                        <button type="button" class="hero-option-card"
+                            onclick="askSuggestion('I want to see wild elephants and leopards. Where should I go?')">
+                            <span class="option-icon" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <circle cx="11" cy="4.5" r="2" />
+                                    <circle cx="18" cy="8" r="2" />
+                                    <circle cx="4" cy="8" r="2" />
+                                    <circle cx="6.5" cy="14.5" r="2" />
+                                    <path d="M13.8 13c1.7 1 2.7 2.6 2.7 4.3a3.7 3.7 0 0 1-3.7 3.7h-1.6a3.7 3.7 0 0 1-3.7-3.7c0-1.7 1-3.3 2.7-4.3a3.5 3.5 0 0 1 3.6 0Z" />
+                                </svg>
+                            </span>
+                            <h3>Wildlife safari</h3>
+                            <p>Explore national parks and plan around when the animals actually show up.</p>
+                        </button>
+
+                        <button type="button" class="hero-option-card"
+                            onclick="askSuggestion('What are the top attractions in the Hill Country?')">
+                            <span class="option-icon" aria-hidden="true">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="m8 3 4 8 5-5 5 15H2Z" />
+                                </svg>
+                            </span>
+                            <h3>Hill country</h3>
+                            <p>Tea plantations, waterfalls and the scenic train rides between them.</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <form class="input-container" id="chat-form">
+                <label class="sr-only" for="user-input">Ask about travel in Sri Lanka</label>
+                <input type="text" id="user-input" placeholder="Ask about travel in Sri Lanka…" autocomplete="off">
+                <button id="send-btn" type="submit" aria-label="Send message">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="m22 2-7 20-4-9-9-4Z" />
+                        <path d="M22 2 11 13" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <script src="ui.js?v=1"></script>
+    <script src="script.js?v=6"></script>
 </body>
 
 </html>

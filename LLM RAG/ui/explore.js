@@ -1,567 +1,733 @@
 /* ==========================================================================
-   Explore Sri Lanka
-   Interactive map + filterable place browser over the merged dataset built by
+   Explore
+   Filterable browser + map over the merged dataset built by
    scripts/build_explore_data.py (MOIP coordinates + UGC review insights +
    Wikipedia descriptions + graph features/activities).
+
+   Cards, badges, icons and the match score all come from ui.js so this page
+   and the homepage can never render a destination two different ways.
    ========================================================================== */
+(function () {
+    'use strict';
 
-const DATA_URL = 'data/explore_places.json';
+    const {
+        DATA_URL, THEMES, themeFor, icon, escapeHtml, titleCase, durationText,
+        placeCard, skeletonCards, stateHtml, matchScore, matchRing, matchBadge,
+        ugcTags, COST_TEXT, CROWD_TEXT, ratingOf, reviewCount, syncWishlistBadges,
+    } = window.LT;
 
-/* ---------- category -> theme (32 raw categories collapse to 8 themes) ---- */
-const THEMES = [
-    { key: 'beach',    label: 'Beaches',     emoji: '🏖️', color: '#38bdf8', match: ['beach', 'lighthouse', 'bay'] },
-    { key: 'heritage', label: 'Heritage',    emoji: '🛕', color: '#f5a524', match: ['religious', 'heritage', 'fort', 'historic', 'memorial', 'cultural', 'museum'] },
-    { key: 'wildlife', label: 'Wildlife',    emoji: '🐘', color: '#a3e635', match: ['wildlife', 'national park', 'zoo', 'bird', 'forest', 'wetland'] },
-    { key: 'water',    label: 'Waterfalls',  emoji: '💧', color: '#2dd4bf', match: ['waterfall', 'lake', 'river', 'hot springs'] },
-    { key: 'views',    label: 'Views & hikes', emoji: '⛰️', color: '#ff6b5b', match: ['viewpoint', 'hiking', 'natural landmark'] },
-    { key: 'parks',    label: 'Parks',       emoji: '🌳', color: '#4ade80', match: ['garden', 'park', 'promenade'] },
-    { key: 'city',     label: 'City & culture', emoji: '🏙️', color: '#8b5cf6', match: ['shopping', 'market', 'tower', 'landmark', 'engineering', 'hotel', 'activity', 'farm', 'factory'] },
-];
-const FALLBACK_THEME = { key: 'other', label: 'Other', emoji: '📍', color: '#94a3b8' };
+    /* ---------------------------------------------- review-insight filters */
+    const INSIGHT_FILTERS = [
+        { id: 'time:EARLY_MORNING', label: 'Best early morning', icon: 'sun',
+          test: p => tod(p) === 'EARLY_MORNING' },
+        { id: 'time:AFTERNOON', label: 'Best afternoon', icon: 'cloud',
+          test: p => tod(p) === 'AFTERNOON' },
+        { id: 'time:EVENING', label: 'Best evening', icon: 'moon',
+          test: p => tod(p) === 'EVENING' },
+        { id: 'crowd:quiet', label: 'Rarely crowded', icon: 'users',
+          test: p => ['EMPTY', 'QUIET'].includes(crowd(p)) },
+        { id: 'crowd:packed', label: 'Very popular', icon: 'trending',
+          test: p => ['BUSY', 'PACKED'].includes(crowd(p)) },
+        { id: 'cost:free', label: 'Free entry', icon: 'wallet',
+          test: p => cost(p) === 'FREE' },
+        { id: 'cost:cheap', label: 'Budget friendly', icon: 'wallet',
+          test: p => ['FREE', 'LOW'].includes(cost(p)) },
+        { id: 'season:DRY_SEASON', label: 'Dry season', icon: 'sun',
+          test: p => season(p) === 'DRY_SEASON' },
+        { id: 'has:photo', label: 'Has photo', icon: 'camera', test: p => !!p.image },
+    ];
+    const INSIGHT_TESTS = Object.fromEntries(INSIGHT_FILTERS.map(f => [f.id, f.test]));
 
-function themeFor(category) {
-    const c = (category || '').toLowerCase();
-    return THEMES.find(t => t.match.some(m => c.includes(m))) || FALLBACK_THEME;
-}
+    const tod = p => p.ugc?.best_time?.time_of_day || null;
+    const season = p => p.ugc?.best_time?.season || null;
+    const crowd = p => p.ugc?.crowd?.label || null;
+    const cost = p => p.ugc?.cost?.level || null;
 
-/* ---------- review-insight filters --------------------------------------- */
-const INSIGHT_FILTERS = [
-    { id: 'time:EARLY_MORNING', label: '🌅 Best early morning', test: p => tod(p) === 'EARLY_MORNING' },
-    { id: 'time:AFTERNOON',     label: '🌤️ Best afternoon',    test: p => tod(p) === 'AFTERNOON' },
-    { id: 'time:EVENING',       label: '🌆 Best evening',       test: p => tod(p) === 'EVENING' },
-    { id: 'crowd:quiet',        label: '🤫 Rarely crowded',     test: p => ['EMPTY', 'QUIET'].includes(crowdLabel(p)) },
-    { id: 'crowd:packed',       label: '🔥 Very popular',       test: p => ['BUSY', 'PACKED'].includes(crowdLabel(p)) },
-    { id: 'cost:free',          label: '🆓 Free entry',         test: p => costLevel(p) === 'FREE' },
-    { id: 'cost:cheap',         label: '💸 Budget friendly',    test: p => ['FREE', 'LOW'].includes(costLevel(p)) },
-    { id: 'season:DRY_SEASON',  label: '☀️ Dry season',         test: p => season(p) === 'DRY_SEASON' },
-    { id: 'has:photo',          label: '📷 Has photo',          test: p => !!p.image },
-];
+    const COST_MAX = 6000, DURATION_MAX = 480;
 
-const tod = p => p.ugc?.best_time?.time_of_day || null;
-const season = p => p.ugc?.best_time?.season || null;
-const crowdLabel = p => p.ugc?.crowd?.label || null;
-const costLevel = p => p.ugc?.cost?.level || null;
+    /* ============================================================== state */
+    let ALL = [];
+    let filtered = [];
+    let selectedId = null;
+    let ACTIVITIES = [];
 
-/* ---------- formatting --------------------------------------------------- */
-const titleCase = s => (s || '').toLowerCase().replace(/_/g, ' ')
-    .replace(/^./, c => c.toUpperCase());
+    const state = {
+        search: '',
+        themes: new Set(),
+        regions: new Set(),
+        activities: new Set(),
+        insights: new Set(),
+        minRating: 0,
+        maxCost: COST_MAX,
+        maxDuration: DURATION_MAX,
+        sort: 'match',
+        view: 'grid',
+        insightTests: INSIGHT_TESTS,
+    };
 
-const CROWD_ICON = { EMPTY: '○', QUIET: '◔', MODERATE: '◑', BUSY: '◕', PACKED: '●' };
-const COST_TEXT = { FREE: 'Free', LOW: 'Cheap', MODERATE: 'Moderate', HIGH: 'Pricey', VERY_HIGH: 'Expensive' };
+    let map = null;
+    let tileLayers = {};
+    const markers = new Map();
+    const el = id => document.getElementById(id);
 
-function durationText(min) {
-    if (!min) return null;
-    const h = Math.floor(min / 60), m = min % 60;
-    if (h && m) return `${h}h ${m}m`;
-    if (h) return `${h}h`;
-    return `${m}m`;
-}
+    /* =============================================================== boot */
+    document.addEventListener('DOMContentLoaded', async () => {
+        el('place-list').innerHTML = skeletonCards(6);
+        wireStaticEvents();
 
-/* ==========================================================================
-   State
-   ========================================================================== */
-let ALL = [];
-let filtered = [];
-let selectedId = null;
+        let payload;
+        try {
+            const res = await fetch(DATA_URL);
+            if (!res.ok) throw new Error('HTTP ' + res.status);
+            payload = await res.json();
+        } catch (err) {
+            console.error('Failed to load explore data:', err);
+            el('place-list').innerHTML = stateHtml({
+                tone: 'error',
+                icon: 'alert',
+                title: 'Could not load destination data',
+                body: 'Rebuild it with <code>python scripts/build_explore_data.py</code>, '
+                    + 'then reload this page.',
+                action: '<button class="btn btn-primary" type="button" onclick="location.reload()">Try again</button>',
+            });
+            return;
+        }
 
-const state = {
-    search: '',
-    themes: new Set(),
-    regions: new Set(),
-    insights: new Set(),
-};
+        ALL = (payload.places || []).map(p => ({ ...p, theme: themeFor(p.category) }));
+        ACTIVITIES = topActivities(ALL, 10);
+        el('count-total').textContent = ALL.length;
 
-let map = null;
-const markers = new Map();      // place.id -> L.marker
-let tileLayers = {};
-
-/* ==========================================================================
-   Boot
-   ========================================================================== */
-document.addEventListener('DOMContentLoaded', async () => {
-    let payload;
-    try {
-        const res = await fetch(DATA_URL);
-        if (!res.ok) throw new Error(res.status);
-        payload = await res.json();
-    } catch (err) {
-        document.getElementById('place-list').innerHTML =
-            `<div class="empty-state"><div>⚠️</div>
-             <h3>Could not load place data</h3>
-             <p>Run <code>python scripts/build_explore_data.py</code> to generate it.</p></div>`;
-        console.error('Failed to load explore data:', err);
-        return;
-    }
-
-    ALL = (payload.places || []).map(p => ({ ...p, theme: themeFor(p.category) }));
-    document.getElementById('count-total').textContent = ALL.length;
-
-    buildChips();
-    initMap();
-    wireEvents();
-    applyFilters();
-
-    // Deep link: explore.html?place=ella-rock
-    const wanted = new URLSearchParams(location.search).get('place');
-    if (wanted) {
-        const hit = ALL.find(p => p.id === wanted);
-        if (hit) openDrawer(hit);
-    }
-});
-
-/* ==========================================================================
-   Filter chips
-   ========================================================================== */
-function buildChips() {
-    const themeBox = document.getElementById('theme-chips');
-    const present = THEMES.filter(t => ALL.some(p => p.theme.key === t.key));
-    present.forEach(t => {
-        themeBox.appendChild(makeChip(`${t.emoji} ${t.label}`, () => toggle(state.themes, t.key), () => state.themes.has(t.key)));
-    });
-
-    const regionBox = document.getElementById('region-chips');
-    const regions = [...new Set(ALL.map(p => p.region))].sort();
-    regions.forEach(r => {
-        regionBox.appendChild(makeChip(r, () => toggle(state.regions, r), () => state.regions.has(r)));
-    });
-
-    const insightBox = document.getElementById('insight-chips');
-    INSIGHT_FILTERS.forEach(f => {
-        if (!ALL.some(f.test)) return;
-        insightBox.appendChild(makeChip(f.label, () => toggle(state.insights, f.id), () => state.insights.has(f.id)));
-    });
-
-    buildLegend(present);
-}
-
-function makeChip(label, onToggle, isActive) {
-    const el = document.createElement('span');
-    el.className = 'chip';
-    el.textContent = label;
-    el.addEventListener('click', () => {
-        onToggle();
-        el.classList.toggle('active', isActive());
+        buildFilters();
+        readUrlParams();
+        initMap();
+        wireFilterEvents();
         applyFilters();
-    });
-    el._sync = () => el.classList.toggle('active', isActive());
-    return el;
-}
 
-function toggle(set, value) {
-    set.has(value) ? set.delete(value) : set.add(value);
-}
-
-function buildLegend(themes) {
-    const legend = document.getElementById('map-legend');
-    themes.forEach(t => {
-        const row = document.createElement('div');
-        row.className = 'legend-item';
-        row.innerHTML = `<span class="legend-dot" style="background:${t.color}"></span>${t.label}`;
-        legend.appendChild(row);
-    });
-}
-
-/* ==========================================================================
-   Filtering
-   ========================================================================== */
-function applyFilters() {
-    const q = state.search.trim().toLowerCase();
-
-    filtered = ALL.filter(p => {
-        if (state.themes.size && !state.themes.has(p.theme.key)) return false;
-        if (state.regions.size && !state.regions.has(p.region)) return false;
-
-        for (const id of state.insights) {
-            const f = INSIGHT_FILTERS.find(x => x.id === id);
-            if (f && !f.test(p)) return false;
+        // deep link: explore.html?place=ella-rock
+        const wanted = new URLSearchParams(location.search).get('place');
+        if (wanted) {
+            const hit = ALL.find(p => p.id === wanted);
+            if (hit) openDrawer(hit);
         }
-
-        if (q) {
-            const haystack = [
-                p.name, p.category, p.region, p.tagline,
-                ...(p.activities || []).map(a => a.name),
-                ...(p.features || []).map(f => f.name),
-            ].join(' ').toLowerCase();
-            if (!haystack.includes(q)) return false;
-        }
-        return true;
     });
 
-    document.getElementById('count-shown').textContent = filtered.length;
-    renderCards();
-    renderMarkers();
-}
-
-/* ==========================================================================
-   Cards
-   ========================================================================== */
-function renderCards() {
-    const list = document.getElementById('place-list');
-    list.innerHTML = '';
-
-    if (!filtered.length) {
-        list.innerHTML = `<div class="empty-state"><div>🧭</div>
-            <h3>Nothing matches those filters</h3>
-            <p>Try clearing a filter or searching for something else.</p></div>`;
-        return;
+    function topActivities(places, n) {
+        const tally = new Map();
+        places.forEach(p => (p.activities || []).forEach(a => {
+            if (!a.name) return;
+            tally.set(a.name, (tally.get(a.name) || 0) + 1);
+        }));
+        return [...tally.entries()]
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, n)
+            .map(([name]) => name);
     }
 
-    const frag = document.createDocumentFragment();
-    filtered.slice(0, 400).forEach((p, i) => {
-        const card = document.createElement('article');
-        card.className = 'place-card';
-        card.dataset.id = p.id;
-        card.style.animationDelay = `${Math.min(i, 20) * 18}ms`;
+    /* ============================================================ filters */
+    function buildFilters() {
+        const themeBox = el('theme-chips');
+        THEMES.filter(t => ALL.some(p => p.theme.key === t.key)).forEach(t => {
+            themeBox.appendChild(chip(
+                `${icon(t.icon)}${escapeHtml(t.label)}`,
+                () => toggle(state.themes, t.key),
+                () => state.themes.has(t.key),
+            ));
+        });
 
-        const media = p.image
-            ? `<img src="${p.image}" alt="${escapeHtml(p.name)}" loading="lazy"
-                    onerror="this.parentElement.innerHTML='<div class=&quot;card-media-fallback&quot;>${p.theme.emoji}</div>'">`
-            : `<div class="card-media-fallback">${p.theme.emoji}</div>`;
+        const regionBox = el('region-chips');
+        [...new Set(ALL.map(p => p.region))].sort().forEach(r => {
+            regionBox.appendChild(chip(
+                escapeHtml(r),
+                () => toggle(state.regions, r),
+                () => state.regions.has(r),
+            ));
+        });
 
-        card.innerHTML = `
-            <div class="card-media">
-                ${media}
-                <span class="card-cat">${p.theme.emoji} ${escapeHtml(p.category)}</span>
-                <span class="card-region">📍 ${escapeHtml(p.region)}</span>
-            </div>
-            <div class="card-body">
-                <h3>${escapeHtml(p.name)}</h3>
-                ${p.tagline ? `<p class="card-tagline">${escapeHtml(p.tagline)}</p>` : ''}
-                <div class="ugc-row">${ugcTags(p)}</div>
+        const actBox = el('activity-chips');
+        ACTIVITIES.forEach(a => {
+            actBox.appendChild(chip(
+                escapeHtml(a),
+                () => toggle(state.activities, a),
+                () => state.activities.has(a),
+            ));
+        });
+
+        const insightBox = el('insight-chips');
+        INSIGHT_FILTERS.forEach(f => {
+            if (!ALL.some(f.test)) return;
+            insightBox.appendChild(chip(
+                `${icon(f.icon)}${escapeHtml(f.label)}`,
+                () => toggle(state.insights, f.id),
+                () => state.insights.has(f.id),
+            ));
+        });
+
+        buildLegend();
+    }
+
+    function chip(html, onToggle, isActive) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'chip';
+        btn.innerHTML = html;
+        btn.setAttribute('aria-pressed', 'false');
+        const sync = () => {
+            const on = isActive();
+            btn.classList.toggle('active', on);
+            btn.setAttribute('aria-pressed', String(on));
+        };
+        btn.addEventListener('click', () => { onToggle(); sync(); applyFilters(); });
+        btn._sync = sync;
+        return btn;
+    }
+
+    function toggle(set, value) {
+        set.has(value) ? set.delete(value) : set.add(value);
+    }
+
+    function buildLegend() {
+        const legend = el('map-legend');
+        THEMES.filter(t => ALL.some(p => p.theme.key === t.key)).forEach(t => {
+            const row = document.createElement('div');
+            row.className = 'legend-item';
+            row.innerHTML = `<span class="legend-dot" style="background:${t.color}"></span>${escapeHtml(t.label)}`;
+            legend.appendChild(row);
+        });
+    }
+
+    /* -------- entry points from the homepage search / footer links -------- */
+    function readUrlParams() {
+        const q = new URLSearchParams(location.search);
+        const setIfPresent = (key, apply) => {
+            const v = q.get(key);
+            if (v) apply(v);
+        };
+        setIfPresent('q', v => { state.search = v; el('search-input').value = v; });
+        setIfPresent('theme', v => v.split(',').forEach(x => state.themes.add(x)));
+        setIfPresent('region', v => v.split(',').forEach(x => state.regions.add(x)));
+        setIfPresent('insight', v => v.split(',').forEach(x => state.insights.add(x)));
+        setIfPresent('sort', v => {
+            const sel = el('sort-select');
+            state.sort = v;
+            sel.value = v;
+            if (sel._dropdownSync) sel._dropdownSync();   // repaint the styled control
+        });
+        syncChips();
+    }
+
+    function syncChips() {
+        document.querySelectorAll('.chip').forEach(c => c._sync && c._sync());
+    }
+
+    /* ========================================================== filtering */
+    function applyFilters() {
+        const q = state.search.trim().toLowerCase();
+
+        filtered = ALL.filter(p => {
+            if (state.themes.size && !state.themes.has(p.theme.key)) return false;
+            if (state.regions.size && !state.regions.has(p.region)) return false;
+
+            if (state.activities.size) {
+                const names = (p.activities || []).map(a => a.name);
+                for (const a of state.activities) if (!names.includes(a)) return false;
+            }
+
+            for (const id of state.insights) {
+                const test = INSIGHT_TESTS[id];
+                if (test && !test(p)) return false;
+            }
+
+            if (state.minRating > 0 && (ratingOf(p) || 0) < state.minRating) return false;
+
+            if (state.maxCost < COST_MAX) {
+                const c = typeof p.planner_cost === 'number' ? p.planner_cost : 0;
+                if (c > state.maxCost) return false;
+            }
+
+            if (state.maxDuration < DURATION_MAX) {
+                const d = p.duration_min || 0;
+                if (d > state.maxDuration) return false;
+            }
+
+            if (q) {
+                const haystack = [
+                    p.name, p.category, p.region, p.tagline,
+                    ...(p.activities || []).map(a => a.name),
+                    ...(p.features || []).map(f => f.name),
+                ].join(' ').toLowerCase();
+                if (!haystack.includes(q)) return false;
+            }
+            return true;
+        });
+
+        const prefs = activePrefs();
+        filtered.forEach(p => { p._match = matchScore(p, prefs); });
+        sortResults();
+
+        el('count-shown').textContent = filtered.length;
+        renderTokens();
+        renderCards();
+        renderMarkers();
+    }
+
+    /* Only the preferences the visitor has actually expressed feed the match
+       score — a slider still sitting at its default is not a preference. */
+    function activePrefs() {
+        return {
+            themes: state.themes,
+            regions: state.regions,
+            activities: state.activities,
+            insights: state.insights,
+            insightTests: INSIGHT_TESTS,
+            minRating: state.minRating > 0 ? state.minRating : 0,
+            maxCost: state.maxCost < COST_MAX ? state.maxCost : null,
+            maxDuration: state.maxDuration < DURATION_MAX ? state.maxDuration : null,
+        };
+    }
+
+    function sortResults() {
+        const byName = (a, b) => a.name.localeCompare(b.name);
+        const sorters = {
+            match: (a, b) => (b._match - a._match) || byName(a, b),
+            rating: (a, b) => ((ratingOf(b) || 0) - (ratingOf(a) || 0)) || byName(a, b),
+            popular: (a, b) => (reviewCount(b) - reviewCount(a)) || byName(a, b),
+            price: (a, b) => ((a.planner_cost || 0) - (b.planner_cost || 0)) || byName(a, b),
+            name: byName,
+        };
+        filtered.sort(sorters[state.sort] || sorters.match);
+    }
+
+    /* ------------------------------- removable "active filter" tokens ---- */
+    function renderTokens() {
+        const box = el('active-tokens');
+        const tokens = [];
+
+        const add = (label, clear) => tokens.push({ label, clear });
+
+        if (state.search) add(`“${state.search}”`, () => { state.search = ''; el('search-input').value = ''; });
+        state.themes.forEach(k => {
+            const t = THEMES.find(x => x.key === k);
+            add(t ? t.label : k, () => state.themes.delete(k));
+        });
+        state.regions.forEach(r => add(r, () => state.regions.delete(r)));
+        state.activities.forEach(a => add(a, () => state.activities.delete(a)));
+        state.insights.forEach(id => {
+            const f = INSIGHT_FILTERS.find(x => x.id === id);
+            add(f ? f.label : id, () => state.insights.delete(id));
+        });
+        if (state.minRating > 0) add(`${state.minRating}★ and up`, () => setRating(0));
+        if (state.maxCost < COST_MAX) add(`Under ${state.maxCost} LKR`, () => setCost(COST_MAX));
+        if (state.maxDuration < DURATION_MAX) add(`Under ${durationText(state.maxDuration)}`, () => setDuration(DURATION_MAX));
+
+        box.innerHTML = tokens.map((t, i) =>
+            `<span class="token">${escapeHtml(t.label)}
+                <button type="button" data-token="${i}" aria-label="Remove filter ${escapeHtml(t.label)}">
+                    ${icon('x')}
+                </button>
+             </span>`).join('');
+
+        box.querySelectorAll('[data-token]').forEach(btn => {
+            btn.addEventListener('click', () => {
+                tokens[Number(btn.dataset.token)].clear();
+                syncChips();
+                applyFilters();
+            });
+        });
+
+        const count = el('filter-count');
+        const n = tokens.length;
+        count.textContent = String(n);
+        count.hidden = n === 0;
+    }
+
+    /* ============================================================== cards */
+    function renderCards() {
+        const list = el('place-list');
+
+        if (!filtered.length) {
+            list.innerHTML = stateHtml({
+                icon: 'search',
+                title: 'No destinations match those filters',
+                body: 'Try widening the budget, dropping a region, or clearing everything to start again.',
+                action: '<button class="btn btn-primary" type="button" data-clear-all>Clear all filters</button>',
+            });
+            list.querySelector('[data-clear-all]')?.addEventListener('click', clearAll);
+            return;
+        }
+
+        list.innerHTML = filtered.slice(0, 400)
+            .map(p => placeCard(p, { match: p._match }))
+            .join('');
+
+        list.querySelectorAll('.place-card').forEach(card => {
+            const id = card.dataset.id;
+            card.addEventListener('mouseenter', () => highlightMarker(id, true));
+            card.addEventListener('mouseleave', () => highlightMarker(id, false));
+        });
+        syncWishlistBadges();
+    }
+
+    /* ================================================================ map */
+    /* The default CARTO basemap follows the site theme so a light page never
+       sits next to a black map. Same layer object — only the tile URL swaps. */
+    function basemapUrl() {
+        return document.documentElement.getAttribute('data-theme') === 'dark'
+            ? 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'
+            : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
+    }
+
+    function initMap() {
+        map = L.map('explore-map', { zoomControl: true, attributionControl: true })
+            .setView([7.6, 80.75], 7.4);
+
+        tileLayers = {
+            dark: L.tileLayer(basemapUrl(), {
+                attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 19,
+            }),
+            satellite: L.tileLayer(
+                'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+                attribution: 'Tiles &copy; Esri', maxZoom: 18,
+            }),
+            terrain: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; OpenTopoMap contributors', maxZoom: 17,
+            }),
+        };
+        tileLayers.dark.addTo(map);
+
+        document.addEventListener('themechange', () => tileLayers.dark.setUrl(basemapUrl()));
+
+        document.querySelectorAll('.map-toggle button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                Object.values(tileLayers).forEach(l => map.removeLayer(l));
+                tileLayers[btn.dataset.layer].addTo(map);
+                document.querySelectorAll('.map-toggle button')
+                    .forEach(b => b.classList.toggle('active', b === btn));
+            });
+        });
+    }
+
+    function renderMarkers() {
+        const keep = new Set(filtered.map(p => p.id));
+
+        markers.forEach((marker, id) => {
+            if (!keep.has(id)) { map.removeLayer(marker); markers.delete(id); }
+        });
+
+        filtered.forEach(p => {
+            if (p.lat == null || p.lon == null || markers.has(p.id)) return;
+
+            const divIcon = L.divIcon({
+                className: '',
+                html: `<div class="poi-marker" data-id="${escapeHtml(p.id)}"
+                            style="background:${p.theme.color}"><span>${icon(p.theme.icon)}</span></div>`,
+                iconSize: [30, 30],
+                iconAnchor: [15, 30],
+                popupAnchor: [0, -28],
+            });
+
+            const marker = L.marker([p.lat, p.lon], { icon: divIcon, title: p.name }).addTo(map);
+            marker.bindPopup(popupHtml(p), { minWidth: 220, maxWidth: 250 });
+            marker.on('popupopen', () => {
+                document.querySelector(`.map-popup-btn[data-id="${p.id}"]`)
+                    ?.addEventListener('click', () => openDrawer(p));
+            });
+            marker.on('click', () => setSelected(p.id));
+            markers.set(p.id, marker);
+        });
+    }
+
+    function popupHtml(p) {
+        const img = p.image
+            ? `<img class="map-popup-img" src="${escapeHtml(p.image)}" alt="" onerror="this.remove()">` : '';
+        const tags = ugcTags(p);
+        return `${img}<b>${escapeHtml(p.name)}</b><br>
+            <span style="color:var(--text-3)">${escapeHtml(p.category)} · ${escapeHtml(p.region)}</span>
+            ${tags ? `<div class="ugc-row" style="margin-top:8px">${tags}</div>` : ''}
+            <span class="map-popup-btn" data-id="${escapeHtml(p.id)}">Quick look →</span>`;
+    }
+
+    function highlightMarker(id, on) {
+        const marker = markers.get(id);
+        if (!marker) return;
+        marker.getElement()?.querySelector('.poi-marker')?.classList.toggle('is-active', on);
+        marker.setZIndexOffset(on ? 1000 : 0);
+    }
+
+    function setSelected(id) {
+        if (selectedId) {
+            highlightMarker(selectedId, false);
+            document.querySelector(`.place-card[data-id="${selectedId}"]`)?.classList.remove('is-active');
+        }
+        selectedId = id;
+        if (!id) return;
+        highlightMarker(id, true);
+        document.querySelector(`.place-card[data-id="${id}"]`)?.classList.add('is-active');
+    }
+
+    /* ==================================================== quick-look drawer */
+    function openDrawer(p) {
+        setSelected(p.id);
+        const pct = p._match != null ? p._match : matchScore(p, activePrefs());
+
+        el('drawer-hero').innerHTML = `
+            ${p.image ? `<img src="${escapeHtml(p.image_full || p.image)}" alt="${escapeHtml(p.name)}">` : ''}
+            <div class="drawer-hero-text">
+                <h2>${escapeHtml(p.name)}</h2>
+                <div class="drawer-meta">
+                    <span>${icon(p.theme.icon)}${escapeHtml(p.category)}</span>
+                    <span>${icon('pin')}${escapeHtml(p.region)}</span>
+                    ${reviewCount(p) ? `<span>${icon('message')}${reviewCount(p)} reviews</span>` : ''}
+                    ${durationText(p.duration_min) ? `<span>${icon('clock')}~${durationText(p.duration_min)}</span>` : ''}
+                </div>
             </div>`;
 
-        card.addEventListener('click', () => openDrawer(p));
-        card.addEventListener('mouseenter', () => highlightMarker(p.id, true));
-        card.addEventListener('mouseleave', () => highlightMarker(p.id, false));
-        frag.appendChild(card);
-    });
-    list.appendChild(frag);
-}
+        el('drawer-content').innerHTML = [
+            matchSection(p, pct),
+            descriptionSection(p),
+            insightSection(p),
+            evidenceSection(p),
+            tagSection('What visitors do here', p.activities),
+            tagSection('What they talk about', p.features),
+        ].filter(Boolean).join('');
 
-function ugcTags(p) {
-    const tags = [];
-    const bt = p.ugc?.best_time;
-    if (bt?.time_of_day) tags.push(`<span class="ugc-tag time">🕐 ${titleCase(bt.time_of_day)}</span>`);
+        el('drawer-actions').innerHTML = `
+            <a class="btn btn-primary" href="place.html?id=${encodeURIComponent(p.id)}">
+                View full details ${icon('arrowRight')}
+            </a>
+            <button class="btn btn-secondary" type="button" data-fav="${escapeHtml(p.id)}"
+                    aria-pressed="${window.LT.Wishlist.has(p.id)}">
+                ${icon('heart')} Save
+            </button>`;
 
-    const cr = p.ugc?.crowd;
-    if (cr?.label) tags.push(`<span class="ugc-tag crowd">${CROWD_ICON[cr.label] || '◑'} ${titleCase(cr.label)}</span>`);
+        const drawer = el('drawer');
+        drawer.classList.add('open');
+        drawer.setAttribute('aria-hidden', 'false');
+        el('drawer-backdrop').classList.add('open');
+        document.querySelector('.drawer-scroll').scrollTop = 0;
+        el('drawer-close').focus();
+        syncWishlistBadges();
 
-    const co = p.ugc?.cost;
-    if (co?.level) {
-        const amount = co.median_lkr ? ` · ${co.median_lkr} LKR` : '';
-        tags.push(`<span class="ugc-tag cost">💰 ${COST_TEXT[co.level] || titleCase(co.level)}${amount}</span>`);
+        if (p.lat != null && map) map.flyTo([p.lat, p.lon], 11, { duration: 0.8 });
     }
 
-    if (!tags.length && p.ugc?.total_reviews) {
-        tags.push(`<span class="ugc-tag">💬 ${p.ugc.total_reviews} reviews</span>`);
+    function closeDrawer() {
+        const drawer = el('drawer');
+        if (!drawer.classList.contains('open')) return;
+        drawer.classList.remove('open');
+        drawer.setAttribute('aria-hidden', 'true');
+        el('drawer-backdrop').classList.remove('open');
     }
-    return tags.join('');
-}
 
-/* ==========================================================================
-   Map
-   ========================================================================== */
-function initMap() {
-    map = L.map('explore-map', { zoomControl: true, attributionControl: true })
-        .setView([7.6, 80.75], 7.4);
-
-    tileLayers = {
-        dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-            attribution: '&copy; OpenStreetMap &copy; CARTO', maxZoom: 19,
-        }),
-        satellite: L.tileLayer(
-            'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-            attribution: 'Tiles &copy; Esri', maxZoom: 18,
-        }),
-        terrain: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenTopoMap contributors', maxZoom: 17,
-        }),
-    };
-    tileLayers.dark.addTo(map);
-
-    document.querySelectorAll('.map-toggle button').forEach(btn => {
-        btn.addEventListener('click', () => {
-            Object.values(tileLayers).forEach(l => map.removeLayer(l));
-            tileLayers[btn.dataset.layer].addTo(map);
-            document.querySelectorAll('.map-toggle button')
-                .forEach(b => b.classList.toggle('active', b === btn));
-        });
-    });
-}
-
-function renderMarkers() {
-    const keep = new Set(filtered.map(p => p.id));
-
-    // drop markers that filtered out
-    markers.forEach((marker, id) => {
-        if (!keep.has(id)) {
-            map.removeLayer(marker);
-            markers.delete(id);
-        }
-    });
-
-    filtered.forEach(p => {
-        if (p.lat == null || p.lon == null || markers.has(p.id)) return;
-
-        const icon = L.divIcon({
-            className: '',
-            html: `<div class="poi-marker" data-id="${p.id}"
-                        style="background:${p.theme.color}"><span>${p.theme.emoji}</span></div>`,
-            iconSize: [30, 30],
-            iconAnchor: [15, 30],
-            popupAnchor: [0, -28],
-        });
-
-        const marker = L.marker([p.lat, p.lon], { icon, title: p.name }).addTo(map);
-        marker.bindPopup(popupHtml(p), { minWidth: 210, maxWidth: 240 });
-        marker.on('popupopen', () => {
-            const btn = document.querySelector('.map-popup-btn[data-id="' + p.id + '"]');
-            if (btn) btn.addEventListener('click', () => openDrawer(p));
-        });
-        marker.on('click', () => setSelected(p.id));
-        markers.set(p.id, marker);
-    });
-}
-
-function popupHtml(p) {
-    const img = p.image
-        ? `<img class="map-popup-img" src="${p.image}" alt="" onerror="this.remove()">` : '';
-    const tags = ugcTags(p);
-    return `${img}<b>${escapeHtml(p.name)}</b><br>
-            <span style="color:#93a2bb;font-size:.8rem">${escapeHtml(p.category)} · ${escapeHtml(p.region)}</span>
-            ${tags ? `<div class="ugc-row" style="margin-top:8px">${tags}</div>` : ''}
-            <span class="map-popup-btn" data-id="${p.id}">View details →</span>`;
-}
-
-function highlightMarker(id, on) {
-    const marker = markers.get(id);
-    if (!marker) return;
-    const el = marker.getElement()?.querySelector('.poi-marker');
-    if (el) el.classList.toggle('is-active', on);
-    if (on) marker.setZIndexOffset(1000);
-    else marker.setZIndexOffset(0);
-}
-
-function setSelected(id) {
-    if (selectedId) {
-        highlightMarker(selectedId, false);
-        document.querySelector(`.place-card[data-id="${selectedId}"]`)?.classList.remove('is-active');
-    }
-    selectedId = id;
-    if (!id) return;
-    highlightMarker(id, true);
-    document.querySelector(`.place-card[data-id="${id}"]`)?.classList.add('is-active');
-}
-
-/* ==========================================================================
-   Detail drawer
-   ========================================================================== */
-function openDrawer(p) {
-    setSelected(p.id);
-
-    const hero = document.getElementById('drawer-hero');
-    hero.innerHTML = `
-        ${p.image ? `<img src="${p.image_full || p.image}" alt="${escapeHtml(p.name)}"
-             onerror="this.remove()">` : ''}
-        <div class="drawer-hero-text">
-            <h2>${escapeHtml(p.name)}</h2>
-            <div class="drawer-meta">
-                <span>${p.theme.emoji} ${escapeHtml(p.category)}</span>
-                <span>📍 ${escapeHtml(p.region)}</span>
-                ${p.ugc?.total_reviews ? `<span>💬 ${p.ugc.total_reviews} reviews</span>` : ''}
-                ${durationText(p.duration_min) ? `<span>⏱️ ~${durationText(p.duration_min)} visit</span>` : ''}
+    function matchSection(p, pct) {
+        return `<div class="drawer-section">
+            <div class="summary-match">
+                ${matchRing(pct)}
+                <p><b>${window.LT.matchWord(pct)}</b>
+                Scored on your filters, the traveller rating and how much review evidence backs it.</p>
             </div>
         </div>`;
-
-    const content = document.getElementById('drawer-content');
-    content.innerHTML = [
-        descriptionSection(p),
-        insightSection(p),
-        evidenceSection(p),
-        tagSection('What visitors do here', p.activities),
-        tagSection('What they talk about', p.features),
-        tagSection('Facilities mentioned', p.facilities),
-        sourceSection(p),
-    ].filter(Boolean).join('');
-
-    const actions = document.getElementById('drawer-actions');
-    actions.innerHTML = `
-        <button class="btn btn-primary" id="act-plan">🗓️ Add to trip plan</button>
-        <button class="btn btn-ghost" id="act-ask">💬 Ask the AI</button>`;
-    document.getElementById('act-plan').onclick =
-        () => location.href = 'planner.html?must_visit=' + encodeURIComponent(p.name);
-    document.getElementById('act-ask').onclick =
-        () => location.href = 'chat.html?q=' + encodeURIComponent(`Tell me about visiting ${p.name}`);
-
-    document.getElementById('drawer').classList.add('open');
-    document.getElementById('drawer').setAttribute('aria-hidden', 'false');
-    document.getElementById('drawer-backdrop').classList.add('open');
-    document.querySelector('.drawer-scroll').scrollTop = 0;
-
-    if (p.lat != null && map) {
-        map.flyTo([p.lat, p.lon], 11, { duration: 0.8 });
-    }
-}
-
-function closeDrawer() {
-    document.getElementById('drawer').classList.remove('open');
-    document.getElementById('drawer').setAttribute('aria-hidden', 'true');
-    document.getElementById('drawer-backdrop').classList.remove('open');
-}
-
-function descriptionSection(p) {
-    const text = p.description || p.tagline;
-    if (!text) return '';
-    return `<div class="drawer-section">
-        <h4>About</h4>
-        <p class="drawer-desc">${escapeHtml(text)}</p>
-    </div>`;
-}
-
-function insightSection(p) {
-    const u = p.ugc;
-    if (!u || (!u.best_time && !u.crowd && !u.cost)) return '';
-
-    const cards = [];
-
-    if (u.best_time) {
-        const bt = u.best_time;
-        const bits = [];
-        if (bt.season) bits.push(titleCase(bt.season));
-        if (bt.months?.length) bits.push(bt.months.join(', '));
-        if (bt.avoid?.length) bits.push(`avoid ${bt.avoid.join(', ')}`);
-        cards.push(insightCard('🕐', 'Best time',
-            bt.time_of_day ? titleCase(bt.time_of_day) : (bt.season ? titleCase(bt.season) : 'Mentioned'),
-            bits.join(' · '), bt.confidence, bt.based_on));
     }
 
-    if (u.crowd) {
-        const cr = u.crowd;
-        const sub = [];
-        if (cr.avg_level) sub.push(`avg ${cr.avg_level.toFixed(1)}/5`);
-        if (cr.busiest_period?.length) sub.push(`busiest ${cr.busiest_period.join(', ')}`);
-        cards.push(insightCard(CROWD_ICON[cr.label] || '◑', 'Crowd level',
-            titleCase(cr.label), sub.join(' · '), cr.confidence, cr.based_on));
+    function descriptionSection(p) {
+        const text = p.description || p.tagline;
+        if (!text) return '';
+        const short = text.length > 320 ? text.slice(0, 320).replace(/\s+\S*$/, '') + '…' : text;
+        return `<div class="drawer-section">
+            <h4>About</h4>
+            <p class="drawer-desc">${escapeHtml(short)}</p>
+        </div>`;
     }
 
-    if (u.cost) {
-        const co = u.cost;
-        const sub = [];
-        if (co.median_lkr) sub.push(`median ${co.median_lkr} LKR`);
-        if (co.fee_type) sub.push(titleCase(co.fee_type));
-        cards.push(insightCard('💰', 'Typical cost',
-            COST_TEXT[co.level] || titleCase(co.level), sub.join(' · '), co.confidence, co.based_on));
+    function insightSection(p) {
+        const u = p.ugc;
+        if (!u || (!u.best_time && !u.crowd && !u.cost)) return '';
+        const cards = [];
+
+        if (u.best_time) {
+            const bt = u.best_time;
+            const bits = [];
+            if (bt.season) bits.push(titleCase(bt.season));
+            if (bt.months?.length) bits.push(bt.months.join(', '));
+            if (bt.avoid?.length) bits.push(`avoid ${bt.avoid.join(', ')}`);
+            cards.push(insightCard('clock', 'Best time',
+                bt.time_of_day ? titleCase(bt.time_of_day) : (bt.season ? titleCase(bt.season) : 'Mentioned'),
+                bits.join(' · '), bt.confidence, bt.based_on));
+        }
+        if (u.crowd) {
+            const cr = u.crowd;
+            const sub = [];
+            if (cr.avg_level) sub.push(`avg ${cr.avg_level.toFixed(1)}/5`);
+            if (cr.busiest_period?.length) sub.push(`busiest ${cr.busiest_period.join(', ')}`);
+            cards.push(insightCard('users', 'Crowd level',
+                CROWD_TEXT[cr.label] || titleCase(cr.label), sub.join(' · '), cr.confidence, cr.based_on));
+        }
+        if (u.cost) {
+            const co = u.cost;
+            const sub = [];
+            if (co.median_lkr) sub.push(`median ${co.median_lkr} LKR`);
+            if (co.fee_type) sub.push(titleCase(co.fee_type));
+            cards.push(insightCard('wallet', 'Typical cost',
+                COST_TEXT[co.level] || titleCase(co.level), sub.join(' · '), co.confidence, co.based_on));
+        }
+
+        return `<div class="drawer-section">
+            <h4>What ${reviewCount(p) || 'the'} reviews say</h4>
+            <div class="insight-grid">${cards.join('')}</div>
+        </div>`;
     }
 
-    return `<div class="drawer-section">
-        <h4>What ${p.ugc.total_reviews || 'the'} reviews say</h4>
-        <div class="insight-grid">${cards.join('')}</div>
-    </div>`;
-}
-
-function insightCard(icon, label, value, sub, confidence, basedOn) {
-    const pct = Math.round((confidence || 0) * 100);
-    return `<div class="insight">
-        <div class="insight-head">${icon} ${label}</div>
-        <div class="insight-value">${escapeHtml(value || '—')}</div>
-        ${sub ? `<div class="insight-sub">${escapeHtml(sub)}</div>` : ''}
-        ${confidence != null ? `
-            <div class="conf-bar"><div class="conf-fill" style="width:${pct}%"></div></div>
-            <div class="insight-sub">${pct}% confidence${basedOn ? ` · ${basedOn} mentions` : ''}</div>` : ''}
-    </div>`;
-}
-
-function evidenceSection(p) {
-    const u = p.ugc;
-    if (!u) return '';
-    const quotes = [
-        ...(u.best_time?.evidence || []),
-        ...(u.crowd?.evidence || []),
-        ...(u.cost?.evidence || []),
-    ].slice(0, 4);
-    if (!quotes.length) return '';
-
-    return `<div class="drawer-section">
-        <h4>Straight from the reviews</h4>
-        ${quotes.map(q => `<div class="quote">"${escapeHtml(q.text)}"
-            <span class="quote-meta">${q.rating ? '★'.repeat(q.rating) : ''} ${escapeHtml(q.date || '')}</span>
-        </div>`).join('')}
-    </div>`;
-}
-
-function tagSection(title, items) {
-    if (!items || !items.length) return '';
-    return `<div class="drawer-section">
-        <h4>${title}</h4>
-        <div class="tag-cloud">
-            ${items.map(i => `<span class="tag ${i.sentiment === 'positive' ? 'positive' : i.sentiment === 'negative' ? 'negative' : ''}">
-                <b>${escapeHtml(i.name)}</b><span class="tag-pct">${i.pct}%</span></span>`).join('')}
-        </div>
-    </div>`;
-}
-
-function sourceSection(p) {
-    const links = [];
-    if (p.wikipedia_url) {
-        links.push(`<a href="${p.wikipedia_url}" target="_blank" rel="noopener"
-            style="color:var(--sky);text-decoration:underline">Wikipedia article</a>`);
+    function insightCard(iconName, label, value, sub, confidence, basedOn) {
+        const pct = Math.round((confidence || 0) * 100);
+        return `<div class="insight">
+            <div class="insight-head">${icon(iconName)}${escapeHtml(label)}</div>
+            <div class="insight-value">${escapeHtml(value || '—')}</div>
+            ${sub ? `<div class="insight-sub">${escapeHtml(sub)}</div>` : ''}
+            ${confidence != null ? `
+                <div class="conf-bar"><div class="conf-fill" style="width:${pct}%"></div></div>
+                <div class="insight-sub">${pct}% confidence${basedOn ? ` · ${basedOn} mentions` : ''}</div>` : ''}
+        </div>`;
     }
-    if (p.lat != null) {
-        links.push(`<a href="https://www.google.com/maps/search/?api=1&query=${p.lat},${p.lon}"
-            target="_blank" rel="noopener" style="color:var(--sky);text-decoration:underline">Open in Google Maps</a>`);
-    }
-    if (p.image_credit) {
-        links.push(`<span style="color:var(--faint)">Photo: ${escapeHtml(p.image_credit)} (Wikimedia)</span>`);
-    }
-    if (!links.length) return '';
-    return `<div class="drawer-section">
-        <h4>Sources</h4>
-        <div style="display:flex;flex-direction:column;gap:6px;font-size:.85rem">${links.join('')}</div>
-    </div>`;
-}
 
-/* ==========================================================================
-   Events
-   ========================================================================== */
-function wireEvents() {
-    const search = document.getElementById('search-input');
-    let timer;
-    search.addEventListener('input', e => {
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-            state.search = e.target.value;
-            applyFilters();
-        }, 180);
-    });
+    function evidenceSection(p) {
+        const u = p.ugc;
+        if (!u) return '';
+        const quotes = [
+            ...(u.best_time?.evidence || []),
+            ...(u.crowd?.evidence || []),
+            ...(u.cost?.evidence || []),
+        ].slice(0, 3);
+        if (!quotes.length) return '';
 
-    document.getElementById('reset-btn').addEventListener('click', () => {
+        return `<div class="drawer-section">
+            <h4>Straight from the reviews</h4>
+            ${quotes.map(q => `<div class="quote">“${escapeHtml(q.text)}”
+                <span class="quote-meta">${q.rating ? '★'.repeat(q.rating) : ''} ${escapeHtml(q.date || '')}</span>
+            </div>`).join('')}
+        </div>`;
+    }
+
+    function tagSection(title, items) {
+        if (!items || !items.length) return '';
+        return `<div class="drawer-section">
+            <h4>${escapeHtml(title)}</h4>
+            <div class="tag-cloud">
+                ${items.slice(0, 10).map(i => `<span class="tag ${i.sentiment === 'positive' ? 'positive'
+                    : i.sentiment === 'negative' ? 'negative' : ''}">
+                    <b>${escapeHtml(i.name)}</b><span class="tag-pct">${i.pct}%</span></span>`).join('')}
+            </div>
+        </div>`;
+    }
+
+    /* ============================================================= events */
+    function wireStaticEvents() {
+        // filter drawer (tablet + mobile)
+        const aside = el('filter-aside');
+        const open = el('filter-open');
+        const close = el('filter-close');
+        const backdrop = el('drawer-backdrop');
+        const setOpen = on => {
+            aside.classList.toggle('open', on);
+            open.setAttribute('aria-expanded', String(on));
+            // the shared backdrop dims the page behind whichever panel is open
+            backdrop.classList.toggle('open', on);
+            if (on) close.focus(); else open.focus();
+        };
+        open.addEventListener('click', () => setOpen(true));
+        close.addEventListener('click', () => setOpen(false));
+
+        // drawer
+        el('drawer-close').addEventListener('click', closeDrawer);
+        backdrop.addEventListener('click', () => {
+            closeDrawer();
+            if (aside.classList.contains('open')) setOpen(false);
+        });
+        document.addEventListener('keydown', e => {
+            if (e.key !== 'Escape') return;
+            closeDrawer();
+            if (aside.classList.contains('open')) setOpen(false);
+        });
+
+        // list ⇄ map on small screens
+        const body = el('explore-body');
+        const mapBtn = el('mobile-map-btn');
+        mapBtn.addEventListener('click', () => {
+            const on = body.classList.toggle('map-mode');
+            el('map-btn-label').textContent = on ? 'List' : 'Map';
+            if (on && map) setTimeout(() => map.invalidateSize(), 140);
+        });
+    }
+
+    function wireFilterEvents() {
+        let timer;
+        el('search-input').addEventListener('input', e => {
+            clearTimeout(timer);
+            timer = setTimeout(() => { state.search = e.target.value; applyFilters(); }, 180);
+        });
+
+        el('min-rating').addEventListener('input', e => setRating(Number(e.target.value)));
+        el('max-cost').addEventListener('input', e => setCost(Number(e.target.value)));
+        el('max-duration').addEventListener('input', e => setDuration(Number(e.target.value)));
+
+        el('sort-select').addEventListener('change', e => {
+            state.sort = e.target.value;
+            sortResults();
+            renderCards();
+        });
+
+        document.querySelectorAll('.view-toggle button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                state.view = btn.dataset.view;
+                el('place-list').classList.toggle('is-list', state.view === 'list');
+                document.querySelectorAll('.view-toggle button').forEach(b => {
+                    const on = b === btn;
+                    b.classList.toggle('active', on);
+                    b.setAttribute('aria-pressed', String(on));
+                });
+            });
+        });
+
+        el('reset-btn').addEventListener('click', clearAll);
+    }
+
+    function setRating(v) {
+        state.minRating = v;
+        el('min-rating').value = v;
+        el('min-rating-out').textContent = v > 0 ? `${v}★` : 'Any';
+        applyFilters();
+    }
+    function setCost(v) {
+        state.maxCost = v;
+        el('max-cost').value = v;
+        el('max-cost-out').textContent = v >= COST_MAX ? 'Any' : (v === 0 ? 'Free only' : `${v} LKR`);
+        applyFilters();
+    }
+    function setDuration(v) {
+        state.maxDuration = v;
+        el('max-duration').value = v;
+        el('max-duration-out').textContent = v >= DURATION_MAX ? 'Any' : durationText(v);
+        applyFilters();
+    }
+
+    function clearAll() {
         state.search = '';
         state.themes.clear();
         state.regions.clear();
+        state.activities.clear();
         state.insights.clear();
-        search.value = '';
-        document.querySelectorAll('.chip').forEach(c => c._sync && c._sync());
+        state.minRating = 0;
+        state.maxCost = COST_MAX;
+        state.maxDuration = DURATION_MAX;
+
+        el('search-input').value = '';
+        el('min-rating').value = 0;
+        el('min-rating-out').textContent = 'Any';
+        el('max-cost').value = COST_MAX;
+        el('max-cost-out').textContent = 'Any';
+        el('max-duration').value = DURATION_MAX;
+        el('max-duration-out').textContent = 'Any';
+
+        syncChips();
         applyFilters();
-        map.flyTo([7.6, 80.75], 7.4, { duration: 0.7 });
-    });
-
-    document.getElementById('drawer-close').addEventListener('click', closeDrawer);
-    document.getElementById('drawer-backdrop').addEventListener('click', closeDrawer);
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
-
-    // small screens: swap between the list and the map
-    const body = document.getElementById('explore-body');
-    const btn = document.getElementById('mobile-map-btn');
-    btn.addEventListener('click', () => {
-        body.classList.toggle('map-mode');
-        btn.textContent = body.classList.contains('map-mode') ? '📋 List' : '🗺️ Map';
-        if (body.classList.contains('map-mode')) setTimeout(() => map.invalidateSize(), 120);
-    });
-}
-
-/* ---------- util ---------- */
-function escapeHtml(str) {
-    return String(str ?? '').replace(/[&<>"']/g, c => (
-        { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
-    ));
-}
+        if (map) map.flyTo([7.6, 80.75], 7.4, { duration: 0.7 });
+    }
+})();

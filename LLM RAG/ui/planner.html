@@ -5,223 +5,300 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trip Planner — Lanka Travel AI</title>
-    <link rel="stylesheet" href="style.css?v=7">
+    <meta name="description"
+        content="Build a multi-day Sri Lanka itinerary with a multi-objective ant-colony optimiser over real road distances.">
+    <link rel="stylesheet" href="style.css?v=10">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
-    <!-- Leaflet CSS and JS -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <!-- Marked.js for Markdown rendering -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="theme.js?v=2"></script>
 </head>
 
 <body>
-    <div class="bg-glow"></div>
+    <a class="skip-link" href="#main">Skip to the planner</a>
 
-    <nav class="site-nav">
-        <a href="index.html" class="logo">
-            <span class="logo-icon">🌴</span>
-            <h1>Lanka Travel AI</h1>
+    <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" class="logo" aria-label="Lanka Travel AI — home">
+            <span class="logo-mark" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" />
+                    <polygon points="16.2 7.8 14.1 14.1 7.8 16.2 9.9 9.9" />
+                </svg>
+            </span>
+            <span class="logo-name">Lanka Travel AI</span>
         </a>
+
         <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
             <a href="explore.html" class="nav-link">Explore</a>
-            <a href="chat.html" class="nav-link">Ask AI</a>
-            <a href="planner.html" class="nav-link active">Trip Planner</a>
+            <a href="chat.html" class="nav-link">Recommendations</a>
+            <a href="planner.html" class="nav-link active" aria-current="page">Trip Planner</a>
+            <a href="index.html#why" class="nav-link">About</a>
+        </div>
+
+        <div class="nav-actions">
+            <span class="nav-fav-wrap">
+                <a class="btn-icon" href="saved.html" aria-label="Saved places">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5C2 10.8 3.5 12.5 5 14l7 7Z" />
+                    </svg>
+                </a>
+                <span class="nav-count" data-wishlist-count hidden>0</span>
+            </span>
+            <button class="btn-icon theme-toggle" type="button" aria-label="Switch theme"></button>
+            <button class="btn-icon nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="nav-panel">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 6h18M3 12h18M3 18h18" />
+                </svg>
+            </button>
         </div>
     </nav>
 
-    <div class="planner-shell">
-        <!-- ================= sidebar: weather + ACO settings ============== -->
-        <aside class="planner-aside">
-            <section class="aside-block">
-                <h3>Weather</h3>
-                <label class="check-row">
-                    <input type="checkbox" id="avoid-bad-weather" checked>
-                    <span>Avoid places with bad weather</span>
-                </label>
-
-                <h4 class="aside-sub">OpenWeatherMap API</h4>
-                <ol class="aside-steps">
-                    <li>Sign up:
-                        <a href="https://home.openweathermap.org/users/sign_up" target="_blank"
-                            rel="noopener">openweathermap.org/users/sign_up</a></li>
-                    <li>Keys:
-                        <a href="https://home.openweathermap.org/api_keys" target="_blank"
-                            rel="noopener">openweathermap.org/api_keys</a></li>
-                    <li>Set env var <code>OPENWEATHERMAP_API_KEY</code> before starting the server</li>
-                </ol>
-                <p class="aside-note" id="weather-key-note">Key set: No (weather ignored)</p>
-            </section>
-
-            <section class="aside-block">
-                <h3>ACO Settings</h3>
-                <div class="form-group">
-                    <label>Number of ants</label>
-                    <div class="stepper">
-                        <input type="number" id="num-ants" min="10" max="1000" step="10" value="80">
-                        <button type="button" data-step="-10" data-target="num-ants">−</button>
-                        <button type="button" data-step="10" data-target="num-ants">+</button>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Iterations</label>
-                    <div class="stepper">
-                        <input type="number" id="iterations" min="5" max="300" step="5" value="30">
-                        <button type="button" data-step="-5" data-target="iterations">−</button>
-                        <button type="button" data-step="5" data-target="iterations">+</button>
-                    </div>
-                </div>
-            </section>
-        </aside>
-
-        <!-- ================= main content ================================= -->
-        <main class="planner-content">
-            <header class="planner-head">
-                <h1>Sri Lanka Multi-Objective Itinerary Optimization</h1>
-                <p class="planner-caption">
-                    ACO · real road matrix · day-wise weather · multi-day coloured map · evaluation &amp; accuracy
-                </p>
-            </header>
-
-            <div class="banner banner-ok" id="load-banner">Loading POIs and road network…</div>
-
-            <!-- ---------------- form ---------------- -->
-            <form id="trip-form" class="planner-form">
-                <div class="form-col">
-                    <div class="form-group">
-                        <label for="start-place">Start place</label>
-                        <select id="start-place" name="start_place" required>
-                            <option value="">Loading POIs…</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="trip-start-date">Trip start date</label>
-                        <input type="date" id="trip-start-date" name="trip_start_date">
-                    </div>
-                    <div class="form-group">
-                        <label for="days">Number of days</label>
-                        <div class="stepper">
-                            <input type="number" id="days" name="days" min="1" max="30" value="4" required>
-                            <button type="button" data-step="-1" data-target="days">−</button>
-                            <button type="button" data-step="1" data-target="days">+</button>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="hours-per-day">Hours per day</label>
-                        <div class="stepper">
-                            <input type="number" id="hours-per-day" name="hours_per_day" min="4" max="16" step="0.5"
-                                value="8.00" required>
-                            <button type="button" data-step="-0.5" data-target="hours-per-day">−</button>
-                            <button type="button" data-step="0.5" data-target="hours-per-day">+</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-col">
-                    <label class="check-row">
-                        <input type="checkbox" id="use-all-pois">
-                        <span>Use all POIs as candidates (ignore must-visit)</span>
-                    </label>
-
-                    <div class="form-group">
-                        <label for="must-visit-input">Candidate / must-visit places (comma or newline)</label>
-                        <textarea id="must-visit-input" name="must_visit" rows="4"
-                            placeholder="Example: Aberdeen Falls, Arugam Bay, Hikkaduwa Beach, Coconut Tree Hill"></textarea>
-                    </div>
-
-                    <h4 class="pref-title">Preference priorities (0–10)</h4>
-                    <div class="pref-slider">
-                        <label>Attraction / Satisfaction <b id="val-attraction">8</b></label>
-                        <input type="range" name="attraction_priority" min="0" max="10" value="8"
-                            data-out="val-attraction">
-                    </div>
-                    <div class="pref-slider">
-                        <label>Budget <b id="val-budget">4</b></label>
-                        <input type="range" name="budget_priority" min="0" max="10" value="4" data-out="val-budget">
-                    </div>
-                    <div class="pref-slider">
-                        <label>Travel time <b id="val-time">7</b></label>
-                        <input type="range" name="time_priority" min="0" max="10" value="7" data-out="val-time">
-                    </div>
-                    <div class="pref-slider">
-                        <label>Popular routes <b id="val-popular">5</b></label>
-                        <input type="range" name="popular_priority" min="0" max="10" value="5" data-out="val-popular">
-                    </div>
-                </div>
-
-                <div class="form-actions">
-                    <button type="submit" class="generate-btn" id="generate-btn">Generate Optimized Routes</button>
-                </div>
-            </form>
-
-            <div class="banner banner-error" id="error-banner" style="display:none;"></div>
-
-            <!-- ---------------- results ---------------- -->
-            <section id="results" style="display:none;">
-                <div id="ai-summary-wrap" class="result-block" style="display:none;">
-                    <h2>AI trip summary</h2>
-                    <div class="itinerary-summary-bubble" id="itinerary-summary"></div>
-                </div>
-
-                <div id="subset-warning" class="banner banner-warn" style="display:none;"></div>
-
-                <div class="result-block">
-                    <h2>Best route</h2>
-                    <p class="route-line" id="best-route-line"></p>
-                </div>
-
-                <div class="result-block">
-                    <h2>Best Route – Day-by-Day Plan</h2>
-                    <div id="best-daybyday"></div>
-                </div>
-
-                <div class="result-block">
-                    <h3>Best route scores</h3>
-                    <div class="table-wrap" id="best-scores-table"></div>
-                </div>
-
-                <div class="result-block">
-                    <h2>Best route map (different colour per day)</h2>
-                    <p class="planner-caption" id="map-legend-caption">
-                        Day 1 = red · Day 2 = blue · Day 3 = green · Day 4 = purple · … · real roads via OSRM
-                    </p>
-                    <div class="itinerary-map-container">
-                        <div id="itinerary-map" class="itinerary-map"></div>
-                    </div>
-                </div>
-
-                <div class="result-block">
-                    <h2>Route options (1–5)</h2>
-                    <div id="route-options"></div>
-                </div>
-
-                <div class="result-block">
-                    <h3>Scores for all 5 routes</h3>
-                    <div class="table-wrap" id="all-scores-table"></div>
-                </div>
-
-                <div class="result-block">
-                    <h2>Evaluation &amp; accuracy</h2>
-                    <div id="accuracy-block"></div>
-                </div>
-
-                <p class="weights-line" id="weights-line"></p>
-            </section>
-        </main>
-
-        <!-- Loading overlay -->
-        <div class="loading-overlay" id="loading-overlay" style="display:none;">
-            <div class="bubble loading"
-                style="background:rgba(12,20,36,.95);border:1px solid var(--line);padding:26px 32px;font-size:1.05rem;">
-                Running ACO, ranking top routes, building day plans &amp; map<span class="dots"><span>.</span><span>.</span><span>.</span></span>
-            </div>
-        </div>
+    <div class="nav-panel" id="nav-panel">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="explore.html" class="nav-link">Explore</a>
+        <a href="chat.html" class="nav-link">Recommendations</a>
+        <a href="planner.html" class="nav-link active">Trip Planner</a>
+        <a href="saved.html" class="nav-link">Saved places</a>
+        <a href="index.html#why" class="nav-link">About</a>
     </div>
 
-    <script src="planner.js?v=4"></script>
+    <main class="page" id="main">
+        <div class="planner-shell">
+
+            <!-- ============= sidebar: weather + optimiser settings ======= -->
+            <aside class="planner-aside" aria-label="Optimiser settings">
+                <section class="aside-block">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.6 1.6A4 4 0 0 0 6.5 19Z" />
+                        </svg>
+                        Weather
+                    </h3>
+                    <label class="check-row">
+                        <input type="checkbox" id="avoid-bad-weather" checked>
+                        <span>Avoid places with bad weather on the day</span>
+                    </label>
+
+                    <h4 class="aside-sub">OpenWeatherMap API</h4>
+                    <ol class="aside-steps">
+                        <li>Sign up at
+                            <a href="https://home.openweathermap.org/users/sign_up" target="_blank"
+                                rel="noopener">openweathermap.org</a>
+                        </li>
+                        <li>Copy a key from
+                            <a href="https://home.openweathermap.org/api_keys" target="_blank"
+                                rel="noopener">API keys</a>
+                        </li>
+                        <li>Set <code>OPENWEATHERMAP_API_KEY</code> before starting the server</li>
+                    </ol>
+                    <p class="aside-note" id="weather-key-note">Key set: No (weather ignored)</p>
+                </section>
+
+                <section class="aside-block">
+                    <h3>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6" />
+                        </svg>
+                        ACO settings
+                    </h3>
+                    <div class="form-group">
+                        <label for="num-ants">Number of ants</label>
+                        <div class="stepper">
+                            <input type="number" id="num-ants" min="10" max="1000" step="10" value="80">
+                            <button type="button" data-step="-10" data-target="num-ants"
+                                aria-label="Decrease ants">−</button>
+                            <button type="button" data-step="10" data-target="num-ants"
+                                aria-label="Increase ants">+</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="iterations">Iterations</label>
+                        <div class="stepper">
+                            <input type="number" id="iterations" min="5" max="300" step="5" value="30">
+                            <button type="button" data-step="-5" data-target="iterations"
+                                aria-label="Decrease iterations">−</button>
+                            <button type="button" data-step="5" data-target="iterations"
+                                aria-label="Increase iterations">+</button>
+                        </div>
+                    </div>
+                    <p class="aside-note">More ants and iterations search harder but take longer.</p>
+                </section>
+            </aside>
+
+            <!-- ======================== main column ====================== -->
+            <div class="planner-content">
+                <header class="planner-head">
+                    <h1>Build your Sri Lanka itinerary</h1>
+                    <p class="planner-caption">
+                        Multi-objective ant-colony optimisation over real road distances — balanced for
+                        attraction value, budget, travel time and popularity, then split into days.
+                    </p>
+                </header>
+
+                <div class="banner banner-ok" id="load-banner">Loading destinations and road network…</div>
+
+                <!-- ---------------------------- form ---------------------------- -->
+                <form id="trip-form" class="planner-form">
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="start-place">Start place</label>
+                            <select id="start-place" name="start_place" required>
+                                <option value="">Loading destinations…</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="trip-start-date">Trip start date</label>
+                            <input type="date" id="trip-start-date" name="trip_start_date">
+                        </div>
+                        <div class="form-group">
+                            <label for="days">Number of days</label>
+                            <div class="stepper">
+                                <input type="number" id="days" name="days" min="1" max="30" value="4" required>
+                                <button type="button" data-step="-1" data-target="days"
+                                    aria-label="One day fewer">−</button>
+                                <button type="button" data-step="1" data-target="days"
+                                    aria-label="One day more">+</button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="hours-per-day">Hours per day</label>
+                            <div class="stepper">
+                                <input type="number" id="hours-per-day" name="hours_per_day" min="4" max="16"
+                                    step="0.5" value="8.00" required>
+                                <button type="button" data-step="-0.5" data-target="hours-per-day"
+                                    aria-label="Half an hour less">−</button>
+                                <button type="button" data-step="0.5" data-target="hours-per-day"
+                                    aria-label="Half an hour more">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-col">
+                        <label class="check-row">
+                            <input type="checkbox" id="use-all-pois">
+                            <span>Use every destination as a candidate (ignore the must-visit list)</span>
+                        </label>
+
+                        <div class="form-group">
+                            <label for="must-visit-input">Candidate / must-visit places</label>
+                            <textarea id="must-visit-input" name="must_visit" rows="4"
+                                placeholder="Aberdeen Falls, Arugam Bay, Hikkaduwa Beach, Coconut Tree Hill"></textarea>
+                            <span class="aside-note">Separate with commas or new lines. Saved places fill this in
+                                automatically.</span>
+                        </div>
+
+                        <h4 class="pref-title">Preference priorities (0–10)</h4>
+                        <div class="pref-slider">
+                            <label for="pri-attraction">Attraction / satisfaction <b id="val-attraction">8</b></label>
+                            <input type="range" id="pri-attraction" name="attraction_priority" min="0" max="10"
+                                value="8" data-out="val-attraction">
+                        </div>
+                        <div class="pref-slider">
+                            <label for="pri-budget">Budget <b id="val-budget">4</b></label>
+                            <input type="range" id="pri-budget" name="budget_priority" min="0" max="10" value="4"
+                                data-out="val-budget">
+                        </div>
+                        <div class="pref-slider">
+                            <label for="pri-time">Travel time <b id="val-time">7</b></label>
+                            <input type="range" id="pri-time" name="time_priority" min="0" max="10" value="7"
+                                data-out="val-time">
+                        </div>
+                        <div class="pref-slider">
+                            <label for="pri-popular">Popular routes <b id="val-popular">5</b></label>
+                            <input type="range" id="pri-popular" name="popular_priority" min="0" max="10" value="5"
+                                data-out="val-popular">
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="generate-btn" id="generate-btn">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="6" cy="19" r="3" />
+                                <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15" />
+                                <circle cx="18" cy="5" r="3" />
+                            </svg>
+                            <span id="generate-label">Generate optimised routes</span>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="banner banner-error" id="error-banner" style="display:none;" role="alert"></div>
+
+                <!-- ------------------------- results ------------------------- -->
+                <section id="results" style="display:none;">
+                    <div id="ai-summary-wrap" class="result-block" style="display:none;">
+                        <h2>AI trip summary</h2>
+                        <div class="itinerary-summary-bubble" id="itinerary-summary"></div>
+                    </div>
+
+                    <div id="subset-warning" class="banner banner-warn" style="display:none;"></div>
+
+                    <div class="result-block">
+                        <h2>Best route</h2>
+                        <p class="route-line" id="best-route-line"></p>
+                    </div>
+
+                    <div class="result-block">
+                        <h2>Day-by-day plan</h2>
+                        <div id="best-daybyday"></div>
+                    </div>
+
+                    <div class="result-block">
+                        <h3>Best route scores</h3>
+                        <div class="table-wrap" id="best-scores-table"></div>
+                    </div>
+
+                    <div class="result-block">
+                        <h2>Route map</h2>
+                        <p class="planner-caption" id="map-legend-caption">
+                            One colour per day · real driving roads via OSRM
+                        </p>
+                        <div class="itinerary-map-container">
+                            <div id="itinerary-map" class="itinerary-map"></div>
+                        </div>
+                    </div>
+
+                    <div class="result-block">
+                        <h2>Alternative routes</h2>
+                        <div id="route-options"></div>
+                    </div>
+
+                    <div class="result-block">
+                        <h3>Scores for all five routes</h3>
+                        <div class="table-wrap" id="all-scores-table"></div>
+                    </div>
+
+                    <div class="result-block">
+                        <h2>Evaluation &amp; accuracy</h2>
+                        <div id="accuracy-block"></div>
+                    </div>
+
+                    <p class="weights-line" id="weights-line"></p>
+                </section>
+            </div>
+
+            <!-- loading overlay -->
+            <div class="loading-overlay" id="loading-overlay" style="display:none;" role="status" aria-live="polite">
+                <div class="loading-card">
+                    <span class="spinner" aria-hidden="true"></span>
+                    <span>
+                        Running the optimiser, ranking routes and building the day plans<span class="dots"><span>.</span><span>.</span><span>.</span></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="ui.js?v=1"></script>
+    <script src="planner.js?v=5"></script>
 </body>
 
 </html>

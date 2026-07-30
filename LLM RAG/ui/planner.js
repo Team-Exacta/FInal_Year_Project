@@ -321,8 +321,10 @@ document.addEventListener('DOMContentLoaded', async () => {
         };
 
         const btn = el('generate-btn');
+        // write to the label span, not the button — the button also holds an icon
+        const btnLabel = el('generate-label') || btn;
         btn.disabled = true;
-        btn.textContent = 'Generating…';
+        btnLabel.textContent = 'Generating…';
         el('loading-overlay').style.display = 'flex';
         el('error-banner').style.display = 'none';
 
@@ -350,7 +352,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         } finally {
             el('loading-overlay').style.display = 'none';
             btn.disabled = false;
-            btn.textContent = 'Generate Optimized Routes';
+            btnLabel.textContent = 'Generate optimised routes';
         }
     });
 });

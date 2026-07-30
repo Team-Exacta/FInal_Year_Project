@@ -4,84 +4,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore Sri Lanka — Lanka Travel AI</title>
-    <link rel="stylesheet" href="style.css?v=7">
+    <title>Explore destinations — Lanka Travel AI</title>
+    <meta name="description"
+        content="Filter every mapped destination in Sri Lanka by type, region, activity, budget, rating and review-mined timing insight.">
+    <link rel="stylesheet" href="style.css?v=10">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="theme.js?v=2"></script>
 </head>
 
 <body>
-    <div class="bg-glow"></div>
+    <a class="skip-link" href="#main">Skip to results</a>
 
-    <nav class="site-nav">
-        <a href="index.html" class="logo">
-            <span class="logo-icon">🌴</span>
-            <h1>Lanka Travel AI</h1>
+    <nav class="site-nav" aria-label="Primary">
+        <a href="index.html" class="logo" aria-label="Lanka Travel AI — home">
+            <span class="logo-mark" aria-hidden="true">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" />
+                    <polygon points="16.2 7.8 14.1 14.1 7.8 16.2 9.9 9.9" />
+                </svg>
+            </span>
+            <span class="logo-name">Lanka Travel AI</span>
         </a>
+
         <div class="nav-links">
-            <a href="explore.html" class="nav-link active">Explore</a>
-            <a href="chat.html" class="nav-link">Ask AI</a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="explore.html" class="nav-link active" aria-current="page">Explore</a>
+            <a href="chat.html" class="nav-link">Recommendations</a>
             <a href="planner.html" class="nav-link">Trip Planner</a>
+            <a href="index.html#why" class="nav-link">About</a>
+        </div>
+
+        <div class="nav-actions">
+            <span class="nav-fav-wrap">
+                <a class="btn-icon" href="saved.html" aria-label="Saved places">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5C2 10.8 3.5 12.5 5 14l7 7Z" />
+                    </svg>
+                </a>
+                <span class="nav-count" data-wishlist-count hidden>0</span>
+            </span>
+            <button class="btn-icon theme-toggle" type="button" aria-label="Switch theme"></button>
+            <button class="btn-icon nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+                aria-controls="nav-panel">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 6h18M3 12h18M3 18h18" />
+                </svg>
+            </button>
         </div>
     </nav>
 
-    <div class="explore-shell">
-        <!-- ------------------------------------------------ filters -->
-        <div class="explore-toolbar">
-            <div class="toolbar-row">
-                <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Search a place, region or activity..."
-                        autocomplete="off">
-                </div>
-                <div class="result-count"><b id="count-shown">0</b> of <span id="count-total">0</span> places</div>
-                <button class="mobile-map-btn" id="mobile-map-btn">🗺️ Map</button>
-                <div style="flex:1"></div>
-                <div class="chip-row" id="theme-chips"></div>
-            </div>
-
-            <div class="toolbar-row">
-                <div class="chip-row">
-                    <span class="chip-label">Region</span>
-                    <div class="chip-row" id="region-chips"></div>
-                </div>
-            </div>
-
-            <div class="toolbar-row">
-                <div class="chip-row">
-                    <span class="chip-label">Review insight</span>
-                    <div class="chip-row" id="insight-chips"></div>
-                    <span class="chip chip-reset" id="reset-btn">Clear all</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- ------------------------------------------------ list + map -->
-        <div class="explore-body" id="explore-body">
-            <div class="explore-list" id="place-list"></div>
-
-            <div class="explore-map-pane">
-                <div id="explore-map"></div>
-                <div class="map-toggle">
-                    <button data-layer="dark" class="active">Dark</button>
-                    <button data-layer="satellite">Satellite</button>
-                    <button data-layer="terrain">Terrain</button>
-                </div>
-                <div class="map-legend" id="map-legend">
-                    <h5>Place type</h5>
-                </div>
-            </div>
-        </div>
+    <div class="nav-panel" id="nav-panel">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="explore.html" class="nav-link active">Explore</a>
+        <a href="chat.html" class="nav-link">Recommendations</a>
+        <a href="planner.html" class="nav-link">Trip Planner</a>
+        <a href="saved.html" class="nav-link">Saved places</a>
+        <a href="index.html#why" class="nav-link">About</a>
     </div>
 
-    <!-- ------------------------------------------------ detail drawer -->
+    <main class="page" id="main">
+        <div class="explore-shell">
+
+            <!-- ======================================= filter sidebar -->
+            <aside class="filter-aside" id="filter-aside" aria-label="Filter destinations">
+                <div class="filter-head">
+                    <h2>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6" />
+                        </svg>
+                        Filters
+                    </h2>
+                    <button class="btn-icon filter-close" id="filter-close" type="button" aria-label="Close filters">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 6 6 18M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="filter-search">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                    <label class="sr-only" for="search-input">Search destinations</label>
+                    <input type="search" id="search-input" placeholder="Search a place or activity…"
+                        autocomplete="off">
+                </div>
+
+                <div class="filter-group">
+                    <h3 id="lbl-type">Destination type</h3>
+                    <div class="chip-row" id="theme-chips" role="group" aria-labelledby="lbl-type"></div>
+                </div>
+
+                <div class="filter-group">
+                    <h3 id="lbl-region">Region</h3>
+                    <div class="chip-row" id="region-chips" role="group" aria-labelledby="lbl-region"></div>
+                </div>
+
+                <div class="filter-group">
+                    <h3 id="lbl-act">Activities</h3>
+                    <div class="chip-row" id="activity-chips" role="group" aria-labelledby="lbl-act"></div>
+                </div>
+
+                <div class="filter-group">
+                    <h3 id="lbl-insight">Season, crowd &amp; cost</h3>
+                    <div class="chip-row" id="insight-chips" role="group" aria-labelledby="lbl-insight"></div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Minimum rating</h3>
+                    <div class="range-row">
+                        <label for="min-rating">Rated at least <b id="min-rating-out">Any</b></label>
+                        <input type="range" id="min-rating" min="0" max="5" step="0.5" value="0">
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Budget</h3>
+                    <div class="range-row">
+                        <label for="max-cost">Entry up to <b id="max-cost-out">Any</b></label>
+                        <input type="range" id="max-cost" min="0" max="6000" step="250" value="6000">
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Travel duration</h3>
+                    <div class="range-row">
+                        <label for="max-duration">Visit under <b id="max-duration-out">Any</b></label>
+                        <input type="range" id="max-duration" min="30" max="480" step="30" value="480">
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <button class="btn btn-quiet btn-block" id="reset-btn" type="button">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M18 6 6 18M6 6l12 12" />
+                        </svg>
+                        Clear all filters
+                    </button>
+                </div>
+            </aside>
+
+            <!-- ========================================= results column -->
+            <div class="explore-main">
+                <div class="results-bar">
+                    <button class="filter-fab" id="filter-open" type="button" aria-controls="filter-aside"
+                        aria-expanded="false">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <polygon points="22 3 2 3 10 12.5 10 19 14 21 14 12.5" />
+                        </svg>
+                        Filters
+                        <span class="nav-count" id="filter-count" hidden>0</span>
+                    </button>
+
+                    <p class="result-count" role="status" aria-live="polite">
+                        <b id="count-shown">0</b> of <span id="count-total">0</span> destinations
+                    </p>
+
+                    <span class="results-bar-spacer"></span>
+
+                    <span class="select-wrap">
+                        <label class="sr-only" for="sort-select">Sort results</label>
+                        <select id="sort-select" data-enhance>
+                            <option value="match">Best match</option>
+                            <option value="rating">Highest rated</option>
+                            <option value="popular">Most reviewed</option>
+                            <option value="price">Lowest price</option>
+                            <option value="name">Name A–Z</option>
+                        </select>
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <polyline points="6 9 12 15 18 9" />
+                        </svg>
+                    </span>
+
+                    <div class="view-toggle" role="group" aria-label="Result layout">
+                        <button type="button" data-view="grid" class="active" aria-pressed="true" aria-label="Grid view">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                                <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                                <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                                <rect x="14" y="14" width="7" height="7" rx="1.5" />
+                            </svg>
+                        </button>
+                        <button type="button" data-view="list" aria-pressed="false" aria-label="List view">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8 6h13M8 12h13M8 18h13" />
+                                <circle cx="3.5" cy="6" r="1.2" />
+                                <circle cx="3.5" cy="12" r="1.2" />
+                                <circle cx="3.5" cy="18" r="1.2" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <button class="filter-fab" id="mobile-map-btn" type="button">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2" />
+                            <path d="M8 2v16M16 6v16" />
+                        </svg>
+                        <span id="map-btn-label">Map</span>
+                    </button>
+
+                    <div class="active-tokens" id="active-tokens"></div>
+                </div>
+
+                <div class="explore-body" id="explore-body">
+                    <div class="explore-list" id="place-list"></div>
+
+                    <div class="explore-map-pane">
+                        <div id="explore-map" role="application" aria-label="Map of Sri Lankan destinations"></div>
+                        <div class="map-toggle" role="group" aria-label="Basemap style">
+                            <button type="button" data-layer="dark" class="active">Standard</button>
+                            <button type="button" data-layer="satellite">Satellite</button>
+                            <button type="button" data-layer="terrain">Terrain</button>
+                        </div>
+                        <div class="map-legend" id="map-legend">
+                            <h5>Place type</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ================================== quick-look drawer (map pins) -->
     <div class="drawer-backdrop" id="drawer-backdrop"></div>
-    <aside class="drawer" id="drawer" aria-hidden="true">
-        <button class="drawer-close" id="drawer-close" aria-label="Close">✕</button>
+    <aside class="drawer" id="drawer" aria-hidden="true" aria-label="Destination quick look">
+        <button class="drawer-close" id="drawer-close" type="button" aria-label="Close quick look">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+        </button>
         <div class="drawer-scroll">
             <div class="drawer-hero" id="drawer-hero"></div>
             <div class="drawer-content" id="drawer-content"></div>
@@ -89,7 +248,8 @@
         <div class="drawer-actions" id="drawer-actions"></div>
     </aside>
 
-    <script src="explore.js?v=1"></script>
+    <script src="ui.js?v=1"></script>
+    <script src="explore.js?v=3"></script>
 </body>
 
 </html>
